@@ -3,7 +3,7 @@
 class FavController < ApplicationController
   def create
       if logged_in?
-          Fav.find_or_create :problem => Problem.today, :to => params[:answer_id], :from => current_user.id
+          Fav.new :problem => Problem.today, :answer_id => params[:answer_id], :from => current_user.id
       else
           render :status => 403
       end

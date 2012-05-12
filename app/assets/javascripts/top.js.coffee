@@ -13,7 +13,7 @@ $(document).ready ->
   $("a#answers-show").click ->
     console.log('button success!')
     $.get '/answers', (data) ->
-      $('div#answers-body .gist-part').remove()
+      $('div#answers-body div#one-program').remove()
       $('div#answers-body').append(data)
       # $('div.gist-part').each ->
       #   url = $(this).attr('data-src')
@@ -29,9 +29,13 @@ $(document).ready ->
       $("ul#lang-selector li").removeClass('active')
       console.log(lang_button.parent())
       lang_button.parent().addClass('active')
-      $('div#answers-body .gist-part').remove()
+      $('div#answers-body div#one-program').remove()
       $('div#answers-body').append(data)
 
   # fav create
-  $("answers-body").delegate("a.fav-btn", 'click') ->
-    $.post '/fav/create'
+  $("div#answers-body").delegate "a.fav-btn", 'click', (evt) ->
+    console.log('fav!!!')
+    fav_btn = $(this)
+    $.post '/fav/create/' + $(this).attr('data-answer-id'), (data) ->
+      fav_btn.find('img').attr('src','/assets/star_full.png')
+

@@ -4,8 +4,8 @@ DailyCoding::Application.routes.draw do
   match 'profile/codes/:user_id' => 'profile#codes'
   match 'profile/stared_codes/:user_id' => 'profile#stared_codes'
 
-  post "fav/create"
-  post "fav/destroy"
+  post "fav/create/:answer_id" => 'fav#create'
+  post "fav/destroy/:answer_id" => 'fav#destroy'
 
   resources :answers
 
