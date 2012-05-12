@@ -21,16 +21,42 @@
 
 <% else %>
   <div class='hero-unit'>
-    <h1> DailyCoding </h1>
-    <p> DailyCodingは、毎日のコーディングをちょっとだけ楽しくするサービスです。</p>
-    <a class='btn btn-primary btn-large' href='/login'>Twitterアカウントで参加</a>
-    <br/>
-    <a class='btn btn-primary btn-large' href='/nologin'>匿名で参加</a>
+    <center>
+      <h1> 
+      <span class="signboard">
+        DailyCoding
+        <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="daily_coding">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <p>寝る前に少しコーディングしていきませんか？</p>
+      </span>
+      </h1>
+      <a class='btn btn-primary btn-large' href='/login'>Twitterでログインして参加</a>
+      <a class='btn btn-large' href='/nologin'>ログインせずに参加</a>
+    </center>
   </div>
-  <div class='hero-unit'>
-    <h2> 今日の問題 </h2>
-    <div id='today-problem'>
-      <%== @today_problem.content %>
+  <div class='row'>
+    <div class='span4'>
+      <h2>このサービスについて</h2>
+      <p> プログラミングの上達には日々のコーディングが欠かせません。
+      DailyCodingは、そういった毎日のコーディングをちょっと楽しくするサービスです。
+      寝る前に少し時間を作って1日1題出される問題を解き、他の人と解答を共有しましょう。
+      Twitter でログインすると他の人の投稿にスターをつけることができます。
+      名前を出してソースコードを公開するのはちょっと恥ずかしい…という人でもログインせずに
+      参加できます。</p>
+    </div>
+    <div class='span4'>
+      <h2>出題される問題</h2>
+      <%= link_to "プロジェクトオイラー","http://projecteuler.net/" %>とは、
+      プログラミングで解く数学の問題集です．初級の問題から少し厄介な問題まで、
+      様々な問題が大量に用意されています。DailyCoding では、それらの中から毎日
+      1問ずつ… 
+      ゆううき仕事しろ！
+    </div>
+    <div class='span4'>
+      <h2> 今日の問題 </h2>
+      <div id='today-problem'>
+        <%== @today_problem.content %>
+      </div>
     </div>
   </div>
 <% end %>
