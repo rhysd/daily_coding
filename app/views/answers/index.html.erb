@@ -1,0 +1,12 @@
+<ul class="nav nav-pills" id='lang-selector'>
+  <li class="active">
+    <a href="#" data-href="/answer/index">ALL</a>
+  </li>
+  <% @langs.each do |lang| %>
+    <li class="active">
+      <a href="#" data-href=<%= "/answer/index/" + lang %>>ALL</a>
+    </li>
+  <% end %>
+</ul>
+
+<div id='answers-body'></div>

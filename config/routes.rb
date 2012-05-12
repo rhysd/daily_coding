@@ -1,4 +1,5 @@
 DailyCoding::Application.routes.draw do
+  resources :answers
 
   get "fav/create"
 
