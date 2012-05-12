@@ -23,8 +23,12 @@ $(document).ready ->
 
   $("ul#lang-selector a.lang-btn").click ->
     url = $(this).attr('data-href')
-    console.log(url)
+    lang_button = $(this)
     $.get url, (data) ->
+      # lang_button.parent().removeClass('active')
+      $("ul#lang-selector li").removeClass('active')
+      console.log(lang_button.parent())
+      lang_button.parent().addClass('active')
       $('div#answers-unit .gist-part').remove()
       $('div#answers-unit').append(data)
 

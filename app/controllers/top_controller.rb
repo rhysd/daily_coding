@@ -6,6 +6,7 @@ class TopController < ApplicationController
     if logged_in?
       @answers = Answer.order('updated_at DESC') # created_at指定して
       @langs = @answers.collect {|a| a.lang}
+      @langs.uniq!
     end
   end
 end
