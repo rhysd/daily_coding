@@ -5,7 +5,9 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+group :development do
+  gem 'sqlite3'
+end
 
 
 # Gems used only for assets and not required
@@ -37,8 +39,17 @@ gem 'nokogiri'
 # Use unicorn as the app server
 gem 'unicorn'
 
+group :production do
+  gem 'mysql2'
+end
+
 # Deploy with Capistrano
-gem 'capistrano'
+group :deployment do
+  gem 'capistrano'
+  gem 'capistrano_colors'
+  gem 'capistrano-ext'
+  gem 'capistrano_rsync_with_remote_cache'
+end
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
