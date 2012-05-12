@@ -1,0 +1,9 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20113
+
+<div id="body">
+<p>ある数の桁を左から右へと順に見たとき, 任意の桁の数が自身の左にある桁の数以上であるとき, その数を増加数 (increasing number) と呼ぶ; 例えば134468は増加数である.</p>
+<p>同様に, 任意の桁の数が自身の右にある桁の数以上であるとき, その数を減少数 (decreasing number) と呼ぶ; 例えば66420がそうである.</p>
+<p>増加数でも減少数でもない数を "はずみ"数 ("bouncy" number) と呼ぶ; 155349がそうである.</p>
+<p>nが大きくなるにつれ, n以下のはずみ数の割合は大きくなる. 例えば, 100万未満では, はずみ数でない数は12951個しかない. 同様に, 10<span style="font-size:60%;vertical-align:super;">10</span>未満では277032個しかない.</p>
+<p>googol数 (10<span style="font-size:60%;vertical-align:super;">100</span>) 未満ではずみ数でないものの数を答えよ.</p>
+</div>

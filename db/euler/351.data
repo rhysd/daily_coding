@@ -1,0 +1,13 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20351
+
+<div id="body">
+<p>次数 <span style="font-style:italic;">n</span> の六角形果樹園(hexagonal orchard)は、辺の長さ <span style="font-style:italic;">n</span> の正六角形状に配置された三角形格子と定義される。次数5の六角形果樹園の例を以下に示す :</p>
+<p><br></p>
+<div class="img_margin" style="text-align:center"><a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%20351&amp;openfile=p_351_hexorchard.png" title="p_351_hexorchard.png"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%20351&amp;src=p_351_hexorchard.png" alt="p_351_hexorchard.png" title="p_351_hexorchard.png" width="370" height="322"></a></div>
+
+<p><br></p>
+<p>緑色で強調された部分は、中心から見たときにより近くの点によって隠されてしまう点を示している。上記の次数5の六角形果樹園の場合、中心から見て30個の点が隠されることがわかるだろう。</p>
+<p>次数 <span style="font-style:italic;">n</span> の六角形果樹園において中心から隠される点の個数を H(<span style="font-style:italic;">n</span>) としよう。以下に例を示す。</p>
+<p>H(5) = 30. H(10) = 138. H(1 000) = 1177848.</p>
+<p>H(100 000 000)を求めよ。</p>
+</div>

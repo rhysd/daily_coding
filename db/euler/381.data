@@ -1,0 +1,10 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20381
+
+<div id="body">
+<p>素数 p について、 1 ≤ k ≤ 5 の k に対し S(p) = (Σ(p-k)!) mod(p) としよう。</p>
+<p>例えば、 p=7 の場合、<br>
+(7-1)! + (7-2)! + (7-3)! + (7-4)! + (7-5)! = 6! + 5! + 4! + 3! + 2! = 720+120+24+6+2 = 872<br>
+872 mod(7) = 4 となるので、 S(7) = 4 。</p>
+<p>5 ≤ p &lt; 100 のとき、 ΣS(p) = 480 となる。</p>
+<p>5 ≤ p &lt; 10<span style="font-size:60%;vertical-align:super;">8</span> のときの ΣS(p) を求めよ。</p>
+</div>

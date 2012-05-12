@@ -1,0 +1,11 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20174
+
+<div id="body">
+<p>輪郭が正方形で、正方形の穴を持ち、縦にも横にも対称性をもつようなものをlaminaと定義する。</p>
+<p>8個のタイルが与えられると、3x3の1x1の穴をもつlaminaしか作れないが、32個のタイルならば2つの異なったlaminaeが作れる。</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_173_square_laminas.gif" title="p_173_square_laminas.gif"><img src="http://projecteuler.net/project/images/p_173_square_laminas.gif" alt="p_173_square_laminas.gif" title="p_173_square_laminas.gif"></a></div>
+
+<p>t で何個のタイルを使うかを表すとすると、t = 8 は L(1)型、t = 32 なら L(2)型であるといえる。</p>
+<p>N(n) をL(n)型となるような t (≤ 1000000) の数であるとする。例えば、N(15) = 832 となる。</p>
+<p>∑ N(n) (1 ≤ n ≤ 10) を求めよ。</p>
+</div>

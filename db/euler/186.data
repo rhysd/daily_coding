@@ -1,0 +1,39 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20186
+
+<div id="body">
+<p>今, 100万人のユーザをもつ電話システムの通信記録がある.</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td">Rec Nr</td>
+<td class="style_td">Caller</td>
+<td class="style_td">Called</td>
+</tr>
+<tr>
+<td class="style_td">1</td>
+<td class="style_td">200007</td>
+<td class="style_td">100053</td>
+</tr>
+<tr>
+<td class="style_td">2</td>
+<td class="style_td">600183</td>
+<td class="style_td">500439</td>
+</tr>
+<tr>
+<td class="style_td">3</td>
+<td class="style_td">600863</td>
+<td class="style_td">701497</td>
+</tr>
+<tr>
+<td class="style_td">...</td>
+<td class="style_td">...</td>
+<td class="style_td">...</td>
+</tr>
+</tbody></table></div>
+<p>n番目の記録の掛けた側と掛けられた側の電話番号は Caller(n) = <span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;">2<span style="font-style:italic;">n</span>-1</span> と Called(n) = <span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;">2<span style="font-style:italic;">n</span></span>で与えられる. <span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;">1</span>, <span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;">2</span>, ...は“ラグ付きフィボナッチ生成器”で定義される.</p>
+<p>1 ≤ k ≤ 55については, <span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span></span> = [100003 - 200003<span style="font-style:italic;">k</span> + 300007<span style="font-style:italic;">k</span><span style="font-size:60%;vertical-align:super;">3</span>] (<span style="font-style:italic;">modulo</span> 1000000)</p>
+<p>56 ≤ kでは, <span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span></span> = [<span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span>-24</span> + <span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span>-55</span>] (<span style="font-style:italic;">modulo</span> 1000000)である.</p>
+<p>もしCaller(n) = Called(n)であれば, ユーザは間違って電話を掛けたとされ通信は切断される. そうでない場合には, 通信は成功している.</p>
+<p>XがYに電話を掛けるかその逆のときに, ユーザXとユーザYが友達であると呼ぶ. 同様に, XがYの友達であるかつYがZの友達であるとき, XがZの友達の友達であると呼ぶ. 同様にして長い連鎖が得られる.</p>
+<p>首相の電話番号は524287である. 何回電話を掛けると99%のユーザ (首相自身も含む) が首相の友達になるだろうか?</p>
+<p><strong>(注: 切断された通信は数えない.)</strong></p>
+</div>

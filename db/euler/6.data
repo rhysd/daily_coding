@@ -1,0 +1,9 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%206
+
+<div id="body">
+<p>最初の10個の自然数について、その和の二乗と、二乗数の和は以下の通り。</p>
+<div style="text-align:center">1² + 2² + ... + 10² = 385</div>
+<div style="text-align:center">(1 + 2 + ... + 10)² = 3025</div>
+<p>これらの数の差は 3025 - 385 = 2640 となる。</p>
+<p>同様にして、最初の100個の自然数について和の二乗と二乗の和の差を求めよ。</p>
+</div>

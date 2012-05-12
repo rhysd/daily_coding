@@ -1,0 +1,45 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20244
+
+<div id="body">
+<p>おそらく<em>15パズル</em>はご存知だろう。ここでは、数字の書かれたタイルの代わりに、7枚の赤いタイルと8枚の青いタイルを使用する。</p>
+<p>移動は、タイルの動いた方向(Left, Right, Up, Down)の大文字のイニシャルで表す。
+すなわち、最初の状態 (<strong>S</strong>) から文字列 <strong>LULUR</strong> を経て状態 (<strong>E</strong>) にたどり着く。</p>
+<div style="text-align:center">(<strong>S</strong>)
+<a href="http://projecteuler.net/project/images/p_244_start.gif" title="p_244_start.gif"><img src="http://projecteuler.net/project/images/p_244_start.gif" alt="p_244_start.gif" title="p_244_start.gif"></a> ,
+(<strong>E</strong>)
+<a href="http://projecteuler.net/project/images/p_244_example.gif" title="p_244_example.gif"><img src="http://projecteuler.net/project/images/p_244_example.gif" alt="p_244_example.gif" title="p_244_example.gif"></a>
+</div>
+<p>各経路は、以下に示す擬似コードによってチェックサムが計算される:</p>
+<blockquote><p class="quotation">checksum = 0<br>
+checksum = (checksum × 243 + m<span style="font-size:60%;vertical-align:sub;">1</span>) mod 100 000 007<br>
+checksum = (checksum × 243 + m<span style="font-size:60%;vertical-align:sub;">2</span>) mod 100 000 007<br>
+…<br>
+checksum = (checksum × 243 + m<span style="font-size:60%;vertical-align:sub;">n</span>) mod 100 000 007</p></blockquote>
+<p>m<span style="font-size:60%;vertical-align:sub;">k</span> は移動の文字列の k 番目の文字のアスキーコードの値である。アスキーコードは以下の通り:</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td"><strong>L</strong></td>
+<td class="style_td">76</td>
+</tr>
+<tr>
+<td class="style_td"><strong>R</strong></td>
+<td class="style_td">82</td>
+</tr>
+<tr>
+<td class="style_td"><strong>U</strong></td>
+<td class="style_td">85</td>
+</tr>
+<tr>
+<td class="style_td"><strong>D</strong></td>
+<td class="style_td">68</td>
+</tr>
+</tbody></table></div>
+<p>上で例に挙げた文字列 <strong>LULUR</strong> の場合、チェックサムは 19761398 になるだろう。</p>
+<p>では、状態 (<strong>S</strong>) から始めて、状態 (<strong>T</strong>) に到達する最短の経路を全て求めよ。</p>
+<div style="text-align:center">(<strong>S</strong>)
+<a href="http://projecteuler.net/project/images/p_244_start.gif" title="p_244_start.gif"><img src="http://projecteuler.net/project/images/p_244_start.gif" alt="p_244_start.gif" title="p_244_start.gif"></a> ,
+(<strong>T</strong>)
+<a href="http://projecteuler.net/project/images/p_244_target.gif" title="p_244_target.gif"><img src="http://projecteuler.net/project/images/p_244_target.gif" alt="p_244_target.gif" title="p_244_target.gif"></a>
+</div>
+<p>最小の長さとなる経路のチェックサム全ての合計を求めよ。</p>
+</div>

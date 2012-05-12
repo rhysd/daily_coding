@@ -1,0 +1,11 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20257
+
+<div id="body">
+<p>辺の長さが整数である三角形 ABC について考える。辺は a ≤ b ≤ c とする(AB = c, BC = a, AC = b)。 <br>
+三角形の角の二等分線は辺と E, F, G で交わる(下の図を参照)。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_257_bisector.gif" title="p_257_bisector.gif"><img src="http://projecteuler.net/project/images/p_257_bisector.gif" alt="p_257_bisector.gif" title="p_257_bisector.gif"></a></div>
+<p>線分 EF, EG, FG は三角形 ABC を 4 つの三角形 AEG, BFE, CGF, EFG に分ける。
+これら 4 つの三角形において、比率 (ABCの面積)/(小三角形の面積)が有理数になることが証明されている。
+しかし、いくつかまたは全ての比率が整数になるような場合が存在する。</p>
+<p>ABCの面積/AEGの面積 の比率が整数となるような、周辺の長さ ≤ 100,000,000 を満たす三角形 ABC はいくつあるか。</p>
+</div>

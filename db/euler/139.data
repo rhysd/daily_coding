@@ -1,0 +1,10 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20139
+
+<div id="body">
+<p>(a, b, c)で各辺の長さが整数の直角三角形の三辺を表す. 一辺の長さがcの正方形中に先ほどの三角形を4つ配置することが可能である.</p>
+<p>例えば (3, 4, 5)-三角形は5×5の正方形に4つ配置される. このとき, 中央部に1×1の穴が空いている. また, 5×5の正方形は25個の1×1の正方形で敷き詰めることが出来る.</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_139.gif" title="p_139.gif"><img src="http://projecteuler.net/project/images/p_139.gif" alt="p_139.gif" title="p_139.gif"></a></div>
+
+<p>しかし, (5, 12, 13)-三角形を使った場合は穴のサイズが7×7になり, 7×7の正方形では13×13の正方形を敷き詰めることが出来ない.</p>
+<p>では, 10<span style="font-size:60%;vertical-align:super;">8</span>未満の周囲長を持つ直角三角形を考え, 上のような敷き詰め方を許す直角三角形の数を答えよ.</p>
+</div>

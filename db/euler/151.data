@@ -1,0 +1,13 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20151
+
+<div id="body">
+<p>とある印刷屋では毎週16回の定期的な仕事がある. 毎回 A5 サイズの特殊な色校正用紙 (special colour-proofing paper) を1枚使う.</p>
+<p>月曜日の朝になると, 主任はA1サイズの特殊紙が入った新しい封筒を開ける.</p>
+<p>彼はA1の紙を半分に切る. するとA2の紙が2枚出来上がる. 片方を半分に切りA3の紙が2枚出来上がる. 以下繰り返し, A5の紙を得るまで繰り返し, 1枚をその週の最初の仕事に使う.</p>
+<p>使われなかった紙は全て元の封筒に収める.</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_151.gif" title="p_151.gif"><img src="http://projecteuler.net/project/images/p_151.gif" alt="p_151.gif" title="p_151.gif"></a></div>
+
+<p>さて, 各仕事の際に, 主任は封筒からランダムに紙を1枚取り出す. もしA5の紙を取り出したならそのまま仕事に使う. そうでない場合は <strong>半分に切る</strong> ことを繰り返し, A5の紙を1枚使い, 残りは元の封筒に戻す.</p>
+<p>週の最初と最後の仕事以外で, 封筒に紙が1枚だけ入っている回数の期待値を求めよ.</p>
+<p>回答は, 四捨五入し小数点以下6桁で答えること (x.xxxxxxという形).</p>
+</div>

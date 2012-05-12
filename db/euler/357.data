@@ -1,0 +1,7 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20357
+
+<div id="body">
+<p>30の約数について考えよう : 1,2,3,5,6,10,15,30.<br>
+30の約数 <span style="font-style:italic;">d</span> は、そのすべてにおいて <span style="font-style:italic;">d</span>+30/<span style="font-style:italic;">d</span> の値が素数になる。</p>
+<p><span style="font-style:italic;">n</span> のすべての約数 <span style="font-style:italic;">d</span> について <span style="font-style:italic;">d</span>+<span style="font-style:italic;">n</span>/<span style="font-style:italic;">d</span> が素数になるような、 100 000 000 以下の正の整数 <span style="font-style:italic;">n</span> の合計を求めよ。</p>
+</div>

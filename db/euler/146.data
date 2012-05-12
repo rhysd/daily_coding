@@ -1,0 +1,6 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20146
+
+<div id="body">
+<p>n<span style="font-size:60%;vertical-align:super;">2</span>+1, n<span style="font-size:60%;vertical-align:super;">2</span>+3, n<span style="font-size:60%;vertical-align:super;">2</span>+7, n<span style="font-size:60%;vertical-align:super;">2</span>+9, n<span style="font-size:60%;vertical-align:super;">2</span>+13, n<span style="font-size:60%;vertical-align:super;">2</span>+27 が連続する素数になる最小の正整数 n は 10 である. 100万未満のそのような n の総和は 1242490 である.</p>
+<p>それでは, 1億5000万未満のそのような n の総和を求めよ.</p>
+</div>

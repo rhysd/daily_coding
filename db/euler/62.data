@@ -1,0 +1,7 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2062
+
+<div id="body">
+<p>立方数 41063625 (345<span style="font-size:60%;vertical-align:super;">3</span>) は, 桁の順番を入れ替えると2つの立方数になる: 56623104 (384<span style="font-size:60%;vertical-align:super;">3</span>) と 66430125 (405<span style="font-size:60%;vertical-align:super;">3</span>) である.
+41063625は, 立方数になるような桁の置換をちょうど3つもつ最小の立方数である.</p>
+<p>立方数になるような桁の置換をちょうど5つもつ最小の立方数を求めよ.</p>
+</div>

@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2041
+
+<div id="body">
+<p>n桁Pandigitalであるとは, 1からnまでの数を各桁に1つずつもつこととする.</p>
+<p>#下のリンク先にあるような数学的定義とは異なる</p>
+<p>例えば2143は4桁<a href="http://ja.wikipedia.org/wiki/%E3%83%91%E3%83%B3%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E6%95%B0" rel="nofollow">Pandigital数</a>であり, かつ素数である.
+n桁（この問題の定義では9桁以下）Pandigitalな素数の中で最大の数を答えよ.</p>
+</div>

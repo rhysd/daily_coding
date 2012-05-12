@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20198
+
+<div id="body">
+<p>実数<span style="font-style:italic;">x</span>に対して、分母が<span style="font-style:italic;">d</span>以下になるような既約分数による最も正確な近似を<span style="font-style:italic;">r</span>/<span style="font-style:italic;">s</span>（<span style="font-style:italic;">s</span> ≤ <span style="font-style:italic;">d</span>、<span style="font-style:italic;">r</span>と<span style="font-style:italic;">s</span>は互いに素）とすると、<span style="font-style:italic;">r</span>/<span style="font-style:italic;">s</span>より<span style="font-style:italic;">x</span>に近いいかなる有理数<span style="font-style:italic;">p</span>/<span style="font-style:italic;">q</span>についても、<span style="font-style:italic;">q</span> &gt; <span style="font-style:italic;">d</span>となる。</p>
+<p>ほとんどの場合、実数に対する最も正確な近似は、任意の分母の上限<span style="font-style:italic;">d</span>に対して一意に定まる。しかし、中には9/40のような例外もある。9/40は、分母の上限が6のとき、最も正確な近似が1/4と1/5の2つ定まる。
+このように、少なくとも一つの分母の上限<span style="font-style:italic;">d</span>に対して、最も正確な近似が2つ以上定まる実数<span style="font-style:italic;">x</span>を「曖昧数」と呼ぶことにする。明らかに、曖昧数は有理数でなければならない。</p>
+<p>0 &lt; <span style="font-style:italic;">x</span> &lt; 1/100 かつ <span style="font-style:italic;">q</span> &lt; 10<span style="font-size:60%;vertical-align:super;">8</span> なる <span style="font-style:italic;">x</span> = <span style="font-style:italic;">p</span>/<span style="font-style:italic;">q</span>について、曖昧数は全部でいくつ存在するか。</p>
+</div>

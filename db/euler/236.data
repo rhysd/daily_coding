@@ -1,0 +1,50 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20236
+
+<div id="body">
+<p>仕入れ業者'A'と'B'が豪華ギフトセット販売用に次の商品と品数を準備する。</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0">
+<thead><tr>
+<td class="style_td" style="text-align:right;">商品</td>
+<td class="style_td" style="text-align:center;">'A'</td>
+<td class="style_td" style="text-align:center;">'B'</td>
+</tr></thead>
+<tbody>
+<tr>
+<td class="style_td" style="text-align:right;">ベルーガ・キャビア</td>
+<td class="style_td" style="text-align:right;">5248</td>
+<td class="style_td" style="text-align:right;">640</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:right;">クリスマスケーキ</td>
+<td class="style_td" style="text-align:right;">1312</td>
+<td class="style_td" style="text-align:right;">1888</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:right;">ギャモンジョイント(高級ハム)</td>
+<td class="style_td" style="text-align:right;">2624</td>
+<td class="style_td" style="text-align:right;">3776</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:right;">ヴィンテージ・ポートワイン</td>
+<td class="style_td" style="text-align:right;">5760</td>
+<td class="style_td" style="text-align:right;">3776</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:right;">シャンパーニュ・トリュフ</td>
+<td class="style_td" style="text-align:right;">3936</td>
+<td class="style_td" style="text-align:right;">5664</td>
+</tr>
+</tbody>
+</table></div>
+<p>仕入れ業者は商品を完全な状態で輸送するよう懸命に努力するが、いくつかは損傷してしまう。
+つまり、商品が駄目になってしまう。</p>
+<p>業者は実績を次の2種類の統計で比較する。</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>各業者ごとの 5 つの"商品ごとの損傷率"は、損傷した商品の数を仕入れた商品の数で割ったものであり、これを 5 つの商品それぞれで求める。</li>
+<li>各業者ごとの "全体損傷率" は全ての損傷した商品の数を仕入れた商品全ての数で割って求める。</li>
+</ul>
+<p>驚いたことに、5 つの各商品ごとの損傷率は A よりも B が悪く(高く)、その係数(損傷率を比較した比率)m&gt;1 は同じであった。さらに、矛盾して見えるが、全体損傷率は B よりも A が悪く、その係数は m であることが業者の調べでわかった。</p>
+<p>この驚くべき結果が起こるケースでは、 35 通りの m&gt;1 が存在する。最小の m は 1476/1475 である。</p>
+<p>最大の m を求めよ。<br>
+各項が最小になるように約分した分数で u/v の形にして入力せよ。</p>
+</div>

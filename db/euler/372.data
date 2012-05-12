@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20372
+
+<div id="body">
+<p><span style="font-style:italic;">M</span>&lt;x≤<span style="font-style:italic;">N</span>、 <span style="font-style:italic;">M</span>&lt;y≤<span style="font-style:italic;">N</span> 、さらに <a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%20372&amp;openfile=p_372_pencilray1.jpg" title="p_372_pencilray1.jpg"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%20372&amp;src=p_372_pencilray1.jpg" alt="p_372_pencilray1.jpg" title="p_372_pencilray1.jpg" width="35" height="51"></a> が奇数となる、これらの条件を満たす格子点 (x,y) の個数を R(<span style="font-style:italic;">M</span>, <span style="font-style:italic;">N</span>) と表すとしよう。</p>
+<p>R(0, 100) = 3019 、R(100, 10000) = 29750422 となることが確かめられる。<br>
+R(2·10<span style="font-size:60%;vertical-align:super;">6</span>, 10<span style="font-size:60%;vertical-align:super;">9</span>) を求めよ。</p>
+<p>注記 : <a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%20372&amp;openfile=p_372_pencilray2.gif" title="p_372_pencilray2.gif"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%20372&amp;src=p_372_pencilray2.gif" alt="p_372_pencilray2.gif" title="p_372_pencilray2.gif" width="27" height="24"></a> は床関数(実数xに対して、x以下の最大の整数)を表す。</p>
+</div>

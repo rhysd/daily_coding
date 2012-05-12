@@ -1,0 +1,16 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2087
+
+<div id="body">
+<p>素数の2乗と素数の3乗と素数の4乗の和で表される最小の数は28である. 50未満のこのような数は丁度4つある.</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>28 = 2<span style="font-size:60%;vertical-align:super;">2</span> + 2<span style="font-size:60%;vertical-align:super;">3</span> + 2<span style="font-size:60%;vertical-align:super;">4</span>
+</li>
+<li>33 = 3<span style="font-size:60%;vertical-align:super;">2</span> + 2<span style="font-size:60%;vertical-align:super;">3</span> + 2<span style="font-size:60%;vertical-align:super;">4</span>
+</li>
+<li>49 = 5<span style="font-size:60%;vertical-align:super;">2</span> + 2<span style="font-size:60%;vertical-align:super;">3</span> + 2<span style="font-size:60%;vertical-align:super;">4</span>
+</li>
+<li>47 = 2<span style="font-size:60%;vertical-align:super;">2</span> + 3<span style="font-size:60%;vertical-align:super;">3</span> + 2<span style="font-size:60%;vertical-align:super;">4</span>
+</li>
+</ul>
+<p>では, 50,000,000未満の数で, 素数の2乗と素数の3乗と素数の4乗の和で表される数は何個あるか?</p>
+</div>

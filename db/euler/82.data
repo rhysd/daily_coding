@@ -1,0 +1,44 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2082
+
+<div id="body">
+<p>注: この問題は<a href="http://odz.sakura.ne.jp/projecteuler/index.php?Problem%2081" title="Problem 81 (1533d)">Problem 81</a>よりも挑戦しがいがあるだろう.</p>
+<p>下記の5次の正方行列で、一番左の行の任意のセルから開始し一番右の行の任意のセルで終わる道を探索する。ただし上下右にのみ移動できるものとする。一番小さなパスは下で赤で示されたものである。このときの合計は994になる。</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td">131</td>
+<td class="style_td">673</td>
+<td class="style_td"><span style="color:red">234</span></td>
+<td class="style_td"><span style="color:red">103</span></td>
+<td class="style_td"><span style="color:red">18</span></td>
+</tr>
+<tr>
+<td class="style_td"><span style="color:red">201</span></td>
+<td class="style_td"><span style="color:red">96</span></td>
+<td class="style_td"><span style="color:red">342</span></td>
+<td class="style_td">965</td>
+<td class="style_td">150</td>
+</tr>
+<tr>
+<td class="style_td">630</td>
+<td class="style_td">803</td>
+<td class="style_td">746</td>
+<td class="style_td">422</td>
+<td class="style_td">111</td>
+</tr>
+<tr>
+<td class="style_td">537</td>
+<td class="style_td">699</td>
+<td class="style_td">497</td>
+<td class="style_td">121</td>
+<td class="style_td">956</td>
+</tr>
+<tr>
+<td class="style_td">805</td>
+<td class="style_td">732</td>
+<td class="style_td">524</td>
+<td class="style_td">37</td>
+<td class="style_td">331</td>
+</tr>
+</tbody></table></div>
+<p>今、31Kのテキストファイルmatrix.txtには80×80の行列が書かれている. 一番左の行から一番右の行へ移動する際の一番小さなパスの和を求めよ。</p>
+</div>

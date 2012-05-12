@@ -1,0 +1,14 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20219
+
+<div id="body">
+<p>AとBをビット列(0と1の連続列)とする。<br>
+Bの<strong>左</strong>端から"Aの長さ"ビットがAと一致する時、AをBの"接頭部"(prefix)と呼ぶ。<br>
+例えば 00110 は <strong>00110</strong>1001 の接頭部だが、00111 や 100110 の接頭部ではない。</p>
+<p>サイズnの"接頭符号"(prefix-free code)とは、次の条件を満たす n 個の異なるビット列の集合である: どのビット列も他のビット列の接頭部ではない。下の例はサイズ6の接頭符号である。</p>
+<div style="text-align:center">0000, 0001, 001, 01, 10, 11</div>
+<p>ここでビット0を送るのに1ペニー、ビット1を送るのに4ペンスかかると仮定する。<br>
+上で挙げた接頭符号にかかる総計は35ペンスとなる。
+この例は非対称なコスト分布となるが、なんと(同じサイズの中で)もっとも安い符号の１つである。短く書くと、Cost(6)=35 となる。</p>
+<p>Cost(10<span style="font-size:60%;vertical-align:super;">9</span>)を求めよ。</p>
+<p>[訳注  ペンス: ペニーの複数形]</p>
+</div>

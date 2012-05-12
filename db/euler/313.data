@@ -1,0 +1,11 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20313
+
+<div id="body">
+<p>スライドパズルでは、カウンタを空白のスペースに向けて横または縦へスライドさせることができる。ゲームの目的は、赤のカウンタを盤の左上角から右下角へ動かすことである；スペースはつねに右下角にある状態から始まる。例えば次の一連の図は、２×２の盤にて５手でゲームを完了させる様子を示している。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/sliding_game_1.gif" title="sliding_game_1.gif"><img src="http://projecteuler.net/project/images/sliding_game_1.gif" alt="sliding_game_1.gif" title="sliding_game_1.gif"></a></div>
+<p>S(m,n) を、m×n の盤でゲームを完了させる最小の手数を表すとする。<br>
+例えば、S(5,4) = 25 であることが確かめられる。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/sliding_game_2.gif" title="sliding_game_2.gif"><img src="http://projecteuler.net/project/images/sliding_game_2.gif" alt="sliding_game_2.gif" title="sliding_game_2.gif"></a></div>
+<p>100 未満の素数 p について、S(m,n)=p<span style="font-size:60%;vertical-align:super;">2</span> となる盤はちょうど 5482 個ある。</p>
+<p>10<span style="font-size:60%;vertical-align:super;">6</span> 未満の素数 p について、S(m,n)=p<span style="font-size:60%;vertical-align:super;">2</span> となる盤は何個あるか。</p>
+</div>

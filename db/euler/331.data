@@ -1,0 +1,15 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20331
+
+<div id="body">
+<p>N×N の円盤が正方形のゲーム盤に置かれている。円盤にはそれぞれ黒面と白面がある。</p>
+<p>各手番では、円盤を１枚選び、同じ横列と同じ縦列にある円盤をすべて裏返す：ゆえに 2×N-1 枚の円盤が裏返される。すべての円盤が白面となればゲームは終了する。<br>
+次の例は 5×5 の盤でのゲームを示している。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_331_crossflips3.gif" title="p_331_crossflips3.gif"><img src="http://projecteuler.net/project/images/p_331_crossflips3.gif" alt="p_331_crossflips3.gif" title="p_331_crossflips3.gif"></a></div>
+<p>このゲームを終わらせる最小の手数は 3 であることが示せる。</p>
+<p>N×N の盤の左下の円盤を座標 (0,0) とする。<br>
+右下の円盤は座標 (N-1,0) で左上の円盤は座標 (0,N-1) である。</p>
+<p>N×N 枚の盤での次の配置を C<span style="font-size:60%;vertical-align:sub;">N</span> とする：<br><a href="http://projecteuler.net/project/images/p_331_crossflips1.gif" title="p_331_crossflips1.gif"><img src="http://projecteuler.net/project/images/p_331_crossflips1.gif" alt="p_331_crossflips1.gif" title="p_331_crossflips1.gif"></a>を満たす (x,y) の円盤は黒面である；さもなくば白面である。C<span style="font-size:60%;vertical-align:sub;">5</span> は上に示されている。</p>
+<p>配置 C<span style="font-size:60%;vertical-align:sub;">N</span> から始めてゲームを終わらせる最小の手数を T(N) とする。配置 C<span style="font-size:60%;vertical-align:sub;">N</span> が解けない場合は T(N) は 0 である。<br>
+T(5)=3 であることが分かる。また T(10)=29、T(1 000)=395253 である。</p>
+<p><a href="http://projecteuler.net/project/images/p_331_crossflips2.gif" title="p_331_crossflips2.gif"><img src="http://projecteuler.net/project/images/p_331_crossflips2.gif" alt="p_331_crossflips2.gif" title="p_331_crossflips2.gif"></a> を求めよ。</p>
+</div>

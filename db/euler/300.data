@@ -1,0 +1,16 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20300
+
+<div id="body">
+<p>タンパク質は, 非常に単純化した形で, 疎水性要素 (H) と極性要素 (P) からなる文字列として考えることができる. 例えば HHPPHHHPHHPH である.<br>
+本問では, タンパク質の方向は重要である. たとえば HPP は PPH と区別して考える. したがって, n 個の要素からなる異なるタンパク質は 2<span style="font-size:60%;vertical-align:super;">n</span> 通りある.</p>
+<p>自然に遭遇するこれらの文字列は, エネルギー的に有利であるため, 常にいつでも, H-H の接触点の数ができるだけ大きくなるよう折りたたまれている.<br>
+その結果, H 要素は内側に集まり, P 要素は外側になる傾向がある.<br>
+自然のタンパク質はもちろん三次元に折りたたまれているが, われわれは二次元に折りたたまれたタンパク質のみを考える.</p>
+<p>下図は, 例のタンパク質を折りたたむやり方を二通り示している (H-H の接触点を赤い点で示している).</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_300_protein.gif" title="p_300_protein.gif"><img src="http://projecteuler.net/project/images/p_300_protein.gif" alt="p_300_protein.gif" title="p_300_protein.gif"></a></div>
+<p>左の折りたたみ方は H-H の接触点が 6 個しかないため, 自然に起こることは決してない.<br>
+一方, 右の折りたたみ方は接触点が 9 個あり, この文字列では最適である.</p>
+<p>H と P 要素は文字列の任意の位置において等しい可能性で起こると仮定すると, 長さ 8 のランダムなタンパク質の文字列の最適な折りたたみ方における H-H の接触点の数は, 平均して 850 / 2<span style="font-size:60%;vertical-align:super;">8</span> = 3.3203125 となることが分かる.</p>
+<p>長さ 15 のランダムなタンパク質の文字列の最適な折りたたみ方における H-H の接触点の平均数は何か.<br>
+厳密な結果に対し, 必要な数の小数位を用いて答えを与えよ.</p>
+</div>

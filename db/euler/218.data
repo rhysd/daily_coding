@@ -1,0 +1,18 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20218
+
+<div id="body">
+<p>a=7, b=24, c=25 の直角三角形について考える。この三角形の面積は84であり、完全数6と28で割り切れる。<br>
+さらに、この三角形は原始(primitive)直角三角形である: つまり、 gcd(a,b)=1, gcd(b,c)=1 を満たす。<br>
+さらに、c は平方数である。</p>
+<p>以下の条件を満たす直角三角形を"完全"(perfect)と呼ぶ:</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>原始直角三角形である</li>
+<li>斜辺が平方数である</li>
+</ul>
+<p>以下の条件を満たす直角三角形を"超完全"(super-perfect)と呼ぶ:</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>完全な直角三角形である</li>
+<li>面積が完全数である6と28の倍数である</li>
+</ul>
+<p>c≤10<span style="font-size:60%;vertical-align:super;">16</span>を満たす完全な直角三角形のうち、超完全でないものはいくつあるか。</p>
+</div>

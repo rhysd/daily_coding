@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20168
+
+<div id="body">
+<p>自然数 142857 を考える。最後の桁 (7) を一番前に持っていく、すなわち、右にローテートすると 714285 を得る。</p>
+<p>714285 = 5 × 142857 が確認できる。</p>
+<p>これは142857の珍しい性質を示している。つまり、右にローテートした数の約数になっている。</p>
+<p>10 &lt; n &lt; 10<span style="font-size:60%;vertical-align:super;">100</span> の n について、この性質をもつ数の総和の下 5 桁を答えよ。</p>
+</div>

@@ -1,0 +1,20 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20165
+
+<div id="body">
+<p>線分は二つの端点によって一意に決まる。<br>
+平面上の2つの線分を考えると以下の3つの可能性がある、<br>
+共有点が0個のケース、共有点が1個のケース、無限に多くの共有点を持つケース。</p>
+<p>さらに、2つの線分が共有点を1つのみ持つとき、共有点がどちらかまたは両方の線分の端点である場合がある。もし共有点がどちらの線分の端点でもないなら、その点は両方の線分の内部の点である。<br>
+もし、線分 <span style="font-style:italic;">L</span><span style="font-size:60%;vertical-align:sub;">1</span> と <span style="font-style:italic;">L</span><span style="font-size:60%;vertical-align:sub;">2</span> の共有点Tが <span style="font-style:italic;">L</span><span style="font-size:60%;vertical-align:sub;">1</span> と <span style="font-style:italic;">L</span><span style="font-size:60%;vertical-align:sub;">2</span> の唯一の共有点であり、両方の線分の内部の点であるとき、Tを真の交点と呼ぶことにする。</p>
+<p>3つの線分 <span style="font-style:italic;">L</span><span style="font-size:60%;vertical-align:sub;">1</span>, <span style="font-style:italic;">L</span><span style="font-size:60%;vertical-align:sub;">2</span>, <span style="font-style:italic;">L</span><span style="font-size:60%;vertical-align:sub;">3</span> を考える。</p>
+<p><span style="font-style:italic;">L</span><span style="font-size:60%;vertical-align:sub;">1</span>: (27, 44) から (12, 32)<br><span style="font-style:italic;">L</span><span style="font-size:60%;vertical-align:sub;">2</span>: (46, 53) から (17, 62)<br><span style="font-style:italic;">L</span><span style="font-size:60%;vertical-align:sub;">3</span>: (46, 70) から (22, 40)<br></p>
+<p><span style="font-style:italic;">L</span><span style="font-size:60%;vertical-align:sub;">2</span> と <span style="font-style:italic;">L</span><span style="font-size:60%;vertical-align:sub;">3</span> は真の交点を持つことが確かめられる。<span style="font-style:italic;">L</span><span style="font-size:60%;vertical-align:sub;">3</span> の1つの端点の(22,40)は <span style="font-style:italic;">L</span><span style="font-size:60%;vertical-align:sub;">1</span> 上にあるが、これは真の交点とならないことに注意。<span style="font-style:italic;">L</span><span style="font-size:60%;vertical-align:sub;">1</span> と <span style="font-style:italic;">L</span><span style="font-size:60%;vertical-align:sub;">2</span> は共有点を持たない。つまり上の、3つの線分では、真の交点は1つとなる。</p>
+<p>いま、同じことを5000個の線分に対して行うことにする。そのために、20000個の数を"Blum Blum Shub"と呼ばれる擬似乱数生成法によって生成する。</p>
+<p><span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;">0</span> = 290797</p>
+<p><span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span>+1</span> = <span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>×<span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span> (<span style="font-style:italic;">modulo</span> 50515093)</p>
+<p><span style="font-style:italic;">t</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span> = <span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span> (<span style="font-style:italic;">modulo</span> 500)</p>
+<p>それぞれの線分を4つの連続する <span style="font-style:italic;">t</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span> によって決める。つまり、最初の線分は、</p>
+<p>(<span style="font-style:italic;">t</span><span style="font-size:60%;vertical-align:sub;">1</span>, <span style="font-style:italic;">t</span><span style="font-size:60%;vertical-align:sub;">2</span>) から (<span style="font-style:italic;">t</span><span style="font-size:60%;vertical-align:sub;">3</span>, <span style="font-style:italic;">t</span><span style="font-size:60%;vertical-align:sub;">4</span>) と与えられる。</p>
+<p>最初の4つの数は上の生成法によって、27, 144, 12, 232 となる。最初の線分は、(27,144) から (12,232) となる。</p>
+<p>上の5000個の線分に対して、いくつの相異なった真の交点が存在するか?</p>
+</div>

@@ -1,0 +1,31 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20150
+
+<div id="body">
+<p>三角形配列において、含まれる要素の和が最小となるような部分三角形を求めたい。</p>
+<p>下図では、マークされた三角形が、和が -42 となり、この条件を満たすことは簡単に確かめられる。</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_150.gif" title="p_150.gif"><img src="http://projecteuler.net/project/images/p_150.gif" alt="p_150.gif" title="p_150.gif"></a></div>
+
+<p>1000行の三角形配列を作りたいので、500500個の値の範囲が±2<span style="font-size:60%;vertical-align:super;">19</span>の擬似乱数 <span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span></span> を以下のような線形合同法によって生成する。</p>
+<p>t := 0<br>
+for k = 1 up to k = 500500:{<br>
+t := (615949*t + 797807) modulo 2<span style="font-size:60%;vertical-align:super;">20</span><br><span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span></span> := t−2<span style="font-size:60%;vertical-align:super;">19</span><br>
+}</p>
+<p>よって、 <span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;">1</span> = 273519, <span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;">2</span> = −153582, <span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;">3</span> = 450905 ...となる。</p>
+<p>三角配列は、以下のように配置される。</p>
+<div style="text-align:center">
+<span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;">1</span>
+</div>
+<div style="text-align:center">
+<span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;">2</span>  <span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;">3</span>
+</div>
+<div style="text-align:center">
+<span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;">4</span>  <span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;">5</span>  <span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;">6</span>
+</div>
+<div style="text-align:center">
+<span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;">7</span>  <span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;">8</span>  <span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;">9</span>  <span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;">10</span>
+</div>
+<div style="text-align:center">...</div>
+<p>部分三角形は、ある要素から始めて下にいくにつれ広くなっていくようなものを考える。(最初の要素の次の行は2つの要素を含む、その次の行は3つの要素を含む、といったように)<br>
+"部分三角形の和"はそれが含む全ての要素の和とする。<br>
+最小の部分三角形の和を求めよ。</p>
+</div>

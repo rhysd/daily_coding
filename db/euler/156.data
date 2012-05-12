@@ -1,0 +1,73 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20156
+
+<div id="body">
+<p>以下のように、10進法で自然数を0から書いていく。<br>
+0 1 2 3 4 5 6 7 8 9 10 11 12....</p>
+<p>ある桁の数が d = 1 について考える。数nを書いた後、1が出現する回数を更新する。この数を f(n,1) とする。f(n,1) の最初の値は以下のようになる。</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td">n</td>
+<td class="style_td">f(n,1)</td>
+</tr>
+<tr>
+<td class="style_td">0</td>
+<td class="style_td">0</td>
+</tr>
+<tr>
+<td class="style_td">1</td>
+<td class="style_td">1</td>
+</tr>
+<tr>
+<td class="style_td">2</td>
+<td class="style_td">1</td>
+</tr>
+<tr>
+<td class="style_td">3</td>
+<td class="style_td">1</td>
+</tr>
+<tr>
+<td class="style_td">4</td>
+<td class="style_td">1</td>
+</tr>
+<tr>
+<td class="style_td">5</td>
+<td class="style_td">1</td>
+</tr>
+<tr>
+<td class="style_td">6</td>
+<td class="style_td">1</td>
+</tr>
+<tr>
+<td class="style_td">7</td>
+<td class="style_td">1</td>
+</tr>
+<tr>
+<td class="style_td">8</td>
+<td class="style_td">1</td>
+</tr>
+<tr>
+<td class="style_td">9</td>
+<td class="style_td">1</td>
+</tr>
+<tr>
+<td class="style_td">10</td>
+<td class="style_td">2</td>
+</tr>
+<tr>
+<td class="style_td">11</td>
+<td class="style_td">4</td>
+</tr>
+<tr>
+<td class="style_td">12</td>
+<td class="style_td">5</td>
+</tr>
+</tbody></table></div>
+<p>f(n,1) は決して3にならないことに注意。<br>
+つまり、f(n,1) = n の最初の2つの解は、n = 0 と n = 1 となる。次の解は n = 199981 である。</p>
+<p>同様にして、f(n,d) はある桁の数dがnまでに何回現れたか、と定義する。<br>
+実は、d ≠ 0 の全てのdについて、0 が f(n,d)=n の最初の解となる。</p>
+<p>s(d) を、f(n,d) = n の解の総和として定義する。
+s(1) = 22786974071 となる。</p>
+<p>1 ≤ d ≤ 9 について、∑ s(d) を求めよ。</p>
+<p>注意: もし、f(n,d) = n となるnが異なったdについて存在した場合、このnは重複して数えるものとする。</p>
+</div>

@@ -1,0 +1,9 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20202
+
+<div id="body">
+<p>正三角形ABCの内側に鏡が張られている。各頂点にはレーザーが通れるような微小の穴がある。</p>
+<p>Cから入ったレーザーが、内側の辺で11回反射し頂点Cから出て行くような経路は2つ存在する。1つを下に示す。もう1つはこの逆である。</p>
+<p><a href="http://projecteuler.net/project/images/p_201_laserbeam.gif" title="p_201_laserbeam.gif"><img src="http://projecteuler.net/project/images/p_201_laserbeam.gif" alt="p_201_laserbeam.gif" title="p_201_laserbeam.gif"></a></p>
+<p>1000001回反射し出て行くような経路は80840通り存在する。</p>
+<p>Cから入ったレーザーが、内側の辺で12017639147回反射し、元の頂点Cから出て行くような経路はいくつ存在するか。</p>
+</div>

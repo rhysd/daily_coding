@@ -1,0 +1,7 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20365
+
+<div id="body">
+<p>二項係数 C(10<span style="font-size:60%;vertical-align:super;">18</span>,10<span style="font-size:60%;vertical-align:super;">9</span>) は90億 (9×10<span style="font-size:60%;vertical-align:super;">9</span>) 以上の桁を持つ数である。</p>
+<p>二項係数 C(n,k) の m を法とする剰余を表す関数を M(n,k,m) としよう。</p>
+<p>1000&lt;p&lt;q&lt;r&lt;5000 、かつ p,q,r が素数のときの ΣM(10<span style="font-size:60%;vertical-align:super;">18</span>,10<span style="font-size:60%;vertical-align:super;">9</span>,p*q*r) を計算せよ。</p>
+</div>

@@ -1,0 +1,11 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20281
+
+<div id="body">
+<p>完全に円形のピザを m・n のピースに等分割にし、各カットにちょうど 1 つずつトッピングを載せたい。</p>
+<p>m (m ≥ 2)種の異なるトッピングをのせ、各トッピングがちょうど n (n ≥ 1)カットからなるピザを何通り作れるかを f(m,n) で表す。<br>
+反転は異なるが、回転は同じものと考える。</p>
+<p>つまり、例えば、f(2,1) = 1, f(2,2) = f(3,1) = 2, f(3,2) = 16 である。
+f(3,2) を下に示す。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_281_pizza.gif" title="p_281_pizza.gif"><img src="http://projecteuler.net/project/images/p_281_pizza.gif" alt="p_281_pizza.gif" title="p_281_pizza.gif"></a></div>
+<p>f(m,n) ≤ 10<span style="font-size:60%;vertical-align:super;">15</span> を満たす全ての f(m,n) の合計を求めよ。</p>
+</div>

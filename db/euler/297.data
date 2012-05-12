@@ -1,0 +1,12 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20297
+
+<div id="body">
+<p>フィボナッチ数列の各項は前の2つの項を足して生成される。<br>
+1 と 2 から始めて、最初の 10 項は: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89 である。</p>
+<p>全ての正整数はフィボナッチ数列の連続しない項の合計で一意に表せる。例えば、100 = 3 + 8 + 89 である。<br>
+そのような合計はゼッケンドルフ表記(Zeckendorf representation)と呼ばれる。</p>
+<p>整数 n&gt;0 に対し、 z(n) を n のゼッケンドルフ表記中の項数とする。<br>
+つまり z(5) = 1, z(14) = 2, z(100) = 3 となる。<br>
+また、 0&lt;n&lt;10<span style="font-size:60%;vertical-align:super;">6</span> に対し、Σz(n) = 7894453 である。</p>
+<p>0&lt;n&lt;10<span style="font-size:60%;vertical-align:super;">17</span> に対し Σz(n) を求めよ。</p>
+</div>

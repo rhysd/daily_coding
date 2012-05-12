@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20136
+
+<div id="body">
+<p>x, y, z を等差数列となるような正の整数とする。正の整数 n が n = 20 と与えられたときに、方程式 <span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:super;">2</span> - <span style="font-style:italic;">y</span><span style="font-size:60%;vertical-align:super;">2</span> - <span style="font-style:italic;">z</span><span style="font-size:60%;vertical-align:super;">2</span> = <span style="font-style:italic;">n</span> は唯一つの解を持つ。</p>
+<p>13<span style="font-size:60%;vertical-align:super;">2</span> - 10<span style="font-size:60%;vertical-align:super;">2</span> - 7<span style="font-size:60%;vertical-align:super;">2</span> = 20</p>
+<p>実のところ100未満のnについて方程式が唯一つの解を持つようなnは25個存在する。</p>
+<p>5000万未満のnについて方程式が唯一つの解を持つようなnは何個存在するか?</p>
+</div>

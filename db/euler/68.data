@@ -1,0 +1,55 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2068
+
+<div id="body">
+<p>下に示す図のようなものを"magic" 3-gon ringという。
+これは1～6の数字を当てはめて、各列の数字の和が9となっている。
+これを例として説明する。</p>
+<div class="img_margin" style="text-align:center"><a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%2068&amp;openfile=p_068_1.gif" title="p_068_1.gif"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%2068&amp;src=p_068_1.gif" alt="p_068_1.gif" title="p_068_1.gif" width="250" height="252"></a></div>
+
+<p>外側のノードのうち一番小さいものの付いた列(例では4,3,2)から時計回りに回ってそれぞれ列の数字を3つ連ねて説明する。例えば例のものは4,3,2; 6,2,1; 5,1,3という組で説明することができる。</p>
+<p>1～6の数字を当てはめて、各列の数字の和が等しくなるものは次の8通りある。</p>
+
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td">合計</td>
+<td class="style_td">組</td>
+</tr>
+<tr>
+<td class="style_td">9</td>
+<td class="style_td">4,2,3; 5,3,1; 6,1,2</td>
+</tr>
+<tr>
+<td class="style_td">9</td>
+<td class="style_td">4,3,2; 6,2,1; 5,1,3</td>
+</tr>
+<tr>
+<td class="style_td">10</td>
+<td class="style_td">2,3,5; 4,5,1; 6,1,3</td>
+</tr>
+<tr>
+<td class="style_td">10</td>
+<td class="style_td">2,5,3; 6,3,1; 4,1,5</td>
+</tr>
+<tr>
+<td class="style_td">11</td>
+<td class="style_td">1,4,6; 3,6,2; 5,2,4</td>
+</tr>
+<tr>
+<td class="style_td">11</td>
+<td class="style_td">1,6,4; 5,4,2; 3,2,6</td>
+</tr>
+<tr>
+<td class="style_td">12</td>
+<td class="style_td">1,5,6; 2,6,4; 3,4,5</td>
+</tr>
+<tr>
+<td class="style_td">12</td>
+<td class="style_td">1,6,5; 3,5,4; 2,4,6</td>
+</tr>
+</tbody></table></div>
+<p>この組の各数字を連結して、9桁の数字で表すことができる。
+例えば、上の図のものは4,3,2; 6,2,1; 5,1,3であるので432621513である。</p>
+<p>さて、下の図に1～10の数字を当てはめ、各列の数字の和が等しくなる"magic" 5-gon ringを作って、それを表す16桁または17桁の数字のうち、16桁のものの最大の数字を答えよ。</p>
+<div class="img_margin" style="text-align:center"><a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%2068&amp;openfile=p_068_2.gif" title="p_068_2.gif"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%2068&amp;src=p_068_2.gif" alt="p_068_2.gif" title="p_068_2.gif" width="320" height="325"></a></div>
+
+</div>

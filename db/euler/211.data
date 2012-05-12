@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20211
+
+<div id="body">
+<p>正の整数 n に対して、σ<span style="font-size:60%;vertical-align:sub;">2</span>(n)を約数の2乗の和とする。例えば、</p>
+<p>σ<span style="font-size:60%;vertical-align:sub;">2</span>(10) = 1 + 4 + 25 + 100 = 130</p>
+<p>である。<br>
+0 &lt; n &lt; 64,000,000 で、σ<span style="font-size:60%;vertical-align:sub;">2</span>(n) が平方数である全ての n の和を求めよ。</p>
+</div>

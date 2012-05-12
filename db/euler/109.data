@@ -1,0 +1,73 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20109
+
+<div id="body">
+<p>ダーツゲームでは, プレイヤーは 20 等分に分けられたダーツボードに 3 本のダーツを投げる. ダーツボードは 1 から 20 の番号がふられている.</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_109.gif" title="p_109.gif"><img src="http://projecteuler.net/project/images/p_109.gif" alt="p_109.gif" title="p_109.gif"></a></div>
+
+<p>ダーツの点数は, ダーツが刺さった領域の番号によって決まる. 外側の赤緑の輪の外に刺さったダーツは 0 点である. この輪の内側の黒と白の領域はシングル (1 倍) の点数を表している. しかし, 外側と内側の赤緑の輪はそれぞれダブル (2 倍) とトリプル (3 倍) の点数である.</p>
+<p>ボードの中央の 2 つの同心円はブルやブルズアイと呼ばれる. 外側のブルは 25 点, 内側のブルはダブルの 50 点である.</p>
+<p>ルールには多くのバリエーションがあるが, 最もポピュラーなゲームでは, プレイヤーは 301 または 501 点から始まり, 最も早く現在の得点を 0 点に減らしたプレイヤーが勝者となる. しかし, 普通は「ダブルアウト」方式でプレイをする. この方式では, プレイヤーは勝利するために, 最後のダーツをダブル (ボードの中央のダブルのブルズアイを含む) に刺さなければならない. それ以外で現在の得点を 1 点以下に減らした場合, 3 本のダーツに対する得点は「バースト(無効)」になる.</p>
+<p>プレイヤーが現在の得点で終了できる場合を「チェックアウト」と呼ぶ. 最も高いチェックアウトは 170: T20 T20 D25 (トリプルの 20 を 2 回とダブルのブル) である.</p>
+<p>得点が 6 でチェックアウトする異なるやり方はちょうど 11 回ある.</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td">D3</td>
+<td class="style_td"></td>
+<td class="style_td"></td>
+</tr>
+<tr>
+<td class="style_td">D1</td>
+<td class="style_td">D2</td>
+<td class="style_td"></td>
+</tr>
+<tr>
+<td class="style_td">S2</td>
+<td class="style_td">D2</td>
+<td class="style_td"></td>
+</tr>
+<tr>
+<td class="style_td">D2</td>
+<td class="style_td">D1</td>
+<td class="style_td"></td>
+</tr>
+<tr>
+<td class="style_td">S4</td>
+<td class="style_td">D1</td>
+<td class="style_td"></td>
+</tr>
+<tr>
+<td class="style_td">S1</td>
+<td class="style_td">S1</td>
+<td class="style_td">D2</td>
+</tr>
+<tr>
+<td class="style_td">S1</td>
+<td class="style_td">T1</td>
+<td class="style_td">D1</td>
+</tr>
+<tr>
+<td class="style_td">S1</td>
+<td class="style_td">S3</td>
+<td class="style_td">D1</td>
+</tr>
+<tr>
+<td class="style_td">D1</td>
+<td class="style_td">D1</td>
+<td class="style_td">D1</td>
+</tr>
+<tr>
+<td class="style_td">D1</td>
+<td class="style_td">S2</td>
+<td class="style_td">D1</td>
+</tr>
+<tr>
+<td class="style_td">S2</td>
+<td class="style_td">S2</td>
+<td class="style_td">D1</td>
+</tr>
+</tbody></table></div>
+<p>D1 D2 と D2 D1 は, 異なるダブルで終了しているので<strong>異なる</strong>とみなすことに注意しよう. しかし S1 T1 D1 の組み合わせは T1 S1 D1 と<strong>同じ</strong>とみなす.</p>
+<p>さらに, 組み合わせを考える上でミスは含まないこととする; たとえば, D3 は 0 D3 や 0 0 D3 と<strong>同じ</strong>である.</p>
+<p>信じられないことに, 異なるチェックアウトは全部で 42336 通りある.</p>
+<p>得点が 100 未満の異なるチェックアウトは何通りあるか.</p>
+</div>

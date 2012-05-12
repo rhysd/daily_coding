@@ -1,0 +1,15 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20277
+
+<div id="body">
+<p>整数の修正コラッツ列は値 a<span style="font-size:60%;vertical-align:sub;">1</span> から始めて次のようにして得られる:</p>
+<p>a<span style="font-size:60%;vertical-align:sub;">n</span> が 3 で割り切れるならば a<span style="font-size:60%;vertical-align:sub;">n+1</span> = a<span style="font-size:60%;vertical-align:sub;">n</span>/3. これを大きな下ステップ "D" と表す.</p>
+<p>a<span style="font-size:60%;vertical-align:sub;">n</span> を 3 で割った余りが 1 ならば a<span style="font-size:60%;vertical-align:sub;">n+1</span> = (4a<span style="font-size:60%;vertical-align:sub;">n</span> + 2)/3. これを大きな上ステップ "U" と表す.</p>
+<p>a<span style="font-size:60%;vertical-align:sub;">n</span> を 3 で割った余りが 2 ならば a<span style="font-size:60%;vertical-align:sub;">n+1</span> = (2a<span style="font-size:60%;vertical-align:sub;">n</span> - 1)/3. これを小さな下ステップ "d" と表す.</p>
+<p>数列は a<span style="font-size:60%;vertical-align:sub;">n</span> = 1 となれば終了する.</p>
+<p>任意の整数が与えられたとき, ステップの列を書き出すことができる.<br>
+例えば a<span style="font-size:60%;vertical-align:sub;">1</span>=231 なら, 数列 {a<span style="font-size:60%;vertical-align:sub;">n</span>}={231,77,51,17,11,7,10,14,9,3,1} はステップ "DdDddUUdDD" に対応する.</p>
+<p>もちろん, 同じ列 "DdDddUUdDD...." から始まる列は他にもある.<br>
+例えば, a<span style="font-size:60%;vertical-align:sub;">1</span>=1004064 なら, ステップの列は DdDddUUdDDDdUDUUUdDdUUDDDUdDD である.<br>
+実際, 1004064 は, 列 DdDddUUdDD から始まる最小の可能な a<span style="font-size:60%;vertical-align:sub;">1</span> &gt; 10<span style="font-size:60%;vertical-align:super;">6</span> である.</p>
+<p>列 "UDDDUdddDDUDDddDdDddDDUDDdUUDd" から始まる最小の a<span style="font-size:60%;vertical-align:sub;">1</span> &gt; 10<span style="font-size:60%;vertical-align:super;">15</span> は何か？</p>
+</div>

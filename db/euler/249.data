@@ -1,0 +1,7 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20249
+
+<div id="body">
+<p>S = {2, 3, 5, ..., 4999} を 5000 より小さい素数の集合とする。</p>
+<p>要素の合計が素数となるような、S の部分集合の数を求めよ。<br>
+最下位の 16 桁を答えとして入力せよ。</p>
+</div>

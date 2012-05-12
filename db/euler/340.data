@@ -1,0 +1,11 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20340
+
+<div id="body">
+<p>固定された整数 a, b, c に対し、クレイジー関数 F(n) を次のように定義する：<br>
+F(n) = n - c （n＞b のとき） <br>
+F(n) = F(a + F(a + F(a + F(a + n)))) （n≦b のとき）</p>
+<p>また、S(a, b, c) = <a href="http://projecteuler.net/project/images/p_340_formula.gif" title="p_340_formula.gif"><img src="http://projecteuler.net/project/images/p_340_formula.gif" alt="p_340_formula.gif" title="p_340_formula.gif"></a> と定義する。</p>
+<p>例えば、a = 50、b = 2000、c = 40 なら、F(0) = 3240 および F(2000) = 2040 である。<br>
+また、S(50, 2000, 40) = 5204240 である。</p>
+<p>S(21<span style="font-size:60%;vertical-align:super;">7</span>, 7<span style="font-size:60%;vertical-align:super;">21</span>, 12<span style="font-size:60%;vertical-align:super;">7</span>) の下 9 桁を求めよ。</p>
+</div>

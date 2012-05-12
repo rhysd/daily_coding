@@ -1,0 +1,24 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20295
+
+<div id="body">
+<p>次の条件を満たす時、2つの円に囲まれた凸状の領域を<em>レンズホール</em>(lenticular hole)と呼ぶ:</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>円の中心が両方とも格子点上にある。</li>
+<li>2つの円は異なる2つの格子点上で交差する。</li>
+<li>両方の円で囲まれた凸状の領域の内部は格子点を含まない。</li>
+</ul>
+<p>次の円について考える:<br>
+C<span style="font-size:60%;vertical-align:sub;">0</span>: x<span style="font-size:60%;vertical-align:super;">2</span>+y<span style="font-size:60%;vertical-align:super;">2</span>=25<br>
+C<span style="font-size:60%;vertical-align:sub;">1</span>: (x+4)<span style="font-size:60%;vertical-align:super;">2</span>+(y-4)<span style="font-size:60%;vertical-align:super;">2</span>=1<br>
+C<span style="font-size:60%;vertical-align:sub;">2</span>: (x-12)<span style="font-size:60%;vertical-align:super;">2</span>+(y-4)<span style="font-size:60%;vertical-align:super;">2</span>=65</p>
+<p>円 C<span style="font-size:60%;vertical-align:sub;">0</span>, C<span style="font-size:60%;vertical-align:sub;">1</span>, C<span style="font-size:60%;vertical-align:sub;">2</span> は以下の図で示す。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p295_lenticular.gif" title="p295_lenticular.gif"><img src="http://projecteuler.net/project/images/p295_lenticular.gif" alt="p295_lenticular.gif" title="p295_lenticular.gif"></a></div>
+<p>C<span style="font-size:60%;vertical-align:sub;">0</span> と C<span style="font-size:60%;vertical-align:sub;">1</span> はレンズホールを形成する。 C<span style="font-size:60%;vertical-align:sub;">0</span> と C<span style="font-size:60%;vertical-align:sub;">2</span> も同様である。</p>
+<p>正の実数のペア (r<span style="font-size:60%;vertical-align:sub;">1</span>, r<span style="font-size:60%;vertical-align:sub;">2</span>) が次の条件を満たす時、これを<em>レンズペア</em>(lenticular pair)と呼ぶ:
+レンズホールを形成するような半径 r<span style="font-size:60%;vertical-align:sub;">1</span> と半径 r<span style="font-size:60%;vertical-align:sub;">2</span> の2つの円が存在する。
+(1, 5) と (5, √65) は共にレンズペアであることが上の例から確かめられる。</p>
+<p>L(N) を 0 &lt; r<span style="font-size:60%;vertical-align:sub;">1</span> ≤ r<span style="font-size:60%;vertical-align:sub;">2</span> ≤ N を満たす<strong>異なる</strong>レンズペア (r<span style="font-size:60%;vertical-align:sub;">1</span>, r<span style="font-size:60%;vertical-align:sub;">2</span>) の数とする。
+L(10) = 30, L(100) = 3442 であることが確かめられる。</p>
+<p>L(100 000)を求めよ。</p>
+<p>注意: 最近上限を変更した。正しい上限を使用しているか確認せよ。</p>
+</div>

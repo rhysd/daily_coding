@@ -1,0 +1,12 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20308
+
+<div id="body">
+<p>プログラミング言語 Fractran で書かれたプログラムは, 分数のリストから構成される.</p>
+<p>Fractran の仮想マシンの内部状態は正の整数であり, あるシード値が初期にセットされる. Fractran の各反復では, リストのうち, 状態の整数との積が整数となる初めの分数が状態の整数に掛けられる.</p>
+<p>例えば, John Horton Conway が書いた素数生成に対する Fractran のプログラムの一つは, 次の 14 の分数から構成される:</p>
+<p><a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%20308&amp;openfile=p_308.gif" title="p_308.gif"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%20308&amp;src=p_308.gif" alt="p_308.gif" title="p_308.gif" width="566" height="39"></a></p>
+<p>シードの整数 2 から始めると, プログラムの反復計算を行うと次の数列が得られる: 15, 825, 725, 1925, 2275, 425, ..., 68, <strong>4</strong>, 30, ..., 136, <strong>8</strong>, 60, ..., 544, <strong>32</strong>, 240, ...</p>
+<p>この数列に現れる 2 のべき乗は 2<span style="font-size:60%;vertical-align:super;">2</span>, 2<span style="font-size:60%;vertical-align:super;">3</span>, 2<span style="font-size:60%;vertical-align:super;">5</span>, ... である.<br>
+この数列の<em>すべての</em> 2 のべき乗は素数の指数を持ち, かつ<em>すべての</em>素数は 2 のべき乗の指数として, 適切な順序で現れることが示せる.</p>
+<p>上の Fractran のプログラムを用いて Project Euler の Problem 7（10001 番目の素数を求めよ）を解くと, プログラムが 2<span style="font-size:60%;vertical-align:super;">10001 番目の素数</span> を生成するまでに何回の反復が必要になるか.</p>
+</div>

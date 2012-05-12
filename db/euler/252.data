@@ -1,0 +1,17 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20252
+
+<div id="body">
+<p>平面上に与えられた点の集合に対し、以下を満たす凸多角形を凸ホール(convex hole)と定義する:<br>
+頂点は与えられた点のいくつかから成り、内部に与えられた点を含まない(頂点以外に、多角形の辺上に与えられた点があっても構わない)</p>
+<p>例として、下の図は 20 個の点とそれに対するいくつかの凸ホールを示している。赤い多角形で示した凸ホールは 1049694.5 の単位正方形と面積が等しく、この点の集合に対し最大の凸ホールである。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_252_convexhole.gif" title="p_252_convexhole.gif"><img src="http://projecteuler.net/project/images/p_252_convexhole.gif" alt="p_252_convexhole.gif" title="p_252_convexhole.gif"></a></div>
+<p>この例では、次の擬似乱数によって生成された 最初の 20 個の点 (T<span style="font-size:60%;vertical-align:sub;">2k−1</span>, T<span style="font-size:60%;vertical-align:sub;">2k</span>) (k = 1,2,…,20) を使用した。</p>
+<blockquote>
+<p class="quotation">S<span style="font-size:60%;vertical-align:sub;">0</span> = 290797<br></p>
+<p class="quotation">S<span style="font-size:60%;vertical-align:sub;">n+1</span> = S<span style="font-size:60%;vertical-align:sub;">n</span><span style="font-size:60%;vertical-align:super;">2</span> mod 50515093<br></p>
+<p class="quotation">T<span style="font-size:60%;vertical-align:sub;">n</span> = (S<span style="font-size:60%;vertical-align:sub;">n</span> mod 2000 ) − 1000</p>
+</blockquote>
+<p>すなわち、(527, 144), (−488, 732), (−454, −947), ... である。</p>
+<p>この擬似乱数生成器による最初の 500 個の点を使用する凸ホールの中で、最大の面積を求めよ。<br>
+小数点以下に1桁をつけて回答を入力せよ。</p>
+</div>

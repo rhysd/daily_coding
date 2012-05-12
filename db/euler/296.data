@@ -1,0 +1,11 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20296
+
+<div id="body">
+<p>辺の長さが整数で BC ≤ AC ≤ AB を満たす三角形 ABC がある。<br>
+k は角 ACB の二等分線である。<br>
+m は ABC の外接円に対する C での接線である。<br>
+n は B を通る m に平行な線である。<br>
+n と k の交点を E とする。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p296_bisector.gif" title="p296_bisector.gif"><img src="http://projecteuler.net/project/images/p296_bisector.gif" alt="p296_bisector.gif" title="p296_bisector.gif"></a></div>
+<p>BE の長さが整数で周長が 100 000 を超えない三角形 ABC はいくつあるか?</p>
+</div>

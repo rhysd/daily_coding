@@ -1,0 +1,15 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20169
+
+<div id="body">
+<p>整数nを2のべき乗の和で表すことを考える. ただし各数は高々2回しか使ってはいけないものとする. この表し方の数をf(n)とする. ただしf(0)=1と定義する.</p>
+<p>例として n=10 を考える.</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>1+1+8</li>
+<li>1+1+4+4</li>
+<li>1+1+2+2+4</li>
+<li>2+4+4</li>
+<li>2+8</li>
+</ul>
+<p>と5通りの異なる表し方があるので, f(10)=5 である.</p>
+<p>f(10^25)を求めよ.</p>
+</div>

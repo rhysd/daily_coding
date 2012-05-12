@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20221
+
+<div id="body">
+<p>次の式を満たす整数p,q,rが存在するとき、正整数 A をアレクサンダー整数(Alexandrian integer)と呼ぶ。</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px"><li>A = p·q·r かつ 1/A = 1/p + 1/q + 1/r</li></ul>
+<p>例えば、630はアレクサンダー整数である(p=5,q=-7,r=-18)。630は6番目のアレクサンダー整数であり、6番目まで並べると 6, 42, 120, 156, 420, 630 となる。</p>
+<p>150000番目のアレクサンダー整数を求めよ。</p>
+</div>

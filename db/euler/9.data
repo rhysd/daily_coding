@@ -1,0 +1,10 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%209
+
+<div id="body">
+<p>ピタゴラスの三つ組(ピタゴラスの定理を満たす自然数)とはa&lt;b&lt;cで<br>
+a² + b² = c²<br>
+を満たす数の組である.</p>
+<p>例えば, 3² + 4² = 9 + 16 = 25 = 5²である.</p>
+<p>a + b + c = 1000となるピタゴラスの三つ組が一つだけ存在する.
+このa,b,cの積を計算しなさい.</p>
+</div>

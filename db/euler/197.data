@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20197
+
+<div id="body">
+<p>f(x) = ⌊2<span style="font-size:60%;vertical-align:super;">30.403243784-x<span style="font-size:60%;vertical-align:super;">2</span></span>⌋ × 10<span style="font-size:60%;vertical-align:super;">-9</span> (⌊ ⌋ は床関数)とし、<br>
+数列 u<span style="font-size:60%;vertical-align:sub;">n</span> を、 u<span style="font-size:60%;vertical-align:sub;">0</span> = -1, u<span style="font-size:60%;vertical-align:sub;">n+1</span> = f(u<span style="font-size:60%;vertical-align:sub;">n</span>) と定義する。</p>
+<p>n = 10<span style="font-size:60%;vertical-align:super;">12</span> で u<span style="font-size:60%;vertical-align:sub;">n</span> + u<span style="font-size:60%;vertical-align:sub;">n+1</span> を求めよ。<br>
+小数点以下を 9 桁で解答せよ。</p>
+</div>

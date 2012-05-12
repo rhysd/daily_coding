@@ -1,0 +1,15 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20237
+
+<div id="body">
+<p>T(n) を以下のルールに従い 4 × n のゲーム盤上を進む順路の数と定義する:</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>左上の角から始める</li>
+<li>1マス分の上下左右の移動を繰り返す</li>
+<li>各マスを全てちょうど1回ずつ通る</li>
+<li>左下の角で終わる</li>
+</ul>
+<p>下の図は 4 × 10 の盤上の順路の一例である:</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_237.gif" title="p_237.gif"><img src="http://projecteuler.net/project/images/p_237.gif" alt="p_237.gif" title="p_237.gif"></a></div>
+
+<p>T(10) は 2329 である。 T(10<span style="font-size:60%;vertical-align:super;">12</span>) を 10<span style="font-size:60%;vertical-align:super;">8</span> で割った余りを求めよ。</p>
+</div>

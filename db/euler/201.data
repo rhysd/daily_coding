@@ -1,0 +1,35 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20201
+
+<div id="body">
+<p>数の集合Aについて, sum(A)でAの要素の和を表す.
+集合B = {1,3,6,8,10,11}を考えよう. Bの3要素の部分集合は20個あり, それぞれ和は以下になる.</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>sum({1,3,6}) = 10,</li>
+<li>sum({1,3,8}) = 12,</li>
+<li>sum({1,3,10}) = 14,</li>
+<li>sum({1,3,11}) = 15,</li>
+<li>sum({1,6,8}) = 15,</li>
+<li>sum({1,6,10}) = 17,</li>
+<li>sum({1,6,11}) = 18,</li>
+<li>sum({1,8,10}) = 19,</li>
+<li>sum({1,8,11}) = 20,</li>
+<li>sum({1,10,11}) = 22,</li>
+<li>sum({3,6,8}) = 17,</li>
+<li>sum({3,6,10}) = 19,</li>
+<li>sum({3,6,11}) = 20,</li>
+<li>sum({3,8,10}) = 21,</li>
+<li>sum({3,8,11}) = 22,</li>
+<li>sum({3,10,11}) = 24,</li>
+<li>sum({6,8,10}) = 24,</li>
+<li>sum({6,8,11}) = 25,</li>
+<li>sum({6,10,11}) = 27,</li>
+<li>sum({8,10,11}) = 29.</li>
+</ul>
+<p>これらの和は1つしか現れない場合もそうでない場合もある.
+集合Aについて, U(A,k)で, Aのk要素の集合全体について和を取ったときに1回のみ現れる和の集合を表す.
+上の例をとると, U(B,3) = {10,12,14,18,21,25,27,29}であり, sum(U(B,3)) = 156となる.</p>
+<p>今, 100個の要素を持つ集合 S = {1<span style="font-size:60%;vertical-align:super;">2</span>, 2<span style="font-size:60%;vertical-align:super;">2</span>, ..., 100<span style="font-size:60%;vertical-align:super;">2</span>}を考える.
+Sの50要素の部分集合は100891344545564193334812497256個ある.</p>
+<p>50要素の部分集合の和の中で1回のみ現れる和の集合の総和を求めよ.
+すなわち, sum(U(S,50))を求めよ.</p>
+</div>

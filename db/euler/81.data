@@ -1,0 +1,46 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2081
+
+<div id="body">
+<p>下記の5次の正方行列で、左上のセルから開始し右下のセルで終わるパスを探索する。
+ただし下方向と右方向にのみ移動できるものとする。<br>
+通過したセルの和が最小となるパスは<span style="color:red">赤</span>で示されたもので、その値は2427である。</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td"><span style="color:red">131</span></td>
+<td class="style_td">673</td>
+<td class="style_td">234</td>
+<td class="style_td">103</td>
+<td class="style_td">18</td>
+</tr>
+<tr>
+<td class="style_td"><span style="color:red">201</span></td>
+<td class="style_td"><span style="color:red">96</span></td>
+<td class="style_td"><span style="color:red">342</span></td>
+<td class="style_td">965</td>
+<td class="style_td">150</td>
+</tr>
+<tr>
+<td class="style_td">630</td>
+<td class="style_td">803</td>
+<td class="style_td"><span style="color:red">746</span></td>
+<td class="style_td"><span style="color:red">422</span></td>
+<td class="style_td">111</td>
+</tr>
+<tr>
+<td class="style_td">537</td>
+<td class="style_td">699</td>
+<td class="style_td">497</td>
+<td class="style_td"><span style="color:red">121</span></td>
+<td class="style_td">956</td>
+</tr>
+<tr>
+<td class="style_td">805</td>
+<td class="style_td">732</td>
+<td class="style_td">524</td>
+<td class="style_td"><span style="color:red">37</span></td>
+<td class="style_td"><span style="color:red">331</span></td>
+</tr>
+</tbody></table></div>
+<p>今、31Kのテキストファイル<a href="http://projecteuler.net/project/matrix.txt" rel="nofollow">matrix.txt</a> (右クリックして、『名前をつけてリンク先を保存』)には80×80の行列が書かれている。<br>
+同様に左上のセルから開始し右下のセルで終わり、かつ右方向と下方向にのみ移動するときの最小のパスの和を求めよ。</p>
+</div>

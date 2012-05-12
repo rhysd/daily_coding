@@ -1,0 +1,26 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20238
+
+<div id="body">
+<p><em>この問題の文章は前のエラーを直すため修正された。</em></p>
+<p>"Blum Blum Shub" 擬似乱数生成器を用いて数列を作る:</p>
+<blockquote>
+<p class="quotation">s<span style="font-size:60%;vertical-align:sub;">0</span> = 14025256</p>
+<p class="quotation">s<span style="font-size:60%;vertical-align:sub;">n+1</span> = s<span style="font-size:60%;vertical-align:sub;">n</span><span style="font-size:60%;vertical-align:super;">2</span> mod 20300713</p>
+</blockquote>
+<p>これらの数 s<span style="font-size:60%;vertical-align:sub;">0</span>s<span style="font-size:60%;vertical-align:sub;">1</span>s<span style="font-size:60%;vertical-align:sub;">2</span>... を連結して無限長の数列 w を作る。<br>
+すなわち w = <span style="color:blue">14025256741014958470038053646...</span> となる。</p>
+<p>正の整数 k に対し、もし数字の合計が k となる w の部分列が存在しないなら、 p(k) を 0 と定義する。
+もし数字の合計が k となる w の部分列が少なくとも一つ存在するなら、z をそのような部分列の中で最も前に出てくる部分列の先頭の位置とすると、
+p(k)=z と定義する。</p>
+<p>例えば:</p>
+<p>部分列 <span style="color:blue">1</span>, <span style="color:blue">14</span>, <span style="color:blue">1402</span>, ...<br>
+はそれぞれ数字の合計が 1, 5, 7, ... であり、<br><strong>1</strong> 番目で始まるので p(1)=p(5)=p(7)=...=<strong>1</strong> となる。</p>
+<p>部分列 <span style="color:blue">4</span>, <span style="color:blue">402</span>, <span style="color:blue">4025</span>, ...<br>
+はそれぞれ数字の合計が 4, 6, 11, ... であり、<br><strong>2</strong> 番目で始まるので p(4)=p(6)=p(11)=...=<strong>2</strong> となる。</p>
+<p>部分列 <span style="color:blue">02</span>, <span style="color:blue">0252</span>, ...<br>
+はそれぞれ数字の合計が 2, 9, ... であり、<br><strong>3</strong> 番目で始まるので p(2)=p(9)=...=<strong>3</strong> となる。</p>
+<p>部分列 <span style="color:blue">025</span> は <strong>3</strong> 番目で始まり、数字の合計は 7 だが、より前にある(<strong>1</strong> 番目から始まる)部分列が数字の合計が 7 である為、
+p(7) = 1 であって 3 ではないことに注意せよ。</p>
+<p>0 &lt; k ≤ 10<span style="font-size:60%;vertical-align:super;">3</span> では Σp(k) = 4742 であることがわかる。</p>
+<p>0 &lt; k ≤ 2⋅10<span style="font-size:60%;vertical-align:super;">15</span> において Σp(k) を求めよ。</p>
+</div>

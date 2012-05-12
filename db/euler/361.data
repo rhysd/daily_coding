@@ -1,0 +1,57 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20361
+
+<div id="body">
+<p><strong>スー・モース数列</strong> (Thue-Morse sequence) {T<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>} は、以下の条件を満たす二値数列である。</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>T<span style="font-size:60%;vertical-align:sub;">0</span> = 0</li>
+<li>T<span style="font-size:60%;vertical-align:sub;">2<span style="font-style:italic;">n</span></span> = T<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>
+</li>
+<li>T<span style="font-size:60%;vertical-align:sub;">2<span style="font-style:italic;">n</span>+1</span> = 1 - T<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>
+</li>
+</ul>
+<p>{T<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>} の最初のいくつかの項は以下のようになる。<br>
+01101001<span style="color:#f00">10010</span>1101001011001101001....<br></p>
+<p>{T<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>} の部分数列として現れる各要素を二進表記の整数とし、それを(小さい方から)並べた数列を {A<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>} を定義する。<br>
+たとえば、十進数の 18 は二進表記で 10010 と表される。これは {t<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>} に現れる ( T<span style="font-size:60%;vertical-align:sub;">8</span> から T<span style="font-size:60%;vertical-align:sub;">12</span> )。したがって、18 は {A<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>} の要素となる。<br>
+十進数の 14 は二進表記で 1110 と表される。これは {t<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>} に現れない。したがって、14 は {A<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>} の要素ではない。</p>
+<p>数列 {A<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>} の最初のいくつかの項は以下のようになる。</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td" style="text-align:center;"><span style="font-style:italic;">n</span></td>
+<td class="style_td" style="text-align:center;">0</td>
+<td class="style_td" style="text-align:center;">1</td>
+<td class="style_td" style="text-align:center;">2</td>
+<td class="style_td" style="text-align:center;">3</td>
+<td class="style_td" style="text-align:center;">4</td>
+<td class="style_td" style="text-align:center;">5</td>
+<td class="style_td" style="text-align:center;">6</td>
+<td class="style_td" style="text-align:center;">7</td>
+<td class="style_td" style="text-align:center;">8</td>
+<td class="style_td" style="text-align:center;">9</td>
+<td class="style_td" style="text-align:center;">10</td>
+<td class="style_td" style="text-align:center;">11</td>
+<td class="style_td" style="text-align:center;">12</td>
+<td class="style_td" style="text-align:center;">…</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">A<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>
+</td>
+<td class="style_td" style="text-align:center;">0</td>
+<td class="style_td" style="text-align:center;">1</td>
+<td class="style_td" style="text-align:center;">2</td>
+<td class="style_td" style="text-align:center;">3</td>
+<td class="style_td" style="text-align:center;">4</td>
+<td class="style_td" style="text-align:center;">5</td>
+<td class="style_td" style="text-align:center;">6</td>
+<td class="style_td" style="text-align:center;">9</td>
+<td class="style_td" style="text-align:center;">10</td>
+<td class="style_td" style="text-align:center;">11</td>
+<td class="style_td" style="text-align:center;">12</td>
+<td class="style_td" style="text-align:center;">13</td>
+<td class="style_td" style="text-align:center;">18</td>
+<td class="style_td" style="text-align:center;">…</td>
+</tr>
+</tbody></table></div>
+<p>同様に、A<span style="font-size:60%;vertical-align:sub;">100</span> = 3251、A<span style="font-size:60%;vertical-align:sub;">1000</span> = 80852364498 となる。</p>
+<p><a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%20361&amp;openfile=p_361_Thue-Morse1.gif" title="p_361_Thue-Morse1.gif"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%20361&amp;src=p_361_Thue-Morse1.gif" alt="p_361_Thue-Morse1.gif" title="p_361_Thue-Morse1.gif" width="75" height="55"></a>の最後の9桁を求めよ。</p>
+</div>

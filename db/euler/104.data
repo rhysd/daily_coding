@@ -1,0 +1,10 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20104
+
+<div id="body">
+<p>フィボナッチ数列は再帰的な関係によって定義される:</p>
+<div style="text-align:center;">
+<span style="font-style:italic;">F</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span> = <span style="font-style:italic;">F</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span>−1</span> + <span style="font-style:italic;">F</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span>−2</span>
+</div>
+<p><span style="font-style:italic;">F</span><span style="font-size:60%;vertical-align:sub;">541</span> (113桁)は, 下9桁に1から9までの数字をすべて含む初めてのフィボナッチ数である. そして, <span style="font-style:italic;">F</span><span style="font-size:60%;vertical-align:sub;">2749</span> (575桁)は, 頭から9桁に1から9までの数字をすべて含む初めてのフィボナッチ数である.</p>
+<p><span style="font-style:italic;">F</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span></span>が, 頭から9桁と下9桁のどちらも1から9までの数字をすべて含む初めてのフィボナッチ数とするとき, kを求めよ.</p>
+</div>

@@ -1,0 +1,9 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20141
+
+<div id="body">
+<p>正の整数nをdで割った余りと商をqとrで表す. d, q, rを適当に並び替えたときに正の項からなる等比数列（幾何数列）になる場合がある.</p>
+<p>例えば58を6で割ると商が9で余りが4である. 4, 6, 9は公比3/2の幾何数列になっている. 以下, このような n を累進数と呼ぶ. (訳者注: progressive numberの定訳が分からないので適当な名前にしておく.)</p>
+<p>いくつかの累進数 9や10404=102<span style="font-size:60%;vertical-align:super;">2</span>は平方数になっている.
+100000未満の累進平方数の和は124657である.</p>
+<p>10<span style="font-size:60%;vertical-align:super;">12</span>未満の累進平方数の総和を答えよ.</p>
+</div>

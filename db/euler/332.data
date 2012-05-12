@@ -1,0 +1,12 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20332
+
+<div id="body">
+<p><strong>球面三角形</strong>とは、球面上で、３頂点の各対で交わる３本の<strong>大円弧</strong>によって作られる図形である。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_332_spherical.jpg" title="p_332_spherical.jpg"><img src="http://projecteuler.net/project/images/p_332_spherical.jpg" alt="p_332_spherical.jpg" title="p_332_spherical.jpg"></a></div>
+<p>中心 (0,0,0)、半径 r の球を C(r) とする。<br>
+整数の座標をもつ C(r) の面上の点の集合を Z(r) とする。<br>
+Z(r) を頂点とする球面三角形の集合を T(r) とする。縮退した球面三角形、すなわち同一の大円弧上の３点から作られる球面三角形は T(r) に含まれ<ins>ない</ins>。<br>
+T(r) のうち最小の球面三角形の面積を A(r) とする。</p>
+<p>例えば A(14) は小数第７位で丸めると 3.294040 である。</p>
+<p><a href="http://projecteuler.net/project/images/p_332_sum.gif" title="p_332_sum.gif"><img src="http://projecteuler.net/project/images/p_332_sum.gif" alt="p_332_sum.gif" title="p_332_sum.gif"></a>A(r) を求めよ。答えを小数第７位で丸めて入力せよ。</p>
+</div>

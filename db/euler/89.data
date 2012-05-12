@@ -1,0 +1,61 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2089
+
+<div id="body">
+<p>ローマ数字の記法は一つの数について沢山ある場合が存在する (FAQを見よ).
+しかし, ある数については<strong>最良の</strong>記法が必ず存在する.</p>
+<p>例えば, 16の正しい記法を全て並べてみる.</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>IIIIIIIIIIIIIIII</li>
+<li>VIIIIIIIIIII</li>
+<li>VVIIIIII</li>
+<li>XIIIIII</li>
+<li>VVVI</li>
+<li>XVI</li>
+</ul>
+<p>最後の例は, 最小の文字数で表せるという意味で, 最も効率が良い.</p>
+<p>11Kのテキストファイル<a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%2089&amp;openfile=roman.txt" title="2010/09/07 20:15:07 10.6KB"><img src="image/file.png" width="20" height="20" alt="file" style="border-width:0px">roman.txt</a> は1000個のローマ記法で書かれた数を含んでいる. これらは, 正しい記法に従っている. 即ち, 大きい数から順に書かれていて, 引き算ペアのルールにも従っている(このルールについてはFAQを見よ) 但し, 最小の文字数で表されているとは限らない.</p>
+<p>最小形で書いたときに, 何文字節約できるかを求めよ.</p>
+<p>注: ファイル中の全てのローマ数字には, 5つ以上の同じ文字が連続して含まれることはない.</p>
+<hr class="full_hr">
+<div class="jumpmenu"><a href="#navigator">↑</a></div>
+<h3 id="content_1_1">FAQ: ローマ数字のルール  <a class="anchor_super" id="n7499c3e" href="http://odz.sakura.ne.jp/projecteuler/index.php?Problem%2089#n7499c3e" title="n7499c3e">†</a>
+</h3>
+<p>(訳者:概略のみ与える)</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td">I</td>
+<td class="style_td">V</td>
+<td class="style_td">X</td>
+<td class="style_td">L</td>
+<td class="style_td">C</td>
+<td class="style_td">D</td>
+<td class="style_td">M</td>
+</tr>
+<tr>
+<td class="style_td">1</td>
+<td class="style_td">5</td>
+<td class="style_td">10</td>
+<td class="style_td">50</td>
+<td class="style_td">100</td>
+<td class="style_td">500</td>
+<td class="style_td">1000</td>
+</tr>
+</tbody></table></div>
+
+<div class="jumpmenu"><a href="#navigator">↑</a></div>
+<h4 id="content_1_2">基本法則1  <a class="anchor_super" id="m18d5e22" href="http://odz.sakura.ne.jp/projecteuler/index.php?Problem%2089#m18d5e22" title="m18d5e22">†</a>
+</h4>
+<p>全ての文字はサイズの降順に並ぶ</p>
+
+<div class="jumpmenu"><a href="#navigator">↑</a></div>
+<h4 id="content_1_3">基本法則2  <a class="anchor_super" id="zd57009e" href="http://odz.sakura.ne.jp/projecteuler/index.php?Problem%2089#zd57009e" title="zd57009e">†</a>
+</h4>
+<p>引き算ペアについて.</p>
+<p>X (10) + IX (9) として19=XIXと表せる. ただし, 8をIIXと二文字以上を引くことは許されない.</p>
+<ol class="list1" style="padding-left:16px;margin-left:16px">
+<li>I, X, Cのみが引き算ペアの最初の文字として許される.</li>
+<li>IはVまたはXの前に来ることが許される</li>
+<li>XはLまたはCの前に来ることが許される</li>
+<li>CはDまたはMの前に来ることが許される</li>
+</ol>
+</div>

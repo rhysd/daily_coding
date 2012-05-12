@@ -1,0 +1,37 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20315
+
+<div id="body">
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_315_clocks.gif" title="p_315_clocks.gif"><img src="http://projecteuler.net/project/images/p_315_clocks.gif" alt="p_315_clocks.gif" title="p_315_clocks.gif"></a></div>
+<p>Sam と Max は、２個のデジタル時計を「デジタルルート（数字根）時計」に作り変えるよう依頼されている。<br>
+デジタルルート時計は、数字根をステップごとに計算するデジタル時計である。</p>
+<p>時計に数字が与えられると、時計は数字を表示し計算を開始する。結果にたどりつくまでの途中の値がすべて表示される。<br>
+例えば、時計に 137 という数が与えられると、"<strong>137</strong>"→"<strong>11</strong>"→"<strong>2</strong>" と表示してから真っ黒になり、次の数を待つ。</p>
+<p>各デジタル数字はセグメント状のライトから構成される：横セグメントが３本（上、中、下）と縦セグメントが４本（左上、右上、左下、右下）である。<br>
+数 "<strong>1</strong>" は右上と右下の縦セグメントでできており、数 "<strong>4</strong>" は中の横セグメントと、左上、右上、右下の縦セグメントからできている。数 "<strong>8</strong>" はすべてのセグメントが点灯する。</p>
+<p>時計はセグメントを点灯/消灯させるときに限りエネルギーを消費する。<br>
+"<strong>2</strong>" を点灯させるには 5 回の遷移を要する。"<strong>7</strong>" は 4 回だけ遷移を要する。</p>
+<p>Sam と Max は２個の異なる時計を作る。</p>
+<p>Sam の時計は 137 のような数を与えられると、"<strong>137</strong>" を表示し、パネルを消灯してから次の数（"<strong>11</strong>"）を点灯し、再び消灯してそして最終的に最後の数（"<strong>2</strong>"）を点灯、しばらくして消灯する。<br>
+たとえば、137 では、Sam の時計は次のように動く。<br></p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>"<strong>137</strong>"：(2 + 5 + 4) × 2 = 22 回の遷移（"<strong>137</strong>" の点灯/消灯）</li>
+<li>"<strong>11</strong>" ：(2 + 2) × 2 = 8 回の遷移（"<strong>11</strong>" の点灯/消灯）</li>
+<li>"<strong>2</strong>"　　：(5) × 2 = 10 回の遷移（"<strong>2</strong>" の点灯/消灯）</li>
+</ul>
+<p>合計で 40 回の遷移である。</p>
+<p>Max の時計は異なる動きをする。パネル全体を消灯するのではなく、次の数に必要のないセグメントのみを消灯するという賢いやり方である。<br>
+数 137 に対して、Max の時計は次のように動く。<br></p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>"<strong>137</strong>"：2 + 5 + 4 = 11 回の遷移（"<strong>137</strong>" の点灯）<br>
+　　　　　7 回の遷移（数 "<strong>11</strong>" に必要ないセグメントの消灯）</li>
+<li>"<strong>11</strong>" ：0 回の遷移（数 "<strong>11</strong>" はすでに正しく点灯済み）<br>
+　　　　　3 回の遷移（始めの "<strong>1</strong>" と２つ目の "<strong>1</strong>" の下部分を消灯；<br>
+　　　　　上部分は数 "<strong>2</strong>" と共通である）</li>
+<li>"<strong>2</strong>"　　：4 回の遷移（"<strong>2</strong>" にするため残りのセグメントを点灯）<br>
+　　　　　5 回の遷移（"<strong>2</strong>" を消灯）</li>
+</ul>
+<p>合計で 30 回の遷移である。</p>
+<p>もちろん、Max の時計のほうが Sam より電力の消費が少ない。<br>
+２つの時計に A = 10<span style="font-size:60%;vertical-align:super;">7</span> から B = 2×10<span style="font-size:60%;vertical-align:super;">7</span> の間の素数が与えられる。<br>
+Sam の時計で必要な遷移の総数と Max の時計で必要な遷移の総数の差を求めよ。</p>
+</div>

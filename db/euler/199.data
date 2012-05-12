@@ -1,0 +1,10 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20199
+
+<div id="body">
+<p>3つの半径の等しい円が、1つのもっと大きい円の中にあり、各円は他の円とお互い接している。ただし中の円はお互いが重ならない。4つのすき間があり、これを繰り返し接する円で埋めていく。</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_199_circles_in_circles.gif" title="p_199_circles_in_circles.gif"><img src="http://projecteuler.net/project/images/p_199_circles_in_circles.gif" alt="p_199_circles_in_circles.gif" title="p_199_circles_in_circles.gif"></a></div>
+
+<p>各ステップで、全てのすき間にそれぞれ最大の円を置いていき、結果として次のステップにはさらにすき間が増えていく。3ステップ後には上の図のようになる。108のすき間ができ、円で埋められていない面積の比率は10進8桁に四捨五入して 0.06790342 となる。</p>
+<p>10ステップ後に円で埋まっていない面積の比率はいくらか？<br>
+10進数8桁に四捨五入し, x.xxxxxxxx という形で回答を入力せよ.</p>
+</div>

@@ -1,0 +1,15 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20292
+
+<div id="body">
+<p>以下の性質を持つ<strong>凸多角形</strong>をピタゴラス多角形(pythagorean polygon)と呼ぶことにする:</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>少なくとも3つの頂点がある</li>
+<li>どの3つの頂点も並んでいない</li>
+<li>各頂点は<strong>座標が整数</strong>である</li>
+<li>各辺は<strong>辺長が整数</strong>である</li>
+</ul>
+<p>与えられた整数 n に対し、P(n) を周長≤ n を満たす異なるピタゴラス多角形の数と定義する。<br>
+ピタゴラス多角形は平行移動で一致しないならば異なるとみなす。</p>
+<p>P(4) = 1, P(30) = 3655, P(60) = 891045 である。<br>
+P(120) を求めよ。</p>
+</div>

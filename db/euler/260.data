@@ -1,0 +1,20 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20260
+
+<div id="body">
+<p>3 つの石の山と 2 人のプレイヤーでゲームを行う。<br>
+彼女のターンでは、プレイヤーは 1 個以上の石を山から取る。しかし、2 つ以上の山から取る場合は、選んだそれぞれの山から同じ数の石を取らないといけない。</p>
+<p>つまり、プレイヤーは N&gt;0 を選んで取る:</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>N 個の石を 1 つの山から取る、または</li>
+<li>N 個の石を 2 つの山からそれぞれ取る(合計 2N 個)、または</li>
+<li>N 個の石を 3 つの山からそれぞれ取る(合計 3N 個)</li>
+</ul>
+<p>最後の石を取ったプレイヤーが勝者である。</p>
+<p><em>勝利状態</em> とは最初のプレイヤーが勝つ状態のことである。<br>
+例えば、(0,0,13), (0,11,11), (5,5,5) は、最初のプレイヤーが全ての石を一度に取れるから勝利状態である。</p>
+<p><em>敗北状態</em> とは最初のプレイヤーがどんなことをしても 2 人目のプレイヤーが勝つ状態のことである。<br>
+例えば、(0,1,2) と (1,3,3) は敗北状態である: ルール上のどんな手を取っても 2 人目のプレイヤーの勝利状態となる。</p>
+<p>x<span style="font-size:60%;vertical-align:sub;">i</span> ≤  y<span style="font-size:60%;vertical-align:sub;">i</span> ≤ z<span style="font-size:60%;vertical-align:sub;">i</span> ≤ 100 を満たす全ての敗北状態 (x<span style="font-size:60%;vertical-align:sub;">i</span>,y<span style="font-size:60%;vertical-align:sub;">i</span>,z<span style="font-size:60%;vertical-align:sub;">i</span>) について考える。<br>
+この場合 Σ(x<span style="font-size:60%;vertical-align:sub;">i</span>+y<span style="font-size:60%;vertical-align:sub;">i</span>+z<span style="font-size:60%;vertical-align:sub;">i</span>) = 173895 であることがわかる。</p>
+<p>x<span style="font-size:60%;vertical-align:sub;">i</span> ≤  y<span style="font-size:60%;vertical-align:sub;">i</span> ≤ z<span style="font-size:60%;vertical-align:sub;">i</span> ≤ 1000 を満たす全ての敗北状態を表す (x<span style="font-size:60%;vertical-align:sub;">i</span>,y<span style="font-size:60%;vertical-align:sub;">i</span>,z<span style="font-size:60%;vertical-align:sub;">i</span>) について Σ(x<span style="font-size:60%;vertical-align:sub;">i</span>+y<span style="font-size:60%;vertical-align:sub;">i</span>+z<span style="font-size:60%;vertical-align:sub;">i</span>) を求めよ。</p>
+</div>

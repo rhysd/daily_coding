@@ -1,0 +1,7 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20223
+
+<div id="body">
+<p>三辺(a≤b≤c)が全て整数の三角形で、三辺が次の式を満たしているものを"わずかに鋭角(barely acute)"と呼ぶ。<br>
+a<span style="font-size:60%;vertical-align:super;">2</span>+b<span style="font-size:60%;vertical-align:super;">2</span>=c<span style="font-size:60%;vertical-align:super;">2</span>+1.</p>
+<p>周辺の長さが 25,000,000 以下のわずかに鋭角な三角形はいくつあるか。</p>
+</div>

@@ -1,0 +1,16 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20217
+
+<div id="body">
+<p>次の条件を満たす(10進数で) k 桁の正の整数を"バランスした"(balanced)と呼ぶ: 最上位 ⌈<span style="font-size:60%;vertical-align:super;">k</span>/<span style="font-size:60%;vertical-align:sub;">2</span>⌉
+桁の和と最下位
+⌈<span style="font-size:60%;vertical-align:super;">k</span>/<span style="font-size:60%;vertical-align:sub;">2</span>⌉
+桁の和が等しい。<br>
+⌈x⌉
+は"xのシーリング"(天井, ceiling of x)と呼び、x以上の最小の整数を表す。例えば
+⌈π⌉=4, ⌈5⌉=5
+である。</p>
+<p>例を挙げると、全ての回文数はバランスしており、13722 もバランスしている。</p>
+<p>T(n) を 10<span style="font-size:60%;vertical-align:super;">n</span> 未満の全てのバランスした数の合計とする。<br>
+例えば、T(1) = 45, T(2) = 540, T(5) = 334795890 である。</p>
+<p>T(47) mod 3<span style="font-size:60%;vertical-align:super;">15</span> を求めよ。</p>
+</div>

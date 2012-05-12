@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20125
+
+<div id="body">
+<p>回文数 595 は連続する平方数の和で表すことができるという面白い性質を持つ:
+6<span style="font-size:60%;vertical-align:super;">2</span>+7<span style="font-size:60%;vertical-align:super;">2</span>+8<span style="font-size:60%;vertical-align:super;">2</span>+9<span style="font-size:60%;vertical-align:super;">2</span>+10<span style="font-size:60%;vertical-align:super;">2</span>+11<span style="font-size:60%;vertical-align:super;">2</span>+12<span style="font-size:60%;vertical-align:super;">2</span></p>
+<p>1000 未満で連続する平方数の和で表せる回文数はちょうど 11 あり、その合計は 4164 である。正の整数の平方のみをこの問題では扱うため、1=0<span style="font-size:60%;vertical-align:super;">2</span>+1<span style="font-size:60%;vertical-align:super;">2</span> は含めないことに注意せよ。</p>
+<p>回文数でありかつ連続する平方数の和で表せる、10<span style="font-size:60%;vertical-align:super;">8</span> 未満のすべての数の合計を求めよ。</p>
+</div>

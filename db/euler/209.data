@@ -1,0 +1,65 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20209
+
+<div id="body">
+<p>k 入力の2進真理値表は k 個の入力ビット(2進数、0(偽)または1(真))から
+1 個の出力ビットへの写像である。
+例えば、論理和(AND)と排他的論理和(XOR)の 2 入力真理値表は以下の通り:</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td" style="background-color:#C1DAF9;">x</td>
+<td class="style_td" style="background-color:#C1DAF9;">y</td>
+<td class="style_td" style="background-color:#C1DAF9;">x AND y</td>
+</tr>
+<tr>
+<td class="style_td">0</td>
+<td class="style_td">0</td>
+<td class="style_td" style="text-align:center;">0</td>
+</tr>
+<tr>
+<td class="style_td">0</td>
+<td class="style_td">1</td>
+<td class="style_td" style="text-align:center;">0</td>
+</tr>
+<tr>
+<td class="style_td">1</td>
+<td class="style_td">0</td>
+<td class="style_td" style="text-align:center;">0</td>
+</tr>
+<tr>
+<td class="style_td">1</td>
+<td class="style_td">1</td>
+<td class="style_td" style="text-align:center;">1</td>
+</tr>
+</tbody></table></div>
+<p><br></p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td" style="background-color:#C1DAF9;">x</td>
+<td class="style_td" style="background-color:#C1DAF9;">y</td>
+<td class="style_td" style="background-color:#C1DAF9;">x XOR y</td>
+</tr>
+<tr>
+<td class="style_td">0</td>
+<td class="style_td">0</td>
+<td class="style_td" style="text-align:center;">0</td>
+</tr>
+<tr>
+<td class="style_td">0</td>
+<td class="style_td">1</td>
+<td class="style_td" style="text-align:center;">1</td>
+</tr>
+<tr>
+<td class="style_td">1</td>
+<td class="style_td">0</td>
+<td class="style_td" style="text-align:center;">1</td>
+</tr>
+<tr>
+<td class="style_td">1</td>
+<td class="style_td">1</td>
+<td class="style_td" style="text-align:center;">0</td>
+</tr>
+</tbody></table></div>
+<p>6ビットの入力(a,b,c,d,e,f)に対し、以下の式を満たす6入力の2進真理値表 τ
+はいくつあるか。</p>
+<div style="text-align:center">τ(a, b, c, d, e, f) AND τ(b, c, d, e, f, a XOR (b AND c)) = 0</div>
+</div>

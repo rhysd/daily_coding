@@ -1,0 +1,14 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2029
+
+<div id="body">
+<p>2 ≤ a ≤ 5 と 2 ≤ b ≤ 5について, <span style="font-style:italic;">a</span><span style="font-size:60%;vertical-align:super;"><span style="font-style:italic;">b</span></span>を全て考えてみよう:</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>2<span style="font-size:60%;vertical-align:super;">2</span>=4, 2<span style="font-size:60%;vertical-align:super;">3</span>=8, 2<span style="font-size:60%;vertical-align:super;">4</span>=16, 2<span style="font-size:60%;vertical-align:super;">5</span>=32</li>
+<li>3<span style="font-size:60%;vertical-align:super;">2</span>=9, 3<span style="font-size:60%;vertical-align:super;">3</span>=27, 3<span style="font-size:60%;vertical-align:super;">4</span>=81, 3<span style="font-size:60%;vertical-align:super;">5</span>=243</li>
+<li>4<span style="font-size:60%;vertical-align:super;">2</span>=16, 4<span style="font-size:60%;vertical-align:super;">3</span>=64, 4<span style="font-size:60%;vertical-align:super;">4</span>=256, 4<span style="font-size:60%;vertical-align:super;">5</span>=1024</li>
+<li>5<span style="font-size:60%;vertical-align:super;">2</span>=25, 5<span style="font-size:60%;vertical-align:super;">3</span>=125, 5<span style="font-size:60%;vertical-align:super;">4</span>=625, 5<span style="font-size:60%;vertical-align:super;">5</span>=3125</li>
+</ul>
+<p>これらを小さい順に並べ, 同じ数を除いたとすると, 15個の項を得る:</p>
+<p>4, 8, 9, 16, 25, 27, 32, 64, 81, 125, 243, 256, 625, 1024, 3125</p>
+<p>2 ≤ a ≤ 100, 2 ≤ b ≤ 100 で同じことをしたときいくつの異なる項が存在するか?</p>
+</div>

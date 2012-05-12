@@ -1,0 +1,15 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20374
+
+<div id="body">
+<p>数 <span style="font-style:italic;">n</span> の整数分割 (interger partition) とは、正の整数の和が <span style="font-style:italic;">n</span> となるような書き表し方のことである。</p>
+<p>加える数の順序が違うだけの分割は同じものとみなす。<span style="font-style:italic;">n</span> の<strong>成分別</strong>分割 (partition of <span style="font-style:italic;">n</span> into distinct parts) とはすべての成分がたかだか1回だけ現れる <span style="font-style:italic;">n</span> の分割を表す。</p>
+<p>5の成分別分割は以下のようになる:<br>
+5, 4+1, 3+2.</p>
+<p><span style="font-style:italic;">n</span> の成分別分割のうちその成分の積が最大となる時、その積を f(<span style="font-style:italic;">n</span>)、その分割の要素の数を m(<span style="font-style:italic;">n</span>) としよう。</p>
+<p>すなわち f(5)=6 そして m(5)=2 となる。</p>
+<p><span style="font-style:italic;">n</span>=10 の時、最大の積となる分割は 10=2+3+5 となり、f(10)=30 、 m(10)=3 となる。<br>
+また、それらを掛けた積は、f(10)·m(10) = 30·3 = 90 となる。</p>
+<p>1 ≤ <span style="font-style:italic;">n</span> ≤ 100 のときの Σf(<span style="font-style:italic;">n</span>)·m(<span style="font-style:italic;">n</span>) = 1683550844462 であることが確かめられる。</p>
+<p>1 ≤ <span style="font-style:italic;">n</span> ≤ 10<span style="font-size:60%;vertical-align:super;">14</span> のときの  Σf(<span style="font-style:italic;">n</span>)·m(<span style="font-style:italic;">n</span>) を求めよ。<br>
+5000万番目の素数、982451653を法として答えよ。</p>
+</div>

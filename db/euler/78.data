@@ -1,0 +1,14 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2078
+
+<div id="body">
+<p>n枚のコインを異なった方法で山に分ける場合の数をp(n)と表わす。
+例えば、５枚のコインを山に分ける異なったやり方は７通りなのでp(5)=7となる。</p>
+<p>　OOOOO</p>
+<p>　OOOO O</p>
+<p>　OOO OO</p>
+<p>　OOO O O</p>
+<p>　OO OO O</p>
+<p>　OO O O O</p>
+<p>　O O O O O</p>
+<p>p(n)が100万で割り切れる場合に最小となるnを求めよ。</p>
+</div>

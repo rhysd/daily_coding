@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20282
+
+<div id="body">
+<p>負ではない整数 m, n に対し、アッカーマン関数 A(m, n) は次のように定義される:</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_282_formula.gif" title="p_282_formula.gif"><img src="http://projecteuler.net/project/images/p_282_formula.gif" alt="p_282_formula.gif" title="p_282_formula.gif"></a></div>
+<p>例えば A(1, 0) = 2, A(2, 2) = 7, A(3, 4) = 125 である。</p>
+<p>Σ<span style="font-size:60%;vertical-align:sub;">0 ≤ n ≤ 6</span>A(n, n) を求め、14<span style="font-size:60%;vertical-align:super;">8</span> で割った余りを入力せよ。</p>
+</div>

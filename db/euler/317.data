@@ -1,0 +1,7 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20317
+
+<div id="body">
+<p>爆竹が地上100mの高さで爆発する。爆竹は爆発すると非常に細かい破片となり四方八方に初速20m/sで広がる。</p>
+<p>破片は空気抵抗を受けず、g=9.81 m/s<span style="font-size:60%;vertical-align:super;">2</span>で一定の重力場において動くものと仮定する。</p>
+<p>破片が地面に到達するまでに動いた領域の体積(m<span style="font-size:60%;vertical-align:super;">3</span>)を小数点以下4桁に丸めて答えよ。</p>
+</div>

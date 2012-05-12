@@ -1,0 +1,21 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20194
+
+<div id="body">
+<p>ユニットA
+<a href="http://projecteuler.net/project/images/p_194_GraphA.png" title="p_194_GraphA.png"><img src="http://projecteuler.net/project/images/p_194_GraphA.png" alt="p_194_GraphA.png" title="p_194_GraphA.png"></a>
+とユニットB
+<a href="http://projecteuler.net/project/images/p_194_GraphB.png" title="p_194_GraphB.png"><img src="http://projecteuler.net/project/images/p_194_GraphB.png" alt="p_194_GraphB.png" title="p_194_GraphB.png"></a>
+からなるグラフについて考える。
+ユニット同士を垂直方向の辺に沿ってくっつけてグラフにする。下図はグラフの一例である。</p>
+<p><a href="http://projecteuler.net/project/images/p_194_Fig.png" title="p_194_Fig.png"><img src="http://projecteuler.net/project/images/p_194_Fig.png" alt="p_194_Fig.png" title="p_194_Fig.png"></a></p>
+<p>(a,b,c)タイプの配置とは、以下を満たすグラフのことである:</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>a 個のユニットAと b 個のユニットBからなる</li>
+<li>各頂点は色づけされていて、最大で c 色まで使われている</li>
+<li>どの隣接する2頂点も同じ色にはならない</li>
+</ul>
+<p>上のグラフは(2,2,6)タイプの配置の例である。正確には c≥4 を満たす全ての c に対し、(2,2,c)タイプの配置となる。</p>
+<p>N(a,b,c)を、(a,b,c)タイプの配置の数とする。
+例えば N(1,0,3) = 24, N(0,2,4) = 92928, N(2,2,3) = 20736 である。</p>
+<p>N(25,75,1984)の最下位8桁を求めよ。</p>
+</div>

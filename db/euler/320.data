@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20320
+
+<div id="body">
+<p>N(i) を、n! が (i!)<span style="font-size:60%;vertical-align:super;">1234567890</span> で割り切れるような最小の整数 n とする。</p>
+<p>S(u) を、10≦i≦u に対し S(u)=ΣN(i) とする。</p>
+<p>S(1000)=614538266565663 である。</p>
+<p>S(1 000 000) mod 10<span style="font-size:60%;vertical-align:super;">18</span> を求めよ。</p>
+</div>

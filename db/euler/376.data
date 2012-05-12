@@ -1,0 +1,25 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20376
+
+<div id="body">
+<p>以下のような規格外の目を持つサイコロについて考えよう。</p>
+<p>サイコロ A: 1 4 4 4 4 4<br>
+サイコロ B: 2 2 2 5 5 5<br>
+サイコロ C: 3 3 3 3 3 6<br></p>
+<p>2人の対局者が順番にサイコロを選びそれを振ってゲームをする。大きい目を出した対局者が勝者となる。</p>
+<p>もし先手がサイコロ A を選び、後手がサイコロ B を選んだ場合、後手が勝つ確率は以下のようになる。<br>
+P(後手が勝つ) = <span style="font-size:60%;vertical-align:super;">7</span>/<span style="font-size:60%;vertical-align:sub;">12</span> &gt; <span style="font-size:60%;vertical-align:super;">1</span>/<span style="font-size:60%;vertical-align:sub;">2</span></p>
+<p>もし先手がサイコロ B を選び、後手がサイコロ C を選んだ場合、後手が勝つ確率は以下のようになる。<br>
+P(後手が勝つ) = <span style="font-size:60%;vertical-align:super;">7</span>/<span style="font-size:60%;vertical-align:sub;">12</span> &gt; <span style="font-size:60%;vertical-align:super;">1</span>/<span style="font-size:60%;vertical-align:sub;">2</span></p>
+<p>もし先手がサイコロ C を選び、後手がサイコロ A を選んだ場合、後手が勝つ確率は以下のようになる。<br>
+P(後手が勝つ) = <span style="font-size:60%;vertical-align:super;">25</span>/<span style="font-size:60%;vertical-align:sub;">36</span> &gt; <span style="font-size:60%;vertical-align:super;">1</span>/<span style="font-size:60%;vertical-align:sub;">2</span></p>
+<p>つまり先手がどのサイコロを選んでも、後手は別のサイコロを選んで50%より大きい勝率を得られる。<br>
+この性質を持つサイコロの集合のことを<strong>サイコロの非推移的集合</strong>と呼ぼう。</p>
+<p>サイコロの非推移的集合がどのぐらいあるのか調査したい。以下の状況を仮定しよう :</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>1 から <span style="font-style:italic;">N</span> の目を持つ3つの6面サイコロをすべて含む。</li>
+<li>サイコロの目の位置にかかわらず、同じ目の集合を持つサイコロは同等である。</li>
+<li>複数のサイコロに同じ目が表れても良い、もし両方の対局者が同じ目を出した時はどちらも勝てない。</li>
+<li>{A,B,C}, {B,C,A}, そして {C,A,B} のサイコロの集合は同じ集合である。</li>
+</ul>
+<p><span style="font-style:italic;">N</span> = 7 のとき、そのような集合は 9780 組ある。<br><span style="font-style:italic;">N</span> = 30 のときはいくつあるだろうか?</p>
+</div>

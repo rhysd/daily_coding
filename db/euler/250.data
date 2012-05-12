@@ -1,0 +1,5 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20250
+
+<div id="body">
+<p>要素の合計が 250 で割り切れるような、{1<span style="font-size:60%;vertical-align:super;">1</span>, 2<span style="font-size:60%;vertical-align:super;">2</span>, 3<span style="font-size:60%;vertical-align:super;">3</span>,..., 250250<span style="font-size:60%;vertical-align:super;">250250</span>} の空でない部分集合の数を求めよ。最下位の 16 桁を答えとして入力せよ。</p>
+</div>

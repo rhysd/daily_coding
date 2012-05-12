@@ -1,0 +1,17 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20220
+
+<div id="body">
+<p>D<span style="font-size:60%;vertical-align:sub;">0</span> を2文字の文字列"Fa"とする。n≥1では、D<span style="font-size:60%;vertical-align:sub;">n</span>はD<span style="font-size:60%;vertical-align:sub;">n-1</span>から以下の変換ルールに従い作られる。</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>"a" → "aRbFR"</li>
+<li>"b" → "LFa<span style="color:black">Lb</span>"</li>
+</ul>
+<p>つまり、D<span style="font-size:60%;vertical-align:sub;">0</span>="Fa", D<span style="font-size:60%;vertical-align:sub;">1</span> = "FaRbFR", D<span style="font-size:60%;vertical-align:sub;">2</span> = "FaRbFRRLFaLbFR",...となる。</p>
+<p>これらの文字列はコンピューターグラフィックスプログラムへの命令と解釈できる:
+"F"を"1ユニット前へ描け"、"L"を"90度左を向け"、"R"を"90度右を向け"、"a"と"b"は無視する。カーソルの初期位置は(0,0)、向きは(0,1)方向、つまり上とする。</p>
+<p>D<span style="font-size:60%;vertical-align:sub;">n</span>は n次の"Heighwayのドラゴン"(Heighway Dragon)として知られる奇妙な図となる。例えば、下図はD<span style="font-size:60%;vertical-align:sub;">10</span>である。各"F"を1ステップとして数えると、500ステップ目で図中で強調してある(18,16)に到達する。</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_220.gif" title="p_220.gif"><img src="http://projecteuler.net/project/images/p_220.gif" alt="p_220.gif" title="p_220.gif"></a></div>
+
+<p>D<span style="font-size:60%;vertical-align:sub;">50</span>において10<span style="font-size:60%;vertical-align:super;">12</span>ステップ後の座標を求めよ。<br>
+回答は x,y という形式でスペースを入れずに入力せよ。</p>
+</div>

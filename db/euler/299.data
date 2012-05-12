@@ -1,0 +1,14 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20299
+
+<div id="body">
+<p>整数の座標をもつ４点が選ばれる:<br>
+A(a, 0), B(b, 0), C(0, c), D(0, d) (0 &lt; a &lt; b かつ 0 &lt; c &lt; d) である.<br>
+線 AC 上に, 整数の座標をもつ点 P を, ３つの三角形 ABP, CDP, BDP が全て相似となるように選ぶ.</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_299_ThreeSimTri.gif" title="p_299_ThreeSimTri.gif"><img src="http://projecteuler.net/project/images/p_299_ThreeSimTri.gif" alt="p_299_ThreeSimTri.gif" title="p_299_ThreeSimTri.gif"></a></div>
+<p>a=c のときにのみ３つの三角形が相似となり得ることは, 容易に証明できる.</p>
+<p>そこで, a=c とし, ３つの三角形 ABP, CDP, BDP が全て相似となる点 P (整数の座標をもつ) が少なくとも１つ存在するような３数の組 (a,b,d) を探すことにする.</p>
+<p>例えば, (a,b,d)=(2,3,4) ならば, 点 P(1,1) が上の条件を満たすことが容易に確かめられる. ３数の組 (2,3,4) と (2,4,3) は, 点 P(1,1) は両者で共通ではあるが, 異なるものとしてみなすことに注意.</p>
+<p>b+d &lt; 100 の場合, 点 P が存在する異なる３数の組 (a,b,d) は 92 個ある.<br>
+b+d &lt; 100,000 の場合, 点 P が存在する異なる３数の組 (a,b,d) は 320471 個ある.<br>
+b+d &lt; 100,000,000 の場合, 点 P が存在する異なる３数の組 (a,b,d) は何個あるか.</p>
+</div>

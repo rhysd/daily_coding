@@ -1,0 +1,7 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20171
+
+<div id="body">
+<p>正の整数nについて、f(n)を各桁の数字(10進数)の平方の和と定義する。例えば、</p>
+<p><span style="font-style:italic;">f</span>(3) = 3<span style="font-size:60%;vertical-align:super;">2</span> = 9,<br><span style="font-style:italic;">f</span>(25) = 2<span style="font-size:60%;vertical-align:super;">2</span> + 5<span style="font-size:60%;vertical-align:super;">2</span> = 4 + 25 = 29,<br><span style="font-style:italic;">f</span>(442) = 4<span style="font-size:60%;vertical-align:super;">2</span> + 4<span style="font-size:60%;vertical-align:super;">2</span> + 2<span style="font-size:60%;vertical-align:super;">2</span> = 16 + 16 + 4 = 36<br></p>
+<p>0 &lt; n &lt; 10<span style="font-size:60%;vertical-align:super;">20</span>について、f(n)が平方数となるようなnの和の末尾9桁を求めよ。</p>
+</div>

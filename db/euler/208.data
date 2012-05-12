@@ -1,0 +1,10 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20208
+
+<div id="body">
+<p>ロボットは <span style="font-size:60%;vertical-align:super;">1</span>/<span style="font-size:60%;vertical-align:sub;">5</span> の円弧(72°)を描き続けながら動く。各ステップでは、次の円弧を時計回りにするか反時計回りにするか好きに選べるが、その場では曲がらない。</p>
+<p>北向きから始めて25回の円弧を経て、閉路を描く道筋は70932通りあり、下図はその一例である。</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_208_robotwalk.gif" title="p_208_robotwalk.gif"><img src="http://projecteuler.net/project/images/p_208_robotwalk.gif" alt="p_208_robotwalk.gif" title="p_208_robotwalk.gif"></a></div>
+
+<p>ロボットが北向きから始めて、70回の円弧を経て、最後は元の位置に戻る道筋は何通りあるか。<br>
+(円弧は何度交差してもよい)</p>
+</div>

@@ -1,0 +1,13 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2049
+
+<div id="body">
+<p>項差3330の等差数列1487, 4817, 8147は次の2つの変わった性質を持つ。</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>(i)3つの項はそれぞれ素数である。<br class="spacer">
+</li>
+<li>(ii)各項は他の項の置換で表される。<br class="spacer">
+</li>
+</ul>
+<p>1, 2, 3桁の素数にはこのような性質を持った数列は存在しないが、4桁の増加列にはもう1つ存在する。</p>
+<p>それではこの数列の3つの項を連結した12桁の数を求めよ。</p>
+</div>

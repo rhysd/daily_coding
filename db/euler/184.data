@@ -1,0 +1,10 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20184
+
+<div id="body">
+<p>原点を中心とした半径rの円の内部に含まれる点 (x,y)、すなわち<span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:super;">2</span> + <span style="font-style:italic;">y</span><span style="font-size:60%;vertical-align:super;">2</span> &lt; <span style="font-style:italic;">r</span><span style="font-size:60%;vertical-align:super;">2</span>、の座標が整数となる集合<span style="font-style:italic;">I</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">r</span></span>を考える。</p>
+<p>半径2の場合、<span style="font-style:italic;">I</span><span style="font-size:60%;vertical-align:sub;">2</span> は(0,0), (1,0), (1,1), (0,1), (-1,1), (-1,0), (-1,-1), (0,-1), (1,-1) の9点を要素に持つ。<span style="font-style:italic;">I</span><span style="font-size:60%;vertical-align:sub;">2</span> を頂点とし、原点を内部に含むような三角形は8個存在する。そのうち2つを下図に示す。残りは回転で得られる。</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_184.gif" title="p_184.gif"><img src="http://projecteuler.net/project/images/p_184.gif" alt="p_184.gif" title="p_184.gif"></a></div>
+
+<p>半径3の場合は、<span style="font-style:italic;">I</span><span style="font-size:60%;vertical-align:sub;">3</span> を頂点とし、原点を内部に含むような三角形は360個存在し、<span style="font-style:italic;">I</span><span style="font-size:60%;vertical-align:sub;">5</span> では10600個存在する。</p>
+<p><span style="font-style:italic;">I</span><span style="font-size:60%;vertical-align:sub;">105</span> を頂点とし、原点を内部に含むような三角形はいくつ存在するか?</p>
+</div>

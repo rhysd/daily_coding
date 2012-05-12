@@ -1,0 +1,11 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20326
+
+<div id="body">
+<p>a<span style="font-size:60%;vertical-align:sub;">n</span> を、<a href="http://projecteuler.net/project/images/p_326_formula1.gif" title="p_326_formula1.gif"><img src="http://projecteuler.net/project/images/p_326_formula1.gif" alt="p_326_formula1.gif" title="p_326_formula1.gif"></a>によって再帰的に定義される数列とする。</p>
+<p>従って、a<span style="font-size:60%;vertical-align:sub;">n</span> 最初の10個の要素は、1,1,0,3,0,3,5,4,1,9 となる。</p>
+<p>下記を満たす対 (p,q) の個数を f(N,M) で表す。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_326_formula2.gif" title="p_326_formula2.gif"><img src="http://projecteuler.net/project/images/p_326_formula2.gif" alt="p_326_formula2.gif" title="p_326_formula2.gif"></a></div>
+<p>f(10,10)=4 であることが分かる。（(3,3), (5,5), (7,9), (9,10) の４個。）</p>
+<p>また、f(10<span style="font-size:60%;vertical-align:super;">4</span>,10<span style="font-size:60%;vertical-align:super;">3</span>)=97158 である。</p>
+<p>f(10<span style="font-size:60%;vertical-align:super;">12</span>,10<span style="font-size:60%;vertical-align:super;">6</span>) を求めよ。</p>
+</div>

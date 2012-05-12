@@ -1,0 +1,15 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2067
+
+<div id="body">
+<p>以下の三角形の頂点から下まで移動するとき、その数値の合計の最大値は23になる。</p>
+<div style="text-align:center">
+<span style="color:red">3</span><br><span style="color:red">7</span> 4<br>
+2 <span style="color:red">4</span> 6<br>
+8 5 <span style="color:red">9</span> 3</div>
+<p>この例では 3 + 7 + 4 + 9 = 23</p>
+<p>100列の三角形を含んでいる15Kのテキストファイル <a href="http://projecteuler.net/project/triangle.txt" rel="nofollow">triangle.txt</a> (右クリックして、『名前をつけてリンク先を保存』)の上から下まで最大合計を見つけてください。</p>
+<p><strong>注</strong>：これは、Problem 18のずっと難しいバージョンです。<br>
+全部で2<span style="font-size:60%;vertical-align:super;">99</span> 通りの組み合わせがあるので、この問題を解決するためにすべてのルートをためすことは可能でありません！<br>
+あなたが毎秒1兆本の(10<span style="font-size:60%;vertical-align:super;">12</span>)ルートをチェックすることができたとしても、全てをチェックするために200億年以上かかるでしょう。<br>
+解決するための効率的なアルゴリズムがあります。;o)</p>
+</div>

@@ -1,0 +1,20 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20318
+
+<div id="body">
+<p>実数√2+√3について考える。<br>
+√2+√3の偶数乗を計算すると以下が得られる。<br>
+(√2+√3)<span style="font-size:60%;vertical-align:super;">2</span> = 9.898979485566356...<br>
+(√2+√3)<span style="font-size:60%;vertical-align:super;">4</span> = 97.98979485566356...<br>
+(√2+√3)<span style="font-size:60%;vertical-align:super;">6</span> = 969.998969071069263...<br>
+(√2+√3)<span style="font-size:60%;vertical-align:super;">8</span> = 9601.99989585502907...<br>
+(√2+√3)<span style="font-size:60%;vertical-align:super;">10</span> = 95049.999989479221...<br>
+(√2+√3)<span style="font-size:60%;vertical-align:super;">12</span> = 940897.9999989371855...<br>
+(√2+√3)<span style="font-size:60%;vertical-align:super;">14</span> = 9313929.99999989263...<br>
+(√2+√3)<span style="font-size:60%;vertical-align:super;">16</span> = 92198401.99999998915...</p>
+<p>これらの小数部分の先頭から連続している9の数は非減少であるように見える。<br>
+実際に(√2+√3)<span style="font-size:60%;vertical-align:super;">2n</span>の小数部分はnを大きくすると1に近づいていくことが証明できる。</p>
+<p>p,qを正の整数でp&lt;qとしたときに、(√p+√q)<span style="font-size:60%;vertical-align:super;">2n</span>の小数部分が1に近づいていくような全ての実数√p+√qについて考える。</p>
+<p>C(p,q,n)を(√p+√q)<span style="font-size:60%;vertical-align:super;">2n</span>の小数部分の先頭から連続する9の数とする。</p>
+<p>N(p,q)をC(p,q,n)≧2011となる最小のnとする。</p>
+<p>p+q≦2011についてΣN(p,q)を求めよ。</p>
+</div>

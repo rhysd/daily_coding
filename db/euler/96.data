@@ -1,0 +1,21 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2096
+
+<div id="body">
+<p>"数独"(日本語で数字を配置するという意味)とは人気があるパズルの名前である。
+起源は不明だが、その評判はラテン語で"Squares"と呼ばれる同様な、そしてはるかに難しいパズルを考案した
+レオンハルト・オイラーの貢献によるものに違いない。
+しかしながら、"数独"パズルの目的は
+それぞれの行、列が3×3の枠を含む9×9の格子の空白（もしくは0）をそれぞれ1から9の数字で置き換えることである。
+下に、一般的なパズルの開始状態とその解答の例がある。</p>
+<div class="img_margin" style="text-align:center"><a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%2096&amp;openfile=q_096.gif" title="q_096.gif"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%2096&amp;src=q_096.gif" alt="q_096.gif" title="q_096.gif" width="534" height="256"></a></div>
+
+<p>うまく作られている"数独"パズルは、
+選択肢を消去するために"仮定とテスト"方式を用いる必要があるかもしれないが、
+ただ一つの解を持ち、論理によって解くことができる(これについては様々な意見がある)。</p>
+<p>探索の複雑さがパズルの難易度を決定する;
+上に挙げた例は、単純で直接的な推論によって解く事ができるため、簡単であると考えられる。</p>
+<p>6kバイトのテキストファイル<a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%2096&amp;openfile=sudoku.txt" title="2009/04/25 18:22:22 5.3KB"><img src="image/file.png" width="20" height="20" alt="file" style="border-width:0px">sudoku.txt</a>(右クリックで,"名前をつけてリンク先を保存")
+にはただ一つの解を持つ、様々な難易度の50の"数独"パズルが含まれている(上の例題はこのファイルにおける最初のパズルである)。</p>
+<p>50すべてのパズルを解き、それぞれの解答の左上隅にある3桁の数の合計が求めよ;
+例えば483は上の解答例の左上隅の3桁の数である。</p>
+</div>

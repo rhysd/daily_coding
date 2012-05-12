@@ -1,0 +1,9 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20167
+
+<div id="body">
+<p>正の整数a,bについて、Ulam数列 U(a,b)は以下のように定義される。<span style="font-style:italic;">U</span>(<span style="font-style:italic;">a</span>,<span style="font-style:italic;">b</span>)<span style="font-size:60%;vertical-align:sub;">1</span> = <span style="font-style:italic;">a</span> , <span style="font-style:italic;">U</span>(<span style="font-style:italic;">a</span>,<span style="font-style:italic;">b</span>)<span style="font-size:60%;vertical-align:sub;">2</span> = <span style="font-style:italic;">b</span> , k &gt; 2については、<span style="font-style:italic;">U</span>(<span style="font-style:italic;">a</span>,<span style="font-style:italic;">b</span>)<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span></span>は二つの異なったU(a,b)のそれまでの値の和としての表し方が一通りである数の<span style="font-style:italic;">U</span>(<span style="font-style:italic;">a</span>,<span style="font-style:italic;">b</span>)<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span>-1</span>を超える最小値となる。</p>
+<p>例えば、数列U(1,2)は、<br>
+1, 2, 3 = 1 + 2, 4 = 1 + 3, 6 = 2 + 4, 8 = 2 + 6, 11 = 3 + 8; となる。<br>
+5は、5 = 1 + 4 = 2 + 3 というように二つの和の表し方があるのでこの数列に含まれない。7 = 1 + 6 = 3 + 4 も同様である。</p>
+<p>∑<span style="font-style:italic;">U</span>(2,2<span style="font-style:italic;">n</span>+1)<span style="font-size:60%;vertical-align:sub;">1<span style="font-style:italic;">e</span>11</span>を 2 ≤ n ≤10 について求めよ。</p>
+</div>

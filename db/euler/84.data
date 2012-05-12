@@ -1,0 +1,107 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2084
+
+<div id="body">
+<p>モノポリーの標準的な盤面は以下である:</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td" style="text-align:center;">GO</td>
+<td class="style_td" style="text-align:center;">A1</td>
+<td class="style_td" style="text-align:center;">CC1</td>
+<td class="style_td" style="text-align:center;">A2</td>
+<td class="style_td" style="text-align:center;">T1</td>
+<td class="style_td" style="text-align:center;">R1</td>
+<td class="style_td" style="text-align:center;">B1</td>
+<td class="style_td" style="text-align:center;">CH1</td>
+<td class="style_td" style="text-align:center;">B2</td>
+<td class="style_td" style="text-align:center;">B3</td>
+<td class="style_td" style="text-align:center;">JAIL</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">H2</td>
+<td class="style_td" colspan="9" style="background-color:#CCD5DD; text-align:center;"></td>
+<td class="style_td" style="text-align:center;">C1</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">T2</td>
+<td class="style_td" colspan="9" style="background-color:#CCD5DD; text-align:center;"></td>
+<td class="style_td" style="text-align:center;">U1</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">H1</td>
+<td class="style_td" colspan="9" style="background-color:#CCD5DD; text-align:center;"></td>
+<td class="style_td" style="text-align:center;">C2</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">CH3</td>
+<td class="style_td" colspan="9" style="background-color:#CCD5DD; text-align:center;"></td>
+<td class="style_td" style="text-align:center;">C3</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">R4</td>
+<td class="style_td" colspan="9" style="background-color:#CCD5DD; text-align:center;"></td>
+<td class="style_td" style="text-align:center;">R2</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">G3</td>
+<td class="style_td" colspan="9" style="background-color:#CCD5DD; text-align:center;"></td>
+<td class="style_td" style="text-align:center;">D1</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">CC3</td>
+<td class="style_td" colspan="9" style="background-color:#CCD5DD; text-align:center;"></td>
+<td class="style_td" style="text-align:center;">CC2</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">G2</td>
+<td class="style_td" colspan="9" style="background-color:#CCD5DD; text-align:center;"></td>
+<td class="style_td" style="text-align:center;">D2</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">G1</td>
+<td class="style_td" colspan="9" style="background-color:#CCD5DD; text-align:center;"></td>
+<td class="style_td" style="text-align:center;">D3</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">G2J</td>
+<td class="style_td" style="text-align:center;">F3</td>
+<td class="style_td" style="text-align:center;">U2</td>
+<td class="style_td" style="text-align:center;">F2</td>
+<td class="style_td" style="text-align:center;">F1</td>
+<td class="style_td" style="text-align:center;">R3</td>
+<td class="style_td" style="text-align:center;">E3</td>
+<td class="style_td" style="text-align:center;">E2</td>
+<td class="style_td" style="text-align:center;">CH2</td>
+<td class="style_td" style="text-align:center;">E1</td>
+<td class="style_td" style="text-align:center;">FP</td>
+</tr>
+</tbody></table></div>
+<p>各プレイヤーはGOのマスから開始し, 2個の6面サイコロを用いて時計回りに進む. 他のルールが無いとすれば, 各マスに止まる確率は全て等しく, 2.5%である. しかし, G2J (Go To Jail), CC (Community Chest, 共同基金), CH (Chance, チャンス) のマスによってこの確率は変えられてしまう.</p>
+<p>G2Jに止まる, または, CCやCHのマスに止まると引くカードのうちそれぞれ1枚によって, プレイヤーはJAILのマスに飛ばされる. またプレイヤーが連続して3回ゾロ目を出すと, 3投目の結果のマスに進むのではなく, 直接JAILのマスに飛ばされる. (訳注: モノポリーではゾロ目が出るともう1回サイコロをふる. 6,6→2,1の場合は合計15マス進む. 4,4→2,2→1,2の場合は合計15マス進む. 3,3→4,4→2,2の場合は6マス目, 14マス目に止まったのちJAILに飛ばされる.)</p>
+<p>ゲーム開始前にCCカードとCHカードはシャッフルされる. プレイヤーがCCまたはCHマスに止まった場合, プレイヤーはCCカードまたはCHカードの山の一番上からカードを1枚引く. カードの指示に従ったのち, そのカードは山の一番下に戻される. それぞれのカードは16枚あるが, 今回は問題を進み方に限定するので, 移動の指示があるカードのみを考える. 移動の指示が無いカードに関しては何もせずカードをそのまま山の下に戻す. プレイヤーはそのままCC/CHマスに残るものとする.</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>Community Chest (16枚中2枚が移動カード)
+<ol class="list2" style="padding-left:16px;margin-left:16px">
+<li>GOへ進め</li>
+<li>JAILへ進め</li>
+</ol>
+</li>
+<li>Chance (16枚中10枚が移動カード)
+<ol class="list2" style="padding-left:16px;margin-left:16px">
+<li>GOへ進め</li>
+<li>JAILへ進め</li>
+<li>C1へ進め</li>
+<li>E3へ進め</li>
+<li>H2へ進め</li>
+<li>R1へ進め</li>
+<li>次のRへ進め (Rはrailway company, 鉄道会社の意)</li>
+<li>次のRへ進め</li>
+<li>次のUへ進め (Uはutility company, 公共事業会社の意)</li>
+<li>3マス戻れ</li>
+</ol>
+</li>
+</ul>
+<p>今回考えるのは, どのマスに止まりやすいかである. 即ち, サイコロを投げた後に止まる確率である. より正確には, サイコロを1回振ってカードやマスによる移動を終えた後に各マスに止まる確率を求めたい. 従って, G2Jに止まる確率は0であり, CHマスに止まる確率はその次に少ない(16枚中10枚が移動カードなので). またJAILマスにたまたま止まることとJAILマスに送られることを区別しない. またJAILマスから抜けるルール (自分のターンにゾロ目を2回出す) を無視する. つまり必ず保釈金を払ってJAILマスから進むものとする.</p>
+<p>GOマスを00とし番号を00-39と順番に振る. これにより各マスを2桁の数で表すことが出来る.</p>
+<p>統計的には, 3つのマスに止まりやすいことを示せる. JAIL (6.24%) = 10番目, E3 (3.18%) = 24番目, GO (3.09%) = 00番目である. 従ってもっとも止まりやすいマスを6桁で表せて102400となる.</p>
+<p>2つの6面サイコロではなくて, 2つの4面サイコロを用いた場合の, もっとも止まりやすいマスを6桁で表せ.</p>
+</div>

@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20231
+
+<div id="body">
+<p>二項係数 <span style="font-size:60%;vertical-align:super;">10</span>C<span style="font-size:60%;vertical-align:sub;">3</span> = 120 は<br>
+120 = 2<span style="font-size:60%;vertical-align:super;">3</span> × 3 × 5 = 2 × 2 × 2 × 3 × 5, 2 + 2 + 2 + 3 + 5 = 14 を満たす。<br>
+つまり、<span style="font-size:60%;vertical-align:super;">10</span>C<span style="font-size:60%;vertical-align:sub;">3</span> を素因数分解した項の和は 14 となる。</p>
+<p><span style="font-size:60%;vertical-align:super;">20000000</span>C<span style="font-size:60%;vertical-align:sub;">15000000</span>を素因数分解した項の和を求めよ。</p>
+</div>

@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2034
+
+<div id="body">
+<p>145は面白い数である.
+1! + 4! + 5! = 1 + 24 + 120 = 145となる.</p>
+<p>各桁の数の階乗の和が自分自身と一致するような数の総和を求めよ.</p>
+<p><strong>注:</strong> 1! = 1 と 2! = 2 は総和に含めてはならない.</p>
+</div>

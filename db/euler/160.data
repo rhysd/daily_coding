@@ -1,0 +1,13 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20160
+
+<div id="body">
+<p>任意の N に対して、f(N) を N! の末尾の 0 の前にある最後の5桁とする。</p>
+<p>例えば、</p>
+<blockquote>
+<p class="quotation">9! = 362880, f(9)=36288</p>
+<p class="quotation">10! = 3628800, f(10)=36288</p>
+<p class="quotation">20! = 2432902008176640000, f(20)=17664</p>
+</blockquote>
+<p>である。</p>
+<p>f(1,000,000,000,000) を求めよ。</p>
+</div>

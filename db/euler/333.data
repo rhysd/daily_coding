@@ -1,0 +1,14 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20333
+
+<div id="body">
+<p>あらゆる正の整数は、各項がいずれも 2<span style="font-size:60%;vertical-align:super;">i</span>x3<span style="font-size:60%;vertical-align:super;">j</span>（i,j≧0）と表されるように分割することができる。</p>
+<p>いずれの項も他の任意の項を割り切らないような分割のみを考えよう。<br>
+例えば、17 = 2 + 6 + 9 = (2<span style="font-size:60%;vertical-align:super;">1</span>x3<span style="font-size:60%;vertical-align:super;">0</span> + 2<span style="font-size:60%;vertical-align:super;">1</span>x3<span style="font-size:60%;vertical-align:super;">1</span> + 2<span style="font-size:60%;vertical-align:super;">0</span>x3<span style="font-size:60%;vertical-align:super;">2</span>) という分割は、2 が 6 を割り切るので有効でない。17 = 16 + 1 = (2<span style="font-size:60%;vertical-align:super;">4</span>x3<span style="font-size:60%;vertical-align:super;">0</span> + 2<span style="font-size:60%;vertical-align:super;">0</span>x3<span style="font-size:60%;vertical-align:super;">0</span>) という分割も、1 が 16 を割り切るので有効でない。17 の唯一の有効な分割は 8 + 9 = (2<span style="font-size:60%;vertical-align:super;">3</span>x3<span style="font-size:60%;vertical-align:super;">0</span> + 2<span style="font-size:60%;vertical-align:super;">0</span>x3<span style="font-size:60%;vertical-align:super;">2</span>) である。</p>
+<p>多くの整数は、１つより多くの有効な分割がある。そのような最初の数である 11 は次の２つの分割がある。<br>
+11 = 2 + 9 = (2<span style="font-size:60%;vertical-align:super;">1</span>x3<span style="font-size:60%;vertical-align:super;">0</span> + 2<span style="font-size:60%;vertical-align:super;">0</span>x3<span style="font-size:60%;vertical-align:super;">2</span>)<br>
+11 = 8 + 3 = (2<span style="font-size:60%;vertical-align:super;">3</span>x3<span style="font-size:60%;vertical-align:super;">0</span> + 2<span style="font-size:60%;vertical-align:super;">0</span>x3<span style="font-size:60%;vertical-align:super;">1</span>)</p>
+<p>n の有効な分割の数を P(n) としよう。例えば、P(11)=2 である。</p>
+<p>P(17) のように、有効な分割が１つのみとなる素数 q だけを考えよう。</p>
+<p>P(q)=1 となる素数 q&lt;100 の和は 233 に等しい。</p>
+<p>P(q)=1 となる素数 q&lt;1000000 の和を求めよ。</p>
+</div>

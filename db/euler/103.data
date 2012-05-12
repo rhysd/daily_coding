@@ -1,0 +1,19 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20103
+
+<div id="body">
+<p>大きさ n の集合 A の要素の和を S(A) で表す. 空でなく共通要素を持たないいかなる 2 つの部分集合 B と C に対しても以下の性質が真であれば, A を特殊和集合と呼ぼう.</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>i. S(B)≠S(C); つまり, 部分集合の和が等しくてはならない.</li>
+<li>ii. B が C より多くの要素を含んでいればこのとき S(B) &gt; S(C) となる.</li>
+</ul>
+<p>ある n に対し S(A) が最小化されていれば, それを最適特殊和集合と呼ぼう. はじめの 5 つの最適特殊和集合は下に与えられる.</p>
+<pre>n = 1: {1}
+n = 2: {1, 2}
+n = 3: {2, 3, 4}
+n = 4: {3, 5, 6, 7}
+n = 5: {6, 9, 11, 12, 13}</pre>
+<p>ある最適集合 A = {a<span style="font-size:60%;vertical-align:sub;">1</span>, a<span style="font-size:60%;vertical-align:sub;">2</span>, ... , a<span style="font-size:60%;vertical-align:sub;">n</span>} に対し, 次の最適集合は B = {b, a<span style="font-size:60%;vertical-align:sub;">1</span>+b, a<span style="font-size:60%;vertical-align:sub;">2</span>+b, ... ,a<span style="font-size:60%;vertical-align:sub;">n</span>+b} となりそうである. ここで b は前列の「中央の」要素である.</p>
+<p>この「法則」を用いると n = 6 に対する最適集合は A = {11, 17, 20, 22, 23, 24} で, S(A) = 117 と予期するだろう. しかしこれは, 最適に近い集合を与えるアルゴリズムを用いたにすぎないため, 最適集合とはならない. n = 6 に対する最適集合は A = {11, 18, 19, 20, 22, 25} で, S(A) = 115 である. これに対応する集合の文字列は 111819202225 である.</p>
+<p>A を n = 7 に対する最適特殊集合とするとき, その集合の文字列を求めよ.</p>
+<p>注意: この問題は Problem 105 と 106 に関連している.</p>
+</div>

@@ -1,0 +1,16 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20275
+
+<div id="body">
+<p>位数 n の<em>均整の取れた彫像</em>を次のように定義する:</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>ブロック(n 枚のタイル)と台座(残りのタイル)と呼ばれる n+1 枚のタイルからなるポリオミノ(*)である</li>
+<li>台座は中心が (x = 0, y = 0) にある</li>
+<li>ブロックの y 座標は 0 より大きい(つまり台座のみが一番下のタイルである)</li>
+<li>全ブロックをあわせた重心は x 座標が 0 に等しい</li>
+</ul>
+<p>彫像を数えるとき、y 軸に対称なだけの図形は別のものと考え<em>ない</em>。例えば、位数 6 の 18 個の均整の取れた彫像は以下の通りである。(y 軸に対し)鏡像のペアは 1 つの彫像として数えていることに注意せよ:</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_275_sculptures2.gif" title="p_275_sculptures2.gif"><img src="http://projecteuler.net/project/images/p_275_sculptures2.gif" alt="p_275_sculptures2.gif" title="p_275_sculptures2.gif"></a></div>
+<p>位数 10 の均整の取れた彫像は 964 あり、 位数 15 では 360505 ある。<br>
+位数 18 の均整の取れた彫像はいくつかるか?</p>
+<p>(*)ポリオミノ : 同じ形の正方形を共有する辺でつなげた図形。穴は許される。</p>
+</div>

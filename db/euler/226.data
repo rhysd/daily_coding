@@ -1,0 +1,14 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20226
+
+<div id="body">
+<p>ブラマンジェ曲線(高木曲線、blancmange curve)は0 ≤ x ≤ 1,</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_226_formula.gif" title="p_226_formula.gif"><img src="http://projecteuler.net/project/images/p_226_formula.gif" alt="p_226_formula.gif" title="p_226_formula.gif"></a></div>
+
+<p>を満たす(x,y)の集合である。s(x)は x から最も近い整数への距離を表す。</p>
+<p>ブラマンジェ曲線より下の面積は 1/2 であり、下図のピンク色の部分である。</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_226_scoop2.gif" title="p_226_scoop2.gif"><img src="http://projecteuler.net/project/images/p_226_scoop2.gif" alt="p_226_scoop2.gif" title="p_226_scoop2.gif"></a></div>
+
+<p>C を (1/4, 1/2)を中心とする半径 1/4 の円とする。上図の黒線が C である。</p>
+<p>C 内に含まれかつブラマンジェ曲線下部の面積を求めよ。<br>
+10進数8桁に四捨五入し, 0.abcdefgh という形で解答を入力せよ.</p>
+</div>

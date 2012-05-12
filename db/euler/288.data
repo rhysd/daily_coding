@@ -1,0 +1,13 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20288
+
+<div id="body">
+<p>任意の素数 p に対し N(p,q) = Σ<span style="font-size:60%;vertical-align:sub;">n=0 to q</span> T<span style="font-size:60%;vertical-align:sub;">n</span>*p<span style="font-size:60%;vertical-align:super;">n</span> とする。<br>
+T<span style="font-size:60%;vertical-align:sub;">n</span> は以下の乱数生成器で生成する:</p>
+<p>S<span style="font-size:60%;vertical-align:sub;">0</span> = 290797<br>
+S<span style="font-size:60%;vertical-align:sub;">n+1</span> = S<span style="font-size:60%;vertical-align:sub;">n</span><span style="font-size:60%;vertical-align:super;">2</span> mod 50515093<br>
+T<span style="font-size:60%;vertical-align:sub;">n</span> = S<span style="font-size:60%;vertical-align:sub;">n</span> mod p</p>
+<p>Nfac(p,q) を N(p,q) の階乗とする。<br>
+NF(p,q) を Nfac(p,q) 内の因数 p の数とする。</p>
+<p>NF(3,10000) mod 3<span style="font-size:60%;vertical-align:super;">20</span>=624955285 であることがわかる。</p>
+<p>NF(61,10<span style="font-size:60%;vertical-align:super;">7</span>) mod 61<span style="font-size:60%;vertical-align:super;">10</span> を求めよ。</p>
+</div>

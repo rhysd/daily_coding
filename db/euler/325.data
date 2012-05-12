@@ -1,0 +1,11 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20325
+
+<div id="body">
+<p>2 つの石の山と 2 人のプレイヤーでゲームをプレイする。各ターンでは、プレイヤーは大きいほうの山から石を取り除く。取り除く石の個数は、小さい方の山の石の個数の整数倍でなくてはならない。</p>
+<p>例えば、順序つきの対 (6,14) で、小さいほうの山に 6 個の石、大きいほうの山に 14 個の石がある状態を表すとすると、先手は大きいほうの山から 6 または 12 個の石を取り除くことができる。</p>
+<p>いずれかの山から石を全て取り除いたプレイヤーが勝利する。</p>
+<p>先手が必勝となる状態を勝利状態と呼ぶ。例えば、(1,5), (2,6), (3,12) は、先手は二つ目の山から即座に全ての石を取り除けるため、勝利状態である。</p>
+<p>先手がどうしようとも後手が必勝となる状態を敗北状態と呼ぶ。例えば、(2,3) や (3,4) は敗北状態である：どのような手をとっても後手が勝利状態となる。</p>
+<p>0＜x<span style="font-size:60%;vertical-align:sub;">i</span>＜y<span style="font-size:60%;vertical-align:sub;">i</span>≦N について、すべての敗北状態 (x<span style="font-size:60%;vertical-align:sub;">i</span>,y<span style="font-size:60%;vertical-align:sub;">i</span>) に対する (x<span style="font-size:60%;vertical-align:sub;">i</span>+y<span style="font-size:60%;vertical-align:sub;">i</span>) の和を S(N) と定義する。S(10) = 211, S(10<span style="font-size:60%;vertical-align:super;">4</span>) = 230312207313 となることが確かめられる。</p>
+<p>S(10<span style="font-size:60%;vertical-align:super;">16</span>) mod 7<span style="font-size:60%;vertical-align:super;">10</span> を求めよ。</p>
+</div>

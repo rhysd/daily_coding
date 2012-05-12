@@ -1,0 +1,10 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20110
+
+<div id="body">
+<p>次の等式で x,y,n は正の整数である。</p>
+<blockquote><p class="quotation">1/x + 1/y = 1/n</p></blockquote>
+<p>n = 1260 では 113 の異なる解があり、この n が解の個数が 100 を超える最小の値である。</p>
+<p>解の数が 4,000,000 を超える最小の n を求めよ。</p>
+<p>注: この問題は Problem 108 を非常に難しくしたケースである。
+総当り法で解ける範囲を超えているので、賢い解き方が求められる。</p>
+</div>

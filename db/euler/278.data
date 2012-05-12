@@ -1,0 +1,11 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20278
+
+<div id="body">
+<p>いくつかの整数 1 &lt; a<span style="font-size:60%;vertical-align:sub;">1</span> &lt; a<span style="font-size:60%;vertical-align:sub;">2</span> &lt; ... &lt; a<span style="font-size:60%;vertical-align:sub;">n</span> に対し、次の線形の組み合わせについて考える。q<span style="font-size:60%;vertical-align:sub;">1</span>a<span style="font-size:60%;vertical-align:sub;">1</span> + q<span style="font-size:60%;vertical-align:sub;">2</span>a<span style="font-size:60%;vertical-align:sub;">2</span> + ... + q<span style="font-size:60%;vertical-align:sub;">n</span>a<span style="font-size:60%;vertical-align:sub;">n</span> = b, ただし q<span style="font-size:60%;vertical-align:sub;">k</span> ≥ 0 は整数のみとする。</p>
+<p>与えられた a<span style="font-size:60%;vertical-align:sub;">k</span> に対して、 b は全ての値を網羅しないかもしれないことに注意せよ。<br>
+例えば、a<span style="font-size:60%;vertical-align:sub;">1</span> = 5, a<span style="font-size:60%;vertical-align:sub;">2</span> = 7 なら、b が 1, 2, 3, 4, 6, 8, 9, 11, 13, 16, 18 または 23 であるような q<span style="font-size:60%;vertical-align:sub;">1</span> ≥ 0, q<span style="font-size:60%;vertical-align:sub;">2</span> ≥ 0 は存在しない。<br>
+実際、 23 は　a<span style="font-size:60%;vertical-align:sub;">1</span> = 5, a<span style="font-size:60%;vertical-align:sub;">2</span> = 7　に対して b の値とならない最大の数である。<br>
+これを f(5, 7) = 23 とする。<br>
+同様に、 f(6, 10, 15) = 29, f(14, 22, 77) = 195 であることを示せる。</p>
+<p>p, q, r が素数で p &lt; q &lt; r &lt; 5000 であるとき、Σf(p*q,p*r,q*r) を求めよ。</p>
+</div>

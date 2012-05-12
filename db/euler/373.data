@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20373
+
+<div id="body">
+<p>すべての三角形は3点の頂点を通る外接円を持っている。整数の辺を持ち、さらに外接円の半径も整数となる三角形について考えよう。</p>
+<p>半径が <span style="font-style:italic;">n</span> 以下の外接円を持つ上記のような三角形すべてについて、その外接円の半径を合計したものを S(<span style="font-style:italic;">n</span>) としよう。</p>
+<p>S(100)=4950 、そして S(1200)=1653605 となる。</p>
+<p>S(10<span style="font-size:60%;vertical-align:super;">7</span>)を求めよ。</p>
+</div>

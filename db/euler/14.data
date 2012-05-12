@@ -1,0 +1,15 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2014
+
+<div id="body">
+<p>正の整数に以下の式で繰り返し生成する数列を定義する。</p>
+<blockquote>
+<p class="quotation"><em>n</em> → <em>n</em>/2 (<em>n</em> が偶数)</p>
+<p class="quotation"><em>n</em> → 3<em>n</em> + 1 (<em>n</em> が奇数)</p>
+</blockquote>
+<p>13からはじめるとこの数列は以下のようになる。</p>
+<div style="text-align:center">13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1</div>
+<p>13から1まで10個の項になる。
+この数列はどのような数字からはじめても最終的には 1 になると考えられているが、まだそのことは証明されていない(コラッツ問題)</p>
+<p>さて、100万未満の数字の中でどの数字からはじめれば一番長い数列を生成するか。</p>
+<p><strong>注意</strong>: 数列の途中で100万以上になってもよい</p>
+</div>

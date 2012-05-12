@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20225
+
+<div id="body">
+<p>数列 1, 1, 1, 3, 5, 9, 17, 31, 57, 105, 193, 355, 653, 1201 ...は, <span style="font-style:italic;">T</span><span style="font-size:60%;vertical-align:sub;">1</span>=<span style="font-style:italic;">T</span><span style="font-size:60%;vertical-align:sub;">2</span>=<span style="font-style:italic;">T</span><span style="font-size:60%;vertical-align:sub;">3</span>=1および<span style="font-style:italic;">T</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>=<span style="font-style:italic;">T</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span>-1</span>+<span style="font-style:italic;">T</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span>-2</span>+<span style="font-style:italic;">T</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span>-3</span>によって定義される.</p>
+<p>27はこの数列の任意の項を割り切らないことが証明できる.
+27はこの性質を持つ最初の奇数である.</p>
+<p>この数列の任意の項を割り切らない124番目の奇数を求めよ.</p>
+</div>

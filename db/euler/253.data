@@ -1,0 +1,78 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20253
+
+<div id="body">
+<p>小さい子供が"数字イモムシ"を持っている。これは 40 のジグソーピースからなり、それぞれのピースは 1 つ数字が書いてあり、一列につなげると 1 から 40 まで順番に並ぶ。</p>
+<p>毎夜、子供の父親は遊戯室にばらまかれたイモムシのピースを拾い集めなければならない。父親は無作為にピースを拾っていき、正しい順序に並べていく。<br>
+このようにイモムシを組み立てていくと、徐々にくっついていっていくつかの断片が出来上がっていく。<br>
+断片の数は0(何もない状態)から始まり、だいたい 11 か 12 まで増えた後、やがてまた減っていき 1 (全部くっついた状態)で終わる。</p>
+<p>例えば、</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td" style="background-color:#C1DAF9;">置かれたピース</td>
+<td class="style_td" style="background-color:#C1DAF9;">現時点の断片</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">12</td>
+<td class="style_td" style="text-align:center;">1</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">4</td>
+<td class="style_td" style="text-align:center;">2</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">29</td>
+<td class="style_td" style="text-align:center;">3</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">6</td>
+<td class="style_td" style="text-align:center;">4</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">34</td>
+<td class="style_td" style="text-align:center;">5</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">5</td>
+<td class="style_td" style="text-align:center;">4</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">35</td>
+<td class="style_td" style="text-align:center;">4</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">...</td>
+<td class="style_td" style="text-align:center;">...</td>
+</tr>
+</tbody></table></div>
+<p>M を無作為にイモムシを組み立てる過程で起こった最大の断片の数とする。<br>
+10 ピースのイモムシの場合では、各 M が起こる場合の数は</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td" style="background-color:#C1DAF9;">M</td>
+<td class="style_td" style="background-color:#C1DAF9;">場合の数</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">1</td>
+<td class="style_td" style="text-align:right;">512</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">2</td>
+<td class="style_td" style="text-align:right;">250912</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">3</td>
+<td class="style_td" style="text-align:right;">1815264</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">4</td>
+<td class="style_td" style="text-align:right;">1418112</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">5</td>
+<td class="style_td" style="text-align:right;">144000</td>
+</tr>
+</tbody></table></div>
+<p>つまり M の最頻値は 3 で平均値は <span style="font-size:60%;vertical-align:super;">385643</span>/<span style="font-size:60%;vertical-align:sub;">113400</span> = 3.400732 である(小数点以下6桁に四捨五入)。</p>
+<p>40 ピースのイモムシの場合は M の最頻値は 11 である。 では M の平均値は?</p>
+<p>小数点以下6桁に四捨五入し回答せよ。</p>
+</div>

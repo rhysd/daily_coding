@@ -1,0 +1,7 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20233
+
+<div id="body">
+<p>(0,0),(N,0),(0,N),(N,N) を通る円上にある、整数の座標を持つ点の数を f(N) とする。</p>
+<p>f(10000) = 36 である。</p>
+<p>f(N) = 420 を満たす正の整数 N (≤ 10<span style="font-size:60%;vertical-align:super;">11</span>)全ての合計を求めよ。</p>
+</div>

@@ -1,0 +1,10 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20273
+
+<div id="body">
+<p>次の等式について考える: a<span style="font-size:60%;vertical-align:super;">2</span> + b<span style="font-size:60%;vertical-align:super;">2</span> = N, 0 ≤ a ≤ b, a,b,N は整数。</p>
+<p>たとえば N=65 では 2 つ解がある:</p>
+<p>a=1, b=8 と a=4, b=7 である。</p>
+<p>S(N) を a<span style="font-size:60%;vertical-align:super;">2</span> + b<span style="font-size:60%;vertical-align:super;">2</span> = N (0 ≤ a ≤ b, a,b,N は整数) の全ての解の a の値の和とする。</p>
+<p>つまり S(65)=1+4=5 である。</p>
+<p>平方因子を持たなく、150 未満の 4k+1 で表せる素数でしか割りきれない全ての N について ΣS(N) を求めよ。</p>
+</div>

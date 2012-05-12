@@ -1,0 +1,16 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20269
+
+<div id="body">
+<p>多項式 P(x) の根または零点(A root or zero)とは等式 P(x)=0 の解のことである。<br>
+P<span style="font-size:60%;vertical-align:sub;">n</span> を n の各桁が係数となるような多項式と定義する。<br>
+例えば、P<span style="font-size:60%;vertical-align:sub;">5703</span>(x)=5x<span style="font-size:60%;vertical-align:super;">3</span> + 7x<span style="font-size:60%;vertical-align:super;">2</span> + 3 である。</p>
+<p>以下のことがわかる:</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>P<span style="font-size:60%;vertical-align:sub;">n</span>(0) は n の最後の桁であり、</li>
+<li>P<span style="font-size:60%;vertical-align:sub;">n</span>(1) は n の各桁の合計であり、</li>
+<li>P<span style="font-size:60%;vertical-align:sub;">n</span>(10) は n そのものである。</li>
+</ul>
+<p>Z(k) を、多項式 P<span style="font-size:60%;vertical-align:sub;">n</span> が少なくとも1つの整数の根を持つような、 k を超えない正の整数 n の数とする。</p>
+<p>Z(100 000) は 14696 であることが確かめられる。</p>
+<p>Z(10<span style="font-size:60%;vertical-align:super;">16</span>) は?</p>
+</div>

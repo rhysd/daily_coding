@@ -1,0 +1,15 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20316
+
+<div id="body">
+<p>p = p<span style="font-size:60%;vertical-align:sub;">1</span> p<span style="font-size:60%;vertical-align:sub;">2</span> p<span style="font-size:60%;vertical-align:sub;">3</span> ... を、{0,1,2,3,4,5,6,7,8,9} から等確率で選んだランダムな数字からなる無限数列とする。<br>
+p は実数 0.p<span style="font-size:60%;vertical-align:sub;">1</span> p<span style="font-size:60%;vertical-align:sub;">2</span> p<span style="font-size:60%;vertical-align:sub;">3</span> ... に対応することが分かる。<br>
+また、区間 [0,1) からランダムに実数を選ぶことは、{0,1,2,3,4,5,6,7,8,9} から等確率で選んだランダムな数字からなる無限数列を選ぶことと等価であることが分かる。</p>
+<p>任意の d 桁の正の整数 n に対して、p<span style="font-size:60%;vertical-align:sub;">k</span>, p<span style="font-size:60%;vertical-align:sub;">k+1</span>, ...p<span style="font-size:60%;vertical-align:sub;">k+d-1</span> が n の十進数と同じ順序で一致するような最小の添字を k とする。<br>
+また、g(n) を k の期待値とする；g(n) は常に有限であり、面白いことに、常に整数であることが示せる。</p>
+<p>たとえば、n = 535 なら、<br>
+p = 31415926<strong>535</strong>897... に対して、k = 9 である。<br>
+p = 35528714365004956000049084876408468<strong>535</strong>4... に対して、k = 36 である。<br>
+他も同様にして、g(535) = 1008 となることが分かる。</p>
+<p><a href="http://projecteuler.net/project/images/p_316_decexp1.gif" title="p_316_decexp1.gif"><img src="http://projecteuler.net/project/images/p_316_decexp1.gif" alt="p_316_decexp1.gif" title="p_316_decexp1.gif"></a> である。<a href="http://projecteuler.net/project/images/p_316_decexp2.gif" title="p_316_decexp2.gif"><img src="http://projecteuler.net/project/images/p_316_decexp2.gif" alt="p_316_decexp2.gif" title="p_316_decexp2.gif"></a> を求めよ。</p>
+<p>注：<a href="http://projecteuler.net/project/images/p_316_decexp3.gif" title="p_316_decexp3.gif"><img src="http://projecteuler.net/project/images/p_316_decexp3.gif" alt="p_316_decexp3.gif" title="p_316_decexp3.gif"></a> は床関数を表す。</p>
+</div>

@@ -1,0 +1,12 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2019
+
+<div id="body">
+<p>次の情報が与えられている。</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>1900年1月1日は月曜日である。</li>
+<li>9月、4月、6月、11月は30日まであり、2月を除く他の月は31日まである。</li>
+<li>2月は28日まであるが、うるう年のときは29日である。</li>
+<li>うるう年は西暦が4で割り切れる年に起こる。しかし、西暦が400で割り切れず100で割り切れる年はうるう年でない。</li>
+</ul>
+<p>20世紀（1901年1月1日から2000年12月31日）で月の初めが日曜日になるのは何回あるか。</p>
+</div>

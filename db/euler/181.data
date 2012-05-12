@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20181
+
+<div id="body">
+<p>3つの黒い物 B と1つの白い物 W を持っているとき, これらは7通りにグループ分け出来る.</p>
+
+<pre>(BBBW) (B,BBW) (B,B,BW) (B,B,B,W) (B,BB,W) (BBB,W) (BB,BW)</pre>
+<p>60個の黒い物 B と40個の白い物 W は何通りにグループ分け出来るか?</p>
+</div>

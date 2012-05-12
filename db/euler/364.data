@@ -1,0 +1,16 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20364
+
+<div id="body">
+<p><span style="font-style:italic;">N</span> 個の一列に並んだ座席がある。<span style="font-style:italic;">N</span> 人の人たちが以下のルールに従って次々に座席を埋めていく。</p>
+<ol class="list1" style="padding-left:16px;margin-left:16px">
+<li>隣接する座席が空いている座席があれば、その座席を取る。</li>
+<li>そのような座席がなく、隣接する座席が一つのみ埋まっている座席があれば、その座席を取る。</li>
+<li>それ以外の場合は、残っている利用可能な座席を取る。</li>
+</ol>
+<p>このルールで <span style="font-style:italic;">N</span> 人の人たちが <span style="font-style:italic;">N</span> 個の座席を取るときの可能性の数を T(<span style="font-style:italic;">N</span>) としよう。<br>
+以下の図により T(4)=8 であることがわかる。</p>
+<div class="img_margin" style="text-align:center"><a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%20364&amp;openfile=p_364_comf_dist.gif" title="p_364_comf_dist.gif"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%20364&amp;src=p_364_comf_dist.gif" alt="p_364_comf_dist.gif" title="p_364_comf_dist.gif" width="420" height="287"></a></div>
+
+<p>T(10) = 61632 、そして T(1 000) mod 100 000 007 = 47255094 となることが確かめられる。</p>
+<p>T(1 000 000) mod 100 000 007 を求めよ。</p>
+</div>

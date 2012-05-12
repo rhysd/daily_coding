@@ -1,0 +1,22 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20122
+
+<div id="body">
+<p>n<span style="font-size:60%;vertical-align:super;">15</span>を求めるのに最も単純な方法では 14 回の掛け算が必要である。</p>
+<blockquote><p class="quotation">n × n × ... × n = n<span style="font-size:60%;vertical-align:super;">15</span></p></blockquote>
+<p>しかし2進法を用いれば、6 回の掛け算で計算できる。</p>
+<blockquote><p class="quotation">n × n = n<span style="font-size:60%;vertical-align:super;">2</span><br>
+n<span style="font-size:60%;vertical-align:super;">2</span> × n<span style="font-size:60%;vertical-align:super;">2</span> = n<span style="font-size:60%;vertical-align:super;">4</span><br>
+n<span style="font-size:60%;vertical-align:super;">4</span> × n<span style="font-size:60%;vertical-align:super;">4</span> = n<span style="font-size:60%;vertical-align:super;">8</span><br>
+n<span style="font-size:60%;vertical-align:super;">8</span> × n<span style="font-size:60%;vertical-align:super;">4</span> = n<span style="font-size:60%;vertical-align:super;">12</span><br>
+n<span style="font-size:60%;vertical-align:super;">12</span> × n<span style="font-size:60%;vertical-align:super;">2</span> = n<span style="font-size:60%;vertical-align:super;">14</span><br>
+n<span style="font-size:60%;vertical-align:super;">14</span> × n = n<span style="font-size:60%;vertical-align:super;">15</span></p></blockquote>
+<p>ところがたった 5 回の掛け算のみでも計算できる。</p>
+<blockquote><p class="quotation">n × n = n<span style="font-size:60%;vertical-align:super;">2</span><br>
+n<span style="font-size:60%;vertical-align:super;">2</span> × n = n<span style="font-size:60%;vertical-align:super;">3</span><br>
+n<span style="font-size:60%;vertical-align:super;">3</span> × n<span style="font-size:60%;vertical-align:super;">3</span> = n<span style="font-size:60%;vertical-align:super;">6</span><br>
+n<span style="font-size:60%;vertical-align:super;">6</span> × n<span style="font-size:60%;vertical-align:super;">6</span> = n<span style="font-size:60%;vertical-align:super;">12</span><br>
+n<span style="font-size:60%;vertical-align:super;">12</span> × n<span style="font-size:60%;vertical-align:super;">3</span> = n<span style="font-size:60%;vertical-align:super;">15</span></p></blockquote>
+<p>m(k)を n<span style="font-size:60%;vertical-align:super;">k</span> を求めるのに必要最低限な掛け算の回数と定義する。
+たとえば m(15)=5 である。</p>
+<p>1 ≤ k ≤ 200 に対し、Σ m(k) を求めよ。</p>
+</div>

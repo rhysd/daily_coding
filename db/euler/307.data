@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20307
+
+<div id="body">
+<p>ある工場で製造するICチップ1000000個あたり20000箇所の欠陥がランダムに生じる。<br>
+（一つのチップにつき複数の欠陥が生じ得る）</p>
+<p>少なくとも3箇所以上の欠陥を持つチップができる確率を、<br>
+小数点以下10桁に丸めて 0.abcdefghij の形で答えよ。</p>
+</div>

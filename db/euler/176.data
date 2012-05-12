@@ -1,0 +1,6 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20176
+
+<div id="body">
+<p>辺の長さが(9,12,15), (12,16,20), (5,12,13), (12,35,37)の4つの直角三角形は、全て最長ではない辺(catheti)として12を持っている。他にcathetiが12であるような辺の長さが整数の直角三角形は存在しないことが示せる。</p>
+<p>ちょうど47547個の相異なった整数辺の直角三角形のcathetiとなる最小の整数を求めよ。</p>
+</div>

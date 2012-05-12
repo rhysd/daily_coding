@@ -1,0 +1,13 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20324
+
+<div id="body">
+<p>3x3xn の塔を 2x1x1 のブロックで埋める場合の数を f(n) とする。<br>
+ブロックは好きな方向に回転することができる；しかし、塔自身を回転・反転等させたものは区別して数える。</p>
+<p>たとえば（q=100000007 として）：<br>
+f(2) = 229,<br>
+f(4) = 117805,<br>
+f(10) mod q = 96149360,<br>
+f(10<span style="font-size:60%;vertical-align:super;">3</span>) mod q = 24806056,<br>
+f(10<span style="font-size:60%;vertical-align:super;">6</span>) mod q = 30808124.<br></p>
+<p>f(10<span style="font-size:60%;vertical-align:super;">10000</span>) mod 100000007 を求めよ。</p>
+</div>

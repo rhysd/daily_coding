@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20356
+
+<div id="body">
+<p>多項式 <span style="font-style:italic;">g</span>(x) = x<span style="font-size:60%;vertical-align:super;">3</span> - 2<span style="font-size:60%;vertical-align:super;"><span style="font-style:italic;">n</span></span>･x<span style="font-size:60%;vertical-align:super;">2</span> + <span style="font-style:italic;">n</span> の最大の実根を <span style="font-style:italic;">a</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span> とする。</p>
+<p>例として、<span style="font-style:italic;">a</span><span style="font-size:60%;vertical-align:sub;">2</span> = 3.86619826...</p>
+<p><a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%20356&amp;openfile=p_356_cubicpoly1.gif" title="p_356_cubicpoly1.gif"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%20356&amp;src=p_356_cubicpoly1.gif" alt="p_356_cubicpoly1.gif" title="p_356_cubicpoly1.gif" width="117" height="59"></a> の最後の8桁を求めよ。</p>
+<p>注記 : <a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%20356&amp;openfile=p_356_cubicpoly2.gif" title="p_356_cubicpoly2.gif"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%20356&amp;src=p_356_cubicpoly2.gif" alt="p_356_cubicpoly2.gif" title="p_356_cubicpoly2.gif" width="31" height="30"></a> は床関数(実数aに対して、a以下の最大の整数)を表す。</p>
+</div>

@@ -1,0 +1,24 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20382
+
+<div id="body">
+<p><strong>ポリゴン</strong>とは、閉じた閉路になるよう組み合わされた直線分から成る平面図形のことである。ポリゴンは少なくとも3つの辺から成り、それ自身と交わることはない。</p>
+<p>正の整数の集合 S が以下の条件を満たすとき <strong>ポリゴン P を作る</strong> と呼ぼう :</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>ポリゴン P が同じ長さの2つの辺を持たず、</li>
+<li>ポリゴン P のすべての辺の長さが集合 S に含まれ、かつ</li>
+<li>集合 S がその他の値を含まない。</li>
+</ul>
+<p>例えば :<br>
+集合 {3, 4, 5} は 3、4、5、の長さの辺を持つポリゴン(三角形)を作る。<br>
+集合 {6, 9, 11, 24} は 6、9、11、24 の長さの辺を持つポリゴン(四角形)を作る。<br>
+集合 {1, 2, 3} そして {2, 3, 4, 9} からはどんなポリゴンも作られない。</p>
+<p>以下のように定義される数列 s を考えよう :</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>s<span style="font-size:60%;vertical-align:sub;">1</span> = 1, s<span style="font-size:60%;vertical-align:sub;">2</span> = 2, s<span style="font-size:60%;vertical-align:sub;">3</span> = 3</li>
+<li>s<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span> = s<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span>-1</span> + s<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span>-3</span>  [<span style="font-style:italic;">n</span> &gt; 3 のとき]</li>
+</ul>
+<p>集合 {s<span style="font-size:60%;vertical-align:sub;">1</span>, s<span style="font-size:60%;vertical-align:sub;">2</span>, ..., s<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>} を U<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span> としよう。例えば、U<span style="font-size:60%;vertical-align:sub;">10</span> = {1, 2, 3, 4, 6, 9, 13, 19, 28, 41} 。<br>
+少なくとも一つのポリゴンを作ることができる U<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span> の部分集合の個数を f(<span style="font-style:italic;">n</span>) としよう。<br>
+例えば、f(5) = 7、 f(10) = 501、そして f(25) = 18635853 となる。</p>
+<p>f(10<span style="font-size:60%;vertical-align:super;">18</span>) の最後の9桁を求めよ。</p>
+</div>

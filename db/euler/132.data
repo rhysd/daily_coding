@@ -1,0 +1,7 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20132
+
+<div id="body">
+<p>1のみからなる数をレプユニットという。R(k) を長さ k のレプユニットとする。</p>
+<p>例えば、R(10) = 1111111111 = 11×41×271×9091 となり、素因数の和は9414となる。</p>
+<p><span style="font-style:italic;">R</span>(10<span style="font-size:60%;vertical-align:super;">9</span>) の最初の40個の素因数の和を求めよ。</p>
+</div>

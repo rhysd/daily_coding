@@ -1,0 +1,7 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20322
+
+<div id="body">
+<p>n≦i＜m（i,m,n は正の整数）に対し、10で割り切れる二項係数 <span style="font-size:60%;vertical-align:super;">i</span>C<span style="font-size:60%;vertical-align:sub;">n</span> の個数を T(m,n) とする。<br>
+T(10<span style="font-size:60%;vertical-align:super;">9</span>, 10<span style="font-size:60%;vertical-align:super;">7</span>-10) = 989697000 である。<br>
+T(10<span style="font-size:60%;vertical-align:super;">18</span>, 10<span style="font-size:60%;vertical-align:super;">12</span>-10) を求めよ。</p>
+</div>

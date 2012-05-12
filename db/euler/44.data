@@ -1,0 +1,9 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2044
+
+<div id="body">
+<p>五角数は <span style="font-style:italic;">P</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span> = <span style="font-style:italic;">n</span>(3<span style="font-style:italic;">n</span>-1)/2で生成される. 最初の10項は</p>
+<pre>1, 5, 12, 22, 35, 51, 70, 92, 117, 145, ...</pre>
+<p>である.</p>
+<p><span style="font-style:italic;">P</span><span style="font-size:60%;vertical-align:sub;">4</span> + <span style="font-style:italic;">P</span><span style="font-size:60%;vertical-align:sub;">7</span> = 22 + 70 = 92 = <span style="font-style:italic;">P</span><span style="font-size:60%;vertical-align:sub;">8</span>である. しかし差 70 - 22 = 48は五角数ではない.</p>
+<p>五角数のペア <span style="font-style:italic;">P</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">j</span></span>と<span style="font-style:italic;">P</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span></span>について, 差と和が五角数になるものを考える. 差を D = |<span style="font-style:italic;">P</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span></span> - <span style="font-style:italic;">P</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">j</span></span>| と書く. 差 D の最小値を求めよ.</p>
+</div>

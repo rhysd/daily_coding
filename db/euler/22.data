@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2022
+
+<div id="body">
+<p>5000個以上の名前が書かれている46Kのテキストファイル<a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%2022&amp;openfile=names.txt" title="2008/04/16 09:23:53 45.4KB"><img src="image/file.png" width="20" height="20" alt="file" style="border-width:0px">names.txt</a> を用いる. まずアルファベット順にソートせよ.</p>
+<p>のち, 各名前についてアルファベットに値を割り振り, リスト中の出現順の数と掛け合わせることで, 名前のスコアを計算する.</p>
+<p>たとえば, リストがアルファベット順にソートされているとすると, COLINはリストの938番目にある. またCOLINは3 + 15 + 12 + 9 + 14 = 53という値を持つ. よってCOLINは938 × 53 = 49714というスコアを持つ.</p>
+<p>ファイル中の全名前のスコアの合計を求めよ.</p>
+</div>
