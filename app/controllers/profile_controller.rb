@@ -11,6 +11,10 @@ class ProfileController < ApplicationController
 
   def stared_codes
     stared_answer_ids = Fav.find_by_from(params[:user]).map{|t| t.answer_id}
-    @stared_answers = Answer.find stared_answer_ids
+    begin
+      @stared_answers = Answer.find stared_answer_ids
+    rescue => ActiveRecord::RecordNotFound
+      return @stared_answers = []
+    end
   end
 end
