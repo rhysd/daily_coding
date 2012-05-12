@@ -4,7 +4,6 @@ class CreateAnswers < ActiveRecord::Migration
       t.string :url, :null => false
       t.string :lang, :null => false
       t.integer :user
-      t.integer :fav_count, :null => false
 
       t.timestamps
     end
