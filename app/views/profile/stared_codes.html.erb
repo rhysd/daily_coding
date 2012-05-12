@@ -10,8 +10,8 @@
           <small><%= link_to @user.url,@user.url %></small>
           <hr>
           <li class="nav-header">Profile Data</li>
-          <li class="active"><a href="#">書いたコード (<%= @my_answers.size %>)</a></li>
-          <li><a href="/profile/stared_codes/<%= @user.twitter_id %>">お気に入りのコード (<%= @stared_answers.size %>)</a></li>
+          <li><a href="/profile/codes/<%= @user.twitter_id %>">書いたコード (<%= @my_answers.size %>)</a></li>
+          <li class="active"><a href="#">お気に入りのコード (<%= @stared_answers.size %>)</a></li>
         </ul>
       </div><!--/.well -->
     </div><!--/span-->
