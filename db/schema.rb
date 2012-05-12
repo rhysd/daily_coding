@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(:version => 20120512083554) do
     t.string   "url",        :null => false
     t.string   "lang",       :null => false
     t.integer  "user"
-    t.integer  "fav_count",  :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
