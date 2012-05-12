@@ -1,4 +1,5 @@
 DailyCoding::Application.routes.draw do
+  resources :answers
 
   root :to => 'top#index'
 

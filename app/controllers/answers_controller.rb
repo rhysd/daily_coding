@@ -2,7 +2,7 @@
 
 class AnswersController < ApplicationController
   def index
-    @answers = Answer.find_all() # created_at指定して
+    @answers = Answer.where(created_at: Date.yesterday..Date.today) # created_at指定して
   end
 
   def create
