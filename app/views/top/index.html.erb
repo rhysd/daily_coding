@@ -1,7 +1,7 @@
 <% if logged_in? %>
   <div class='hero-unit'>
     <div id='today-problem'>
-      <%= @today_problem.content %>
+      <%== @today_problem.content %>
     </div>
     <div id='gist-url'>
       <%= form_tag('/answer/create', :id => 'gist-url-form') do %>
@@ -25,8 +25,8 @@
   <div class='hero-unit'>
     <h2> 今日の問題 </h2>
     <div id='today-problem'>
-      <%= @today_problem.content %>
+      <%== @today_problem.content %>
     </div>
-    <%# <p>10未満の自然数のうち、3 もしくは 5 の倍数になっているものは 3, 5, 6, 9 の4つがあり、 これらの合計は 23 になる。同じようにして、1,000 未満の 3 か 5 の倍数になっている数字の合計を求めよ。 </p>
+    <%# <p>10未満の自然数のうち、3 もしくは 5 の倍数になっているものは 3, 5, 6, 9 の4つがあり、 これらの合計は 23 になる。同じようにして、1,000 未満の 3 か 5 の倍数になっている数字の合計を求めよ。 </p> %>
   </div>
 <% end %>
