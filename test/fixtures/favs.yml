@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  problem: 1
+  to: 1
+  from: 1
+
+two:
+  problem: 1
+  to: 1
+  from: 1
