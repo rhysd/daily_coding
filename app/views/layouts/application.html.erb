@@ -31,9 +31,9 @@
           <a class="brand" href="/">DailyCoding</a>
           <ul class="nav secondary-nav" style="float: right;">
             <% if logged_in? %>
-              <%= link_to "Logout", smart_twitter.logout_url %>
+              <%= link_to "Logout", smart_twitter.logout_url, :class => "brand" %>
             <% else %>
-              <%= link_to "Login", smart_twitter.login_url %>
+              <%= link_to "Login", smart_twitter.login_url, :class => "brand" %>
             <% end %>
           </ul>
         </div>
