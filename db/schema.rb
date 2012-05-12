@@ -11,7 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120512053409) do
+ActiveRecord::Schema.define(:version => 20120512082549) do
+
+  create_table "answers", :force => true do |t|
+    t.string   "url",        :null => false
+    t.string   "lang",       :null => false
+    t.integer  "user"
+    t.integer  "fav_count",  :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "problems", :force => true do |t|
+    t.text     "content"
+    t.string   "url"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "smart_twitter_users", :force => true do |t|
     t.string   "twitter_id"
@@ -39,6 +55,11 @@ ActiveRecord::Schema.define(:version => 20120512053409) do
     t.integer  "favourites_count"
     t.integer  "utc_offset"
     t.string   "time_zone"
+  end
+
+  create_table "users", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  url: MyString
+  lang: MyString
+  user: 1
+  fav_count: 1
+
+two:
+  url: MyString
+  lang: MyString
+  user: 1
+  fav_count: 1
