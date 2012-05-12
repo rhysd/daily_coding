@@ -9,7 +9,7 @@ DailyCoding::Application.routes.draw do
 
   mount SmartTwitter::Engine => "/", :as => "smart_twitter"
 
-  match 'profile/:user_id' => 'profile#base'
+  match 'profile/:user_id' => 'profile#codes'
   match 'profile/codes/:user_id' => 'profile#codes'
   match 'profile/stared_codes/:user_id' => 'profile#stared_codes'
 
