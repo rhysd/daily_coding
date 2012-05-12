@@ -7,11 +7,14 @@ $(document).ready ->
   $("form#gist-url-form").ajaxForm ->
     console.log('form commit sucess!')
     $.get '/answers', (data) ->
-      $('answers-unit').append(data)
+      alert('投稿しました。')
+      $('div#answers-unit').append(data)
 
   $("a#answers-show").click ->
     console.log('button success!')
     $.get '/answers', (data) ->
+      $('#lang-selector').remove()
+      $('div#answers-unit .gist-part').remove()
       $('div#answers-unit').append(data)
       # $('div.gist-part').each ->
       #   url = $(this).attr('data-src')
