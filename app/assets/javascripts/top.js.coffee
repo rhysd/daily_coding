@@ -13,7 +13,6 @@ $(document).ready ->
   $("a#answers-show").click ->
     console.log('button success!')
     $.get '/answers', (data) ->
-      $('#lang-selector').remove()
       $('div#answers-unit .gist-part').remove()
       $('div#answers-unit').append(data)
       # $('div.gist-part').each ->
@@ -22,9 +21,10 @@ $(document).ready ->
       #     $('div#answers-body').append(res.div)
       # $(this).hide()
 
-  $("ul#lang-selector a").click ->
+  $("ul#lang-selector a.lang-btn").click ->
     url = $(this).attr('data-href')
     console.log(url)
     $.get url, (data) ->
-      $('div#answers-body').append(data)
+      $('div#answers-unit .gist-part').remove()
+      $('div#answers-unit').append(data)
 

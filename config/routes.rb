@@ -1,9 +1,10 @@
 DailyCoding::Application.routes.draw do
+  match 'answers/:lang' => 'answers#index'
+
+  post "fav/create"
+  post "fav/destroy"
+
   resources :answers
-
-  get "fav/create"
-
-  get "fav/destroy"
 
   root :to => 'top#index'
 

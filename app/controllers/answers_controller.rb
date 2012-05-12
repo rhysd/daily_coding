@@ -4,9 +4,14 @@ class AnswersController < ApplicationController
 
   def index
     # @answers = Answer.where(updated_at: Date.today..Date.tomorrow).order('updated_at DESC') # created_at指定して
-    @answers = Answer.order('updated_at DESC') # created_at指定して
-    @langs = @answers.collect {|a| a.lang}
-    logger.debug(@langs)
+
+    @answers =
+      if params[:lang]
+        Answer.order('updated_at DESC').where(lang: params[:lang])
+      else
+        Answer.order('updated_at DESC') # created_at指定して
+      end
+
     html_str = render_to_string partial: 'index'
     render text: html_str
   end

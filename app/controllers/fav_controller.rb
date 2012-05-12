@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 class FavController < ApplicationController
   def create
       if logged_in?
