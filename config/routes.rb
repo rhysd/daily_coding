@@ -1,5 +1,9 @@
 DailyCoding::Application.routes.draw do
 
+  get "fav/create"
+
+  get "fav/destroy"
+
   root :to => 'top#index'
 
   mount SmartTwitter::Engine => "/", :as => "smart_twitter"

@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(:version => 20120512083554) do
     t.string   "url",        :null => false
     t.string   "lang",       :null => false
     t.integer  "user"
-    t.integer  "fav_count",  :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -33,8 +32,9 @@ ActiveRecord::Schema.define(:version => 20120512083554) do
   create_table "problems", :force => true do |t|
     t.text     "content"
     t.string   "url"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.boolean  "proposed",   :default => false, :null => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
   end
 
   create_table "smart_twitter_users", :force => true do |t|
