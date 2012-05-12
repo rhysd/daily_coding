@@ -1,13 +1,18 @@
 DailyCoding::Application.routes.draw do
   resources :answers
 
-  get "fav/create"
+  post "fav/create"
 
-  get "fav/destroy"
+  post "fav/destroy"
 
   root :to => 'top#index'
 
   mount SmartTwitter::Engine => "/", :as => "smart_twitter"
+
+  match 'profile/:user_id' => 'profile#base'
+  match 'profile/codes/:user_id' => 'profile#codes'
+  match 'profile/stared_codes/:user_id' => 'profile#stared_codes'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
