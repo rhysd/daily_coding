@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(:version => 20120512083554) do
     t.string   "url",        :null => false
     t.string   "lang",       :null => false
     t.text     "body",       :null => false
-    t.integer  "user"
+    t.integer  "user_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

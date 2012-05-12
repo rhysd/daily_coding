@@ -11,6 +11,14 @@ class AnswersController < ApplicationController
       else
         Answer.order('updated_at DESC') # created_at指定して
       end
+    authors = User.find(@answers.map {|a| a.id})
+    @answers = @answers.map.with_index do |a, i|
+      tmp = {}
+      tmp[:answer] = a
+      tmp[:author] = authors[i]
+      tmp
+    end
+    logger.debug(@answers)
 
     html_str = render_to_string partial: 'index'
     render text: html_str

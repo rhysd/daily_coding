@@ -4,7 +4,7 @@ class CreateAnswers < ActiveRecord::Migration
       t.string :url, :null => false
       t.string :lang, :null => false
       t.text   :body, :null => false
-      t.integer :user
+      t.references :user
 
       t.timestamps
     end

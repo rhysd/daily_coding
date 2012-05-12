@@ -32,3 +32,4 @@ $(document).ready ->
       $('div#answers-unit .gist-part').remove()
       $('div#answers-unit').append(data)
 
+

@@ -1,8 +1,11 @@
 
 <div id='answers-body'>
-  <% @answers.each do |answer| %>
-    <div class="gist-part" data-src="<%= answer.url + ".json"%>">
-      <%== answer.body %>
+  <% @answers.each do |a| %>
+    <div class="author">
+      <p><a href="#">@<%= a[:author].login %></a></p>
+    </div>
+    <div class="gist-part">
+      <%== a[:answer].body %>
     </div>
   <% end %>
 </div>

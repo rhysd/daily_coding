@@ -23,9 +23,9 @@
       <li class="active">
         <a class= "lang-btn" href="javascript:void(0);" data-href="/answers">ALL</a>
       </li>
-      <% @langs.each_with_index do |lang, i| %>
+      <% @langs.each do |lang| %>
         <li>
-        <a class="lang-btn" data-href=<%= "/answers/" + lang%> href="javascript:void(0);" ><%= lang %></a>
+          <a class="lang-btn" data-href=<%= "/answers/" + lang%> href="javascript:void(0);" ><%= lang %></a>
         </li>
       <% end %>
     </ul>
