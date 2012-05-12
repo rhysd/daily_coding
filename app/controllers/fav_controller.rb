@@ -1,7 +1,7 @@
 class FavController < ApplicationController
   def create
       if logged_in?
-          Fav.find_or_create :problem => params[:answer_id], :to => params[:author], :from => current_user.twitter_id
+          Fav.find_or_create :problem => Problem.today, :to => params[:answer_id], :from => current_user.twitter_id
       else
           render :status => 403
       end
@@ -10,7 +10,7 @@ class FavController < ApplicationController
   def destroy
       if logged_in?
           begin
-              Fav.delete :problem => params[:answer_id], :to => params[:author], :from => current_user.twitter_id
+              Fav.delete :problem => Problem.today, :to => params[:answer_id], :from => current_user.twitter_id
           rescue
               render :status => 400
           end
