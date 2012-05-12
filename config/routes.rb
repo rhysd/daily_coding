@@ -13,6 +13,8 @@ DailyCoding::Application.routes.draw do
 
   mount SmartTwitter::Engine => "/", :as => "smart_twitter"
 
+  match 'answers/profile/:uid' => 'answer#profile'
+  match 'answers/profile_fav/:uid' => 'answer#profile_fav'
 
 
   # The priority is based upon order of creation:
