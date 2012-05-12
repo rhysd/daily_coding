@@ -1,5 +1,8 @@
 DailyCoding::Application.routes.draw do
   match 'answers/:lang' => 'answers#index'
+  match 'profile/:user_id' => 'profile#codes'
+  match 'profile/codes/:user_id' => 'profile#codes'
+  match 'profile/stared_codes/:user_id' => 'profile#stared_codes'
 
   post "fav/create"
   post "fav/destroy"
@@ -9,6 +12,8 @@ DailyCoding::Application.routes.draw do
   root :to => 'top#index'
 
   mount SmartTwitter::Engine => "/", :as => "smart_twitter"
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
