@@ -1,11 +1,12 @@
 
-<div id='answers-body'>
-  <% @answers.each do |a| %>
-    <div class="author">
-      <p><a href="#">@<%= a[:author].login %></a></p>
-    </div>
-    <div class="gist-part">
-      <%== a[:answer].body %>
-    </div>
-  <% end %>
-</div>
+<% @answers.each do |a| %>
+  <div class="author">
+    <p><a href="#">@<%= a[:author].login %></a></p>
+  </div>
+  <div stype='float: right;' class="fav-star">
+    <a class='fav-btn' data-answer-id="<%= a[:answer].id %>" href="javascript:void(0);"><img src="#"></img></a>
+  </div>
+  <div class="gist-part">
+    <%== a[:answer].body %>
+  </div>
+<% end %>
