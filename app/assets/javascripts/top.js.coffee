@@ -7,17 +7,21 @@ $(document).ready ->
   $("form#gist-url-form").ajaxForm ->
     console.log('form commit sucess!')
     $.get '/answers', (data) ->
-      $('answers-unit').append data
+      $('answers-unit').append(data)
 
   $("a#answers-show").click ->
     console.log('button success!')
     $.get '/answers', (data) ->
-      $('answers-unit').append data
-      $(this).hide()
+      $('div#answers-unit').append(data)
+      # $('div.gist-part').each ->
+      #   url = $(this).attr('data-src')
+      #   $.getJSON url, (res) ->
+      #     $('div#answers-body').append(res.div)
+      # $(this).hide()
 
   $("ul#lang-selector a").click ->
     url = $(this).attr('data-href')
     console.log(url)
     $.get url, (data) ->
-      $('div#answers-body').append data
+      $('div#answers-body').append(data)
 

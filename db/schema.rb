@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(:version => 20120512083554) do
   create_table "answers", :force => true do |t|
     t.string   "url",        :null => false
     t.string   "lang",       :null => false
+    t.text     "body",       :null => false
     t.integer  "user"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
