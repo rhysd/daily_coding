@@ -1,0 +1,9 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20216
+
+<div id="body">
+<p>式 t(n) = 2n<span style="font-size:60%;vertical-align:super;">2</span>-1 (n&gt;1)で表される数 t(n) について考える。<br>
+最初の数個を挙げると、 7, 17, 31, 49, 71, 97, 127, 161 となる。<br>
+この中では 49 = 7*7 と 161 = 7*23 だけが素数でないことがわかる。<br>
+n ≤ 10000 では 2202 個の t(n) が素数である。<br></p>
+<p>n ≤ 50,000,000 で素数である t(n) はいくつあるか。</p>
+</div>

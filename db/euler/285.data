@@ -1,0 +1,11 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20285
+
+<div id="body">
+<p>Albert は正整数 k を選び, さらに二つの実数 a, b を区間 [0,1] の一様分布からランダムに選ぶ.<br>
+さらに和 (k･a+1)<span style="font-size:60%;vertical-align:super;">2</span>+(k･b+1)<span style="font-size:60%;vertical-align:super;">2</span> の平方根を計算し, 最も近い整数に丸める. もし結果が k に等しければ, 彼は k 点を得る; それ以外は 0 点である.</p>
+<p>例えば, k=6, a=0.2, b=0.85 なら, (k･a+1)<span style="font-size:60%;vertical-align:super;">2</span>+(k･b+1)<span style="font-size:60%;vertical-align:super;">2</span>=42.05 である.<br>
+42.05 の平方根は 6.484... で, 最も近い整数は 6 になる.<br>
+この値は 6 に等しいため, 彼は 6 点を得る.</p>
+<p>k=1, k=2, ..., k=10 で 10 回プレイした場合, 小数第６位で四捨五入した合計点の期待値は 10.20914 であることが分かる.</p>
+<p>k=1, k=2, k=3, ..., k=10<span style="font-size:60%;vertical-align:super;">5</span> で 10<span style="font-size:60%;vertical-align:super;">5</span> 回プレイした場合, 小数第６位で四捨五入した合計点の期待値はいくらか？</p>
+</div>

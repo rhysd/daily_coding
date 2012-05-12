@@ -1,0 +1,6 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2016
+
+<div id="body">
+<p>2<span style="font-size:60%;vertical-align:super;">15</span> = 32768 であり、これの各数字の合計は 3 + 2 + 7 + 6 + 8 = 26 となる。</p>
+<p>同様にして、2<span style="font-size:60%;vertical-align:super;">1000</span> の各数字の合計を求めよ。</p>
+</div>

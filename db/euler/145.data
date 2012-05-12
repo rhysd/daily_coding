@@ -1,0 +1,7 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20145
+
+<div id="body">
+<p>ある正の整数nについて、[n + reverse(n)]が奇数のみで表されるようなnが存在する。例えば、36 + 63 = 99, 409 + 904 = 1313 のように。この性質を持つ数を、reversibleと呼ぶことにする。つまり、36, 63, 409, 904はrevesibleである。先頭の0はnでもreverse(n)でも許されない。</p>
+<p>1000未満には120個のreversibleな数が存在する。</p>
+<p>10億(10<span style="font-size:60%;vertical-align:super;">9</span>)未満では、いくつのreversibleな数が存在するか。</p>
+</div>

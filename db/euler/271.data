@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20271
+
+<div id="body">
+<p>正の整数 n に対し、S(n) を 1&lt;x&lt;n で x<span style="font-size:60%;vertical-align:super;">3</span>≡1 mod n を満たすような整数 x の和と定義する。</p>
+<p>n=91 の時、 x は 8 つの値を取りうる、すなわち: 9, 16, 22, 29, 53, 74, 79, 81 である。<br>
+つまり、 S(91)=9+16+22+29+53+74+79+81=363 である。</p>
+<p>S(13082761331670030) を求めよ。</p>
+</div>

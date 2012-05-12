@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20187
+
+<div id="body">
+<p>合成数とは2つ以上の素因数を含む整数のことである.　例えば15 = 3 × 5, 9 = 3 × 3, 12 = 2 × 2 × 3が合成数である.</p>
+<p>30以下には丁度2つの素因数を含む合成数  (異なる素因数でなくてもよい) が, 10個存在する. 4, 6, 9, 10, 14, 15, 21, 22, 25, 26がそうである.</p>
+<p>合成数n &lt; 10<span style="font-size:60%;vertical-align:super;">8</span>について, 丁度2つの素因数を含む合成数 (異なる素因数でなくてもよい) の数を答えよ.</p>
+<p><a href="http://ja.wikipedia.org/wiki/%E5%8D%8A%E7%B4%A0%E6%95%B0" rel="nofollow">http://ja.wikipedia.org/wiki/%E5%8D%8A%E7%B4%A0%E6%95%B0</a></p>
+</div>

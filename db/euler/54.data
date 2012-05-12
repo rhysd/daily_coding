@@ -1,0 +1,71 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2054
+
+<div id="body">
+<p>カードゲームのポーカーでは, 手札は5枚のカードからなりランク付けされている. 役を低い方から高い方へ順に並べると以下である.</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>役無し: 一番値が大きいカード</li>
+<li>ワン・ペア: 同じ値のカードが2枚</li>
+<li>ツー・ペア: 2つの異なる値のペア</li>
+<li>スリーカード: 同じ値のカードが3枚</li>
+<li>ストレート: 5枚の連続する値のカード</li>
+<li>フラッシュ: 全てのカードが同じスート (注: スートとはダイヤ・ハート・クラブ/スペードというカードの絵柄のこと)</li>
+<li>フルハウス: スリーカードとペア</li>
+<li>フォーカード: 同じ値のカードが4枚</li>
+<li>ストレートフラッシュ: ストレートかつフラッシュ</li>
+<li>ロイヤルフラッシュ: 同じスートの10, J, Q, K, A</li>
+</ul>
+<p>ここでカードの値は小さい方から2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, Aである.
+(訳注：データ中で10は'T'と表される)</p>
+<p>もし2人のプレイヤーが同じ役の場合には, 役を構成する中で値が最も大きいカードによってランクが決まる:
+例えば, 8のペアは5のペアより強い (下の例1を見よ).
+それでも同じランクの場合には (例えば, 両者ともQのペアの場合), 一番値が大きいカードによってランクが決まる (下の例4を見よ).
+一番値が大きいカードが同じ場合には, 次に値が大きいカードが比べれられ, 以下同様にランクを決定する.</p>
+<p>例:</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td"></td>
+<td class="style_td">プレイヤー1</td>
+<td class="style_td">プレイヤー2</td>
+<td class="style_td">勝者</td>
+</tr>
+<tr>
+<td class="style_td">1</td>
+<td class="style_td">5H 5C 6S 7S KD (5のペア)</td>
+<td class="style_td">2C 3S 8S 8D TD (8のペア)</td>
+<td class="style_td">プレイヤー2</td>
+</tr>
+<tr>
+<td class="style_td">2</td>
+<td class="style_td">5D 8C 9S JS AC (役無し, A)</td>
+<td class="style_td">2C 5C 7D 8S QH (役無し, Q)</td>
+<td class="style_td">プレイヤー1</td>
+</tr>
+<tr>
+<td class="style_td">3</td>
+<td class="style_td">2D 9C AS AH AC (Aのスリーカード)</td>
+<td class="style_td">3D 6D 7D TD QD (ダイヤのフラッシュ)</td>
+<td class="style_td">プレイヤー2</td>
+</tr>
+<tr>
+<td class="style_td">4</td>
+<td class="style_td">4D 6S 9H QH QC (Qのペア, 9)</td>
+<td class="style_td">3D 6D 7H QD QS (Qのペア, 7)</td>
+<td class="style_td">プレイヤー1</td>
+</tr>
+<tr>
+<td class="style_td">5</td>
+<td class="style_td">2H 2D 4C 4D 4S (4-2のフルハウス)</td>
+<td class="style_td">3C 3D 3S 9S 9D (3-9のフルハウス)</td>
+<td class="style_td">プレイヤー1</td>
+</tr>
+</tbody></table></div>
+<p><a href="http://projecteuler.net/project/poker.txt" rel="nofollow">poker.txt</a>には1000個のランダムな手札の組が含まれている.
+各行は10枚のカードからなる (スペースで区切られている): 最初の5枚がプレイヤー1の手札であり, 残りの5枚がプレイヤー2の手札である.
+以下のことを仮定してよい</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>全ての手札は正しい (使われない文字が出現しない. 同じカードは繰り返されない)</li>
+<li>各プレイヤーの手札は特に決まった順に並んでいるわけではない</li>
+<li>各勝負で勝敗は必ず決まる</li>
+</ul>
+<p>1000回中プレイヤー1が勝つのは何回か?</p>
+</div>

@@ -1,0 +1,107 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20124
+
+<div id="body">
+<p>n の"根基"(radical)は、rad(n) で表し、n の素因数の積を意味する。
+例えば 504 = 2<span style="font-size:60%;vertical-align:super;">3</span> × 3<span style="font-size:60%;vertical-align:super;">2</span> × 7
+であるから、 rad(504) = 2 × 3 × 7 = 42 である。</p>
+<p>1 ≤ n ≤ 10 に対して rad(n) を計算し、rad(n) を対象にソートし、
+rad(n) が同じ場合は n を対象にソートすると以下のようになる。</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td" colspan="2" style="text-align:center;">未ソート</td>
+<td class="style_td">　　　　　　　</td>
+<td class="style_td" colspan="3" style="text-align:center;">ソート済み</td>
+</tr>
+<tr>
+<td class="style_td">n</td>
+<td class="style_td">rad(n)</td>
+<td class="style_td"></td>
+<td class="style_td">n</td>
+<td class="style_td">rad(n)</td>
+<td class="style_td">k</td>
+</tr>
+<tr>
+<td class="style_td">1</td>
+<td class="style_td" style="text-align:center;">1</td>
+<td class="style_td"></td>
+<td class="style_td">1</td>
+<td class="style_td" style="text-align:center;">1</td>
+<td class="style_td">1</td>
+</tr>
+<tr>
+<td class="style_td">2</td>
+<td class="style_td" style="text-align:center;">2</td>
+<td class="style_td"></td>
+<td class="style_td">2</td>
+<td class="style_td" style="text-align:center;">2</td>
+<td class="style_td">2</td>
+</tr>
+<tr>
+<td class="style_td">3</td>
+<td class="style_td" style="text-align:center;">3</td>
+<td class="style_td"></td>
+<td class="style_td">4</td>
+<td class="style_td" style="text-align:center;">2</td>
+<td class="style_td">3</td>
+</tr>
+<tr>
+<td class="style_td">4</td>
+<td class="style_td" style="text-align:center;">2</td>
+<td class="style_td"></td>
+<td class="style_td">8</td>
+<td class="style_td" style="text-align:center;">2</td>
+<td class="style_td">4</td>
+</tr>
+<tr>
+<td class="style_td">5</td>
+<td class="style_td" style="text-align:center;">5</td>
+<td class="style_td"></td>
+<td class="style_td">3</td>
+<td class="style_td" style="text-align:center;">3</td>
+<td class="style_td">5</td>
+</tr>
+<tr>
+<td class="style_td">6</td>
+<td class="style_td" style="text-align:center;">6</td>
+<td class="style_td"></td>
+<td class="style_td">9</td>
+<td class="style_td" style="text-align:center;">3</td>
+<td class="style_td">6</td>
+</tr>
+<tr>
+<td class="style_td">7</td>
+<td class="style_td" style="text-align:center;">7</td>
+<td class="style_td"></td>
+<td class="style_td">5</td>
+<td class="style_td" style="text-align:center;">5</td>
+<td class="style_td">7</td>
+</tr>
+<tr>
+<td class="style_td">8</td>
+<td class="style_td" style="text-align:center;">2</td>
+<td class="style_td"></td>
+<td class="style_td">6</td>
+<td class="style_td" style="text-align:center;">6</td>
+<td class="style_td">8</td>
+</tr>
+<tr>
+<td class="style_td">9</td>
+<td class="style_td" style="text-align:center;">3</td>
+<td class="style_td"></td>
+<td class="style_td">7</td>
+<td class="style_td" style="text-align:center;">7</td>
+<td class="style_td">9</td>
+</tr>
+<tr>
+<td class="style_td">10</td>
+<td class="style_td" style="text-align:center;">10</td>
+<td class="style_td"></td>
+<td class="style_td">10</td>
+<td class="style_td" style="text-align:center;">10</td>
+<td class="style_td">10</td>
+</tr>
+</tbody></table></div>
+<p>E(k) をソートした表の n の列の k 番目の要素とする。
+例えば、 E(4) = 8, E(6) = 9 である。</p>
+<p>rad(n) を 1 ≤ n ≤ 100000 でソートした場合、 E(10000) を求めよ。</p>
+</div>

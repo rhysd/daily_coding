@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2097
+
+<div id="body">
+<p>100万桁を超える初めての素数は1999年に発見された. これはメルセンヌ素数であり, 2<span style="font-size:60%;vertical-align:super;">6972593</span>-1 である. 実際, 2,098,960桁ある.
+それ以降も, より多くの桁になるメルセンヌ素数 (2<span style="font-size:60%;vertical-align:super;">p</span>-1の形の数) が他にも発見されている.</p>
+<p>しかし, 2004年に, 非常に大きな非メルセンヌ素数が発見された. これは2,357,207桁の数であり, 28433×2<span style="font-size:60%;vertical-align:super;">7830457</span>+1である.</p>
+<p>この素数の最後の10桁を答えよ.</p>
+</div>

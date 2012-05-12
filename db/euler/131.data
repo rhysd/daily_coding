@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20131
+
+<div id="body">
+<p>いくつかの素数pでは, ある正の整数nが存在して, <span style="font-style:italic;">n</span><span style="font-size:60%;vertical-align:super;">3</span>+<span style="font-style:italic;">pn</span><span style="font-size:60%;vertical-align:super;">2</span>が立方数になる.</p>
+<p>例えば, p = 19のときには, 8<span style="font-size:60%;vertical-align:super;">3</span>+19×8<span style="font-size:60%;vertical-align:super;">2</span>=12<span style="font-size:60%;vertical-align:super;">3</span>である.</p>
+<p>このような性質を持つ各素数について, nの値は一意に定まる. また, 100未満の素数では4つしかこの性質を満たさない.</p>
+<p>この性質を持つ100万未満の素数は何個あるだろうか?</p>
+</div>

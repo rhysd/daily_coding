@@ -1,0 +1,23 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20328
+
+<div id="body">
+<p>整数の集合 {1, 2, ..., n} から選ばれた秘密の数を、質問により当てようとしている。数（質問）を尋ねる際は、<ins>尋ねた数に等しいコスト</ins>がかかり、次の三つのいずれかの答えを得る：</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>「秘密の数はあなたの推測した数より小さいです」</li>
+<li>「そう、まさにその数です！」</li>
+<li>「秘密の数はあなたの推測した数より大きいです」</li>
+</ul>
+<p>n の値が与えられたとき、最適な戦略をとると、<ins>起こり得る最悪の場合</ins>に対し、総コスト（尋ねた質問の全ての和）が最小になる。例えば、</p>
+<p>n=3 の場合、とり得る最良の方法はもちろん "<strong>2</strong>" と尋ねることである。答えによりたちどころに秘密の数が分かるだろう（総コスト=2）。</p>
+<p>n=8 の場合、「二分探索」型の戦略を用いようとするかもしれない：最初の質問は "<strong>4</strong>" となり、もし秘密の数が 4 より大きければ、追加で１または２回の質問をする必要があるだろう。<br>
+２番目の質問を "<strong>6</strong>" としよう。秘密の数がなおも 6 より大きければ、7 と 8 を見分けるため３番目の質問を必要とするだろう。<br>
+このようにして３番目の質問は "<strong>7</strong>" となり、この最悪の場合のシナリオに対する総コストは 4+6+7=<strong><span style="color:red">17</span></strong> となる。</p>
+<p>最初の質問として "<strong>5</strong>" を尋ねれば、n=8 に対する最悪の場合のコストを大幅に改善することができる。<br>
+もし秘密の数は 5 より大きいと告げられた場合は、２番目の質問を "<strong>7</strong>" とすれば、秘密の数が何であるか確実に分かる（総コストは 5+7=<strong><span style="color:blue">12</span></strong>）。<br>
+もし秘密の数は 5 より小さいと告げられた場合は、２番目の質問を "<strong>3</strong>" とすれば、もし秘密の数が 3 より小さければ３番目の質問は "<strong>1</strong>" となり、総コストは 5+3+1=<strong><span style="color:blue">9</span></strong> となる。<br><strong><span style="color:blue">12</span></strong>＞<strong><span style="color:blue">9</span></strong> なので、この戦略に対する最悪の場合のコストは <strong><span style="color:red">12</span></strong> となる。これは先ほどの「二分探索」の戦略の結果より優れている；また他のいかなる戦略より優れているか、同コストである。<br>
+以上の通り、n=8 に対する最適な戦略を述べた。</p>
+<p>上述のように、n に対し最適な戦略をとることで得られる最悪の場合のコストを C(n) とする。<br>
+C(1) = 0, C(2) = 1, C(3) = 2, C(8) = 12 である。<br>
+同様に、C(100) = 400, <a href="http://projecteuler.net/project/images/p_328_sum1.gif" title="p_328_sum1.gif"><img src="http://projecteuler.net/project/images/p_328_sum1.gif" alt="p_328_sum1.gif" title="p_328_sum1.gif"></a>C(n) = 17575 である。</p>
+<p><a href="http://projecteuler.net/project/images/p_328_sum2.gif" title="p_328_sum2.gif"><img src="http://projecteuler.net/project/images/p_328_sum2.gif" alt="p_328_sum2.gif" title="p_328_sum2.gif"></a>C(n) を求めよ。</p>
+</div>

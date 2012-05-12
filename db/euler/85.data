@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2085
+
+<div id="body">
+<p>注意深く数えると, 横が3, 縦が2の長方形の格子には, 18個の長方形が含まれている.</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_085.gif" title="p_085.gif"><img src="http://projecteuler.net/project/images/p_085.gif" alt="p_085.gif" title="p_085.gif"></a></div>
+
+<p>ぴったり2,000,000個の長方形を含むような長方形の格子は存在しない. 一番近い解を持つような格子の面積を求めよ.</p>
+</div>

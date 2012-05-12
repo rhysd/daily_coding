@@ -1,0 +1,44 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2028
+
+<div id="body">
+<p>1から初めて右方向に進み時計回りに数字を増やしていき, 5×5の螺旋が以下のように生成される:</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td" style="color:red;">21</td>
+<td class="style_td">22</td>
+<td class="style_td">23</td>
+<td class="style_td">24</td>
+<td class="style_td" style="color:red;">25</td>
+</tr>
+<tr>
+<td class="style_td">20</td>
+<td class="style_td" style="color:red;">7</td>
+<td class="style_td">8</td>
+<td class="style_td" style="color:red;">9</td>
+<td class="style_td">10</td>
+</tr>
+<tr>
+<td class="style_td">19</td>
+<td class="style_td">6</td>
+<td class="style_td" style="color:red;">1</td>
+<td class="style_td">2</td>
+<td class="style_td">11</td>
+</tr>
+<tr>
+<td class="style_td">18</td>
+<td class="style_td" style="color:red;">5</td>
+<td class="style_td">4</td>
+<td class="style_td" style="color:red;">3</td>
+<td class="style_td">12</td>
+</tr>
+<tr>
+<td class="style_td" style="color:red;">17</td>
+<td class="style_td">16</td>
+<td class="style_td">15</td>
+<td class="style_td">14</td>
+<td class="style_td" style="color:red;">13</td>
+</tr>
+</tbody></table></div>
+<p>両対角線上の数字の合計は101であることが確かめられる.</p>
+<p>1001×1001の螺旋を同じ方法で生成したとき, 対角線上の数字の合計はいくつだろうか?</p>
+</div>

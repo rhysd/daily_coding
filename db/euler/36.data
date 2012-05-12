@@ -1,0 +1,7 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2036
+
+<div id="body">
+<p>585 = 1001001001<span style="font-size:60%;vertical-align:sub;">2</span> (2進) は10進でも2進でも回文数である.</p>
+<p>100万未満で10進でも2進でも回文数になるような数の総和を求めよ.</p>
+<p>(注: 先頭に0を含めて回文にすることは許されない.)</p>
+</div>

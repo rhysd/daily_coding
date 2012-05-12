@@ -1,0 +1,11 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20349
+
+<div id="body">
+<p>黒白いずれかで色づけされた正方形の規則的な格子上をアリが動く。<br>
+アリは四方（上下左右）のいずれかを向いており、次のルールに則って正方形から隣接する正方形へ動く：<br></p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>黒い正方形上にいる場合、その正方形の色を白に変えて反時計回りに向きを変え、１マス前進する。</li>
+<li>白い正方形上にいる場合、その正方形の色を黒に変えて時計回りに向きを変え、１マス前進する。</li>
+</ul>
+<p>格子全体が白の状態から始めるとき、アリが 10<span style="font-size:60%;vertical-align:super;">18</span> 回動いた後の黒い正方形の数は何個あるか。</p>
+</div>

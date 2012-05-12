@@ -1,0 +1,36 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20140
+
+<div id="body">
+<p>3項間漸化式 <span style="font-style:italic;">G</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span></span> = <span style="font-style:italic;">G</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span>-1</span> + <span style="font-style:italic;">G</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span>-2</span>, <span style="font-style:italic;">G</span><span style="font-size:60%;vertical-align:sub;">1</span> = 1, <span style="font-style:italic;">G</span><span style="font-size:60%;vertical-align:sub;">2</span> = 4 (<span style="font-style:italic;">G</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span></span> = 1, 4, 5, 9, 14, 23, ...) によって与えられる無限級数 <span style="font-style:italic;">A</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">G</span></span>(<span style="font-style:italic;">x</span>) = <span style="font-style:italic;">xG</span><span style="font-size:60%;vertical-align:sub;">1</span> + <span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:super;">2</span><span style="font-style:italic;">G</span><span style="font-size:60%;vertical-align:sub;">2</span> + <span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:super;">3</span><span style="font-style:italic;">G</span><span style="font-size:60%;vertical-align:sub;">3</span> + ... を考える。</p>
+<p>この問題では、<span style="font-style:italic;">A</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">G</span></span>(<span style="font-style:italic;">x</span>) が正の整数となるような x の値について考える。</p>
+<p>最初の5つの自然数に対する x の値を下表に示す。</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td">x</td>
+<td class="style_td">
+<span style="font-style:italic;">A</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">G</span></span>(<span style="font-style:italic;">x</span>)</td>
+</tr>
+<tr>
+<td class="style_td">(√5−1)/4</td>
+<td class="style_td">1</td>
+</tr>
+<tr>
+<td class="style_td">2/5</td>
+<td class="style_td">2</td>
+</tr>
+<tr>
+<td class="style_td">(√22−2)/6</td>
+<td class="style_td">3</td>
+</tr>
+<tr>
+<td class="style_td">(√137−5)/14</td>
+<td class="style_td">4</td>
+</tr>
+<tr>
+<td class="style_td">1/2</td>
+<td class="style_td">5</td>
+</tr>
+</tbody></table></div>
+<p>x が有理数となるときの <span style="font-style:italic;">A</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">G</span></span>(<span style="font-style:italic;">x</span>) の値を golden nugget と呼ぶことにする。golden nugget は次第に稀になっていき、20番目の golden nugget は 211345365 となる。</p>
+<p>最初の30個の golden nugget の和を求めよ。</p>
+</div>

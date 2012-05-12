@@ -1,0 +1,14 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20323
+
+<div id="body">
+<p>y<span style="font-size:60%;vertical-align:sub;">0</span>, y<span style="font-size:60%;vertical-align:sub;">1</span>, y<span style="font-size:60%;vertical-align:sub;">2</span>,... を、ランダムな 32 ビット符号なし整数からなる数列とする。<br>
+（つまり 0≦y<span style="font-size:60%;vertical-align:sub;">i</span>＜2<span style="font-size:60%;vertical-align:super;">32</span> で全ての値が同様に確からしい。）</p>
+<p>数列 x<span style="font-size:60%;vertical-align:sub;">i</span> に対し次の反復が与えられる:</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>x<span style="font-size:60%;vertical-align:sub;">0</span> = 0</li>
+<li>x<span style="font-size:60%;vertical-align:sub;">i</span> = x<span style="font-size:60%;vertical-align:sub;">i-1</span> | y<span style="font-size:60%;vertical-align:sub;">i-1</span> （i&gt;0）（| はビット単位のOR演算）</li>
+</ul>
+<p>すべての i≧N に対し x<span style="font-size:60%;vertical-align:sub;">i</span> = 2<span style="font-size:60%;vertical-align:super;">32</span>-1（ビットがすべて1となるパターン）となるような添え字 N が最終的に存在することが分かる。</p>
+<p>N の期待値を求めよ。<br>
+答を小数点以下 10 桁に四捨五入して求めよ。</p>
+</div>

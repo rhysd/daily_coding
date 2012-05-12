@@ -1,0 +1,30 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20264
+
+<div id="body">
+<p>以下の条件をすべてみたす三角形を考える。</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>すべての頂点は格子点上にある。</li>
+<li>外心は原点である。</li>
+<li>垂心は点H(5, 0)である。</li>
+</ul>
+<p>周の長さが50以下であり上記の条件を満たす三角形は全部で9個ある。
+周の長さが小さい順に列挙すると以下のようになる：</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>A(-4, 3), B(5, 0), C(4, -3)</li>
+<li>A(4, 3), B(5, 0), C(-4, -3)</li>
+<li>A(-3, 4), B(5, 0), C(3, -4)</li>
+</ul>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>A(3, 4), B(5, 0), C(-3, -4)</li>
+<li>A(0, 5), B(5, 0), C(0, -5)</li>
+<li>A(1, 8), B(8, -1), C(-4, -7)</li>
+</ul>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>A(8, 1), B(1, -8), C(-4, 7)</li>
+<li>A(2, 9), B(9, -2), C(-6, -7)</li>
+<li>A(9, 2), B(2, -9), C(-6, 7)</li>
+</ul>
+<p>これらの三角形の周の長さの合計を四捨五入して小数点以下4桁で表すと291.0089となる。</p>
+<p>上記の条件を満たす三角形であって周の長さが10<span style="font-size:60%;vertical-align:super;">5</span>以下であるようなものをすべて求め、
+これらの三角形の周の長さの合計を四捨五入して小数点以下4桁で表した値を答えよ。</p>
+</div>

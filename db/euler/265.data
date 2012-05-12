@@ -1,0 +1,14 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20265
+
+<div id="body">
+<p>2<span style="font-size:60%;vertical-align:super;">N</span> の2進数の数字は、時計回りに N 桁連続する数字全てで網羅するように円状に並べることができる。</p>
+<p>例えば N=3 では、回転を無視すると2 つの円状の配置が可能である。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_265_BinaryCircles.gif" title="p_265_BinaryCircles.gif"><img src="http://projecteuler.net/project/images/p_265_BinaryCircles.gif" alt="p_265_BinaryCircles.gif" title="p_265_BinaryCircles.gif"></a></div>
+<p>最初の配置では、時計回りの3桁の数列は: 000, 001, 010, 101, 011, 111, 110, 100 である。</p>
+<p>それぞれの円形の配置は、全部が 0 であるような数列を最上位にして時計回りに数字をつなげることで、1 つの数に変換できる。<br>
+N=3 の 2つの配置は 23 と 29 になる:</p>
+<div style="text-align:center">00010111 <span style="font-size:60%;vertical-align:sub;">2</span> = 23<br>
+00011101 <span style="font-size:60%;vertical-align:sub;">2</span> = 29</div>
+<p>S(N) を異なる変換した数の合計とすると、S(3) = 23 + 29 = 52 となる。</p>
+<p>S(5) を求めよ。</p>
+</div>

@@ -1,0 +1,27 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20334
+
+<div id="body">
+<p>プラトンの天国には、直線状に無限の枚数のボウルが存在する。<br>
+各ボウルは０個以上の有限個の豆が含まれている。<br>
+子供がゲームをプレイする。このゲームでは、１種類の手だけが許される：どれかのボウルから豆を２個取り除き、両隣の２個のボウルに１個ずつ入れる。<br>
+どのボウルも１個ないしは０個の豆を含んでいれば、ゲームは終了する。</p>
+<p>例えば、それぞれ２個と３個の豆を含んだ隣り合う２枚のボウルを考えよう。他のボウルはすべて空である。次の８手でゲームは終了する：</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_334_beans.gif" title="p_334_beans.gif"><img src="http://projecteuler.net/project/images/p_334_beans.gif" alt="p_334_beans.gif" title="p_334_beans.gif"></a></div>
+<p>次の数列が与えられる：</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>t<span style="font-size:60%;vertical-align:sub;">0</span> = 123456.</li>
+<li>
+<a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%20334&amp;openfile=1.gif" title="1.gif"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%20334&amp;src=1.gif" alt="1.gif" title="1.gif" width="324" height="108"></a>
+<ul class="list2" style="padding-left:16px;margin-left:16px">
+<li>
+<a href="http://projecteuler.net/images/symbol_lfloor.gif" title="symbol_lfloor.gif"><img src="http://projecteuler.net/images/symbol_lfloor.gif" alt="symbol_lfloor.gif" title="symbol_lfloor.gif"></a>x<a href="http://projecteuler.net/images/symbol_rfloor.gif" title="symbol_rfloor.gif"><img src="http://projecteuler.net/images/symbol_rfloor.gif" alt="symbol_rfloor.gif" title="symbol_rfloor.gif"></a>は床関数を表し、</li>
+<li>
+<a href="http://projecteuler.net/project/images/p_334_oplus.gif" title="p_334_oplus.gif"><img src="http://projecteuler.net/project/images/p_334_oplus.gif" alt="p_334_oplus.gif" title="p_334_oplus.gif"></a>はビットの XOR 演算である。</li>
+</ul>
+</li>
+<li>b<span style="font-size:60%;vertical-align:sub;">i</span> = ( t<span style="font-size:60%;vertical-align:sub;">i</span> mod 2<span style="font-size:60%;vertical-align:super;">11</span> ) + 1.</li>
+</ul>
+<p>最後の数列の最初の２項は b<span style="font-size:60%;vertical-align:sub;">1</span> = 289 と b<span style="font-size:60%;vertical-align:sub;">2</span> = 145 である。<br>
+２枚の隣り合うボウルに b<span style="font-size:60%;vertical-align:sub;">1</span> と b<span style="font-size:60%;vertical-align:sub;">2</span> 個の豆がある状態から始めると、ゲームを終えるのに 3419100 手が必要である。</p>
+<p>1500 枚の隣り合うボウルにそれぞれ b<span style="font-size:60%;vertical-align:sub;">1</span>, b<span style="font-size:60%;vertical-align:sub;">2</span>,..., b<span style="font-size:60%;vertical-align:sub;">1500</span> 個の豆がある状態を考えよう。他のボウルはすべて空である。ゲームを終えるのにかかる手の数を求めよ。</p>
+</div>

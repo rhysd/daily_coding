@@ -1,0 +1,6 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2048
+
+<div id="body">
+<p>次の式は、1<span style="font-size:60%;vertical-align:super;">1</span> + 2<span style="font-size:60%;vertical-align:super;">2</span> + 3<span style="font-size:60%;vertical-align:super;">3</span> + ... + 10<span style="font-size:60%;vertical-align:super;">10</span> = 10405071317 である。</p>
+<p>では、1<span style="font-size:60%;vertical-align:super;">1</span> + 2<span style="font-size:60%;vertical-align:super;">2</span> + 3<span style="font-size:60%;vertical-align:super;">3</span> + ... + 1000<span style="font-size:60%;vertical-align:super;">1000</span> の最後の10桁を求めよ。</p>
+</div>

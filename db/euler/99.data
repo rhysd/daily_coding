@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2099
+
+<div id="body">
+<p>指数の形で表される2つの数, 例えば 2<span style="font-size:60%;vertical-align:super;">11</span> と 3<span style="font-size:60%;vertical-align:super;">7</span>, の大小を調べることは難しくはない. 電卓を使えば, 2<span style="font-size:60%;vertical-align:super;">11</span> = 2048 &lt; 3<span style="font-size:60%;vertical-align:super;">7</span> = 2187 であることが確かめられる.</p>
+<p>しかし, 632382<span style="font-size:60%;vertical-align:super;">518061</span> &gt; 519432<span style="font-size:60%;vertical-align:super;">525806</span> を確認することは非常に難しい (両者ともに300万桁以上になる).</p>
+<p>各行に1組が書かれている1000個の組を含んだ22Kのテキストファイル<a href="http://projecteuler.net/project/base_exp.txt" rel="nofollow">base_exp.txt</a>から, 最大の数が書かれている行の番号を求めよ.</p>
+<p>注: ファイル中の最初の二行は上の例である.</p>
+</div>

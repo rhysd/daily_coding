@@ -1,0 +1,10 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20266
+
+<div id="body">
+<p>12 の約数は: 1,2,3,4,6,12 である。<br>
+12 の平方根を超えない最大の 12 の約数は 3 である。<br>
+整数 n に対し、その平方根を超えないような n の最大の約数を n の擬似平方根(PSR) と呼ぶことにしよう。<br>
+PSR(3102)=47 であることがわかる。</p>
+<p>p を 190 未満の素数の積とする。<br>
+PSR(p) mod 10<span style="font-size:60%;vertical-align:super;">16</span> を求めよ。</p>
+</div>

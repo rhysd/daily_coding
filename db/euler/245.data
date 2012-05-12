@@ -1,0 +1,12 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20245
+
+<div id="body">
+<p>約分できない分数を弾性分数(resilient fraction)と呼ぶことにする。<br>
+さらに分母に対し弾性(resilience)を真分数のうち弾性分数の比率と定義し、R(d)で表す。
+例えば、R(12) = <span style="font-size:60%;vertical-align:super;">4</span>/<span style="font-size:60%;vertical-align:sub;">11</span> である。</p>
+<p>数字 d &gt; 1 の弾性は <span style="font-size:60%;vertical-align:super;">φ(d)</span>/<span style="font-size:60%;vertical-align:sub;">d-1</span> となる。φ はオイラーのトーティエント関数である。</p>
+<p>さらに数字 n &gt; 1 に対し <strong>共役弾性</strong>(<strong>coresilience</strong>)を C(n) = <span style="font-size:60%;vertical-align:super;">n-φ(n)</span>/<span style="font-size:60%;vertical-align:sub;">n-1</span> と定義する。</p>
+<p>素数 p の共役弾性は C(p) = <span style="font-size:60%;vertical-align:super;">1</span>/<span style="font-size:60%;vertical-align:sub;">p-1</span> である。</p>
+<p>C(n) が<em>単位分数</em>であるような、 1 &lt; n ≤ 2×10<span style="font-size:60%;vertical-align:super;">11</span> を満たす<strong>合成数</strong> n 全ての合計を求めよ。</p>
+<p>注意: 上限が最近変更された。正しい上限を使用しているか確認せよ。</p>
+</div>

@@ -1,0 +1,13 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20183
+
+<div id="body">
+<p>Nを正整数とし, Nをk個に等分する. 即ち, r=N/kとし, N = r + r + ... + rである.
+Pをその分割数の積とする. 即ち, P = r × r × ... × r = r<span style="font-size:60%;vertical-align:super;">k</span>.</p>
+<p>例えば, 11を5つに分割すると, 11 = 2.2 + 2.2 + 2.2 + 2.2 + 2.2となる. このとき, P = 2.2<span style="font-size:60%;vertical-align:super;">5</span> = 51.53632である.</p>
+<p>M(N)=P<span style="font-size:60%;vertical-align:sub;">max</span>とする.</p>
+<p>N=11の場合には4つに分けた場合がP<span style="font-size:60%;vertical-align:sub;">max</span>=(11/4)<span style="font-size:60%;vertical-align:super;">4</span>で最大となる. M(11) = 14641/256 = 57.19140625であり, 有限小数である.</p>
+<p>しかし, N=8の場合には最大値は3に分けられたときに得られ, M(8)=512/27となる. これは無限小数 (循環小数) である.</p>
+<p>さて, M(N)が無限小数のときD(N)=Nに, M(N)が有限小数のときにD(N)=-Nとする.</p>
+<p>5 ≦ N ≦ 100のとき, ΣD(N) = 2438となる.</p>
+<p>5 ≦ N ≦ 10000のとき, ΣD(N) を求めよ.</p>
+</div>

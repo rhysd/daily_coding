@@ -1,0 +1,12 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20314
+
+<div id="body">
+<p>月が開拓され、土地はただで手に入るようになったが、困ったことがある。確保した土地の周りに壁を作らなければならないのだが、月に壁を作るにはお金がかかるのだ。各国には 500 m × 500 m の正方形の土地が割り当てられているが、壁の内側にある領域だけ保有することになる。251001 本の杭が１メートル間隔で格子状に設置されている。壁は閉じた一つながりの直線であり、各直線は杭どうしを結んでいなければならない。</p>
+<p>大きな国はもちろん 250 000 m<span style="font-size:60%;vertical-align:super;">2</span> の土地全体を囲うよう 2000 m の壁を建てた。<br><a href="http://en.wikipedia.org/wiki/Grand_Fenwick" rel="nofollow">グランドフェンウィック大公国</a>は予算が厳しく、あなた（皇室プログラマ）に、囲われた面積／壁の長さ の比が最大となる形はどのようなものか計算するよう依頼した。</p>
+<p>あなたは紙の上で予備計算を行った。2000 メートルの壁で 250 000 m<span style="font-size:60%;vertical-align:super;">2</span> の土地を囲うと、囲われた面積／壁の長さの比は 125 となる。<br>
+認められてはいないが、いくらか良いかもしれないアイデアを試してみよう：正方形の内部に、四辺に接するように円を置けば、面積は π*250<span style="font-size:60%;vertical-align:super;">2</span> m<span style="font-size:60%;vertical-align:super;">2</span> に等しく、周囲の長さは π*500 m となり、したがって囲われた面積／壁の長さの比はこれも 125 となる。</p>
+<p>しかしながら、三辺が 75 m、75 m、75√2 m の三角形を四つ正方形から切り離すと、総面積は 238750 m<span style="font-size:60%;vertical-align:super;">2</span> で、周囲の長さは 1400+300√2 m となる。したがって囲われた面積／壁の長さの比は 130.87 と著しく良くなる。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_314_landgrab.gif" title="p_314_landgrab.gif"><img src="http://projecteuler.net/project/images/p_314_landgrab.gif" alt="p_314_landgrab.gif" title="p_314_landgrab.gif"></a></div>
+<p>囲われた面積／壁の長さの比の最大値を求めよ。<br>
+答えを小数第９位で四捨五入し abc.defghijk の形で答えよ。</p>
+</div>

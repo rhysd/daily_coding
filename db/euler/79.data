@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2079
+
+<div id="body">
+<p>オンラインバンクで通常使われるsecurity methodは, パスコードからランダムに選んだ3文字をユーザーに要求するものである.</p>
+<p>たとえば, パスコードが531278のとき, 2番目, 3番目, 5番目の文字を要求されるかもしれない. このとき, 期待される答えは: 317 である.</p>
+<p>テキストファイル<a href="http://projecteuler.net/project/keylog.txt" rel="nofollow">keylog.txt</a>には, ログインに成功した50回の試行が記録されている.</p>
+<p>3つの文字が常に順番通りに要求されるとするとき, ファイルを分析して, 可能なパスコードのなかでもっとも短いものを見つけよ.</p>
+</div>

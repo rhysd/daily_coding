@@ -1,0 +1,14 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20311
+
+<div id="body">
+<p>四角形ABCDは各辺の長さが整数で 1 ≦ AB &lt; BC &lt; CD &lt; AD をみたす凸四角形である。<br>
+BDの長さは整数である。OはBDの中点で、AOの長さも整数である。<br>
+AO = CO ≦ BO = DOとなるこのような四角形ABCDを<em>biclinic整数四角形</em>と呼ぶ。</p>
+<p>例えば以下の四角形はbiclinic整数四角形である。<br>
+AB = 19, BC = 29, CD = 37, AD = 43, BD = 48, AO = CO = 23 となっている。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_311_biclinic.gif" title="p_311_biclinic.gif"><img src="http://projecteuler.net/project/images/p_311_biclinic.gif" alt="p_311_biclinic.gif" title="p_311_biclinic.gif"></a></div>
+<p>B(<em>N</em>)を<br><span style="font-style:italic;">AB</span><span style="font-size:60%;vertical-align:super;">2</span>+<span style="font-style:italic;">BC</span><span style="font-size:60%;vertical-align:super;">2</span>+<span style="font-style:italic;">CD</span><span style="font-size:60%;vertical-align:super;">2</span>+<span style="font-style:italic;">AD</span><span style="font-size:60%;vertical-align:super;">2</span> ≦ <span style="font-style:italic;">N</span><br>
+をみたす、異なるbiclinic整数四角形ABCDの数とする。<br>
+B(10 000) = 49, B(1 000 000) = 38239 であることが確かめられる。</p>
+<p>B(10 000 000 000) を求めよ。</p>
+</div>

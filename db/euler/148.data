@@ -1,0 +1,14 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20148
+
+<div id="body">
+<p>パスカルの三角形の最初の7行には7で割り切れる要素は一つもないことが簡単に分かる.</p>
+<pre>       1
+      1 1
+     1 2 1
+    1 3 3 1
+   1 4 6 4 1
+ 1 5 10 10 5 1
+1 6 15 20 15 6 1</pre>
+<p>しかし最初の100行を調べると, 5050個の要素の内, 7で割り切れないものは2361個しかない.</p>
+<p>パスカルの三角形の最初の10億行 (10<span style="font-size:60%;vertical-align:super;">9</span>行) の要素で7で割り切れないものの数を答えよ.</p>
+</div>

@@ -1,0 +1,12 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20215
+
+<div id="body">
+<p>2x1 と 3x1 のレンガ(水平x垂直方向)を使って壁を建てる。
+ただし追加条件として、水平方向に隣接したレンガ間の隙間が上下の層にまたがってはならない。
+つまり、"伝播亀裂(running crack)"がないようにする。</p>
+<p>例として、下図の9x3の壁は条件を満たしていない。赤線が伝播亀裂だからである。</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_215_crackfree.gif" title="p_215_crackfree.gif"><img src="http://projecteuler.net/project/images/p_215_crackfree.gif" alt="p_215_crackfree.gif" title="p_215_crackfree.gif"></a></div>
+
+<p>9x3の亀裂のない壁は8通りの建て方がある。これを W(9,3)=8 と表す。</p>
+<p>W(32,10) を計算せよ。</p>
+</div>

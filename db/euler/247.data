@@ -1,0 +1,14 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20247
+
+<div id="body">
+<p>1 ≤ x, 0 ≤ y ≤ <span style="font-size:60%;vertical-align:super;">1</span>/<span style="font-size:60%;vertical-align:sub;">x</span> の領域について考える。</p>
+<p>S<span style="font-size:60%;vertical-align:sub;">1</span> をこの曲線の下に入る最大の正方形とする。<br>
+S<span style="font-size:60%;vertical-align:sub;">2</span> を残りの空間に入る最大の正方形とし、これを繰り返す。<br>
+S<span style="font-size:60%;vertical-align:sub;">n</span> のインデックスを (left, below) とする。 left は S<span style="font-size:60%;vertical-align:sub;">n</span> の左にある正方形の数を、below は S<span style="font-size:60%;vertical-align:sub;">n</span> の下にある正方形の数を表す。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_247_hypersquares.gif" title="p_247_hypersquares.gif"><img src="http://projecteuler.net/project/images/p_247_hypersquares.gif" alt="p_247_hypersquares.gif" title="p_247_hypersquares.gif"></a></div>
+<p>これらの正方形に番号を記したものを上の図に示す。<br>
+S<span style="font-size:60%;vertical-align:sub;">2</span> は左に 1 個、下に 0 個の正方形があるので、 S<span style="font-size:60%;vertical-align:sub;">2</span> のインデックスは (1,0) である。<br>
+S<span style="font-size:60%;vertical-align:sub;">32</span> のインデックスは (1,1) であることがわかる。 S<span style="font-size:60%;vertical-align:sub;">50</span> のインデックスも同じである。<br>
+50 は (1,1) をインデックスに持つ S<span style="font-size:60%;vertical-align:sub;">n</span> の中で、最大の n である。</p>
+<p>(3,3) をインデックスに持つ S<span style="font-size:60%;vertical-align:sub;">n</span> の中で、最大の n を求めよ。</p>
+</div>

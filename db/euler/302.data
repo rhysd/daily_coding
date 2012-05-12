@@ -1,0 +1,12 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20302
+
+<div id="body">
+<p>ある自然数nがそのすべての素因数<em>p</em>について<span style="font-style:italic;">p</span><span style="font-size:60%;vertical-align:super;">2</span>で割り切れるとき<strong>多冪数</strong>と呼ぶ。<br></p>
+<p>また、ある自然数nが別の自然数の累乗であるとき<strong>累乗数</strong>と呼ぶ。<br></p>
+<p>多冪数のうち累乗数でないものを<strong>アキレス数</strong>と呼ぶ。<br>
+例えば、864(=2<span style="font-size:60%;vertical-align:super;">5</span>・3<span style="font-size:60%;vertical-align:super;">3</span>)や1800(=2<span style="font-size:60%;vertical-align:super;">3</span>・3<span style="font-size:60%;vertical-align:super;">2</span>・5<span style="font-size:60%;vertical-align:super;">2</span>)はアキレス数である。</p>
+<p>ここで<em>S</em>とφ(<em>S</em>)<a id="notetext_1" href="#notefoot_1" class="note_super" title="φはオイラーのトーティエント関数">*1</a>が共にアキレス数となるような自然数<em>S</em>を<strong><em>強アキレス数</em></strong>と呼ぶことにする。<br>
+例えば、864は強アキレス数だが(φ(864)=288=2<span style="font-size:60%;vertical-align:super;">5</span>・3<span style="font-size:60%;vertical-align:super;">2</span>)、1800は強アキレス数ではない(φ(1800)=480=2<span style="font-size:60%;vertical-align:super;">5</span>・3<span style="font-size:60%;vertical-align:super;">1</span>・5<span style="font-size:60%;vertical-align:super;">1</span>)。</p>
+<p>強アキレス数は10<span style="font-size:60%;vertical-align:super;">4</span>以下には7個、10<span style="font-size:60%;vertical-align:super;">8</span>以下には656個存在する。</p>
+<p>10<span style="font-size:60%;vertical-align:super;">18</span>以下に強アキレス数はいくつ存在するか。</p>
+</div>

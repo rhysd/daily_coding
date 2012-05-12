@@ -1,0 +1,34 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20212
+
+<div id="body">
+<p>座標軸に平行な直方体 (axis-aligned cuboid) は {(<span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:sub;">0</span>, <span style="font-style:italic;">y</span><span style="font-size:60%;vertical-align:sub;">0</span>, <span style="font-style:italic;">z</span><span style="font-size:60%;vertical-align:sub;">0</span>), (<span style="font-style:italic;">dx</span>, <span style="font-style:italic;">dy</span>, <span style="font-style:italic;">dz</span>)} で与えられ、<span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:sub;">0</span> ≤ X ≤ <span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:sub;">0</span> + <span style="font-style:italic;">dx</span>,
+<span style="font-style:italic;">y</span><span style="font-size:60%;vertical-align:sub;">0</span> ≤ Y ≤ <span style="font-style:italic;">y</span><span style="font-size:60%;vertical-align:sub;">0</span> + <span style="font-style:italic;">dy</span>,
+<span style="font-style:italic;">z</span><span style="font-size:60%;vertical-align:sub;">0</span> ≤ Z ≤ <span style="font-style:italic;">z</span><span style="font-size:60%;vertical-align:sub;">0</span> + <span style="font-style:italic;">dz</span>,
+を満たす点で構成される。
+直方体の体積は <span style="font-style:italic;">dx</span> × <span style="font-style:italic;">dy</span> × <span style="font-style:italic;">dz</span>で求められる。
+複数の直方体を結合したものの体積を考えた場合、直方体に重なりがあれば、結合直方体の体積は
+それぞれの直方体の体積の和より小さくなる。</p>
+<p><span style="font-style:italic;">C</span><span style="font-size:60%;vertical-align:sub;">1</span>, …, <span style="font-style:italic;">C</span><span style="font-size:60%;vertical-align:sub;">50000</span> を以下のパラメータで与えられる座標軸に平行な直方体とする。</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>
+<span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:sub;">0</span> = <span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;">6<span style="font-style:italic;">n</span>-5</span> modulo 10000</li>
+<li>
+<span style="font-style:italic;">y</span><span style="font-size:60%;vertical-align:sub;">0</span> = <span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;">6<span style="font-style:italic;">n</span>-4</span> modulo 10000</li>
+<li>
+<span style="font-style:italic;">z</span><span style="font-size:60%;vertical-align:sub;">0</span> = <span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;">6<span style="font-style:italic;">n</span>-3</span> modulo 10000</li>
+<li>
+<span style="font-style:italic;">dx</span> = 1 + (<span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;">6<span style="font-style:italic;">n</span>-2</span> modulo 399)</li>
+<li>
+<span style="font-style:italic;">dy</span> = 1 + (<span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;">6<span style="font-style:italic;">n</span>-1</span> modulo 399)</li>
+<li>
+<span style="font-style:italic;">dz</span> = 1 + (<span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;">6<span style="font-style:italic;">n</span></span> modulo 399)</li>
+</ul>
+<p><span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;">1</span>,…,<span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;">300000</span> はラグ付きフィボナッチ法により生成される。</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>1 ≤ <span style="font-style:italic;">k</span> ≤ 55 の場合、<span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span></span> = [100003 - 200003<span style="font-style:italic;">k</span> + 300007<span style="font-style:italic;">k</span><span style="font-size:60%;vertical-align:super;">3</span>] (modulo 1000000)</li>
+<li>56 ≤ <span style="font-style:italic;">k</span> の場合、[<span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span>-24</span> + <span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span>-55</span>] (modulo 1000000)</li>
+</ul>
+<p>したがって、<span style="font-style:italic;">C</span><span style="font-size:60%;vertical-align:sub;">1</span> は {(7, 53, 183), (94, 369, 56)}、<span style="font-style:italic;">C</span><span style="font-size:60%;vertical-align:sub;">2</span> は {(2383, 3563, 5079), (42, 212, 344)} となる</p>
+<p><span style="font-style:italic;">C</span><span style="font-size:60%;vertical-align:sub;">1</span>, …, <span style="font-style:italic;">C</span><span style="font-size:60%;vertical-align:sub;">100</span> の結合直方体の体積は 723581599 である。</p>
+<p><span style="font-style:italic;">C</span><span style="font-size:60%;vertical-align:sub;">1</span>, …, <span style="font-style:italic;">C</span><span style="font-size:60%;vertical-align:sub;">50000</span> の結合直方体の体積を求めよ。</p>
+</div>

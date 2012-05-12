@@ -1,0 +1,17 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20350
+
+<div id="body">
+<p>「サイズ <span style="font-style:italic;">n</span> のリスト」とは、<span style="font-style:italic;">n</span> 個の自然数を持つ数列のことである。<br>
+例えば (2,4,6), (2,6,4), (10,6,15,6), (11)。</p>
+<p>リストの<strong>最大公約数</strong>、gcdとは、リストのすべての数を割り切る最大の自然数を言う。<br>
+例 : gcd(2,6,4) = 2, gcd(10,6,15,6) = 1, gcd(11) = 11.</p>
+<p>リストの<strong>最小公倍数</strong>、lcmとは、リストそれぞれの数で割り切ることができる最小の自然数を言う。<br>
+例 : lcm(2,6,4) = 12, lcm(10,6,15,6) = 30, lcm(11) = 11.</p>
+<p>gcd ≥ <span style="font-style:italic;">G</span> 、lcm ≤ <span style="font-style:italic;">L</span> となるサイズ <span style="font-style:italic;">N</span> のリストの個数を f(<span style="font-style:italic;">G</span>, <span style="font-style:italic;">L</span>, <span style="font-style:italic;">N</span>) としよう。<br>
+以下に例を示す:</p>
+<p>f(10, 100, 1) = 91.<br>
+f(10, 100, 2) = 327.<br>
+f(10, 100, 3) = 1135.<br>
+f(10, 100, 1000) mod 101<span style="font-size:60%;vertical-align:super;">4</span> = 3286053.</p>
+<p>f(10<span style="font-size:60%;vertical-align:super;">6</span>, 10<span style="font-size:60%;vertical-align:super;">12</span>, 10<span style="font-size:60%;vertical-align:super;">18</span>) mod 101<span style="font-size:60%;vertical-align:super;">4</span> を求めよ。</p>
+</div>

@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20303
+
+<div id="body">
+<p>正の整数 n に対し, f(n) を, n の倍数であり 10 進数で表すと 2 以下の数字のみが用いられる最小の数と定義する.</p>
+<p>ゆえに, f(2)=2, f(3)=12, f(7)=21, f(42)=210, f(89)=1121222 である.</p>
+<p>また, <a href="http://projecteuler.net/project/images/p303_formula100.gif" title="p303_formula100.gif"><img src="http://projecteuler.net/project/images/p303_formula100.gif" alt="p303_formula100.gif" title="p303_formula100.gif"></a> である.</p>
+<p><a href="http://projecteuler.net/project/images/p303_formula10000.gif" title="p303_formula10000.gif"><img src="http://projecteuler.net/project/images/p303_formula10000.gif" alt="p303_formula10000.gif" title="p303_formula10000.gif"></a> を求めよ.</p>
+</div>

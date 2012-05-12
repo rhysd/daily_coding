@@ -1,0 +1,30 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20182
+
+<div id="body">
+<p>RSA暗号は以下のアルゴリズムに基づいている:</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>鍵生成
+<ol class="list2" style="padding-left:16px;margin-left:16px">
+<li>二つの異なる素数pとqを生成する.</li>
+<li>n=pqとし, φ=(p-1)(q-1) (=φ(n))とする.</li>
+<li>1&lt;e&lt;φの範囲でgcd(e,φ)=1となる整数eを決定する.</li>
+</ol>
+</li>
+<li>暗号化
+<ol class="list2" style="padding-left:16px;margin-left:16px">
+<li>平文を[0,n-1]中の整数mとする. 平文は以下の方法で[0,n-1]中の整数に暗号化される.</li>
+<li>c=m<span style="font-size:60%;vertical-align:super;">e</span> mod nとし, cを暗号文とする.</li>
+</ol>
+</li>
+<li>復号
+<ol class="list2" style="padding-left:16px;margin-left:16px">
+<li>暗号文をcとし以下の操作を行う.</li>
+<li>ed=1 mod φとなるdを計算する. m=c<span style="font-size:60%;vertical-align:super;">d</span> mod nが元の平文となる.</li>
+</ol>
+</li>
+</ul>
+<p>さてあるeとmについてm<span style="font-size:60%;vertical-align:super;">e</span> mod n=mとなることがある. 以下, m<span style="font-size:60%;vertical-align:super;">e</span> mod n=mとなるmを<strong>公然の平文</strong>と呼ぶことにする.</p>
+<p>公開鍵の一部 e を選ぶときには, 公然の平文が多くならないという点が重要である.
+例えば, p = 19, q = 37 とする. このとき, n = 19 * 37 = 703でありφ = 18 * 36 = 648 である. もし e = 181 とすると, gcd(181, 648) = 1 であるが, 全ての平文m (0≤m≤n-1)が公然の平文となってしまう. eについてどのような選び方をしても, 必ずいくつかは公然の平文が存在する. 従って, 公然の平文の数を最小化するようにeを選ぶのは重要である.</p>
+<p>さて, p = 1009, q = 3643とする. このとき, 公然の平文の個数が最小となる全てのeの総和を求めよ (ただし1&lt;e&lt;φ(1009,3643)かつgcd(e,φ)=1).</p>
+</div>

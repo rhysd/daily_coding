@@ -1,0 +1,12 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20154
+
+<div id="body">
+<p>1つの球が下の層の3つの球の上に乗るように作られた三角錐がある。</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_154_pyramid.gif" title="p_154_pyramid.gif"><img src="http://projecteuler.net/project/images/p_154_pyramid.gif" alt="p_154_pyramid.gif" title="p_154_pyramid.gif"></a></div>
+
+<p>頂上から各球への経路の数を計算することにする。</p>
+<p>経路は、頂上から始まって、すぐ下の3つのいずれかへと下向きに進む。</p>
+<p>したがって、ある位置への経路の数はすぐ上のものの和となる。(位置に依るが、最大で3つが上にある)</p>
+<p>結果はパスカルのピラミッドとなり、深さnの層に含まれる数は (<span style="font-style:italic;">x</span> + <span style="font-style:italic;">y</span> + <span style="font-style:italic;">z</span>)<span style="font-size:60%;vertical-align:super;"><span style="font-style:italic;">n</span></span> を展開したものの係数である。</p>
+<p>(<span style="font-style:italic;">x</span> + <span style="font-style:italic;">y</span> + <span style="font-style:italic;">z</span>)<span style="font-size:60%;vertical-align:super;">200000</span> を展開したものの係数で、10<span style="font-size:60%;vertical-align:super;">12</span>の倍数となるものはいくつあるか?</p>
+</div>

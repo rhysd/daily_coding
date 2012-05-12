@@ -1,0 +1,15 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20147
+
+<div id="body">
+<p>3x2 の斜め線が引かれた格子には、下図で示されるように全部で37個の異なった長方形が存在する。</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_147.gif" title="p_147.gif"><img src="http://projecteuler.net/project/images/p_147.gif" alt="p_147.gif" title="p_147.gif"></a></div>
+
+<p>3x2 より横にも縦にも小さい5個の格子(つまり、1x1, 2x1, 3x1, 1x2, 2x2)を考えると、それらに存在する長方形の数は以下のようになる。</p>
+<p>1x1: 1<br>
+2x1: 4<br>
+3x1: 8<br>
+1x2: 4<br>
+2x2: 18</p>
+<p>これらに3x2の格子の37を加えると、全部で72個の異なった長方形が3x2以下の格子について存在する。</p>
+<p>47x43以下の格子について存在する異なった長方形の数を求めよ。</p>
+</div>

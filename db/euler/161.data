@@ -1,0 +1,15 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20161
+
+<div id="body">
+<p>トリオミノとは3つの正方形を辺で繋げたものである。以下は2つの基本形。</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_161_trio1.gif" title="p_161_trio1.gif"><img src="http://projecteuler.net/project/images/p_161_trio1.gif" alt="p_161_trio1.gif" title="p_161_trio1.gif"></a></div>
+
+<p>すべての方向を可能性に入れると、以下の6つがある。</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_161_trio3.gif" title="p_161_trio3.gif"><img src="http://projecteuler.net/project/images/p_161_trio3.gif" alt="p_161_trio3.gif" title="p_161_trio3.gif"></a></div>
+
+<p>n x m が3で割り切れるならば、どのn x m の格子もトリオミノによって埋めることができる。<br>
+反転、回転によって得られる埋めかたを別の埋め方とすると、2 x 9 の格子では41通りの埋め方がある。</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_161_k9.gif" title="p_161_k9.gif"><img src="http://projecteuler.net/project/images/p_161_k9.gif" alt="p_161_k9.gif" title="p_161_k9.gif"></a></div>
+
+<p>9 x 12 の格子では何通りの埋め方があるか?</p>
+</div>

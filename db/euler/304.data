@@ -1,0 +1,13 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20304
+
+<div id="body">
+<p>任意の自然数nについて関数next_prime(n)はp&gt;nとなるような最小の素数pを返す。</p>
+<p>数列a(n)は<br>
+a(1)=next_prime(10<span style="font-size:60%;vertical-align:super;">14</span>), a(n)=next_prime(a(n-1)) for n&gt;1<br>
+で定義される。</p>
+<p>フィボナッチ数列f(n)は<br>
+f(0)=0, f(1)=1, f(n)=f(n-1)+f(n-2) for n&gt;1<br>
+で定義される。</p>
+<p>数列b(n)はf(a(n))で定義される。</p>
+<p>1 ≦ n ≦ 100000 について Σb(n) mod 1234567891011 を求めよ。</p>
+</div>

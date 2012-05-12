@@ -1,0 +1,18 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20348
+
+<div id="body">
+<p>多くの数は平方数と立方数の和として表せる。１通り以上のやり方で表せるものもある。</p>
+<p>いずれも１より大きな平方数と立方数の和として、<strong>ちょうど</strong>４通りのやり方で表せる回文数を考えよう。<br>
+例えば、5229225 は回文数であり、ちょうど４通りの異なるやり方で表せる：</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>2285<span style="font-size:60%;vertical-align:super;">2</span> + 20<span style="font-size:60%;vertical-align:super;">3</span>
+</li>
+<li>2223<span style="font-size:60%;vertical-align:super;">2</span> + 66<span style="font-size:60%;vertical-align:super;">3</span>
+</li>
+<li>1810<span style="font-size:60%;vertical-align:super;">2</span> + 125<span style="font-size:60%;vertical-align:super;">3</span>
+</li>
+<li>1197<span style="font-size:60%;vertical-align:super;">2</span> + 156<span style="font-size:60%;vertical-align:super;">3</span>
+</li>
+</ul>
+<p>このような回文数を小さいものから順に５つ求め、その和を入力せよ。</p>
+</div>

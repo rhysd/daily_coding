@@ -1,0 +1,94 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20107
+
+<div id="body">
+<p>以下の無向ネットワークは7つの頂点と重み付きの12個の辺からなり, 重みの総和は243である.</p>
+<div class="img_margin" style="text-align:center"><a href="http://projecteuler.net/project/images/p_107_1.gif" title="p_107_1.gif"><img src="http://projecteuler.net/project/images/p_107_1.gif" alt="p_107_1.gif" title="p_107_1.gif"></a></div>
+
+<p>このネットワークを以下の行列で表現することができる.</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td"></td>
+<td class="style_td">A</td>
+<td class="style_td">B</td>
+<td class="style_td">C</td>
+<td class="style_td">D</td>
+<td class="style_td">E</td>
+<td class="style_td">F</td>
+<td class="style_td">G</td>
+</tr>
+<tr>
+<td class="style_td">A</td>
+<td class="style_td">-</td>
+<td class="style_td">16</td>
+<td class="style_td">12</td>
+<td class="style_td">21</td>
+<td class="style_td">-</td>
+<td class="style_td">-</td>
+<td class="style_td">-</td>
+</tr>
+<tr>
+<td class="style_td">B</td>
+<td class="style_td">16</td>
+<td class="style_td">-</td>
+<td class="style_td">-</td>
+<td class="style_td">17</td>
+<td class="style_td">20</td>
+<td class="style_td">-</td>
+<td class="style_td">-</td>
+</tr>
+<tr>
+<td class="style_td">C</td>
+<td class="style_td">12</td>
+<td class="style_td">-</td>
+<td class="style_td">-</td>
+<td class="style_td">28</td>
+<td class="style_td">-</td>
+<td class="style_td">31</td>
+<td class="style_td">-</td>
+</tr>
+<tr>
+<td class="style_td">D</td>
+<td class="style_td">21</td>
+<td class="style_td">17</td>
+<td class="style_td">28</td>
+<td class="style_td">-</td>
+<td class="style_td">18</td>
+<td class="style_td">19</td>
+<td class="style_td">23</td>
+</tr>
+<tr>
+<td class="style_td">E</td>
+<td class="style_td">-</td>
+<td class="style_td">20</td>
+<td class="style_td">-</td>
+<td class="style_td">18</td>
+<td class="style_td">-</td>
+<td class="style_td">-</td>
+<td class="style_td">11</td>
+</tr>
+<tr>
+<td class="style_td">F</td>
+<td class="style_td">-</td>
+<td class="style_td">-</td>
+<td class="style_td">31</td>
+<td class="style_td">19</td>
+<td class="style_td">-</td>
+<td class="style_td">-</td>
+<td class="style_td">27</td>
+</tr>
+<tr>
+<td class="style_td">G</td>
+<td class="style_td">-</td>
+<td class="style_td">-</td>
+<td class="style_td">-</td>
+<td class="style_td">23</td>
+<td class="style_td">11</td>
+<td class="style_td">27</td>
+<td class="style_td">-</td>
+</tr>
+</tbody></table></div>
+<p>しかし, このネットワークを, 全ての頂点が連結であるように適当な辺を除いた上で最適化することが出来る. 節約される量が最大化されるように取り除いたネットワークが以下の画像である. この場合, 辺の重みの総和は93であり, 元のネットワークからの節約量は 243 - 93 = 150 である.</p>
+<div class="img_margin" style="text-align:center"><a href="http://projecteuler.net/project/images/p_107_2.gif" title="p_107_2.gif"><img src="http://projecteuler.net/project/images/p_107_2.gif" alt="p_107_2.gif" title="p_107_2.gif"></a></div>
+
+<p>6Kバイトのテキストファイル <a href="http://projecteuler.net/project/network.txt" rel="nofollow">network.txt</a> (右クリックして保存すること) には40頂点のネットワークを行列表示したものが記されている. ネットワーク全体が連結であるが冗長な辺を取り除いたときの節約量を最大にするようにした場合の節約量を答えよ.</p>
+</div>

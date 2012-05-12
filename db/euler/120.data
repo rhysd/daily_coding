@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20120
+
+<div id="body">
+<p>(a-1)<span style="font-size:60%;vertical-align:super;">n</span>+(a+1)<span style="font-size:60%;vertical-align:super;">n</span> を a<span style="font-size:60%;vertical-align:super;">2</span> で割った余りを r と定義する。</p>
+<p>例えば、 a=7, n=3 の時、 r=42 である: 6<span style="font-size:60%;vertical-align:super;">3</span> + 8<span style="font-size:60%;vertical-align:super;">3</span> = 728 ≡ 42 mod 49。
+n が変われば r も変わるが、 a=7 の時 r の最大値 r<span style="font-size:60%;vertical-align:sub;">max</span> は 42 であることがわかる。</p>
+<p>3 ≤ a ≤ 1000 において、 Σ r<span style="font-size:60%;vertical-align:sub;">max</span> を求めよ。</p>
+</div>

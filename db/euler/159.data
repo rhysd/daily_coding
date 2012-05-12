@@ -1,0 +1,52 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20159
+
+<div id="body">
+<p>合成数は多くの異なった方法で因数分解することができる。例えば、1を含めないとすると、24は以下の7通りに因数分解される。</p>
+<p>24 = 2x2x2x3<br>
+24 = 2x3x4<br>
+24 = 2x2x6<br>
+24 = 4x6<br>
+24 = 3x8<br>
+24 = 2x12<br>
+24 = 24</p>
+<p>ある数について、各桁の数字を足し合わせることを10未満になるまで繰り返したときに得られる数を、digital root と呼ぶことにする。つまり、467のdigital rootは8となる。</p>
+<p>それぞれの因数のdigital rootの和をDigital Root Sum(DRS)と呼ぶことにする。<br>
+以下の表に24のDRSを示す。</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td"><strong>因数分解</strong></td>
+<td class="style_td"><strong>Digital Root Sum</strong></td>
+</tr>
+<tr>
+<td class="style_td">2x2x2x3</td>
+<td class="style_td">9</td>
+</tr>
+<tr>
+<td class="style_td">2x3x4</td>
+<td class="style_td">9</td>
+</tr>
+<tr>
+<td class="style_td">2x2x6</td>
+<td class="style_td">10</td>
+</tr>
+<tr>
+<td class="style_td">4x6</td>
+<td class="style_td">10</td>
+</tr>
+<tr>
+<td class="style_td">3x8</td>
+<td class="style_td">11</td>
+</tr>
+<tr>
+<td class="style_td">2x12</td>
+<td class="style_td">5</td>
+</tr>
+<tr>
+<td class="style_td">24</td>
+<td class="style_td">6</td>
+</tr>
+</tbody></table></div>
+<p>24のDigital Root Sumの最大値は11となる。<br>
+mdrs(n) を、nのDigital Root Sumの最大値と定義する。つまり、mdrs(24) = 11 となる。<br>
+1 &lt; n &lt; 1,000,000 について ∑mdrs(n) を求めよ。</p>
+</div>

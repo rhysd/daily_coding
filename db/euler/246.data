@@ -1,0 +1,16 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20246
+
+<div id="body">
+<p>楕円の定義は以下の通り:<br>
+中心 M と半径 r を持つ円 c と、 d(G,M)&lt;r を満たす点 G が与えられた場合、
+c と G から等距離にある点の軌跡が楕円となる。</p>
+<p>楕円上の点の作成手順を下に示す。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_246_anim.gif" title="p_246_anim.gif"><img src="http://projecteuler.net/project/images/p_246_anim.gif" alt="p_246_anim.gif" title="p_246_anim.gif"></a></div>
+<p>点 M(-2000,1500), G(8000,1500) とする。<br>
+円 c は中心が M, 半径 15000 とする。<br>
+G と c から等距離にある点の軌跡を楕円 e とする。<br>
+e の外の点 P から楕円に対し 2 本の接線 t<span style="font-size:60%;vertical-align:sub;">1</span>, t<span style="font-size:60%;vertical-align:sub;">2</span> を描く。<br>
+t<span style="font-size:60%;vertical-align:sub;">1</span>, t<span style="font-size:60%;vertical-align:sub;">2</span> が楕円に接する点を R, S とする。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_246_ellipse.gif" title="p_246_ellipse.gif"><img src="http://projecteuler.net/project/images/p_246_ellipse.gif" alt="p_246_ellipse.gif" title="p_246_ellipse.gif"></a></div>
+<p>角 RPS が 45 度より大きくなるような格子点 P はいくつあるか。</p>
+</div>

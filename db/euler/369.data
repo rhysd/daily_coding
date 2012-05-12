@@ -1,0 +1,7 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20369
+
+<div id="body">
+<p>標準的な52枚のトランプから、ペアや同じスートの2枚組を含まない4枚のカードを選んだ時、その4枚のカードの組をバドージ (Badugi) という。</p>
+<p>4枚のカードの部分集合がバドージとなる <span style="font-style:italic;">n</span> 枚のカードの選びかたの数を f(<span style="font-style:italic;">n</span>) としよう。例えば、標準的な52枚のトランプから5枚のカードを取る選び方は 2598960 通りあり、そのうち4枚のカードの部分集合がバドージとなるものは 514800 通りあるので、f(5) = 514800 となる。</p>
+<p>4 ≤ <span style="font-style:italic;">n</span> ≤ 13 のときの ∑f(<span style="font-style:italic;">n</span>) を求めよ。</p>
+</div>

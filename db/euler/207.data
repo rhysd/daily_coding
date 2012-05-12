@@ -1,0 +1,22 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20207
+
+<div id="body">
+<p>いくつかの正整数 k は、整数の分割式 4<span style="font-size:60%;vertical-align:super;">t</span> = 2<span style="font-size:60%;vertical-align:super;">t</span> + k が成り立つ。
+4<span style="font-size:60%;vertical-align:super;">t</span>, 2<span style="font-size:60%;vertical-align:super;">t</span>, k は全て正の整数、 t は実数とする。</p>
+<p>最初の 2 つの分割は 4<span style="font-size:60%;vertical-align:super;">1</span> = 2<span style="font-size:60%;vertical-align:super;">1</span> + 2 と
+4<span style="font-size:60%;vertical-align:super;">1.5849625...</span> = 2<span style="font-size:60%;vertical-align:super;">1.5849625...</span> + 6 である。</p>
+<p>t も整数である分割を完全と呼ぶ。<br>
+m≥1を満たす m に対して P(m) を k≤m で分割が完全である割合と定義する。
+つまり P(6) = 1/2 である。</p>
+<p>次の表はいくつかの m に対する P(m) の例である。</p>
+<pre>  P(5) = 1/1
+  P(10) = 1/2
+  P(15) = 2/3
+  P(20) = 1/2
+  P(25) = 1/2
+  P(30) = 2/5
+  ...
+  P(180) = 1/4
+  P(185) = 3/13</pre>
+<p>P(m) &lt; 1/12345 を満たす最小の m を求めよ。</p>
+</div>

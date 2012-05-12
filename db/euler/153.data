@@ -1,0 +1,57 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20153
+
+<div id="body">
+<p>方程式 <span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:super;">2</span> = -1 が実数 x について解が存在しないことは誰もが知っている。<br>
+しかし、虚数 i を導入することで方程式は2つの解 x = i , x = -i を持つ。<br>
+さらに、方程式 (<span style="font-style:italic;">x</span> - 3)<span style="font-size:60%;vertical-align:super;">2</span> = -4 は二つの複素数の解 x = 3+2i , x = 3-2i を持つ。<br>
+x = 3+2i と x = 3-2i は他方の共役複素数と呼ばれる。<br>
+a + bi という形の数は複素数と呼ばれる。<br>
+一般に、a + bi と a - bi は他方の共役複素数である。</p>
+<p>ガウス整数とはaとbがともに整数である複素数 a + bi のことである。<br>
+普通の整数はまた、ガウス整数である。(b = 0 のケース)<br>
+b ≠ 0 のガウス整数と区別するために、普通の整数を"有理整数"と呼ぶことにする。<br>
+有理整数 n をあるガウス整数で割った結果がガウス整数である場合、そのガウス整数は約数と呼ばれる。<br>
+例として、5 を 1+2i で割ると、<a href="http://projecteuler.net/project/images/p_153_formule1.gif" title="p_153_formule1.gif"><img src="http://projecteuler.net/project/images/p_153_formule1.gif" alt="p_153_formule1.gif" title="p_153_formule1.gif"></a>は以下のように簡略化できる。<br>
+分子と分母に1+2iの共役複素数(1-2i)を掛ける。<br>
+結果は、<a href="http://projecteuler.net/project/images/p_153_formule2.gif" title="p_153_formule2.gif"><img src="http://projecteuler.net/project/images/p_153_formule2.gif" alt="p_153_formule2.gif" title="p_153_formule2.gif"></a>となる。<br>
+よって、1+2i は 5 の約数である。<br>
+1+i は<a href="http://projecteuler.net/project/images/p_153_formule5.gif" title="p_153_formule5.gif"><img src="http://projecteuler.net/project/images/p_153_formule5.gif" alt="p_153_formule5.gif" title="p_153_formule5.gif"></a>なので 5 の約数でないことに注意。<br>
+さらに、ガウス整数(a+bi)が有理整数 n の約数ならば、その共役複素数(a-bi)もまた n の約数となることにも注意。</p>
+<p>実際、5 は実部が正となる約数を、{1, 1 + 2i, 1 - 2i, 2 + i, 2 - i, 5}の6個持つ。<br>
+以下に最初の5個の正の有理整数の約数の表を示す。</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td">n</td>
+<td class="style_td">実部が正のガウス整数の約数</td>
+<td class="style_td">約数の和 s(n)</td>
+</tr>
+<tr>
+<td class="style_td">1</td>
+<td class="style_td">1</td>
+<td class="style_td">1</td>
+</tr>
+<tr>
+<td class="style_td">2</td>
+<td class="style_td">1, 1+i, 1-i, 2</td>
+<td class="style_td">5</td>
+</tr>
+<tr>
+<td class="style_td">3</td>
+<td class="style_td">1, 3</td>
+<td class="style_td">4</td>
+</tr>
+<tr>
+<td class="style_td">4</td>
+<td class="style_td">1, 1+i, 1-i, 2, 2+2i, 2-2i,4</td>
+<td class="style_td">13</td>
+</tr>
+<tr>
+<td class="style_td">5</td>
+<td class="style_td">1, 1+2i, 1-2i, 2+i, 2-i, 5</td>
+<td class="style_td">12</td>
+</tr>
+</tbody></table></div>
+<p>正の実部を持つ約数について、<a href="http://projecteuler.net/project/images/p_153_formule6.gif" title="p_153_formule6.gif"><img src="http://projecteuler.net/project/images/p_153_formule6.gif" alt="p_153_formule6.gif" title="p_153_formule6.gif"></a>を得る。</p>
+<p>1 ≤ n ≤ 10<span style="font-size:60%;vertical-align:super;">5</span> について、∑s(n) = 17924657155 となる。</p>
+<p>1 ≤ n ≤ 10<span style="font-size:60%;vertical-align:super;">8</span> について、∑s(n) を求めよ。</p>
+</div>

@@ -1,0 +1,11 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20258
+
+<div id="body">
+<p>数列を以下のように定義する。</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>0 ≤ k ≤ 1999 に対して g<span style="font-size:60%;vertical-align:sub;">k</span> = 1</li>
+<li>k ≥ 2000 に対して g<span style="font-size:60%;vertical-align:sub;">k</span> = g<span style="font-size:60%;vertical-align:sub;">k-2000</span> + g<span style="font-size:60%;vertical-align:sub;">k-1999</span>
+</li>
+</ul>
+<p>k = 10<span style="font-size:60%;vertical-align:super;">18</span> に対して g<span style="font-size:60%;vertical-align:sub;">k</span> mod 20092010 を求めよ。</p>
+</div>

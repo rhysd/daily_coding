@@ -1,0 +1,12 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20354
+
+<div id="body">
+<p>すべての部屋が辺の長さ1の完全な正六角形からなるミツバチの蜂の巣を考えよう。
+<br></p>
+<div class="img_margin" style="text-align:center"><a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%20354&amp;openfile=p_354_bee_honeycomb.png" title="p_354_bee_honeycomb.png"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%20354&amp;src=p_354_bee_honeycomb.png" alt="p_354_bee_honeycomb.png" title="p_354_bee_honeycomb.png" width="499" height="443"></a></div>
+
+<p>ある特定の部屋に女王蜂が居る。</p>
+<p>正の実数 <span style="font-style:italic;">L</span> に対し、女王蜂の部屋から <span style="font-style:italic;">L</span> の距離がある部屋の個数を B(<span style="font-style:italic;">L</span>) としよう(すべての距離は部屋の中心から部屋の中心までを計測したものとする)。ここで蜂の巣はどんな距離でも対応できるほど大きいと仮定する。</p>
+<p>例をあげよう。B(√3) = 6, B(√21) = 12, そして B(111 111 111) = 54.</p>
+<p>B(<span style="font-style:italic;">L</span>)=450 となる <span style="font-style:italic;">L</span> ≤ 5・10<span style="font-size:60%;vertical-align:super;">11</span> の個数を求めよ。</p>
+</div>

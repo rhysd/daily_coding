@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2056
+
+<div id="body">
+<p>Googol (10<span style="font-size:60%;vertical-align:super;">100</span>)は非常に大きな数である: 1の後に0が100個続く.
+100<span style="font-size:60%;vertical-align:super;">100</span>は想像を絶する. 1の後に0が200回続く.
+その大きさにも関わらず, 両者とも桁の和は1である.</p>
+<p>a, b &lt; 100について自然数<span style="font-style:italic;">a</span><span style="font-size:60%;vertical-align:super;"><span style="font-style:italic;">b</span></span>を考える. 桁の和の最大を答えよ.</p>
+</div>

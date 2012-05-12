@@ -1,0 +1,14 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2076
+
+<div id="body">
+<p>5は数の和として6通りに書くことができる:</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>4 + 1</li>
+<li>3 + 2</li>
+<li>3 + 1 + 1</li>
+<li>2 + 2 + 1</li>
+<li>2 + 1 + 1 + 1</li>
+<li>1 + 1 + 1 + 1 + 1</li>
+</ul>
+<p>2つ以上の正整数の和としての100の表し方は何通りか.</p>
+</div>

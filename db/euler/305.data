@@ -1,0 +1,10 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20305
+
+<div id="body">
+<p>Sを10進で表した(1から始まる)自然数を連続してつなげた(無限に続く)文字列とする。<br>
+すなわち S = 1234567891011121314151617181920212223242... となる。</p>
+<p>いかなる数もこの文字列の中に無限回現れることは容易にわかる。</p>
+<p>f(n)をnがSの中でn回目に現れた先頭の場所とする。<br>
+例えば、 f(1)=1, f(5)=81, f(12)=271, f(7780)=111111365 となる。</p>
+<p>1 ≦ k ≦ 13 について Σf(3<span style="font-size:60%;vertical-align:super;"><span style="font-style:italic;">k</span></span>) を求めよ。</p>
+</div>

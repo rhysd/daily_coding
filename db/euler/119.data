@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20119
+
+<div id="body">
+<p>512 という数は興味深い数である. というのも, 各桁の和を何乗かしたものに等しくなっているからである: 5 + 1 + 2 = 8, 8<span style="font-size:60%;vertical-align:super;">3</span> = 512 である. この特性を持つ他の数は例えば 614656 = 28<span style="font-size:60%;vertical-align:super;">4</span> である.</p>
+<p>この数列の第 n 項を a<span style="font-size:60%;vertical-align:sub;">n</span> と定義し, また 2 桁以上であるとしよう.</p>
+<p>a<span style="font-size:60%;vertical-align:sub;">2</span> = 512, a<span style="font-size:60%;vertical-align:sub;">10</span> = 614656 となる.</p>
+<p>a<span style="font-size:60%;vertical-align:sub;">30</span> を求めよ.</p>
+</div>

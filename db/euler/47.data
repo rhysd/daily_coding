@@ -1,0 +1,18 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2047
+
+<div id="body">
+<p>連続する2つの数がそれぞれ2つの異なる素因数を持つのは</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>14 = 2 × 7</li>
+<li>15 = 3 × 5
+の場合である.</li>
+</ul>
+<p>同様に連続する3つの数がそれぞれ3つの異なる素因数を持つのは</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>644 = 2<span style="font-size:60%;vertical-align:super;">2</span> × 7 × 23</li>
+<li>645 = 3 × 5 × 43</li>
+<li>646 = 2 × 17 × 19
+の場合である.</li>
+</ul>
+<p>連続する4つの数がそれぞれ4つの異なる素因数を持つ場合を考え, 連続する数の中で最小のものを答えよ.</p>
+</div>

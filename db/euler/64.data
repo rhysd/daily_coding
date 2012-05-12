@@ -1,0 +1,47 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2064
+
+<div id="body">
+<p>平方根は連分数の形で表したときに周期的であり, 以下の形で書ける:</p>
+<p>√N = <span style="font-style:italic;">a</span><span style="font-size:60%;vertical-align:sub;">0</span> + 1 / (<span style="font-style:italic;">a</span><span style="font-size:60%;vertical-align:sub;">1</span> + 1 / (<span style="font-style:italic;">a</span><span style="font-size:60%;vertical-align:sub;">2</span> + 1 / (<span style="font-style:italic;">a</span><span style="font-size:60%;vertical-align:sub;">3</span> + ...)))</p>
+<p>例えば, √23を考えよう.</p>
+<p>√23 = 4 + √23 - 4 = 4 + 1 / (1 / (√23 - 4)) = 4 + 1 / (1 + (√23 - 3) / 7)</p>
+<p>となる.</p>
+<p>この操作を続けていくと,</p>
+<p>√23 = 4 + 1 / (1 + 1 / (3 + 1 / (1 + 1 / (8 + ...))))</p>
+<p>を得る.</p>
+<p>操作を纏めると以下になる:</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>
+<span style="font-style:italic;">a</span><span style="font-size:60%;vertical-align:sub;">0</span> = 4, 1/(√23-4) = (√23+4)/7 = 1 + (√23-3)/7</li>
+<li>
+<span style="font-style:italic;">a</span><span style="font-size:60%;vertical-align:sub;">1</span> = 1, 7/(√23-3) = 7(√23+3)/14 = 3 + (√23-3)/2</li>
+<li>
+<span style="font-style:italic;">a</span><span style="font-size:60%;vertical-align:sub;">2</span> = 3, 2/(√23-3) = 2(√23+3)/14 = 1 + (√23-4)/7</li>
+<li>
+<span style="font-style:italic;">a</span><span style="font-size:60%;vertical-align:sub;">3</span> = 1, 7/(√23-4) = 7(√23+4)/7 = 8 + (√23-4)</li>
+<li>
+<span style="font-style:italic;">a</span><span style="font-size:60%;vertical-align:sub;">4</span> = 8, 1/(√23-4) = (√23+4)/7 = 1 + (√23-3)/7</li>
+<li>
+<span style="font-style:italic;">a</span><span style="font-size:60%;vertical-align:sub;">5</span> = 1, 7/(√23-3) = 7(√23+3)/14 = 3 + (√23-3)/2</li>
+<li>
+<span style="font-style:italic;">a</span><span style="font-size:60%;vertical-align:sub;">6</span> = 3, 2/(√23-3) = 2(√23+3)/14 = 1 + (√23-4)/7</li>
+<li>
+<span style="font-style:italic;">a</span><span style="font-size:60%;vertical-align:sub;">7</span> = 1, 7/(√23-4) = 7(√23+4)/7 = 8 + (√23-4)</li>
+</ul>
+<p>よって, この操作は繰り返しになることが分かる. 表記を簡潔にするために, √23 = [4;(1,3,1,8)]と表す. (1,3,1,8)のブロックは無限に繰り返される項を表している.</p>
+<p>最初の10個の無理数である平方根を連分数で表すと以下になる.</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>√2=[1;(2)], period=1</li>
+<li>√3=[1;(1,2)], period=2</li>
+<li>√5=[2;(4)], period=1</li>
+<li>√6=[2;(2,4)], period=2</li>
+<li>√7=[2;(1,1,1,4)], period=4</li>
+<li>√8=[2;(1,4)], period=2</li>
+<li>√10=[3;(6)], period=1</li>
+<li>√11=[3;(3,6)], period=2</li>
+<li>√12= [3;(2,6)], period=2</li>
+<li>√13=[3;(1,1,1,1,6)], period=5</li>
+</ul>
+<p>N ≤ 13で奇数の周期をもつ平方根は丁度4つある.</p>
+<p>N ≤ 10000 について奇数の周期をもつ平方根が何個あるか答えよ.</p>
+</div>

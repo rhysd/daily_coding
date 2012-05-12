@@ -1,0 +1,10 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20138
+
+<div id="body">
+<p>底の長さbが16, 脚の長さLが17の二等辺三角形を考える.</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_138.gif" title="p_138.gif"><img src="http://projecteuler.net/project/images/p_138.gif" alt="p_138.gif" title="p_138.gif"></a></div>
+
+<p>ピタゴラスの定理より, 三角形の高さh = √(17<span style="font-size:60%;vertical-align:super;">2</span> − 8<span style="font-size:60%;vertical-align:super;">2</span>) = 15となる. 高さは底の長さより1だけ短い.</p>
+<p>b = 272, L = 305とすると, h = 273となり, これは底の長さより1だけ長い. この三角形はh = b ± 1という性質を持つ二等辺三角形の中で二番目に小さい.</p>
+<p>h = b ± 1, b, Lが全て正の整数であるとし, そのような二等辺三角形の中で小さい順に12個取ったときの∑Lを求めよ.</p>
+</div>

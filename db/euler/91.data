@@ -1,0 +1,11 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2091
+
+<div id="body">
+<p>点P(x1, y1)と点Q(x2, y2)はともに整数係数の点であり, 原点O(0,0)と合わせてΔOPQをなす.</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_091_1.gif" title="p_091_1.gif"><img src="http://projecteuler.net/project/images/p_091_1.gif" alt="p_091_1.gif" title="p_091_1.gif"></a></div>
+
+<p>各係数が0と2の間にあるとき, すなわち0 ≤ x1, y1, x2, y2 ≤ 2のとき, 直角三角形は14個できる:</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_091_2.gif" title="p_091_2.gif"><img src="http://projecteuler.net/project/images/p_091_2.gif" alt="p_091_2.gif" title="p_091_2.gif"></a></div>
+
+<p>では, 0 ≤ x1, y1, x2, y2 ≤ 50のとき, 直角三角形は何個作れるか?</p>
+</div>

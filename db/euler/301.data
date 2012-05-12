@@ -1,0 +1,28 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20301
+
+<div id="body">
+<p>Nimは2人のプレイヤーがいくつかの山に分かれた石を交互にとっていくゲームである。</p>
+<p>ここでは以下のようなNimについて考える。</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>ゲーム開始時点で3つの山がある</li>
+<li>各ターンでプレイヤーは任意の1つの山から1つ以上の任意の数の石をとる</li>
+<li>すべての石がなくなり、石を取ることができなくなった最初のプレイヤーが負けとなる</li>
+</ul>
+<p>(<span style="font-style:italic;">n</span><span style="font-size:60%;vertical-align:sub;">1</span>,<span style="font-style:italic;">n</span><span style="font-size:60%;vertical-align:sub;">2</span>,<span style="font-style:italic;">n</span><span style="font-size:60%;vertical-align:sub;">3</span>)がそれぞれの山に残っている石の数を表すとすると</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>後手必勝の場合 0</li>
+<li>先手必勝の場合 0以外</li>
+</ul>
+<p>を返す関数 <em>X</em>(<span style="font-style:italic;">n</span><span style="font-size:60%;vertical-align:sub;">1</span>,<span style="font-style:italic;">n</span><span style="font-size:60%;vertical-align:sub;">2</span>,<span style="font-style:italic;">n</span><span style="font-size:60%;vertical-align:sub;">3</span>) が定義できる。</p>
+<p>例えば、<em>X</em>(1,2,3) = 0 である。<br>
+なぜなら先手がどのように石をとっても、後手は二つの山に同じ数の石が残るようにとることができ、<br>
+その後は先手と同じように他方の山から石をとっていけば勝てるからである。<br>
+具体的に書くと以下ようになる</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>先手 (1,2,1)</li>
+<li>後手 (1,0,1)</li>
+<li>先手 (0,0,1)</li>
+<li>後手 (0,0,0)</li>
+</ul>
+<p>正の整数 <span style="font-style:italic;">n</span> ≦ 2<span style="font-size:60%;vertical-align:super;">30</span> のうち <em>X</em>(<em>n</em>,2<em>n</em>,3<em>n</em>) = 0 となるものはいくつあるか。</p>
+</div>

@@ -1,0 +1,101 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20298
+
+<div id="body">
+<p>ラリーとロビンが次のような記憶ゲームを行う。1回ごとに 1 から 10 までの数のうちどれか 1 つがランダムに告げられていく。
+各プレイヤーは前に呼ばれた数字を 5 つまで覚えることができる。
+もし告げられた数字を記憶していたら、1 ポイントを得る。
+もし記憶していなかった数字ならば、プレイヤーは呼ばれた数字を記憶に加え、もし記憶が一杯であれば他の数字を取り除く。</p>
+<p>両プレイヤー共に空の記憶から始める。各プレイヤーは共に記憶していなかった新たな数字を必ず記憶していくが、どの数字を忘れていくかを決める戦略が異なる。ラリーの戦略は一番長く呼ばれなかった数字を忘れる。ロビンの戦略は一番長く記憶していた数字を忘れる。</p>
+<p>ゲームの例を挙げる:</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td" style="background-color:#C1DAF9;">ターン</td>
+<td class="style_td" style="background-color:#C1DAF9;">呼ばれた数字</td>
+<td class="style_td" style="background-color:#C1DAF9;">ラリーの記憶</td>
+<td class="style_td" style="background-color:#C1DAF9;">ラリーの得点</td>
+<td class="style_td" style="background-color:#C1DAF9;">ロビンの記憶</td>
+<td class="style_td" style="background-color:#C1DAF9;">ロビンの得点</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">1</td>
+<td class="style_td" style="text-align:center;">1</td>
+<td class="style_td" style="text-align:right;">1</td>
+<td class="style_td" style="text-align:center;">0</td>
+<td class="style_td" style="text-align:right;">1</td>
+<td class="style_td" style="text-align:center;">0</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">2</td>
+<td class="style_td" style="text-align:center;">2</td>
+<td class="style_td" style="text-align:right;">1,2</td>
+<td class="style_td" style="text-align:center;">0</td>
+<td class="style_td" style="text-align:right;">1,2</td>
+<td class="style_td" style="text-align:center;">0</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">3</td>
+<td class="style_td" style="text-align:center;">4</td>
+<td class="style_td" style="text-align:right;">1,2,4</td>
+<td class="style_td" style="text-align:center;">0</td>
+<td class="style_td" style="text-align:right;">1,2,4</td>
+<td class="style_td" style="text-align:center;">0</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">4</td>
+<td class="style_td" style="text-align:center;">6</td>
+<td class="style_td" style="text-align:right;">1,2,4,6</td>
+<td class="style_td" style="text-align:center;">0</td>
+<td class="style_td" style="text-align:right;">1,2,4,6</td>
+<td class="style_td" style="text-align:center;">0</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">5</td>
+<td class="style_td" style="text-align:center;">1</td>
+<td class="style_td" style="text-align:right;">1,2,4,6</td>
+<td class="style_td" style="text-align:center;">1</td>
+<td class="style_td" style="text-align:right;">1,2,4,6</td>
+<td class="style_td" style="text-align:center;">1</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">6</td>
+<td class="style_td" style="text-align:center;">8</td>
+<td class="style_td" style="text-align:right;">1,2,4,6,8</td>
+<td class="style_td" style="text-align:center;">1</td>
+<td class="style_td" style="text-align:right;">1,2,4,6,8</td>
+<td class="style_td" style="text-align:center;">1</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">7</td>
+<td class="style_td" style="text-align:center;">10</td>
+<td class="style_td" style="text-align:right;">1,4,6,8,10</td>
+<td class="style_td" style="text-align:center;">1</td>
+<td class="style_td" style="text-align:right;">2,4,6,8,10</td>
+<td class="style_td" style="text-align:center;">1</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">8</td>
+<td class="style_td" style="text-align:center;">2</td>
+<td class="style_td" style="text-align:right;">1,2,6,8,10</td>
+<td class="style_td" style="text-align:center;">1</td>
+<td class="style_td" style="text-align:right;">2,4,6,8,10</td>
+<td class="style_td" style="text-align:center;">2</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">9</td>
+<td class="style_td" style="text-align:center;">4</td>
+<td class="style_td" style="text-align:right;">1,2,4,8,10</td>
+<td class="style_td" style="text-align:center;">1</td>
+<td class="style_td" style="text-align:right;">2,4,6,8,10</td>
+<td class="style_td" style="text-align:center;">3</td>
+</tr>
+<tr>
+<td class="style_td" style="text-align:center;">10</td>
+<td class="style_td" style="text-align:center;">1</td>
+<td class="style_td" style="text-align:right;">1,2,4,8,10</td>
+<td class="style_td" style="text-align:center;">2</td>
+<td class="style_td" style="text-align:right;">1,4,6,8,10</td>
+<td class="style_td" style="text-align:center;">3</td>
+</tr>
+</tbody></table></div>
+<p>ラリーの得点を L で、ロビンの得点を R で表すとすると、50 ターン後の |L-R| の期待値を求めよ。小数点以下 8 桁に四捨五入し、x.xxxxxxxx の形式で回答せよ。</p>
+</div>

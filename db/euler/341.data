@@ -1,0 +1,48 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20341
+
+<div id="body">
+<p><strong>Golomb の自己記述的数列</strong> {G(n)} は、n が数列にちょうど G(n) 回現れるような、自然数の非減少の数列である。最初のいくつかの n に対する G(n) の値は次の通りである。</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td">n</td>
+<td class="style_td">1</td>
+<td class="style_td">2</td>
+<td class="style_td">3</td>
+<td class="style_td">4</td>
+<td class="style_td">5</td>
+<td class="style_td">6</td>
+<td class="style_td">7</td>
+<td class="style_td">8</td>
+<td class="style_td">9</td>
+<td class="style_td">10</td>
+<td class="style_td">11</td>
+<td class="style_td">12</td>
+<td class="style_td">13</td>
+<td class="style_td">14</td>
+<td class="style_td">15</td>
+<td class="style_td">…</td>
+</tr>
+<tr>
+<td class="style_td">G(n)</td>
+<td class="style_td">1</td>
+<td class="style_td">2</td>
+<td class="style_td">2</td>
+<td class="style_td">3</td>
+<td class="style_td">3</td>
+<td class="style_td">4</td>
+<td class="style_td">4</td>
+<td class="style_td">4</td>
+<td class="style_td">5</td>
+<td class="style_td">5</td>
+<td class="style_td">5</td>
+<td class="style_td">6</td>
+<td class="style_td">6</td>
+<td class="style_td">6</td>
+<td class="style_td">6</td>
+<td class="style_td">…</td>
+</tr>
+</tbody></table></div>
+<p>G(10<span style="font-size:60%;vertical-align:super;">3</span>) = 86, G(10<span style="font-size:60%;vertical-align:super;">6</span>) = 6137 である。
+また、1≦n＜10<span style="font-size:60%;vertical-align:super;">3</span> に対し、 ΣG(n<span style="font-size:60%;vertical-align:super;">3</span>) = 153506976 である。</p>
+<p>1≦n＜10<span style="font-size:60%;vertical-align:super;">6</span> に対し、 ΣG(n<span style="font-size:60%;vertical-align:super;">3</span>) を求めよ。</p>
+</div>

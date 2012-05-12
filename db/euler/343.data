@@ -1,0 +1,14 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20343
+
+<div id="body">
+<p>ある正の整数 <span style="font-style:italic;">k</span> において、分数 x<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">i</span></span>/y<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">i</span></span> による有限数列 a<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">i</span></span> は次のように定義される :</p>
+<p>a<span style="font-size:60%;vertical-align:sub;">1</span> = 1 / <span style="font-style:italic;">k</span><br>
+a<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">i</span></span> = (x<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">i</span>-1</span>+1)/(y<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">i</span>-1</span>-1)　[ ただし、<span style="font-style:italic;">i</span>&gt;1 のとき、約分可能な場合は約分する ]</p>
+<p>a<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">i</span></span> がある整数 <span style="font-style:italic;">n</span> になったとき、数列はそこで終了とする。(つまり、y<span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">i</span></span>=1になった時)<br>
+ここで関数 f(<span style="font-style:italic;">k</span>) = <span style="font-style:italic;">n</span> と定義する。<br>
+例えば、<span style="font-style:italic;">k</span> = 20 のとき、</p>
+<p>1/20 → 2/19 → 3/18 = 1/6 → 2/5 → 3/4 → 4/3 → 5/2 → 6/1 = 6</p>
+<p>したがって f(20) = 6 となる。</p>
+<p>同様に、f(1) = 1, f(2) = 2, f(3) = 1, そして 1 ≤ <span style="font-style:italic;">k</span> ≤ 100 のとき、 Σf(<span style="font-style:italic;">k</span><span style="font-size:60%;vertical-align:super;">3</span>) = 118937 となる。</p>
+<p>1 ≤ <span style="font-style:italic;">k</span> ≤ 2×10<span style="font-size:60%;vertical-align:super;">6</span> のときの Σf(<span style="font-style:italic;">k</span><span style="font-size:60%;vertical-align:super;">3</span>) を求めよ。</p>
+</div>

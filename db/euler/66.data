@@ -1,0 +1,17 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2066
+
+<div id="body">
+<p>次の形式の, 2次のディオファントス方程式を考えなさい:</p>
+<div style="text-align:center;">
+<span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:super;">2</span> - <span style="font-style:italic;">Dy</span><span style="font-size:60%;vertical-align:super;">2</span> = 1</div>
+<p>たとえばD=13のとき, xを最小にする解は649<span style="font-size:60%;vertical-align:super;">2</span> - 13×180<span style="font-size:60%;vertical-align:super;">2</span> = 1である.</p>
+<p>Dが平方数(square)のとき, 正整数のなかに解は存在しないと考えられる.</p>
+<p>D = {2, 3, 5, 6, 7}に対してxを最小にする解は次のようになる:</p>
+<div style="text-align:center;">3<span style="font-size:60%;vertical-align:super;">2</span> - 2×2<span style="font-size:60%;vertical-align:super;">2</span> = 1</div>
+<div style="text-align:center;">2<span style="font-size:60%;vertical-align:super;">2</span> - 3×1<span style="font-size:60%;vertical-align:super;">2</span> = 1</div>
+<div style="text-align:center;">9<span style="font-size:60%;vertical-align:super;">2</span> - 5×4<span style="font-size:60%;vertical-align:super;">2</span> = 1</div>
+<div style="text-align:center;">5<span style="font-size:60%;vertical-align:super;">2</span> - 6×2<span style="font-size:60%;vertical-align:super;">2</span> = 1</div>
+<div style="text-align:center;">8<span style="font-size:60%;vertical-align:super;">2</span> - 7×3<span style="font-size:60%;vertical-align:super;">2</span> = 1</div>
+<p>したがって, D ≤ 7に対してxを最小にする解を考えると, D=5のときxは最大である.</p>
+<p>D ≤ 1000に対するxを最小にする解で, xが最大になるようなDの値を見つけよ.</p>
+</div>

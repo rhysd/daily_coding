@@ -1,0 +1,27 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2045
+
+<div id="body">
+<p>三角数, 五角数, 六角数は以下のように生成される.</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td">三角数</td>
+<td class="style_td">
+<span style="font-style:italic;">T</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>=n(n+1)/2</td>
+<td class="style_td">1, 3,  6, 10, 15, ...</td>
+</tr>
+<tr>
+<td class="style_td">五角数</td>
+<td class="style_td">
+<span style="font-style:italic;">P</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>=n(3n-1)/2</td>
+<td class="style_td">1, 5, 12, 22, 35, ...</td>
+</tr>
+<tr>
+<td class="style_td">六角数</td>
+<td class="style_td">
+<span style="font-style:italic;">H</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>=n(2n-1)</td>
+<td class="style_td">1, 6, 15, 28, 45, ...</td>
+</tr>
+</tbody></table></div>
+<p><span style="font-style:italic;">T</span><span style="font-size:60%;vertical-align:sub;">285</span> = <span style="font-style:italic;">P</span><span style="font-size:60%;vertical-align:sub;">165</span> = <span style="font-style:italic;">H</span><span style="font-size:60%;vertical-align:sub;">143</span> = 40755であることが分かる.</p>
+<p>次の三角数かつ五角数かつ六角数な数を求めよ.</p>
+</div>

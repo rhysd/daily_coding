@@ -1,0 +1,17 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20116
+
+<div id="body">
+<p>5 個の黒い正方形のタイルの列を、赤(長さ 2)、緑(長さ 3)、青(長さ 4)から選んで、この色のついた長方形のタイルでいくつか置き換える。</p>
+<p>もし赤のタイルを選んだ場合は、ちょうど 7 通りの方法がある。</p>
+<div class="img_margin" style="text-align:left"><a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%20116&amp;openfile=116_1.png" title="116_1.png"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%20116&amp;src=116_1.png" alt="116_1.png" title="116_1.png" width="565" height="83"></a></div>
+
+<p>もし緑のタイルを選んだ場合は、3 通りである。</p>
+<div class="img_margin" style="text-align:left"><a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%20116&amp;openfile=116_2.png" title="116_2.png"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%20116&amp;src=116_2.png" alt="116_2.png" title="116_2.png" width="424" height="40"></a></div>
+
+<p>もし青のタイルを選んだ場合は、2 通りである。</p>
+<div class="img_margin" style="text-align:left"><a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%20116&amp;openfile=116_3.png" title="116_3.png"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%20116&amp;src=116_3.png" alt="116_3.png" title="116_3.png" width="281" height="39"></a></div>
+
+<p>複数の色を混ぜられない場合は、5 ユニットの長さの 1 列に並んだ黒いタイルを置き換える方法は 7 + 3 + 2 = 12 通りある。</p>
+<p>50 ユニットの長さの 1 列に並んだ黒いタイルを置き換える方法は何通りあるか。ただし複数の色を混ぜることはできず、少なくとも 1 個は色のついたタイルを使うこと。</p>
+<p>注: この問題は Problem <a href="http://odz.sakura.ne.jp/projecteuler/index.php?Problem%20117" rel="nofollow">117</a> に関連する</p>
+</div>

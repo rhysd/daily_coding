@@ -1,0 +1,36 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20101
+
+<div id="body">
+<p>数列のk個の項を与えられたときに, 次の項を確実に求めることは不可能である. その数列に合うような多項式が無限個存在するからである.</p>
+<p>例として, 立方数の数列を考えよう. これは生成関数 u<span style="font-size:60%;vertical-align:sub;">n</span> = n<span style="font-size:60%;vertical-align:super;">3</span> で定義され, 1, 8, 27, 64, 125, 216, ...となる.</p>
+<p>この数列の最初の2項のみが与えられているとしよう. "Simple is best"の法則にのっとり, 線形の関係があると仮定し, 3つ目の項が15であると予想する (差分が7). もし最初の3項のみが与えられていたとしても, 同じ原則により, 二次の関係があると仮定して次の項を予測する.</p>
+<p>数列の最初のk項を生成できる最適な多項式のn項を OP(k, n) で表すことにする.
+明らかに, n ≤ k について OP(k, n) は正しい. 最初の異なる項 (First Incorrect Term, FIT) は OP(k, k+1) であろう. これを bad OP (BOP) と呼ぶことにする.</p>
+<p>原則より, 最初の項しか与えられていない場合には, 定数項とするのが理に適っているだろう; 即ち, n ≥ 2, OP(1, n) = u<span style="font-size:60%;vertical-align:sub;">1</span>.</p>
+<p>従って, 立方数の数列について以下のOPを得る.</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td">OP(1, n) = 1</td>
+<td class="style_td">1, <span style="color:red">1</span>, 1, 1, ...</td>
+</tr>
+<tr>
+<td class="style_td">OP(2, n) = 7n−6</td>
+<td class="style_td">1, 8, <span style="color:red">15</span>, ...</td>
+</tr>
+<tr>
+<td class="style_td">OP(3, n) = 6n<span style="font-size:60%;vertical-align:super;">2</span>−11n+6</td>
+<td class="style_td">1, 8, 27, <span style="color:red">58</span>, ...</td>
+</tr>
+<tr>
+<td class="style_td">OP(4, n) = n<span style="font-size:60%;vertical-align:super;">3</span>
+</td>
+<td class="style_td">1, 8, 27, 64, 125, ...</td>
+</tr>
+</tbody></table></div>
+<p>明らかに, k ≥ 4 のときにはBOPは存在しない.</p>
+<p>BOPのFIT (上の例では赤で示されている) の和は, 1 + 15 + 58 = 74 である.</p>
+<p>以下の10次多項式からなる生成関数を考える:</p>
+<div style="text-align:center">u<span style="font-size:60%;vertical-align:sub;">n</span> = 1 − n + n<span style="font-size:60%;vertical-align:super;">2</span> − n<span style="font-size:60%;vertical-align:super;">3</span> + n<span style="font-size:60%;vertical-align:super;">4</span> − n<span style="font-size:60%;vertical-align:super;">5</span> + n<span style="font-size:60%;vertical-align:super;">6</span> − n<span style="font-size:60%;vertical-align:super;">7</span> + n<span style="font-size:60%;vertical-align:super;">8</span> − n<span style="font-size:60%;vertical-align:super;">9</span> + n<span style="font-size:60%;vertical-align:super;">10</span>
+</div>
+<p>BOPのFITの総和を求めよ.</p>
+</div>

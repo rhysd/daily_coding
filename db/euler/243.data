@@ -1,0 +1,14 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20243
+
+<div id="body">
+<p>分子が分母より小さい正の分数を真分数と呼ぶ。<br>
+任意の分母 d に対し、真分数は d-1 個ある。たとえば、d = 12 では:<br><span style="font-size:60%;vertical-align:super;">1</span>/<span style="font-size:60%;vertical-align:sub;">12</span> , <span style="font-size:60%;vertical-align:super;">2</span>/<span style="font-size:60%;vertical-align:sub;">12</span> , <span style="font-size:60%;vertical-align:super;">3</span>/<span style="font-size:60%;vertical-align:sub;">12</span> ,
+<span style="font-size:60%;vertical-align:super;">4</span>/<span style="font-size:60%;vertical-align:sub;">12</span> , <span style="font-size:60%;vertical-align:super;">5</span>/<span style="font-size:60%;vertical-align:sub;">12</span> , <span style="font-size:60%;vertical-align:super;">6</span>/<span style="font-size:60%;vertical-align:sub;">12</span> ,
+<span style="font-size:60%;vertical-align:super;">7</span>/<span style="font-size:60%;vertical-align:sub;">12</span> , <span style="font-size:60%;vertical-align:super;">8</span>/<span style="font-size:60%;vertical-align:sub;">12</span> , <span style="font-size:60%;vertical-align:super;">9</span>/<span style="font-size:60%;vertical-align:sub;">12</span> ,
+<span style="font-size:60%;vertical-align:super;">10</span>/<span style="font-size:60%;vertical-align:sub;">12</span> , <span style="font-size:60%;vertical-align:super;">11</span>/<span style="font-size:60%;vertical-align:sub;">12</span> である。</p>
+<p>約分できない分数を弾性分数(resilient fraction)と呼ぶことにしよう。<br>
+さらに分母に対し弾性(resilience)を真分数のうち弾性分数の比率と定義し、R(d)で表す。
+例えば、R(12) = <span style="font-size:60%;vertical-align:super;">4</span>/<span style="font-size:60%;vertical-align:sub;">11</span> である。<br>
+ちなみに d = 12 は弾性が R(d) &lt; <span style="font-size:60%;vertical-align:super;">4</span>/<span style="font-size:60%;vertical-align:sub;">10</span> を満たす最小の分母である。</p>
+<p>R(d) &lt; <span style="font-size:60%;vertical-align:super;">15499</span>/<span style="font-size:60%;vertical-align:sub;">94744</span> を満たす最小の分母 d を求めよ。</p>
+</div>

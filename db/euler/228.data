@@ -1,0 +1,15 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20228
+
+<div id="body">
+<p>S<span style="font-size:60%;vertical-align:sub;">n</span>を正n角形とし、各頂点の座標が以下の式で表せるとする。</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>x<span style="font-size:60%;vertical-align:sub;">k</span> = cos(<span style="font-size:60%;vertical-align:super;">2k-1</span>/<span style="font-size:60%;vertical-align:sub;">n</span>×180°)</li>
+<li>y<span style="font-size:60%;vertical-align:sub;">k</span> = sin(<span style="font-size:60%;vertical-align:super;">2k-1</span>/<span style="font-size:60%;vertical-align:sub;">n</span>×180°)</li>
+</ul>
+<p>各S<span style="font-size:60%;vertical-align:sub;">n</span>は辺上と内部の全ての点からなる、塗りつぶされた図形とする。</p>
+<p>2つの図形S,Tのミンコフスキー和(Minkowski sum)S+T は、S上の全ての点とT上の全ての点を足した結果である。点の足し算は (u, v) + (x, y) = (u+x, v+y) で求める。</p>
+<p>例として、S<span style="font-size:60%;vertical-align:sub;">3</span>とS<span style="font-size:60%;vertical-align:sub;">4</span>の和は下図のピンク色の六角形で表せる。</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_228.png" title="p_228.png"><img src="http://projecteuler.net/project/images/p_228.png" alt="p_228.png" title="p_228.png"></a></div>
+
+<p>S<span style="font-size:60%;vertical-align:sub;">1864</span>+S<span style="font-size:60%;vertical-align:sub;">1865</span>+...+S<span style="font-size:60%;vertical-align:sub;">1909</span>はいくつ辺を持つか。</p>
+</div>

@@ -1,0 +1,11 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20177
+
+<div id="body">
+<p>ABCDを、ACとBDを対角線とする凸な四角形とする。各頂点で対角線は2つの角をつくり、合計で8つの角をつくる。</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_177_quad.gif" title="p_177_quad.gif"><img src="http://projecteuler.net/project/images/p_177_quad.gif" alt="p_177_quad.gif" title="p_177_quad.gif"></a></div>
+
+<p>例えば、頂点AではCADとCABが2つの角である。</p>
+<p>全ての8つの角が度数法で整数となる角度を持つ四角形を、"整数角の四角形"と定義する。例えば、正方形は8つの角が45°となる。他の例では、DAC = 20°, BAC = 60°, ABD = 50°, CBD = 30°, BCA = 40°, DCA = 30°, CDB = 80°, ADB = 50°となる四角形がある。</p>
+<p>相似でない整数角の四角形はいくつ存在するか?</p>
+<p>注: 計算時に、角度が整数値から10<span style="font-size:60%;vertical-align:super;">-9</span>以内ならば、その角を整数角とみなしてもよい。</p>
+</div>

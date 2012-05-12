@@ -1,0 +1,13 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20155
+
+<div id="body">
+<p>静電容量が等しい理想的なキャパシタのみを使った電気回路がある.</p>
+<p>複数のキャパシタを直列または並列に接続してサブユニットを形成し, そのサブユニットを他のキャパシタやサブユニットと直列または並列に接続してより大きなサブユニットを形成し, そのようにして最終的な回路を形成する.</p>
+<p>この単純な手続きを<em>n</em>個以下の理想的なキャパシタに適用し, 全体の静電容量が異なる複数の回路を構成することができる. 例えば, 60μFのキャパシタで<em>n</em>=3の場合は, 以下のように7通りの異なる静電容量を得ることができる.</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_155_capacitors1.gif" title="p_155_capacitors1.gif"><img src="http://projecteuler.net/project/images/p_155_capacitors1.gif" alt="p_155_capacitors1.gif" title="p_155_capacitors1.gif"></a></div>
+
+<p><em>n</em>個以下の等価なキャパシタと上で述べた単純な手続きから得られる全体の静電容量が異なる組み合わせの数を<em>D</em>(<em>n</em>)と書くとすると, <em>D</em>(1)=1, <em>D</em>(2)=3, <em>D</em>(3)=7, ... となる.</p>
+<p><em>D</em>(18)を求めよ.</p>
+<p>注意：キャパシタC1, C2, ...を並列に接続したときの全体の静電容量はCT = C1 + C2 + ... ,
+直列に接続したときの全体の静電容量は <a href="http://projecteuler.net/project/images/p_155_capsform.gif" title="p_155_capsform.gif"><img src="http://projecteuler.net/project/images/p_155_capsform.gif" alt="p_155_capsform.gif" title="p_155_capsform.gif"></a> で求められる.</p>
+</div>

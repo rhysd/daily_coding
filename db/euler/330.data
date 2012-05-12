@@ -1,0 +1,11 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20330
+
+<div id="body">
+<p>全ての整数 n に対し、実数の無限数列 a(n) は次のように定義される。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_330_formula.gif" title="p_330_formula.gif"><img src="http://projecteuler.net/project/images/p_330_formula.gif" alt="p_330_formula.gif" title="p_330_formula.gif"></a></div>
+<p>例えば、<br><a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%20330&amp;openfile=1.gif" title="1.gif"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%20330&amp;src=1.gif" alt="1.gif" title="1.gif" width="370" height="151"></a><br>
+ここで e = 2.7182818... はオイラーの定数である。</p>
+<p>a(n) は整数 A(n) と B(n) に対し<a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%20330&amp;openfile=2.gif" title="2.gif"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%20330&amp;src=2.gif" alt="2.gif" title="2.gif" width="111" height="51"></a>の形となることが示せる。<br>
+例えば a(10) = <a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%20330&amp;openfile=3.gif" title="3.gif"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%20330&amp;src=3.gif" alt="3.gif" title="3.gif" width="193" height="49"></a>である。</p>
+<p>A(10<span style="font-size:60%;vertical-align:super;">9</span>)+B(10<span style="font-size:60%;vertical-align:super;">9</span>) を求め、答えを 77 777 777 で割った余りを入力せよ。</p>
+</div>

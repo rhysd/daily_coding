@@ -1,0 +1,12 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20143
+
+<div id="body">
+<p>ABCを全ての内角が120度未満の三角形とする. Xを三角形の内点とし, XA = p, XB = q, XC = rとする.</p>
+<p>フェルマーは「p+q+rを最小にするXを探す方法はあるか?」とトリチェリに問題を出した.</p>
+<p>正三角形 AOB, BNC, AMC がABCの各辺に構成できるならば, AOB, BNC, AMCに外接する3つの円が三角形の内部の1点 T で交わることをトリチェリは示した. さらに, トリチェリ-フェルマー点と呼ばれる T が, p + q + r を最小化することも示した. 更には, 和が最小となるときには, AN = BM = CO = p + q + r であり, AN, BM, COもまた T と交わることも示せる.</p>
+<div class="img_margin" style="text-align:left"><a href="http://projecteuler.net/project/images/p_143_torricelli.gif" title="p_143_torricelli.gif"><img src="http://projecteuler.net/project/images/p_143_torricelli.gif" alt="p_143_torricelli.gif" title="p_143_torricelli.gif"></a></div>
+
+<p>和が最小化されているとして, a, b, c, p, q, r が全て正の整数であるとき, 三角形 ABC をトリチェリ三角形と呼ぶ. 例えば, a = 399, b = 455, c = 511 は p + q + r = 784 のトリチェリ三角形である.</p>
+<p>トリチェリ三角形について 異なる値をとる p + q + r ≤ 120000 の総和を求めよ.</p>
+<p>注: この問題は最近変更された. 正しいパラメータを用いているかどうかチェックしてほしい.</p>
+</div>

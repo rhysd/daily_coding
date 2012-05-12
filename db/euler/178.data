@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20178
+
+<div id="body">
+<p>45656を考えよう. 連続する2桁の数は全て差の絶対値が 1 である.</p>
+<p>連続する2桁の数の差の絶対値が全て 1 である数をステップ数と呼ぶ.</p>
+<p>Pandigital数では0から9の各数が少なくとも 1 回出現する.</p>
+<p>10<span style="font-size:60%;vertical-align:super;">40</span>未満の数でPandigital数かつステップ数であるものの数を答えよ.</p>
+</div>

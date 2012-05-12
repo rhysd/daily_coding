@@ -1,0 +1,10 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20377
+
+<div id="body">
+<p>各桁にゼロを持たず、桁の数の合計が 5 になる正の整数は16個ある。すなわち、:<br>
+5, 14, 23, 32, 41, 113, 122, 131, 212, 221, 311, 1112, 1121, 1211, 2111, 11111.<br>
+これらの和は 17891 となる。</p>
+<p>各桁にゼロを持たず、桁の数の合計が <span style="font-style:italic;">n</span> になる正の整数の和を <span style="font-style:italic;">f</span>(<span style="font-style:italic;">n</span>) としよう。</p>
+<p><a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%20377&amp;openfile=sod_13.gif" title="sod_13.gif"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%20377&amp;src=sod_13.gif" alt="sod_13.gif" title="sod_13.gif" width="89" height="64"></a>を求めよ。</p>
+<p>回答を最後の9桁として答えよ。</p>
+</div>

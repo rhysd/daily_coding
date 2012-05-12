@@ -1,0 +1,11 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20378
+
+<div id="body">
+<p><span style="font-style:italic;">n</span> 番目の三角数を T(<span style="font-style:italic;">n</span>) としよう、すなわち T(<span style="font-style:italic;">n</span>) = <span style="font-size:60%;vertical-align:super;"><span style="font-style:italic;">n</span>(<span style="font-style:italic;">n</span>+1)</span>/<span style="font-size:60%;vertical-align:sub;">2</span>。</p>
+<p>T(<span style="font-style:italic;">n</span>) の約数の数を dT(<span style="font-style:italic;">n</span>) としよう。<br>
+例えば、T(7) = 28、 dT(7) = 6 となる。</p>
+<p>1 ≤ <span style="font-style:italic;">i</span> &lt; <span style="font-style:italic;">j</span> &lt; <span style="font-style:italic;">k</span> ≤ <span style="font-style:italic;">n</span>、そして dT(<span style="font-style:italic;">i</span>) &gt; dT(<span style="font-style:italic;">j</span>) &gt; dT(<span style="font-style:italic;">k</span>) が成り立つ三数 (triples) (<span style="font-style:italic;">i</span>, <span style="font-style:italic;">j</span>, <span style="font-style:italic;">k</span>) の個数を Tr(<span style="font-style:italic;">n</span>) としよう。<br>
+Tr(20) = 14 、 Tr(100) = 5772 、 Tr(1000) = 11174776 となる。</p>
+<p>Tr(60 000 000) を求めよ。<br>
+回答として最後の18桁を答えよ。</p>
+</div>

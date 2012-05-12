@@ -1,0 +1,10 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20383
+
+<div id="body">
+<p><span style="font-style:italic;">n</span> を 5<span style="font-size:60%;vertical-align:super;"><span style="font-style:italic;">x</span></span> で割り切ることができる最大の整数 <span style="font-style:italic;">x</span> を f<span style="font-size:60%;vertical-align:sub;">5</span>(<span style="font-style:italic;">n</span>) で表すとしよう。<br>
+例えば、 f<span style="font-size:60%;vertical-align:sub;">5</span>(625000) = 7 となる。</p>
+<p>f<span style="font-size:60%;vertical-align:sub;">5</span>((2･<span style="font-style:italic;">i</span>-1)!) &lt; 2･f<span style="font-size:60%;vertical-align:sub;">5</span>(<span style="font-style:italic;">i</span>!) 、
+かつ 1 ≤ <span style="font-style:italic;">i</span> ≤ <span style="font-style:italic;">n</span> を満たす <span style="font-style:italic;">i</span> の個数を T<span style="font-size:60%;vertical-align:sub;">5</span>(<span style="font-style:italic;">n</span>) で表すとしよう。<br></p>
+<p>T<span style="font-size:60%;vertical-align:sub;">5</span>(10<span style="font-size:60%;vertical-align:super;">3</span>) = 68 、そして T<span style="font-size:60%;vertical-align:sub;">5</span>(10<span style="font-size:60%;vertical-align:super;">9</span>) = 2408210 であることが確認できる。</p>
+<p>T<span style="font-size:60%;vertical-align:sub;">5</span>(10<span style="font-size:60%;vertical-align:super;">18</span>) を求めよ。</p>
+</div>

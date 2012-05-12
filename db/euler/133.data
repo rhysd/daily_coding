@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20133
+
+<div id="body">
+<p>1のみからなる数をレプユニットという。R(k) を長さ k のレプユニットとする。例えば、R(6) = 111111 となる。</p>
+<p><span style="font-style:italic;">R</span>(10<span style="font-size:60%;vertical-align:super;"><span style="font-style:italic;">n</span></span>) というレプユニットについて考える。</p>
+<p>R(10), R(100), R(1000) は 17 では割り切れないが、R(10000) は 17 で割り切られる。さらに、<span style="font-style:italic;">R</span>(10<span style="font-size:60%;vertical-align:super;"><span style="font-style:italic;">n</span></span>) が 19 で割り切られるような n は存在しない。驚くべきことに、<span style="font-style:italic;">R</span>(10<span style="font-size:60%;vertical-align:super;"><span style="font-style:italic;">n</span></span>) の因子となりうる100未満の素数は 11, 17, 41, 73 の4個のみである。</p>
+<p><span style="font-style:italic;">R</span>(10<span style="font-size:60%;vertical-align:super;"><span style="font-style:italic;">n</span></span>) の因子となりえない100000未満の素数の和を求めよ。</p>
+</div>

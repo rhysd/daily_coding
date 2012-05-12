@@ -1,0 +1,24 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20255
+
+<div id="body">
+<p>正整数 n の丸め平方根(rounded-square-root)を、 n の平方根を一番近い整数に丸めたものと定義する。</p>
+<p>次の方法(本質的には整数論に適用したヘロンの方法)で n の丸め平方根が求まる:</p>
+<p>d を数 n の桁数とする。<br>
+もし d が奇数なら、x<span style="font-size:60%;vertical-align:sub;">0</span> = 2 × 10<span style="font-size:60%;vertical-align:super;">(d-1)/2</span><br>
+もし d が偶数なら、x<span style="font-size:60%;vertical-align:sub;">0</span> = 7 × 10<span style="font-size:60%;vertical-align:super;">(d-2)/2</span><br></p>
+<p>x<span style="font-size:60%;vertical-align:sub;">k+1</span> = x<span style="font-size:60%;vertical-align:sub;">k</span> になるまで</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_255_Heron.gif" title="p_255_Heron.gif"><img src="http://projecteuler.net/project/images/p_255_Heron.gif" alt="p_255_Heron.gif" title="p_255_Heron.gif"></a></div>
+<p>を繰り返す。</p>
+<p>例えば、 n = 4321 の丸め平方根を求めてみよう。<br>
+n は4桁である、だから x<span style="font-size:60%;vertical-align:sub;">0</span> = 7 × 10<span style="font-size:60%;vertical-align:super;">(4-2)/2</span> = 70 である。</p>
+<p><a href="http://projecteuler.net/project/images/p_255_Example.gif" title="p_255_Example.gif"><img src="http://projecteuler.net/project/images/p_255_Example.gif" alt="p_255_Example.gif" title="p_255_Example.gif"></a></p>
+<p>x<span style="font-size:60%;vertical-align:sub;">2</span> = x<span style="font-size:60%;vertical-align:sub;">1</span> だから、ここで止める。<br>
+つまり、たった 2 回の繰り返しで、4321 の丸め平方根は 66 であることがわかる
+(実際の平方根は 65.7343137... である)</p>
+<p>この方法を使うと繰り返しの回数は意外に少ない。
+例えば、5 桁の整数(10,000 ≤ n ≤ 99,999) では平均 3.2102888889 である
+(平均は小数点以下 10 桁に四捨五入した)。</p>
+<p>上記の方法を用いて、14 桁の数(10<span style="font-size:60%;vertical-align:super;">13</span> ≤ n &lt; 10<span style="font-size:60%;vertical-align:super;">14</span>)の丸め平方根を求めるのに必要な繰り返しの回数の平均を求めよ。<br>
+回答は小数点以下 10 桁に四捨五入せよ。</p>
+<p>注意: 記号 ⌊x⌋ と ⌈x⌉ はそれぞれ床関数と天井関数を表す。</p>
+</div>

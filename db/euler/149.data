@@ -1,0 +1,38 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20149
+
+<div id="body">
+<p>下の表において、任意の方向(縦横斜め)に隣り合うものの和の最大値は16 (= 8 + 7 + 1)となることは簡単に確かめられる。</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td">-2</td>
+<td class="style_td">5</td>
+<td class="style_td">3</td>
+<td class="style_td">2</td>
+</tr>
+<tr>
+<td class="style_td">9</td>
+<td class="style_td">-6</td>
+<td class="style_td">5</td>
+<td class="style_td">1</td>
+</tr>
+<tr>
+<td class="style_td">3</td>
+<td class="style_td">2</td>
+<td class="style_td">7</td>
+<td class="style_td">3</td>
+</tr>
+<tr>
+<td class="style_td">-1</td>
+<td class="style_td">8</td>
+<td class="style_td">-4</td>
+<td class="style_td">8</td>
+</tr>
+</tbody></table></div>
+<p>いま、同じ探索をより大きなものについてもしてみることにする。</p>
+<p>まず、400万個の擬似乱数を"Lagged Fibonacci Generator"によって生成する。</p>
+<p>1 ≤ k ≤ 55 について、<span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span></span> = [100003 - 200003<span style="font-style:italic;">k</span> + 300007<span style="font-style:italic;">k</span><span style="font-size:60%;vertical-align:super;">3</span>] (<span style="font-style:italic;">modulo</span> 1000000) - 500000 <br>
+56 ≤ k ≤ 4000000 について、<span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span></span> = [<span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span>-24</span> + <span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span>-55</span> + 1000000] (<span style="font-style:italic;">modulo</span> 1000000) - 500000</p>
+<p>つまり、<span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;">10</span> = -393027 , <span style="font-style:italic;">s</span><span style="font-size:60%;vertical-align:sub;">100</span> = 86613 となる。</p>
+<p>s の項は、最初の2000個を最初の行に(順番に)、次の2000個を2番目の行に、というように、2000x2000の表に並べ替えられる。</p>
+<p>任意の方向(縦横斜め)に隣り合うものの和の最大値を求めよ。</p>
+</div>

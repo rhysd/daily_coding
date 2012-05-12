@@ -1,0 +1,9 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20346
+
+<div id="body">
+<p>7という数字は特別な数字である、なぜなら7は2進数では111と表せ、また6進数では11と表せる。(すなわち 7<span style="font-size:60%;vertical-align:sub;">10</span> = 11<span style="font-size:60%;vertical-align:sub;">6</span> = 111<span style="font-size:60%;vertical-align:sub;">2</span>).
+別の言い方をすると、7は少なくとも二種類の1より大きい底の記数法でレピュニット(全ての桁が1である自然数)であるという。</p>
+<p>ここで上記の特徴を有する正の整数を「強いレピュニット」と呼ぶことにする。50未満には8つの強いレピュニットが存在する。:{1,7,13,15,21,31,40,43}.
+さらに、1000未満の強いレピュニットの和は15864になる。</p>
+<p>10<span style="font-size:60%;vertical-align:super;">12</span>未満の強いレピュニットの和を求めよ。</p>
+</div>

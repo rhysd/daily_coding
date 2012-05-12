@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20355
+
+<div id="body">
+<p>集合 {1,2, ..., <span style="font-style:italic;">n</span>} から、「任意の二つの要素の組がすべて互いに素となる(mutually co-prime)」集合を、要素の合計が最大になるように選んだとき、その合計を Co(<span style="font-style:italic;">n</span>) と定義する。</p>
+<p>例えば、Co(10) の値は 30 となり、最大となる部分集合は {1, 5, 7, 8, 9} となる。</p>
+<p>Co(30) = 193、 ならびに Co(100) = 1356 がすでに与えられている。</p>
+<p>Co(200000) を求めよ。</p>
+</div>

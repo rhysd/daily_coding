@@ -1,0 +1,12 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20200
+
+<div id="body">
+<p>p<span style="font-size:60%;vertical-align:super;">2</span>q<span style="font-size:60%;vertical-align:super;">3</span> (p, q は異なる素数)で表せる数をスキューブ(sqube)と定義する。
+例えば、200 = 5<span style="font-size:60%;vertical-align:super;">2</span>2<span style="font-size:60%;vertical-align:super;">3</span>, 120072949 = 23<span style="font-size:60%;vertical-align:super;">2</span>61<span style="font-size:60%;vertical-align:super;">3</span> である。</p>
+<p>最初の5つのスキューブは 72, 108, 200, 392, 500 である。</p>
+<p>面白いことに、200はどの1桁の数字を変更しても素数とならない最小の数である。
+この特徴をもつ数字を"耐素数性のある"(prime-proof)数と呼ぶ。
+連続する部分列に "200" を持つ次の耐素数性のあるスキューブは 1992008 である。</p>
+<p>連続する部分列に "200" を持つ 200 番目の耐素数性のあるスキューブを求めよ。</p>
+<p>[訳注: sqube(スキューブ): square(平方数)とcube(立方数)からの造語]</p>
+</div>

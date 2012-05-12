@@ -1,0 +1,24 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20287
+
+<div id="body">
+<p>4分木による符号化を用いて、2<span style="font-size:60%;vertical-align:super;">N</span>×2<span style="font-size:60%;vertical-align:super;">N</span> の白黒の画像を(0 と 1 の)ビット列で表すことができる。このビット列は左から右へ以下のようにして解読する:</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>最初のビットは 2<span style="font-size:60%;vertical-align:super;">N</span>×2<span style="font-size:60%;vertical-align:super;">N</span> 全体の領域を表し、</li>
+<li>"0" は分割を意味する:<br>
+対象の 2<span style="font-size:60%;vertical-align:super;">n</span>×2<span style="font-size:60%;vertical-align:super;">n</span> の領域を 4 つの 2<span style="font-size:60%;vertical-align:super;">n-1</span>×2<span style="font-size:60%;vertical-align:super;">n-1</span> の領域に分割し、続くビット列は左上、右上、左下、右下の順で分割された領域を表し、</li>
+<li>"10" は対象の領域が黒いピクセルしか含んでいないことを表し、</li>
+<li>"11" は対象の領域が白いピクセルしか含んでいないことを表す。</li>
+</ul>
+<p>下の 4×4 の画像について考える(色のついた印はどこで分割が起こるかを表す)</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_287_quadtree.gif" title="p_287_quadtree.gif"><img src="http://projecteuler.net/project/images/p_287_quadtree.gif" alt="p_287_quadtree.gif" title="p_287_quadtree.gif"></a></div>
+<p>この画像はいくつかの文字列で表すことができる、例えば:<br>
+"<span style="color:red"><strong>0</strong></span><span style="color:blue"><strong>0</strong></span>10101010<span style="color:green"><strong>0</strong></span>1011111011<span style="color:orange"><strong>0</strong></span>10101010" は長さ 30 であり、または<br>
+"<span style="color:red"><strong>0</strong></span>10<span style="color:green"><strong>0</strong></span>101111101110", は長さ 16 であり、これはこの画像を表す最短のビット列である。</p>
+<p>正の整数 N に対し、 D<span style="font-size:60%;vertical-align:sub;">N</span> を次の条件を満たす 2<span style="font-size:60%;vertical-align:super;">N</span>×2<span style="font-size:60%;vertical-align:super;">N</span> の画像と定義する:</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>左下のピクセルを座標 x=0, y=0 とし、</li>
+<li>もし (x-2<span style="font-size:60%;vertical-align:super;">N-1</span>)<span style="font-size:60%;vertical-align:super;">2</span>+(y-2<span style="font-size:60%;vertical-align:super;">N-1</span>)<span style="font-size:60%;vertical-align:super;">2</span> ≤ 2<span style="font-size:60%;vertical-align:super;">2N-2</span> ならピクセルは黒とし、</li>
+<li>他の場合はピクセルは白とする。</li>
+</ul>
+<p>D<span style="font-size:60%;vertical-align:sub;">24</span> を表す最短のビット列の長さを求めよ。</p>
+</div>

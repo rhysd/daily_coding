@@ -1,0 +1,11 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2092
+
+<div id="body">
+<p>各桁の2乗を足し合わせて新たな数を作ることを、同じ数が現れるまで繰り返す。</p>
+<p>例えば</p>
+<p>　　44 → 32 → 13 → 10 → <strong>1</strong> → <strong>1</strong><br class="spacer">
+　　85 → <strong>89</strong> → 145 → 42 → 20 → 4 → 16 → 37 → 58 → <strong>89</strong></p>
+<p>のような列である。どちらも1か89で無限ループに陥っている。<br class="spacer">
+驚くことに、どの数から始めても最終的に1か89に到達する。</p>
+<p>では、10,000,000より小さい数で89に到達する数はいくつあるか。</p>
+</div>

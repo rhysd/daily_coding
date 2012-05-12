@@ -1,0 +1,7 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20134
+
+<div id="body">
+<p>連続する素数 <span style="font-style:italic;">p</span><span style="font-size:60%;vertical-align:sub;">1</span> = 19, <span style="font-style:italic;">p</span><span style="font-size:60%;vertical-align:sub;">2</span> = 23 について考える。1219 は末尾の桁が <span style="font-style:italic;">p</span><span style="font-size:60%;vertical-align:sub;">1</span> からなり <span style="font-style:italic;">p</span><span style="font-size:60%;vertical-align:sub;">2</span> で割り切られる最小の数であることが確かめられる。</p>
+<p>実際、 <span style="font-style:italic;">p</span><span style="font-size:60%;vertical-align:sub;">1</span> = 3, <span style="font-style:italic;">p</span><span style="font-size:60%;vertical-align:sub;">2</span> = 5 を除けば、全ての <span style="font-style:italic;">p</span><span style="font-size:60%;vertical-align:sub;">2</span> &gt; <span style="font-style:italic;">p</span><span style="font-size:60%;vertical-align:sub;">1</span> なる連続する素数のペアについて、末尾の桁が <span style="font-style:italic;">p</span><span style="font-size:60%;vertical-align:sub;">1</span> からなり <span style="font-style:italic;">p</span><span style="font-size:60%;vertical-align:sub;">2</span> で割り切られる数 n が存在する。S を n の最小のものであるとする。</p>
+<p>5 ≤ <span style="font-style:italic;">p</span><span style="font-size:60%;vertical-align:sub;">1</span> ≤ 1000000 を満たす連続する素数のペア全てに対し ∑ S を求めよ。</p>
+</div>

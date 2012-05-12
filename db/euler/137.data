@@ -1,0 +1,38 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20137
+
+<div id="body">
+<p>フィボナッチ数列 <span style="font-style:italic;">F</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span></span> = <span style="font-style:italic;">F</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span>-1</span> + <span style="font-style:italic;">F</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span>-2</span>, <span style="font-style:italic;">F</span><span style="font-size:60%;vertical-align:sub;">1</span> = 1, <span style="font-style:italic;">F</span><span style="font-size:60%;vertical-align:sub;">2</span> = 1 (<span style="font-style:italic;">F</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">k</span></span> = 1, 1, 2, 3, 5, 8, ...) によって与えられる無限級数 <span style="font-style:italic;">A</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">F</span></span>(<span style="font-style:italic;">x</span>) = <span style="font-style:italic;">xF</span><span style="font-size:60%;vertical-align:sub;">1</span> + <span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:super;">2</span><span style="font-style:italic;">F</span><span style="font-size:60%;vertical-align:sub;">2</span> + <span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:super;">3</span><span style="font-style:italic;">F</span><span style="font-size:60%;vertical-align:sub;">3</span> + ... を考える。</p>
+<p>この問題では、<span style="font-style:italic;">A</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">F</span></span>(<span style="font-style:italic;">x</span>) が正の整数となるような x の値について考える。
+驚くべきことに,
+<span style="font-style:italic;">A</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">F</span></span>(1/2) = (1/2).1 + (1/2)<span style="font-size:60%;vertical-align:super;">2</span>.1 + (1/2)<span style="font-size:60%;vertical-align:super;">3</span>.2 + (1/2)<span style="font-size:60%;vertical-align:super;">4</span>.3 + (1/2)<span style="font-size:60%;vertical-align:super;">5</span>.5 + ... = 1/2 + 1/4 + 2/8 + 3/16 + 5/32 + ... = 2である.</p>
+<p>最初の5つの自然数に対する x の値を下表に示す。</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td">x</td>
+<td class="style_td">
+<span style="font-style:italic;">A</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">F</span></span>(<span style="font-style:italic;">x</span>)</td>
+</tr>
+<tr>
+<td class="style_td">√2−1</td>
+<td class="style_td">1</td>
+</tr>
+<tr>
+<td class="style_td">1/2</td>
+<td class="style_td">2</td>
+</tr>
+<tr>
+<td class="style_td">(√13−2)/3</td>
+<td class="style_td">3</td>
+</tr>
+<tr>
+<td class="style_td">(√89−5)/8</td>
+<td class="style_td">4</td>
+</tr>
+<tr>
+<td class="style_td">(√34−3)/5</td>
+<td class="style_td">5</td>
+</tr>
+</tbody></table></div>
+<p>xが有理数のときの<span style="font-style:italic;">A</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">F</span></span>(<span style="font-style:italic;">x</span>)の値を, 非常に稀なので, golden nuggetと呼ぶ. 実際, 10番目のgolden nuggetは74049690である.</p>
+<p>15番目のgolden nuggetを求めよ.</p>
+</div>

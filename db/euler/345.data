@@ -1,0 +1,300 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20345
+
+<div id="body">
+<p>行と列それぞれで1つのみの要素を選択した場合の要素の合計が最も大きくなるものを、その行列の「行列計( Matrix Sum )」と定義する。例えば、下記の行列での行列計は3315になる。( = 863 + 383 + 343 + 959 + 767) :</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td">7</td>
+<td class="style_td">53</td>
+<td class="style_td">183</td>
+<td class="style_td">439</td>
+<td class="style_td"><span style="color:#0f0">863</span></td>
+</tr>
+<tr>
+<td class="style_td">497</td>
+<td class="style_td"><span style="color:#0f0">383</span></td>
+<td class="style_td">563</td>
+<td class="style_td">79</td>
+<td class="style_td">973</td>
+</tr>
+<tr>
+<td class="style_td">287</td>
+<td class="style_td">63</td>
+<td class="style_td"><span style="color:#0f0">343</span></td>
+<td class="style_td">169</td>
+<td class="style_td">583</td>
+</tr>
+<tr>
+<td class="style_td">627</td>
+<td class="style_td">343</td>
+<td class="style_td">773</td>
+<td class="style_td"><span style="color:#0f0">959</span></td>
+<td class="style_td">943</td>
+</tr>
+<tr>
+<td class="style_td"><span style="color:#0f0">767</span></td>
+<td class="style_td">473</td>
+<td class="style_td">103</td>
+<td class="style_td">699</td>
+<td class="style_td">303</td>
+</tr>
+</tbody></table></div>
+<p>下記行列の行列計を求めよ。</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td">7</td>
+<td class="style_td">53</td>
+<td class="style_td">183</td>
+<td class="style_td">439</td>
+<td class="style_td">863</td>
+<td class="style_td">497</td>
+<td class="style_td">383</td>
+<td class="style_td">563</td>
+<td class="style_td">79</td>
+<td class="style_td">973</td>
+<td class="style_td">287</td>
+<td class="style_td">63</td>
+<td class="style_td">343</td>
+<td class="style_td">169</td>
+<td class="style_td">583</td>
+</tr>
+<tr>
+<td class="style_td">627</td>
+<td class="style_td">343</td>
+<td class="style_td">773</td>
+<td class="style_td">959</td>
+<td class="style_td">943</td>
+<td class="style_td">767</td>
+<td class="style_td">473</td>
+<td class="style_td">103</td>
+<td class="style_td">699</td>
+<td class="style_td">303</td>
+<td class="style_td">957</td>
+<td class="style_td">703</td>
+<td class="style_td">583</td>
+<td class="style_td">639</td>
+<td class="style_td">913</td>
+</tr>
+<tr>
+<td class="style_td">447</td>
+<td class="style_td">283</td>
+<td class="style_td">463</td>
+<td class="style_td">29</td>
+<td class="style_td">23</td>
+<td class="style_td">487</td>
+<td class="style_td">463</td>
+<td class="style_td">993</td>
+<td class="style_td">119</td>
+<td class="style_td">883</td>
+<td class="style_td">327</td>
+<td class="style_td">493</td>
+<td class="style_td">423</td>
+<td class="style_td">159</td>
+<td class="style_td">743</td>
+</tr>
+<tr>
+<td class="style_td">217</td>
+<td class="style_td">623</td>
+<td class="style_td">3</td>
+<td class="style_td">399</td>
+<td class="style_td">853</td>
+<td class="style_td">407</td>
+<td class="style_td">103</td>
+<td class="style_td">983</td>
+<td class="style_td">89</td>
+<td class="style_td">463</td>
+<td class="style_td">290</td>
+<td class="style_td">516</td>
+<td class="style_td">212</td>
+<td class="style_td">462</td>
+<td class="style_td">350</td>
+</tr>
+<tr>
+<td class="style_td">960</td>
+<td class="style_td">376</td>
+<td class="style_td">682</td>
+<td class="style_td">962</td>
+<td class="style_td">300</td>
+<td class="style_td">780</td>
+<td class="style_td">486</td>
+<td class="style_td">502</td>
+<td class="style_td">912</td>
+<td class="style_td">800</td>
+<td class="style_td">250</td>
+<td class="style_td">346</td>
+<td class="style_td">172</td>
+<td class="style_td">812</td>
+<td class="style_td">350</td>
+</tr>
+<tr>
+<td class="style_td">870</td>
+<td class="style_td">456</td>
+<td class="style_td">192</td>
+<td class="style_td">162</td>
+<td class="style_td">593</td>
+<td class="style_td">473</td>
+<td class="style_td">915</td>
+<td class="style_td">45</td>
+<td class="style_td">989</td>
+<td class="style_td">873</td>
+<td class="style_td">823</td>
+<td class="style_td">965</td>
+<td class="style_td">425</td>
+<td class="style_td">329</td>
+<td class="style_td">803</td>
+</tr>
+<tr>
+<td class="style_td">973</td>
+<td class="style_td">965</td>
+<td class="style_td">905</td>
+<td class="style_td">919</td>
+<td class="style_td">133</td>
+<td class="style_td">673</td>
+<td class="style_td">665</td>
+<td class="style_td">235</td>
+<td class="style_td">509</td>
+<td class="style_td">613</td>
+<td class="style_td">673</td>
+<td class="style_td">815</td>
+<td class="style_td">165</td>
+<td class="style_td">992</td>
+<td class="style_td">326</td>
+</tr>
+<tr>
+<td class="style_td">322</td>
+<td class="style_td">148</td>
+<td class="style_td">972</td>
+<td class="style_td">962</td>
+<td class="style_td">286</td>
+<td class="style_td">255</td>
+<td class="style_td">941</td>
+<td class="style_td">541</td>
+<td class="style_td">265</td>
+<td class="style_td">323</td>
+<td class="style_td">925</td>
+<td class="style_td">281</td>
+<td class="style_td">601</td>
+<td class="style_td">95</td>
+<td class="style_td">973</td>
+</tr>
+<tr>
+<td class="style_td">445</td>
+<td class="style_td">721</td>
+<td class="style_td">11</td>
+<td class="style_td">525</td>
+<td class="style_td">473</td>
+<td class="style_td">65</td>
+<td class="style_td">511</td>
+<td class="style_td">164</td>
+<td class="style_td">138</td>
+<td class="style_td">672</td>
+<td class="style_td">18</td>
+<td class="style_td">428</td>
+<td class="style_td">154</td>
+<td class="style_td">448</td>
+<td class="style_td">848</td>
+</tr>
+<tr>
+<td class="style_td">414</td>
+<td class="style_td">456</td>
+<td class="style_td">310</td>
+<td class="style_td">312</td>
+<td class="style_td">798</td>
+<td class="style_td">104</td>
+<td class="style_td">566</td>
+<td class="style_td">520</td>
+<td class="style_td">302</td>
+<td class="style_td">248</td>
+<td class="style_td">694</td>
+<td class="style_td">976</td>
+<td class="style_td">430</td>
+<td class="style_td">392</td>
+<td class="style_td">198</td>
+</tr>
+<tr>
+<td class="style_td">184</td>
+<td class="style_td">829</td>
+<td class="style_td">373</td>
+<td class="style_td">181</td>
+<td class="style_td">631</td>
+<td class="style_td">101</td>
+<td class="style_td">969</td>
+<td class="style_td">613</td>
+<td class="style_td">840</td>
+<td class="style_td">740</td>
+<td class="style_td">778</td>
+<td class="style_td">458</td>
+<td class="style_td">284</td>
+<td class="style_td">760</td>
+<td class="style_td">390</td>
+</tr>
+<tr>
+<td class="style_td">821</td>
+<td class="style_td">461</td>
+<td class="style_td">843</td>
+<td class="style_td">513</td>
+<td class="style_td">17</td>
+<td class="style_td">901</td>
+<td class="style_td">711</td>
+<td class="style_td">993</td>
+<td class="style_td">293</td>
+<td class="style_td">157</td>
+<td class="style_td">274</td>
+<td class="style_td">94</td>
+<td class="style_td">192</td>
+<td class="style_td">156</td>
+<td class="style_td">574</td>
+</tr>
+<tr>
+<td class="style_td">34</td>
+<td class="style_td">124</td>
+<td class="style_td">4</td>
+<td class="style_td">878</td>
+<td class="style_td">450</td>
+<td class="style_td">476</td>
+<td class="style_td">712</td>
+<td class="style_td">914</td>
+<td class="style_td">838</td>
+<td class="style_td">669</td>
+<td class="style_td">875</td>
+<td class="style_td">299</td>
+<td class="style_td">823</td>
+<td class="style_td">329</td>
+<td class="style_td">699</td>
+</tr>
+<tr>
+<td class="style_td">815</td>
+<td class="style_td">559</td>
+<td class="style_td">813</td>
+<td class="style_td">459</td>
+<td class="style_td">522</td>
+<td class="style_td">788</td>
+<td class="style_td">168</td>
+<td class="style_td">586</td>
+<td class="style_td">966</td>
+<td class="style_td">232</td>
+<td class="style_td">308</td>
+<td class="style_td">833</td>
+<td class="style_td">251</td>
+<td class="style_td">631</td>
+<td class="style_td">107</td>
+</tr>
+<tr>
+<td class="style_td">813</td>
+<td class="style_td">883</td>
+<td class="style_td">451</td>
+<td class="style_td">509</td>
+<td class="style_td">615</td>
+<td class="style_td">77</td>
+<td class="style_td">281</td>
+<td class="style_td">613</td>
+<td class="style_td">459</td>
+<td class="style_td">205</td>
+<td class="style_td">380</td>
+<td class="style_td">274</td>
+<td class="style_td">302</td>
+<td class="style_td">35</td>
+<td class="style_td">805</td>
+</tr>
+</tbody></table></div>
+</div>

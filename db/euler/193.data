@@ -1,0 +1,6 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20193
+
+<div id="body">
+<p>正の整数 n が、任意の素数の2乗によって割り切れないとき、n を"平方因子を含まない"(squarefree)と呼ぶ。1, 2, 3, 5, 6, 7, 10, 11 は平方因子を含まないが、 4, 8, 9, 12 は含む。</p>
+<p>2<span style="font-size:60%;vertical-align:super;">50</span> 未満で平方因子を含まない数はいくつあるか?</p>
+</div>

@@ -1,0 +1,6 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20222
+
+<div id="body">
+<p>内半径が50mmのパイプを考える. このパイプの中に半径が30mm, 31mm, ..., 50mmの21個の球を収めたい. 最短のパイプの長さを求めよ.</p>
+<p>μm (10<span style="font-size:60%;vertical-align:super;">-6</span> m)単位で一番近い整数に丸めて答えよ.</p>
+</div>

@@ -1,0 +1,22 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20229
+
+<div id="body">
+<p>3600 は特殊な数字である、というのは以下の特徴があるからである。</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>3600 = 48<span style="font-size:60%;vertical-align:super;">2</span> +     36²</li>
+<li>3600 = 20² + 2×40²</li>
+<li>3600 = 30² + 3×30²</li>
+<li>3600 = 45² + 7×15²</li>
+</ul>
+<p>同様に、82201 = 99² + 280² = 287² + 2×54² = 283² + 3×54² = 197² + 7×84² である。</p>
+<p>1747年、オイラーはどのような数が平方数の和で表せるか証明した。我々は以下のような4通りの式で表せる数nに着目する。</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>n = a<span style="font-size:60%;vertical-align:sub;">1</span>² +   b<span style="font-size:60%;vertical-align:sub;">1</span>²</li>
+<li>n = a<span style="font-size:60%;vertical-align:sub;">2</span>² + 2b<span style="font-size:60%;vertical-align:sub;">2</span>²</li>
+<li>n = a<span style="font-size:60%;vertical-align:sub;">3</span>² + 3b<span style="font-size:60%;vertical-align:sub;">3</span>²</li>
+<li>n = a<span style="font-size:60%;vertical-align:sub;">7</span>² + 7b<span style="font-size:60%;vertical-align:sub;">7</span>²</li>
+</ul>
+<p>a<span style="font-size:60%;vertical-align:sub;">k</span>,b<span style="font-size:60%;vertical-align:sub;">k</span>は正整数とする。</p>
+<p>10<span style="font-size:60%;vertical-align:super;">7</span>以下ではこれを満たす整数は75373個ある。<br>
+2×10<span style="font-size:60%;vertical-align:super;">9</span>以下ではいくつあるか。</p>
+</div>

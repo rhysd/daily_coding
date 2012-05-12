@@ -1,0 +1,10 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20210
+
+<div id="body">
+<p>|x| + |y| ≤ r を満たす整数の座標 (x,y) の集合 S(r) について考える。<br>
+O を点 (0,0) とし、 C を点 (r/4, r/4) とする。<br>
+N(r) を次の条件を満たす S(r) 中の点 B の数とする: 三角形 OBC が鈍角を持つ、つまり
+最大角 α が 90&lt;α&lt;180 を満たす。<br>
+例えば N(4)=24, N(8)=100 である。</p>
+<p>N(1,000,000,000) を求めよ。</p>
+</div>

@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20135
+
+<div id="body">
+<p>正の整数x, y, z が等差数列として与えられたとき、<span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:super;">2</span> - <span style="font-style:italic;">y</span><span style="font-size:60%;vertical-align:super;">2</span> - <span style="font-style:italic;">z</span><span style="font-size:60%;vertical-align:super;">2</span> = <span style="font-style:italic;">n</span> がちょうど2個の解を持つような最小の正の整数 n は、n = 27である。</p>
+<p>34<span style="font-size:60%;vertical-align:super;">2</span> − 27<span style="font-size:60%;vertical-align:super;">2</span> − 20<span style="font-size:60%;vertical-align:super;">2</span> = 12<span style="font-size:60%;vertical-align:super;">2</span> − 9<span style="font-size:60%;vertical-align:super;">2</span> − 6<span style="font-size:60%;vertical-align:super;">2</span> = 27</p>
+<p>n = 1155 は、方程式がちょうど10個の解を持つ最小の値である。</p>
+<p>ちょうど10個の解を持つような n は、100万までにいくつ存在するか?</p>
+</div>

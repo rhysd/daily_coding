@@ -1,0 +1,19 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20319
+
+<div id="body">
+<p><span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:sub;">1</span>, <span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:sub;">2</span>,..., <span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span> を以下のような長さnの数列とする。</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>
+<span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:sub;">1</span> = 2</li>
+<li>1 &lt; i ≦ n について <span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">i</span>-1</span> &lt; <span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">i</span></span>
+</li>
+<li>1 ≦ i,j ≦ n について (<span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">i</span></span>)<span style="font-size:60%;vertical-align:super;"><span style="font-style:italic;">j</span></span> &lt; (<span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">j</span></span>+1)<span style="font-size:60%;vertical-align:super;"><span style="font-style:italic;">i</span></span>
+</li>
+</ul>
+<p>長さ2のこのような数列は {2,4}, {2,5}, {2,6}, {2,7}, {2,8} の5つのみである。<br>
+長さ5のこのような数列は293ある。以下がそのうちの3つの例である。<br>
+{2,5,11,25,55}, {2,6,14,36,88}, {2,8,22,64,181}</p>
+<p>t(n)を長さnのこのような数列の数とする。<br>
+t(10) = 86195, t(20) = 5227991891 である。</p>
+<p>t(10<span style="font-size:60%;vertical-align:super;">10</span>) を modulo 10<span style="font-size:60%;vertical-align:super;">9</span> で求めよ。</p>
+</div>

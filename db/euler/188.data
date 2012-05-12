@@ -1,0 +1,11 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20188
+
+<div id="body">
+<p>数aの正整数bによるhyperexponentiationまたはtetrationを a↑↑b または <span style="font-size:60%;vertical-align:super;"><span style="font-style:italic;">b</span></span><span style="font-style:italic;">a</span> と書き, 以下のように再帰的に定義する.</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>a↑↑1 = a,</li>
+<li>a↑↑(k+1) = <span style="font-style:italic;">a</span><span style="font-size:60%;vertical-align:super;">(<span style="font-style:italic;">a</span>↑↑<span style="font-style:italic;">k</span>)</span>.</li>
+</ul>
+<p>定義によれば 3↑↑2 = 3<span style="font-size:60%;vertical-align:super;">3</span> = 27であり, 3↑↑3 = 3<span style="font-size:60%;vertical-align:super;">27</span> = 7625597484987となる. また, 3↑↑4は大体10<span style="font-size:60%;vertical-align:super;">3.6383346400240996*10^12</span>となる.</p>
+<p>1777↑↑1855の最後の8桁を求めよ.</p>
+</div>

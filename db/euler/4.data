@@ -1,0 +1,7 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%204
+
+<div id="body">
+<p>左右どちらから読んでも同じ値になる数を回文数という。
+2桁の数の積で表される回文数のうち、最大のものは 9009 = 91 × 99 である。</p>
+<p>では、3桁の数の積で表される回文数のうち最大のものはいくらになるか。</p>
+</div>

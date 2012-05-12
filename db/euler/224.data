@@ -1,0 +1,7 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20224
+
+<div id="body">
+<p>三辺(a≤b≤c)が全て整数の三角形で、三辺が次の式を満たしているものを"わずかに鈍角(barely obtuse)"と呼ぶ。<br>
+a<span style="font-size:60%;vertical-align:super;">2</span>+b<span style="font-size:60%;vertical-align:super;">2</span>=c<span style="font-size:60%;vertical-align:super;">2</span>-1.</p>
+<p>周辺の長さが 75,000,000 以下のわずかに鈍角な三角形はいくつあるか。</p>
+</div>

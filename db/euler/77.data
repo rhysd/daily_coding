@@ -1,0 +1,13 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2077
+
+<div id="body">
+<p>10は素数の和として5通りに表すことができる:</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>7 + 3</li>
+<li>5 + 5</li>
+<li>5 + 3 + 2</li>
+<li>3 + 3 + 2 + 2</li>
+<li>2 + 2 + 2 + 2 + 2</li>
+</ul>
+<p>素数の和としての表し方が5000通り以上になる最初の数を求めよ。</p>
+</div>

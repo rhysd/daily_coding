@@ -1,0 +1,22 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20127
+
+<div id="body">
+<p>nのradicalをrad(n)と書き, nの異なる素因数の積とする. 例えば, 504 = 2<span style="font-size:60%;vertical-align:super;">3</span> × 3<span style="font-size:60%;vertical-align:super;">2</span> × 7なのでrad(504) = 2 × 3 × 7 = 42である.</p>
+<p>正整数の3つ組 (a, b, c)がabc-hitであるとは</p>
+<ol class="list1" style="padding-left:16px;margin-left:16px">
+<li>GCD(a, b) = GCD(b, c) = GCD(c, a) = 1</li>
+<li>a &lt; b</li>
+<li>a + b = c</li>
+<li>rad(abc) &lt; c</li>
+</ol>
+<p>の4つの性質を満たすことである.</p>
+<p>(5, 27, 32) はabc-hitである:</p>
+<ol class="list1" style="padding-left:16px;margin-left:16px">
+<li>GCD(5, 27) = GCD(5, 32) = GCD(27, 32) = 1</li>
+<li>5 &lt; 27</li>
+<li>5 + 27 = 32</li>
+<li>rad(4320) = 30 &lt; 32</li>
+</ol>
+<p>abc-hitは非常に稀である. c &lt; 1000のときには31個しかなく, そのときの∑cは12523である.</p>
+<p>c &lt; 120000での∑cを求めよ.</p>
+</div>

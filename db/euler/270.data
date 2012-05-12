@@ -1,0 +1,13 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20270
+
+<div id="body">
+<p>寸法が N×N (整数)の正方形の紙 1 枚を、角を原点に、2辺を x 軸と y 軸に沿って置く。そして、次のルールに従ってそれを切っていく:</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>格子点でかつ正方形の異なる辺上にある 2 点の間を一直線に切る</li>
+<li>どの切った線も交わらない、ただしいくつかの切った線は同じ端点を共有する</li>
+<li>もう切ることができなくなるまで続ける</li>
+</ul>
+<p>反転や回転したものを全て区別して数えた時、C(N) を N×N の正方形を何通り切れるかを表すとする。例えば、C(1) = 2、 C(2) = 30 である(下を参照)。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_270_CutSquare.gif" title="p_270_CutSquare.gif"><img src="http://projecteuler.net/project/images/p_270_CutSquare.gif" alt="p_270_CutSquare.gif" title="p_270_CutSquare.gif"></a></div>
+<p>C(30) mod 10<span style="font-size:60%;vertical-align:super;">8</span> を求めよ。</p>
+</div>

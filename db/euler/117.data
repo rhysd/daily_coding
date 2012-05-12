@@ -1,0 +1,9 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20117
+
+<div id="body">
+<p>黒い正方形のタイルと、2 ユニットの長さの赤のタイル、3 ユニットの長さの緑のタイル、4 ユニットの長さの青のタイルから選んで組み合わせて、5 ユニットの長さの 1 列をタイルで埋める方法はちょうど 15 通りある。</p>
+<div class="img_margin" style="text-align:left"><a href="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=attach&amp;refer=Problem%20117&amp;openfile=117_1.png" title="117_1.png"><img src="http://odz.sakura.ne.jp/projecteuler/index.php?plugin=ref&amp;page=Problem%20117&amp;src=117_1.png" alt="117_1.png" title="117_1.png" width="569" height="183"></a></div>
+
+<p>長さ 50 ユニットの 1 列をタイルで埋める方法は何通りあるか。</p>
+<p>注: この問題は Problem <a href="http://odz.sakura.ne.jp/projecteuler/index.php?Problem%20116" rel="nofollow">116</a> に関連する</p>
+</div>

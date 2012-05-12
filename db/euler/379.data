@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20379
+
+<div id="body">
+<p><span style="font-style:italic;">x</span> ≤ <span style="font-style:italic;">y</span> かつ、<span style="font-style:italic;">x</span> と <span style="font-style:italic;">y</span> の最小公倍数が <span style="font-style:italic;">n</span> と等しくなる正の整数 <span style="font-style:italic;">x</span> と <span style="font-style:italic;">y</span> の組 (<span style="font-style:italic;">x</span>,<span style="font-style:italic;">y</span>) の個数を <span style="font-style:italic;">f</span>(<span style="font-style:italic;">n</span>) と表すとしよう。</p>
+<p><span style="font-style:italic;">f</span> の<strong>総和関数</strong>を <span style="font-style:italic;">g</span> としよう。すなわち、1 ≤ <span style="font-style:italic;">i</span> ≤ <span style="font-style:italic;">n</span> に対し、<span style="font-style:italic;">g</span>(<span style="font-style:italic;">n</span>) = Σ<span style="font-style:italic;">f</span>(<span style="font-style:italic;">i</span>)</p>
+<p><span style="font-style:italic;">g</span>(10<span style="font-size:60%;vertical-align:super;">6</span>) = 37429395 がすでに与えられている。</p>
+<p><span style="font-style:italic;">g</span>(10<span style="font-size:60%;vertical-align:super;">12</span>) を求めよ。</p>
+</div>

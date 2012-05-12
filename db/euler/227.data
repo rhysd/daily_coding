@@ -1,0 +1,14 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20227
+
+<div id="body">
+<p>"The Chase"とは2つのサイコロと偶数人のプレイヤーによって行われるゲームである.</p>
+<p>"The Chase" is a game played with two dice and an even number of players.</p>
+<p>各プレイヤーはテーブルの周りに座っている．対面にいる2人のプレイヤーがそれぞれ1つのサイコロを持っているところからゲームを開始する. 各ターンにサイコロを持っている2人のプレイヤーがそれぞれサイコロを振る. もしプレイヤーが1を出した場合は, そのプレイヤーは自分のサイコロを左隣の人に渡す. 6を出した場合には, 右隣の人に渡す. それ以外の数字が出た場合には, サイコロは移動しない. サイコロを振りサイコロの移動を終えたときに1人のプレイヤーが2つのサイコロを持っていた場合, そのプレイヤーは負けとなりゲームは終了する.</p>
+<p>The players sit around a table; the game begins with two opposite players having one die each. On each turn, the two players with a die roll it.
+If a player rolls a 1, he passes the die to his neighbour on the left; if he rolls a 6, he passes the die to his neighbour on the right; otherwise, he keeps the die for the next turn.
+The game ends when one player has both dice after they have been rolled and passed, that player has then lost.</p>
+<p>100人のプレイヤーでゲームを行ったとき, ゲームが終了するターンの期待値はいくつか?</p>
+<p>In a game with 100 players, what is the expected number of turns the game lasts?</p>
+<p>11桁目を四捨五入し, 上位10進10桁を答えよ.</p>
+<p>Give your answer rounded to ten significant digits.</p>
+</div>

@@ -1,0 +1,21 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2046
+
+<div id="body">
+<p>Christian Goldbachは全ての奇合成数は平方数の2倍と素数の和で表せると予想した.</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>9 = 7 + 2×1<span style="font-size:60%;vertical-align:super;">2</span>
+</li>
+<li>15 = 7 + 2×2<span style="font-size:60%;vertical-align:super;">2</span>
+</li>
+<li>21 = 3 + 2×3<span style="font-size:60%;vertical-align:super;">2</span>
+</li>
+<li>25 = 7 + 2×3<span style="font-size:60%;vertical-align:super;">2</span>
+</li>
+<li>27 = 19 + 2×2<span style="font-size:60%;vertical-align:super;">2</span>
+</li>
+<li>33 = 31 + 2×1<span style="font-size:60%;vertical-align:super;">2</span>
+</li>
+</ul>
+<p>後に, この予想は誤りであることが分かった.</p>
+<p>平方数の2倍と素数の和で表せない最小の奇合成数を答えよ.</p>
+</div>

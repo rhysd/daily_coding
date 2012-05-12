@@ -1,0 +1,73 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2058
+
+<div id="body">
+<p>1から始めて, 以下のように反時計回りに数字を並べていくと, 辺の長さが7の渦巻きが形成される.</p>
+<div class="ie5"><table class="style_table" cellspacing="1" border="0"><tbody>
+<tr>
+<td class="style_td"><span style="color:red">37</span></td>
+<td class="style_td">36</td>
+<td class="style_td">35</td>
+<td class="style_td">34</td>
+<td class="style_td">33</td>
+<td class="style_td">32</td>
+<td class="style_td"><span style="color:red">31</span></td>
+</tr>
+<tr>
+<td class="style_td">38</td>
+<td class="style_td"><span style="color:red">17</span></td>
+<td class="style_td">16</td>
+<td class="style_td">15</td>
+<td class="style_td">14</td>
+<td class="style_td"><span style="color:red">13</span></td>
+<td class="style_td">30</td>
+</tr>
+<tr>
+<td class="style_td">39</td>
+<td class="style_td">18</td>
+<td class="style_td"><span style="color:red">5</span></td>
+<td class="style_td">4</td>
+<td class="style_td"><span style="color:red">3</span></td>
+<td class="style_td">12</td>
+<td class="style_td">29</td>
+</tr>
+<tr>
+<td class="style_td">40</td>
+<td class="style_td">19</td>
+<td class="style_td">6</td>
+<td class="style_td">1</td>
+<td class="style_td">2</td>
+<td class="style_td">11</td>
+<td class="style_td">28</td>
+</tr>
+<tr>
+<td class="style_td">41</td>
+<td class="style_td">20</td>
+<td class="style_td"><span style="color:red">7</span></td>
+<td class="style_td">8</td>
+<td class="style_td">9</td>
+<td class="style_td">10</td>
+<td class="style_td">27</td>
+</tr>
+<tr>
+<td class="style_td">42</td>
+<td class="style_td">21</td>
+<td class="style_td">22</td>
+<td class="style_td">23</td>
+<td class="style_td">24</td>
+<td class="style_td">25</td>
+<td class="style_td">26</td>
+</tr>
+<tr>
+<td class="style_td"><span style="color:red">43</span></td>
+<td class="style_td">44</td>
+<td class="style_td">45</td>
+<td class="style_td">46</td>
+<td class="style_td">47</td>
+<td class="style_td">48</td>
+<td class="style_td">49</td>
+</tr>
+</tbody></table></div>
+<p>面白いことに, 奇平方数が右下の対角線上に出現する.
+もっと面白いことには, 対角線上の13個の数字のうち, 8個が素数である. ここで割合は8/13 ≈ 62%である.</p>
+<p>渦巻きに新しい層を付け加えよう. すると辺の長さが9の渦巻きが出来る. 以下, この操作を繰り返していく. 対角線上の素数の割合が10%未満に落ちる最初の辺の長さを求めよ.</p>
+</div>

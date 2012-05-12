@@ -1,0 +1,19 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20312
+
+<div id="body">
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>1次のシェルピンスキーの三角形(<span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;">1</span>)は正三角形である</li>
+<li>
+<span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span>+1</span>は<span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>3つをそれぞれのペアが角の頂点を一つ共有するように配置したものである</li>
+</ul>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_312_sierpinskyAt.gif" title="p_312_sierpinskyAt.gif"><img src="http://projecteuler.net/project/images/p_312_sierpinskyAt.gif" alt="p_312_sierpinskyAt.gif" title="p_312_sierpinskyAt.gif"></a></div>
+<p>C(n)を<span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;"><span style="font-style:italic;">n</span></span>のすべての頂点を一度だけ通るような閉路の数とする。<br>
+例えば、<span style="font-style:italic;">S</span><span style="font-size:60%;vertical-align:sub;">3</span>については下図のように8つの閉路が描けるため C(3) = 8 となる。</p>
+<div style="text-align:center"><a href="http://projecteuler.net/project/images/p_312_sierpinsky8t.gif" title="p_312_sierpinsky8t.gif"><img src="http://projecteuler.net/project/images/p_312_sierpinsky8t.gif" alt="p_312_sierpinsky8t.gif" title="p_312_sierpinsky8t.gif"></a></div>
+<p>C(1) = C(2) = 1<br>
+C(5) = 71328803586048<br>
+C(10 000) mod 10<span style="font-size:60%;vertical-align:super;">8</span> = 37652224<br>
+C(10 000) mod 13<span style="font-size:60%;vertical-align:super;">8</span> = 617720485<br>
+であることが確認できる。</p>
+<p>C(C(C(10 000))) mod 13<span style="font-size:60%;vertical-align:super;">8</span> を求めよ。</p>
+</div>

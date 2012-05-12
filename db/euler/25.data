@@ -1,0 +1,23 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%2025
+
+<div id="body">
+<p>フィボナッチ数列は以下の漸化式で定義される:</p>
+<div style="text-align:center">F<span style="font-size:60%;vertical-align:sub;">n</span> = F<span style="font-size:60%;vertical-align:sub;">n-1</span> + F<span style="font-size:60%;vertical-align:sub;">n-2</span>, ただし F<span style="font-size:60%;vertical-align:sub;">1</span> = 1, F<span style="font-size:60%;vertical-align:sub;">2</span> = 1.</div>
+<p>最初の12項は以下である.</p>
+<ul class="list1" style="padding-left:16px;margin-left:16px">
+<li>F<span style="font-size:60%;vertical-align:sub;">1</span> = 1</li>
+<li>F<span style="font-size:60%;vertical-align:sub;">2</span> = 1</li>
+<li>F<span style="font-size:60%;vertical-align:sub;">3</span> = 2</li>
+<li>F<span style="font-size:60%;vertical-align:sub;">4</span> = 3</li>
+<li>F<span style="font-size:60%;vertical-align:sub;">5</span> = 5</li>
+<li>F<span style="font-size:60%;vertical-align:sub;">6</span> = 8</li>
+<li>F<span style="font-size:60%;vertical-align:sub;">7</span> = 13</li>
+<li>F<span style="font-size:60%;vertical-align:sub;">8</span> = 21</li>
+<li>F<span style="font-size:60%;vertical-align:sub;">9</span> = 34</li>
+<li>F<span style="font-size:60%;vertical-align:sub;">10</span> = 55</li>
+<li>F<span style="font-size:60%;vertical-align:sub;">11</span> = 89</li>
+<li>F<span style="font-size:60%;vertical-align:sub;">12</span> = 144</li>
+</ul>
+<p>12番目の項, F<span style="font-size:60%;vertical-align:sub;">12</span>が3桁になる最初の項である.</p>
+<p>1000桁になる最初の項の番号を答えよ.</p>
+</div>

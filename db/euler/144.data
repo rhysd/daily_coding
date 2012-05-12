@@ -1,0 +1,15 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20144
+
+<div id="body">
+<p>レーザー物理学では、"white cell"とはレーザー光線を遅延させるための鏡の装置のことである。光線はcellに入り、鏡で反射して、最終的には飛び出す。</p>
+<p>特定のwhite cellは、方程式 4<span style="font-style:italic;">x</span><span style="font-size:60%;vertical-align:super;">2</span> + <span style="font-style:italic;">y</span><span style="font-size:60%;vertical-align:super;">2</span> = 100 で表される楕円と考えることができる。</p>
+<p>−0.01 ≤ x ≤ +0.01 に対応する上部に穴が空いていて、光線が出入りできるようになっている。</p>
+<p><a href="http://projecteuler.net/project/images/p_144_1.gif" title="p_144_1.gif"><img src="http://projecteuler.net/project/images/p_144_1.gif" alt="p_144_1.gif" title="p_144_1.gif"></a><a href="http://projecteuler.net/project/images/p_144_2.gif" title="p_144_2.gif"><img src="http://projecteuler.net/project/images/p_144_2.gif" alt="p_144_2.gif" title="p_144_2.gif"></a></p>
+<p>この問題では、光線はwhite cellの外側 (0.0,10.1) から始まり、最初に (1.4,-9.6) で鏡に反射するものとする。</p>
+<p>光線は、楕円の表面に当たるごとに、反射の法則に従う。つまり、入射する光線と反射する光線は入射する点の法線に対して同じ角度をなす。</p>
+<p>上の左の図では、white cellと赤線で光線の最初に反射する2点を、青線で最初に反射する点の接線を示している。</p>
+<p>与えられた楕円に対する点 (x,y) での接線の傾きmは、m = -4x/y となる。</p>
+<p>法線とは、反射する点での接線に垂直な線である。</p>
+<p>右側のanimationは光線の最初の10回の反射を示している。</p>
+<p>光線はwhite cellから出るまでに何回反射するか?</p>
+</div>

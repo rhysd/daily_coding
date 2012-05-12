@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20235
+
+<div id="body">
+<p>等差と等比を用いた次の数列を考える: u(k) = (900-3k)r<span style="font-size:60%;vertical-align:super;">k-1</span><br>
+s(n) = Σ<span style="font-size:60%;vertical-align:sub;">k=1...n</span>u(k) とする。</p>
+<p>s(5000) = -600,000,000,000 を満たす r を求めよ。</p>
+<p>小数点以下 12 桁に四捨五入して解答を入力せよ</p>
+</div>

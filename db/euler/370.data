@@ -1,0 +1,8 @@
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%20370
+
+<div id="body">
+<p>整数の辺 <span style="font-style:italic;">a</span> ≤ <span style="font-style:italic;">b</span> ≤ <span style="font-style:italic;">c</span> が<strong>幾何数列</strong> (等比数列)、すなわち <span style="font-style:italic;">b</span><span style="font-size:60%;vertical-align:super;">2</span> = <span style="font-style:italic;">a</span>・<span style="font-style:italic;">c</span> となる三角形を<strong>幾何三角形</strong> (geometric triangle) と定義しよう。</p>
+<p>例えば、<span style="font-style:italic;">a</span> = 144, <span style="font-style:italic;">b</span> = 156, <span style="font-style:italic;">c</span> = 169 の辺を持つとき、これは幾何三角形となる。</p>
+<p>周囲の長さが 10<span style="font-size:60%;vertical-align:super;">6</span> 以下となる幾何三角形は 861805 個ある。</p>
+<p>周囲の長さが 2.5・10<span style="font-size:60%;vertical-align:super;">13</span> 以下となる幾何三角形は何個あるか。</p>
+</div>
