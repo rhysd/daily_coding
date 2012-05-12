@@ -4,10 +4,16 @@
 #
 
 $(document).ready ->
-  $("gist-url-form").ajaxForm ->
+  $("form#gist-url-form").ajaxForm ->
     console.log('form commit sucess!')
-    $.get '/answers/index', (data) ->
+    $.get '/answers', (data) ->
       $('answers-unit').append data
+
+  $("a#answers-show").click ->
+    console.log('button success!')
+    $.get '/answers', (data) ->
+      $('answers-unit').append data
+      $(this).hide()
 
   $("ul#lang-selector a").click ->
     url = $(this).attr('data-href')
