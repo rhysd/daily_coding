@@ -5,7 +5,7 @@ module DailyCoding
     require 'errors.rb'
 
     def lang_type(url)
-        doc = Nokogiri::HTML open(url)
+        doc = Nokogiri::HTML open(url, :ssl_verify_mode => OpenSSL::SSL::VERIFY_NONE)
         doc.xpath('//div[@class="file"]/div').each do |div|
             return $1 if div.get_attribute("class") =~ /^data type-(.*)$/
         end

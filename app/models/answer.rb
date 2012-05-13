@@ -23,7 +23,7 @@ class Answer < ActiveRecord::Base
 
   def self.hash_from_gist(gist_url)
     logger.debug(gist_url)
-    open(gist_url) do |f|
+    open(gist_url, :ssl_verify_mode => OpenSSL::SSL::VERIFY_NONE) do |f|
       json = JSON.parse f.read
       json['div']
     end
