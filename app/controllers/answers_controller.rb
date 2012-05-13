@@ -5,20 +5,20 @@ class AnswersController < ApplicationController
   def index
     # @answers = Answer.where(updated_at: Date.today..Date.tomorrow).order('updated_at DESC') # created_at指定して
 
-    @answers =
+    answers =
       if params[:lang]
         Answer.order('updated_at DESC').where(lang: params[:lang])
       else
         Answer.order('updated_at DESC') # created_at指定して
       end
-    authors = User.find(@answers.map {|a| a.user_id})
-    @answers = @answers.map.with_index do |a, i|
+    # authors = User.find(answers.map {|a| a.user_id})
+    @answers = answers.map do |a|
       tmp = {}
       tmp[:answer] = a
-      tmp[:author] = authors[i]
+      tmp[:author] = User.find(a.user_id)
       tmp
     end
-    logger.debug(@answers)
+    @answers.each {|a| logger.debug(a)}
 
     html_str = render_to_string partial: 'index'
     render text: html_str
