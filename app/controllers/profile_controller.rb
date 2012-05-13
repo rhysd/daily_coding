@@ -1,12 +1,10 @@
 class ProfileController < ApplicationController
   def codes
     setup
-    @answers = @my_answers
   end
 
   def stared_codes
     setup
-    @answers = @stared_answers
   end
 
   private

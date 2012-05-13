@@ -2,7 +2,7 @@
 <% @answers.each do |a| %>
   <div id='one-program'>
     <div class="author">
-      <p><a href="#">@<%= a[:author].login %></a></p>
+      <p><a href="/profile/<%= a[:author].twitter_id %>">@<%= a[:author].login %></a></p>
     </div>
     <div stype='float: right;' class="fav-star">
       <a class='fav-btn' data-answer-id="<%= a[:answer].id %>" href="javascript:void(0);">
