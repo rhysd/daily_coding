@@ -11,9 +11,26 @@
 div#gist-url {
   margin: 0 auto;
   clear: both;
-  width: 80%;
+  width: 100%;
   display: -webkit-box;
   display: -moz-box;
   display: -o-box;
   display: box;
+}
+
+form#gist-url-form {
+  margin: 0 auto;
+  width: 120%;
+}
+
+.gist-unit {
+  padding: 60px;
+  margin-bottom: 30px;
+  background-color: #EFE;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }

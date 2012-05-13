@@ -8,13 +8,17 @@ $(document).ready ->
     console.log('form commit sucess!')
     $.get '/answers', (data) ->
       alert('投稿しました。')
+      $('div#answers-body div#one-program').remove()
       $('div#answers-body').append(data)
+      $("ul#lang-selector li").removeClass('active')
+      $('a#all-lang').parent().addClass('active') # 強制的にALL表示
 
   $("a#answers-show").click ->
     console.log('button success!')
     $.get '/answers', (data) ->
       $('div#answers-body div#one-program').remove()
       $('div#answers-body').append(data)
+      $('a#all-lang').parent().addClass('active')
       # $('div.gist-part').each ->
       #   url = $(this).attr('data-src')
       #   $.getJSON url, (res) ->
