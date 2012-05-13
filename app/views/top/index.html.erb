@@ -4,8 +4,8 @@
       <%== @today_problem.content %>
     </div>
     <hr>
-    作成した解答を<%= link_to "Gist","https://gist.github.com/" %>にアップロードしましょう。
     <div id='gist-url'>
+      <p>作成した解答を<%= link_to "Gist","https://gist.github.com/" %>にアップロードしましょう。</p>
       <%= form_tag('/answers', :id => 'gist-url-form') do %>
         <%= url_field_tag "gisturl", "", {:placeholder => "gistのURLを入力してください."} %>
         <%= submit_tag("投稿") %>
@@ -13,7 +13,7 @@
     </div>
   </div>
 
-  <a id="answers-show" class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+  <a id="answers-show" class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">
     他のユーザのコードを見る
     <span class="caret"></span>
   </a>
