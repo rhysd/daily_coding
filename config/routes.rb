@@ -1,4 +1,5 @@
 DailyCoding::Application.routes.draw do
+  match '/nologin' => 'top#index'
   match 'answers/:lang' => 'answers#index'
   match 'profile/:user_id' => 'profile#codes'
   match 'profile/codes/:user_id' => 'profile#codes'
