@@ -3,29 +3,13 @@
 class AnswersController < ApplicationController
 
   def index
-    # @answers = Answer.where(updated_at: Date.today..Date.tomorrow).order('updated_at DESC') # created_at指定して
-
-    answers =
-      if params[:lang]
-        Answer.order('updated_at DESC').where(lang: params[:lang])
-      else
-        Answer.order('updated_at DESC') # created_at指定して
-      end
-    # authors = User.find(answers.map {|a| a.user_id})
-    @answers = answers.map do |a|
-      tmp = {}
-      tmp[:answer] = a
-      tmp[:author] = User.find(a.user_id)
-      tmp
-    end
-    @answers.each {|a| logger.debug(a)}
-
+    @answers = Answer.find_by_problem_id(params[:problem_id], params[:lang])
     html_str = render_to_string partial: 'index'
     render text: html_str
   end
 
   def profile
-    @user = User.find_by_id params[:uid]
+    @user = User.find_by_id(params[:uid])
     @my_answers = Answer.find_by_user_id(params[:uid]) || []
     @my_answers = @my_answers.class == Array ? @my_answers : [@my_answers]
   end
@@ -34,7 +18,7 @@ class AnswersController < ApplicationController
     stared_answer_ids = Fav.find_by_from(params[:uid]) || []
     stared_answer_ids = stared_answer_ids.class == Array ? stared_answer_ids : [stared_answer_ids]
     begin
-      @stared_answers = Answer.find stared_answer_ids
+      @stared_answers = Answer.find(stared_answer_ids)
     rescue ActiveRecord::RecordNotFound
       @stared_answers = []
     end
@@ -48,7 +32,7 @@ class AnswersController < ApplicationController
   end
 
   def create
-    Answer.create_or_update(current_user.id, params[:gisturl])
+    Answer.create_or_update(current_user.id, params[:problem_id], params[:gisturl])
     render nothing: true
   end
 
@@ -57,7 +41,6 @@ class AnswersController < ApplicationController
   end
 
   private
-
   def setup(uid)
     user = User.find_by_twitter_id uid
     @my_answers = Answer.find_by_user_id(user.id) || []
@@ -65,12 +48,10 @@ class AnswersController < ApplicationController
     stared_answer_ids = Fav.find_by_from(uid) || []
     stared_answer_ids = stared_answer_ids.class == Array ? stared_answer_ids : [stared_answer_ids]
     begin
-      @stared_answers = Answer.find stared_answer_ids
+      @stared_answers = Answer.find(stared_answer_ids)
     rescue ActiveRecord::RecordNotFound
       @stared_answers = []
     end
   end
-
-
 
 end

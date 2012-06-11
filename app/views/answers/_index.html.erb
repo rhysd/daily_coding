@@ -1,16 +1,16 @@
 
-<% @answers.each do |a| %>
+<% @answers.each do |answer| %>
   <div id='one-program'>
     <div class="author">
-      <p><a href="/profile/<%= a[:author].twitter_id %>">@<%= a[:author].login %></a></p>
+      <p><a href="/profile/<%= answer.user.twitter_id %>">@<%= answer.user.login %></a></p>
     </div>
     <div stype='float: right;' class="fav-star">
-      <a class='fav-btn' data-answer-id="<%= a[:answer].id %>" href="javascript:void(0);">
+      <a class='fav-btn' data-answer-id="<%= answer.id %>" href="javascript:void(0);">
         <img src="/assets/star_empty.png">
       </a>
     </div>
     <div class="gist-part">
-      <%== a[:answer].body %>
+      <%== answer.body %>
     </div>
   </div>
 <% end %>

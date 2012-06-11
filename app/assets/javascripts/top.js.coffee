@@ -6,7 +6,8 @@
 $(document).ready ->
   $("form#gist-url-form").ajaxForm ->
     console.log('form commit sucess!')
-    $.get '/answers', (data) ->
+    problem_id = $("div#today-problem").attr('data-problem-id')
+    $.get '/answers/' + problem_id, (data) ->
       alert('投稿しました。')
       $('div#answers-body div#one-program').remove()
       $('div#answers-body').append(data)
@@ -15,24 +16,19 @@ $(document).ready ->
 
   $("a#answers-show").click ->
     console.log('button success!')
-    $.get '/answers', (data) ->
+    problem_id = $("div#today-problem").attr('data-problem-id')
+    $.get '/answers/' + problem_id, (data) ->
       $('div#answers-body div#one-program').remove()
       $('div#answers-body').append(data)
       $('a#all-lang').parent().addClass('active')
-      # $('div.gist-part').each ->
-      #   url = $(this).attr('data-src')
-      #   $.getJSON url, (res) ->
-      #     $('div#answers-body').append(res.div)
-      # $(this).hide()
 
   $("ul#lang-selector a.lang-btn").click ->
     url = $(this).attr('data-href')
-    lang_button = $(this)
+    lang_btn = $(this)
     $.get url, (data) ->
-      # lang_button.parent().removeClass('active')
       $("ul#lang-selector li").removeClass('active')
-      console.log(lang_button.parent())
-      lang_button.parent().addClass('active')
+      console.log(lang_btn.parent())
+      lang_btn.parent().addClass('active')
       $('div#answers-body div#one-program').remove()
       $('div#answers-body').append(data)
 

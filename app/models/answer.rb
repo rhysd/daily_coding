@@ -7,14 +7,26 @@ require 'json'
 class Answer < ActiveRecord::Base
   extend DailyCoding
   attr_accessible :lang, :url, :user
+  belongs_to :problem
+  belongs_to :user
 
-  def self.create_or_update(uid, gist_url)
+  def self.find_by_problem_id(problem_id, lang_type=nil)
+    answers =
+      if lang_type
+        Answer.where(problem_id: problem_id, lang: lang_type).order('updated_at DESC')
+      else
+        Answer.where(problem_id: problem_id).order('updated_at DESC')
+      end
+  end
+
+  def self.create_or_update(uid, problem_id, gist_url)
     unless answer = Answer.find_by_url(gist_url)
       answer = Answer.new do |a|
         a.user_id = uid
         a.url = gist_url
         a.lang = lang_type(gist_url)
         a.body = self.hash_from_gist(gist_url + ".json")
+        a.problem_id = problem_id
         a.save
       end
     end

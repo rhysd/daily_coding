@@ -2,7 +2,7 @@ module DailyCoding
 
     require 'open-uri'
     require 'nokogiri'
-    require './errors.rb'
+    require 'errors.rb'
 
     def lang_type(url)
         doc = Nokogiri::HTML open(url, :ssl_verify_mode => OpenSSL::SSL::VERIFY_NONE)

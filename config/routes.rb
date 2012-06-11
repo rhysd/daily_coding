@@ -1,21 +1,23 @@
 DailyCoding::Application.routes.draw do
+
   match '/nologin' => 'top#index'
-  match 'answers/:lang' => 'answers#index'
   match 'profile/:user_id' => 'profile#codes'
   match 'profile/codes/:user_id' => 'profile#codes'
   match 'profile/stared_codes/:user_id' => 'profile#stared_codes'
 
-  post "fav/create/:answer_id" => 'fav#create'
-  post "fav/destroy/:answer_id" => 'fav#destroy'
+  post 'fav/create/:answer_id' => 'fav#create'
+  post 'fav/destroy/:answer_id' => 'fav#destroy'
 
-  resources :answers
+  get     'answers/:problem_id' => 'answers#index'
+  get     'answers/:problem_id/:lang' => 'answers#index'
+  post    'answers' => 'answers#create'
+  delete  'answers' => 'answers#create'
+  match   'answers/profile/:uid' => 'answer#profile'
+  match   'answers/profile_fav/:uid' => 'answer#profile_fav'
 
   root :to => 'top#index'
 
   mount SmartTwitter::Engine => "/", :as => "smart_twitter"
-
-  match 'answers/profile/:uid' => 'answer#profile'
-  match 'answers/profile_fav/:uid' => 'answer#profile_fav'
 
 
   # The priority is based upon order of creation:
