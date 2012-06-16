@@ -1,3 +1,15 @@
-// Place all the styles related to the answers controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.author img {
+  float: left;
+}
+
+div.gist-part {
+  display: block;
+}
+
+div.fav-star {
+  float: right;
+  padding-bottom: 10px;
+  margin: 0;
+}
+  

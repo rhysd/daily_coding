@@ -3,8 +3,11 @@
   <div id='one-program'>
     <div class="author">
       <p><a href="/profile/<%= answer.user.twitter_id %>">@<%= answer.user.login %></a></p>
+      <a href="/profile/<%= answer.user.twitter_id %>">
+        <img src="<%= answer.user.profile_image_url %>" width='40px' height='40px'>
+      </a>
     </div>
-    <div stype='float: right;' class="fav-star">
+    <div class="fav-star">
       <a class='fav-btn' data-answer-id="<%= answer.id %>" href="javascript:void(0);">
         <% if current_user.fav %>
           <img src="/assets/star_full.png">
@@ -12,6 +15,11 @@
           <img src="/assets/star_empty.png">
         <% end %>
       </a>
+      <% answer.fav.each do |fav| %>
+        <a href="/profile/<%= fav.user.twitter_id %>">
+          <img src="<%= fav.user.profile_image_url %>" width='40px' height='40px'>
+        </a>
+      <% end %>
     </div>
     <div class="gist-part">
       <%== answer.body %>
