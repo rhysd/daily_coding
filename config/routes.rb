@@ -1,12 +1,12 @@
 DailyCoding::Application.routes.draw do
 
-  match '/nologin' => 'top#index'
-  match 'profile/:user_id' => 'profile#codes'
-  match 'profile/codes/:user_id' => 'profile#codes'
-  match 'profile/stared_codes/:user_id' => 'profile#stared_codes'
+  match   '/nologin' => 'top#index'
+  match   'profile/:user_id' => 'profile#codes'
+  match   'profile/codes/:user_id' => 'profile#codes'
+  match   'profile/stared_codes/:user_id' => 'profile#stared_codes'
 
-  post 'fav/create/:answer_id' => 'fav#create'
-  post 'fav/destroy/:answer_id' => 'fav#destroy'
+  post    'fav/create/:answer_id' => 'fav#create'
+  delete  'fav/destroy/:answer_id' => 'fav#destroy'
 
   get     'answers/:problem_id' => 'answers#index'
   get     'answers/:problem_id/:lang' => 'answers#index'

@@ -24,9 +24,8 @@ ActiveRecord::Schema.define(:version => 20120512083554) do
   end
 
   create_table "favs", :force => true do |t|
-    t.integer  "problem",    :null => false
     t.integer  "answer_id",  :null => false
-    t.integer  "from",       :null => false
+    t.integer  "user_id",    :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

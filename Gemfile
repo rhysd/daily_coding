@@ -28,7 +28,7 @@ gem 'smart_twitter', :git => 'https://github.com/y-uuki/smart-twitter.git'
 gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'quiet_assets', :git => 'https://github.com/evrone/quiet_assets.git'
 gem 'nokogiri'
-
+gem "rspec-rails", :group => [:development, :test]
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -4,6 +4,7 @@
 #
 
 $(document).ready ->
+
   $("form#gist-url-form").ajaxForm ->
     console.log('form commit sucess!')
     problem_id = $("div#today-problem").attr('data-problem-id')
@@ -34,8 +35,16 @@ $(document).ready ->
 
   # fav create
   $("div#answers-body").delegate "a.fav-btn", 'click', (evt) ->
-    console.log('fav!!!')
     fav_btn = $(this)
-    $.post '/fav/create/' + $(this).attr('data-answer-id'), (data) ->
-      fav_btn.find('img').attr('src','/assets/star_full.png')
+    # fav create
+    if fav_btn.find('img').attr('src') == '/assets/star_empty.png'
+      $.post '/fav/create/' + fav_btn.attr('data-answer-id'), (res) ->
+          fav_btn.find('img').attr('src','/assets/star_full.png')
+    else # fav delete
+      $.ajax {
+        'url': '/fav/destroy/' + fav_btn.attr('data-answer-id'),
+        'type': 'DELETE',
+        'success': (res) ->
+          fav_btn.find('img').attr('src','/assets/star_empty.png')
+      }
 
