@@ -6,7 +6,11 @@
     </div>
     <div stype='float: right;' class="fav-star">
       <a class='fav-btn' data-answer-id="<%= answer.id %>" href="javascript:void(0);">
-        <img src="/assets/star_empty.png">
+        <% if current_user.fav %>
+          <img src="/assets/star_full.png">
+        <% else %>
+          <img src="/assets/star_empty.png">
+        <% end %>
       </a>
     </div>
     <div class="gist-part">
