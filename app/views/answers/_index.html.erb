@@ -9,7 +9,7 @@
     </div>
     <div class="fav-star">
       <a class='fav-btn' data-answer-id="<%= answer.id %>" href="javascript:void(0);">
-        <% if current_user.fav %>
+        <% if current_user_faved?(answer) %>
           <img src="/assets/star_full.png">
         <% else %>
           <img src="/assets/star_empty.png">

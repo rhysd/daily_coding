@@ -6,7 +6,7 @@ require 'json'
 
 class Answer < ActiveRecord::Base
   extend DailyCoding
-  attr_accessible :lang, :url, :user
+  attr_accessible :lang, :url, :user_id, :problem_id, :body
   has_many :fav
   belongs_to :problem
   belongs_to :user

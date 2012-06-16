@@ -17,7 +17,7 @@
     </div><!--/span-->
     <div class="span9">
       <div id="answers-unit" class="hero-unit">
-        <%= render :partial => "/answers/profile_fav", :locations => {:uid => @user.id} %>
+        <%= render partial: 'answers/answer', collection: @stared_answers, as: :answer %>
       </div>
     </div>
   </div>

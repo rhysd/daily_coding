@@ -1,9 +1,9 @@
 DailyCoding::Application.routes.draw do
 
   match   '/nologin' => 'top#index'
-  match   'profile/:user_id' => 'profile#codes'
-  match   'profile/codes/:user_id' => 'profile#codes'
-  match   'profile/stared_codes/:user_id' => 'profile#stared_codes'
+  get     'profile/:user_id' => 'profile#codes'
+  get     'profile/codes/:user_id' => 'profile#codes'
+  get     'profile/stared_codes/:user_id' => 'profile#stared_codes'
 
   post    'fav/create/:answer_id' => 'fav#create'
   delete  'fav/destroy/:answer_id' => 'fav#destroy'
@@ -12,10 +12,10 @@ DailyCoding::Application.routes.draw do
   get     'answers/:problem_id/:lang' => 'answers#index'
   post    'answers' => 'answers#create'
   delete  'answers' => 'answers#create'
-  match   'answers/profile/:uid' => 'answer#profile'
-  match   'answers/profile_fav/:uid' => 'answer#profile_fav'
+  get     'answers/profile/:uid' => 'answer#profile'
+  get     'answers/profile_fav/:uid' => 'answer#profile_fav'
 
-  root :to => 'top#index'
+  root    :to => 'top#index'
 
   mount SmartTwitter::Engine => "/", :as => "smart_twitter"
 
