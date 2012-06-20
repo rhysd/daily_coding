@@ -1,78 +1,39 @@
-<% if logged_in? %>
-  <div class='hero-unit'>
-    <div id='today-problem' data-problem-id="<%= @today_problem.id %>">
+<div class='hero-unit'>
+  <center>
+    <h1>
+      <span class="signboard">
+        DailyCoding
+        <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="daily_coding">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <p>１日の終わりにコーディングしていきませんか？</p>
+      </span>
+    </h1>
+    <a class='btn btn-primary btn-large' href='/login'>Twitterでログインして参加</a>
+    <a class='btn btn-large' href='/problems/today'>ログインせずに参加</a>
+  </center>
+</div>
+<div class='row'>
+  <div class='span4'>
+    <h2>このサービスについて</h2>
+    <p> プログラミングの上達には日々のコーディングが欠かせません。
+    DailyCodingは、そういった毎日のコーディングをちょっと楽しくするサービスです。
+    寝る前に少し時間を作って1日1題出される問題を解き、他の人と解答を共有しましょう。
+    問題は日替わりです。<br>
+    また、Twitter でログインすると他の人の投稿にスターをつけることができます。
+    名前を出してソースコードを公開するのはちょっと恥ずかしい…という人でもログインせずに
+    参加できます。</p>
+  </div>
+  <div class='span4'>
+    <h2>出題される問題</h2>
+    <%= link_to "プロジェクトオイラー","http://projecteuler.net/" %>とは、
+    プログラミングで解く数学の問題集です．初級の問題から少し厄介な問題まで、
+    様々な問題が大量に用意されています。DailyCoding では、それらの中から毎日
+    1問ずつ解いていくことで、楽しくプログラミング能力を向上させていくことができます。
+  </div>
+  <div class='span4'>
+    <h2> 今日の問題 </h2>
+    <div id='today-problem'>
       <%== @today_problem.content %>
     </div>
-    <hr>
-    <div id='gist-url'>
-      <p>作成した解答を<%= link_to "Gist","https://gist.github.com/" %>にアップロードしましょう。</p>
-      <%= form_tag('/answers', :id => 'gist-url-form') do %>
-        <%= url_field_tag "gisturl", "", {:placeholder => "gistのURLを入力してください."} %>
-        <%= hidden_field_tag 'problem_id', @today_problem.id %>
-        <%= submit_tag("投稿") %>
-      <% end %>
-    </div>
   </div>
-
-  <a id="answers-show" class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">
-    他のユーザのコードを見る
-    <span class="caret"></span>
-  </a>
-
-  <% answers_url = '/answers/' + @today_problem.id.to_s %>
-  <div id='answers-unit' class='gist-unit'>
-    <ul class="nav nav-pills" id='lang-selector'>
-      <li class="active">
-        <a id="all-lang" class= "lang-btn" href="javascript:void(0);" data-href="<%= answers_url %>">ALL</a>
-      </li>
-      <% @langs.each do |lang| %>
-        <li>
-          <a class="lang-btn" data-href=<%= answers_url + '/' + lang %> href="javascript:void(0);" ><%= lang %></a>
-        </li>
-      <% end %>
-    </ul>
-
-    <div id='answers-body'></div>
-  </div>
-
-<% else %>
-  <div class='hero-unit'>
-    <center>
-      <h1>
-        <span class="signboard">
-          DailyCoding
-          <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="daily_coding">Tweet</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          <p>１日の終わりにコーディングしていきませんか？</p>
-        </span>
-      </h1>
-      <a class='btn btn-primary btn-large' href='/login'>Twitterでログインして参加</a>
-      <a class='btn btn-large' href='/nologin'>ログインせずに参加</a>
-    </center>
-  </div>
-  <div class='row'>
-    <div class='span4'>
-      <h2>このサービスについて</h2>
-      <p> プログラミングの上達には日々のコーディングが欠かせません。
-      DailyCodingは、そういった毎日のコーディングをちょっと楽しくするサービスです。
-      寝る前に少し時間を作って1日1題出される問題を解き、他の人と解答を共有しましょう。
-      問題は日替わりです。<br>
-      また、Twitter でログインすると他の人の投稿にスターをつけることができます。
-      名前を出してソースコードを公開するのはちょっと恥ずかしい…という人でもログインせずに
-      参加できます。</p>
-    </div>
-    <div class='span4'>
-      <h2>出題される問題</h2>
-      <%= link_to "プロジェクトオイラー","http://projecteuler.net/" %>とは、
-      プログラミングで解く数学の問題集です．初級の問題から少し厄介な問題まで、
-      様々な問題が大量に用意されています。DailyCoding では、それらの中から毎日
-      1問ずつ解いていくことで、楽しくプログラミング能力を向上させていくことができます。
-    </div>
-    <div class='span4'>
-      <h2> 今日の問題 </h2>
-      <div id='today-problem'>
-        <%== @today_problem.content %>
-      </div>
-    </div>
-  </div>
-<% end %>
+</div>
