@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(:version => 20120512083554) do
 
   create_table "answers", :force => true do |t|
     t.string   "url",        :null => false
-    t.string   "lang"
+    t.string   "lang",       :null => false
     t.text     "body",       :null => false
     t.integer  "user_id",    :null => false
     t.integer  "problem_id", :null => false
@@ -24,14 +24,15 @@ ActiveRecord::Schema.define(:version => 20120512083554) do
   end
 
   create_table "favs", :force => true do |t|
+    t.integer  "problem",    :null => false
     t.integer  "answer_id",  :null => false
-    t.integer  "user_id",    :null => false
+    t.integer  "from",       :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   create_table "problems", :force => true do |t|
-    t.text     "content",                       :null => false
+    t.text     "content"
     t.string   "url"
     t.boolean  "proposed",   :default => false, :null => false
     t.datetime "created_at",                    :null => false

@@ -1,10 +1,12 @@
 
 <div id='one-program'>
   <div class="author">
-    <p><a href="/profile/<%= answer.user.twitter_id %>">@<%= answer.user.login %></a></p>
-    <a href="/profile/<%= answer.user.twitter_id %>">
-      <img src="<%= answer.user.profile_image_url %>" width='40px' height='40px'>
-    </a>
+    <% if answer.user %>
+      <p><a href="/profile/<%= answer.user.twitter_id %>">@<%= answer.user.login %></a></p>
+      <a href="/profile/<%= answer.user.twitter_id %>">
+        <img src="<%= answer.user.profile_image_url %>" width='40px' height='40px'>
+      </a>
+    <% end %>
   </div>
   <div class="fav-star">
     <a class='fav-btn' data-answer-id="<%= answer.id %>" href="javascript:void(0);">
