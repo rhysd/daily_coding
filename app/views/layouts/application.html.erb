@@ -28,7 +28,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="/"><font color="#FFA945">DailyCoding</font></a>
+          <% top_path = request.fullpath == root_path ? root_path : problems_today_path %>
+          <a class="brand" href=<%= top_path %>><font color="#FFA945">DailyCoding</font></a>
           <ul class="nav secondary-nav" style="float: right;">
             <% if logged_in? %>
               <a href="/profiles/<%= current_user.twitter_id %>"><img src="<%= current_user.profile_image_url %>" height="28" vspace="4"></a><%= link_to "Logout", smart_twitter.logout_path, :class => "brand" %>
