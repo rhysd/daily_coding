@@ -11,7 +11,7 @@ class ProfilesController < ApplicationController
 
   def setup
     @uid = params[:user_id]
-    @user = User.find_by_id params[:user_id]
+    @user = User.find_by_id(params[:user_id])
     @my_answers = Answer.find_all_by_user_id(@user.id) || []
     @my_answers = @my_answers.class == Array ? @my_answers : [@my_answers]
     stared_answer_ids = Fav.find_all_by_user_id(params[:user_id]) || []
