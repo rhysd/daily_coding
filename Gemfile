@@ -29,7 +29,6 @@ gem 'quiet_assets', :git => 'https://github.com/evrone/quiet_assets.git'
 gem 'nokogiri'
 gem 'jquery-rails'
 gem "rspec-rails", :group => [:development, :test]
-gem 'quiet-assets', :git => 'git://github.com/evrone/quiet-assets.git' # make annoying log quiet
 
 # Deploy with Capistrano
 group :deployment do
