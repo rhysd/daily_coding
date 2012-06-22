@@ -25,7 +25,8 @@ class AnswersController < ApplicationController
   end
 
   def create
-    Answer.create_or_update(current_user.id, params[:problem_id], params[:gisturl])
+    id = logged_in? ? current_user.id : 0
+    Answer.create_or_update(id, params[:problem_id], params[:gisturl])
     render nothing: true
   end
 
