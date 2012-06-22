@@ -7,8 +7,8 @@ DailyCoding::Application.routes.draw do
   post    'fav/create/:answer_id'  => 'fav#create'
   delete  'fav/destroy/:answer_id' => 'fav#destroy'
 
-  get     'answers/:problem_id'       => 'answers#index'
-  get     'answers/:problem_id/:lang' => 'answers#index'
+  get     'answers/:problem_id'       => 'answers#index', :as => 'answers_problem'
+  get     'answers/:problem_id/:lang' => 'answers#index', :as => 'answers_problem_lang'
   post    'answers'                   => 'answers#create'
   delete  'answers'                   => 'answers#delete'
   get     'answers/profile/:uid'      => 'answer#profile'

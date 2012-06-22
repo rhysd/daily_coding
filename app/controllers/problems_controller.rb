@@ -8,7 +8,7 @@ class ProblemsController < ApplicationController
   def show
     @problem = Problem.find(params[:id])
     begin
-        @answers = @problem.answer #Answer.find_by_problem_id(@today_problem.id)
+        @answers = @problem.answers #Answer.find_by_problem_id(@today_problem.id)
         @langs = @answers.collect {|a| a.lang}.uniq
     rescue => e
         @langs = []
@@ -18,7 +18,7 @@ class ProblemsController < ApplicationController
   def today
     @today_problem = Problem.today
     begin
-        @answers = @today_problem.answer #Answer.find_by_problem_id(@today_problem.id)
+        @answers = @today_problem.answers #Answer.find_by_problem_id(@today_problem.id)
         @langs = @answers.collect {|a| a.lang}.uniq
     rescue => e
         @langs = []
