@@ -34,4 +34,10 @@ class AnswersController < ApplicationController
     render nothing: true
   end
 
+  def edit
+  end
+
+  def update
+  end
+
 end

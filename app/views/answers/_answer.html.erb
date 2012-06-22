@@ -14,7 +14,7 @@
         <img src="/assets/star_empty.png">
       <% end %>
     </a>
-    <% answer.fav.each do |fav| %>
+    <% answer.favs.each do |fav| %>
       <a href="/profile/<%= fav.user.twitter_id %>">
         <img src="<%= fav.user.profile_image_url %>" width='40px' height='40px'>
       </a>

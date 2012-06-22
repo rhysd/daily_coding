@@ -5,7 +5,7 @@
   <hr>
   <div id='gist-url'>
     <p>作成した解答を<%= link_to "Gist","https://gist.github.com/" %>にアップロードしましょう。</p>
-    <%= form_tag('/answers', :id => 'gist-url-form') do %>
+    <%= form_tag(answers_path, :id => 'gist-url-form') do %>
       <%= url_field_tag "gisturl", "", {:placeholder => "GistのURLを入力してください."} %>
       <%= hidden_field_tag 'problem_id', @today_problem.id %>
       <%= submit_tag("投稿") %>
@@ -22,7 +22,7 @@
 <div id='answers-unit' class='gist-unit'>
   <ul class="nav nav-pills" id='lang-selector'>
     <li class="active">
-    <a id="all-lang" class= "lang-btn" href="javascript:void(0);" data-href="<%= answers_url %>">ALL</a>
+    <a id="all-lang" class= "lang-btn" href="javascript:void(0);" data-href="<%= answers_path(@today_problem.id) %>">ALL</a>
     </li>
     <% @langs.each do |lang| %>
       <li>
