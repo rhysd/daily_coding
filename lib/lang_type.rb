@@ -1,8 +1,8 @@
-module DailyCoding
+require 'open-uri'
+require 'nokogiri'
+require 'errors.rb'
 
-  require 'open-uri'
-  require 'nokogiri'
-  require 'errors.rb'
+module DailyCoding
 
   def lang_type(url)
     doc = Nokogiri::HTML open(url, :ssl_verify_mode => OpenSSL::SSL::VERIFY_NONE)
@@ -19,7 +19,7 @@ module DailyCoding
         return type
       end
     end
-    raise LangTypeNotFound,url
+    raise LangTypeNotFound, url
   end
 
 end
