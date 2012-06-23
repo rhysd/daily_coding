@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 require 'open-uri'
-require 'lang_type'
 
 class Answer < ActiveRecord::Base
   attr_accessible :lang, :url, :user_id, :problem_id, :body
@@ -23,7 +22,7 @@ class Answer < ActiveRecord::Base
       answer = Answer.new do |a|
         a.user_id = uid
         a.url = gist_url
-        a.lang = DailyCoding.lang_type(gist_url)
+        a.lang = DailyCoding::lang_type(gist_url)
         a.body = self.hash_from_gist(gist_url + ".json")
         a.problem_id = problem_id
         a.save
