@@ -29,7 +29,7 @@ gem 'quiet_assets', :git => 'https://github.com/evrone/quiet_assets.git'
 gem 'nokogiri'
 gem 'jquery-rails'
 gem "rspec-rails", :group => [:development, :test]
-gem 'ruby-debug19', :require => 'ruby-debug'
+gem 'ruby-debug19', :require => 'ruby-debug', :group => :development
 gem 'pry', :group => :development
 
 # Deploy with Capistrano
