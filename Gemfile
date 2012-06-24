@@ -29,6 +29,8 @@ gem 'quiet_assets', :git => 'https://github.com/evrone/quiet_assets.git'
 gem 'nokogiri'
 gem 'jquery-rails'
 gem "rspec-rails", :group => [:development, :test]
+gem 'ruby-debug19', :require => 'ruby-debug'
+gem 'pry', :group => :development
 
 # Deploy with Capistrano
 group :deployment do
@@ -44,5 +46,3 @@ end
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'

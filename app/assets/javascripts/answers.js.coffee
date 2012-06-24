@@ -1,3 +1,10 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
+$ ->
+  $("ul#lang-selector a.lang-btn").click ->
+    url = $(this).attr('data-href')
+    console.log(url)
+    lang_btn = $(this)
+    $.get url, (data) ->
+      $("ul#lang-selector li").removeClass('active')
+      lang_btn.parent().addClass('active')
+      console.log(data)
+      $('div#answers-body').html(data)

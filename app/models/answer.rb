@@ -7,13 +7,17 @@ class Answer < ActiveRecord::Base
   has_many :favs
   belongs_to :problem
   belongs_to :user
+  scope :recent, order('created_at DESC')
+  scope :lang, lambda { |l| where(:lang => l) }
+  scope :answers_by_pid, lambda { |p| where(:problem_id => p) }
+  scope :answers_by_uid, lambda { |u| where(:user_id => u) }
 
   def self.find_by_problem_id(problem_id, lang_type=nil)
     answers =
       if lang_type
-        Answer.where(problem_id: problem_id, lang: lang_type).order('updated_at DESC')
+        Answer.where(problem_id: problem_id, lang: lang_type).order('created_at DESC')
       else
-        Answer.where(problem_id: problem_id).order('updated_at DESC')
+        Answer.where(problem_id: problem_id).order('created_at DESC')
       end
   end
 

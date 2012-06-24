@@ -11,24 +11,5 @@
       <%= submit_tag("投稿") %>
     <% end %>
   </div>
-</div>
-
-<a id="answers-show" class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">
-  他のユーザのコードを見る
-  <span class="caret"></span>
-</a>
-
-<div id='answers-unit' class='gist-unit'>
-  <ul class="nav nav-pills" id='lang-selector'>
-    <li class="active">
-    <a id="all-lang" class= "lang-btn" href="javascript:void(0);" data-href="<%= answers_problem_path(@today_problem.id) %>">ALL</a>
-    </li>
-    <% @langs.each do |lang| %>
-      <li>
-      <a class="lang-btn" data-href="<%= answers_problem_lang_path(@today_problem.id, lang) %>" href="javascript:void(0);" ><%= lang %></a>
-      </li>
-    <% end %>
-  </ul>
-
-  <div id='answers-body'></div>
+  <a class='btn btn-primary' href=<%= answers_problem_path(@today_problem.id) %>>みんなのコードを見る</a>
 </div>

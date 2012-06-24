@@ -1,3 +1,16 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
+$ ->
+  # fav create
+  $("a.fav-btn").click ->
+    fav_btn = $(this)
+    # fav create
+    if fav_btn.find('img').attr('src') == '/assets/star_empty.png'
+      $.post '/fav/create/' + fav_btn.attr('data-answer-id'), (res) ->
+        fav_btn.find('img').attr('src','/assets/star_full.png')
+    else # fav delete
+      $.ajax {
+        'url': '/fav/destroy/' + fav_btn.attr('data-answer-id'),
+        'type': 'DELETE',
+        'success': (res) ->
+          fav_btn.find('img').attr('src','/assets/star_empty.png')
+      }
+
