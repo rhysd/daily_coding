@@ -1,6 +1,8 @@
+<h2>問題<%= @today_problem.id %></h2>
 <div class='hero-unit'>
   <div id='today-problem' data-problem-id="<%= @today_problem.id %>">
     <%== @today_problem.content %>
+    <%= link_to "Project Euler 問題#{@today_problem.id}", @today_problem.url %>
   </div>
   <hr>
   <div id='gist-url'>
