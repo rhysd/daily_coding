@@ -24,7 +24,7 @@
   </div>
   <% if current_user == answer.user %>
     <div class='answer-destroy'>
-      <%= link_to "削除", answer_path(answer.id), :confirm => "この投稿を削除します。よろしいですか?", :method => :delete %>
+        <%= link_to "削除", answer_path(answer.id), :data => {:confirm => "この投稿を削除します。よろしいですか?"}, :method => :delete %>
     </div>
   <% end %>
   <div class="gist-part">
