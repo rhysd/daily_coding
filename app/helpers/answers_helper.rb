@@ -1,4 +1,5 @@
 module AnswersHelper
+
   def current_user_faved?(answer)
     favs = answer.favs
     favs.each do |fav|
@@ -6,4 +7,5 @@ module AnswersHelper
     end
     false
   end
+
 end

@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 
+require 'open-uri'
+
 class AnswersController < ApplicationController
+  helper_method :gist_url?
 
   def index
     @problem = Problem.find(params[:problem_id])
@@ -40,13 +43,41 @@ class AnswersController < ApplicationController
 
   def create
     id = logged_in? ? current_user.id : 0
-    Answer.create_or_update(id, params[:problem_id], params[:gisturl])
+    content = content_by_gist_url(params[:gisturl])
+    unless content.present?
+      raise DailyCoding::Exceptions::InvalidURLError, "入力されたURLが適切ではありません。GistのURLを投稿して下さい。"
+    end
+    Answer.find_or_create(id, params[:problem_id], params[:gisturl], content)
     redirect_to :action => 'index', :problem_id => params[:problem_id]
   end
 
   def destroy
-    Answer.destroy(params[:answer_id])
+    Answer.destroy(params[:id])
     render nothing: true
+  end
+
+  def gist_url?(url)
+    uri = URI.parse(url)
+    return false unless uri.host == "gist.github.com" && uri.path =~ /\d{1,8}/
+    true
+  end
+
+  private
+
+  def content_by_gist_url(url)
+    uri = URI.parse(url + '.json')
+    begin
+      content = uri.read
+    rescue SocketError
+      return nil
+    end
+    return nil if (content.status == "404" || content.status == "302") || gist_url?(url) == false
+    hash_from_gist(content)
+  end
+  
+  def hash_from_gist(content)
+    json = JSON.parse content
+    json['div']
   end
 
 end
