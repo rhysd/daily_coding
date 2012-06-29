@@ -53,7 +53,7 @@ class AnswersController < ApplicationController
 
   def destroy
     Answer.destroy(params[:id])
-    render nothing: true
+    redirect_to :back
   end
 
   def gist_url?(url)

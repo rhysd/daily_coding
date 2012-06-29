@@ -47,7 +47,7 @@ class Answer < ActiveRecord::Base
       answer.lang = self.lang_type(gist_url)
       answer.body = content
       answer.problem_id = problem_id
-      answer.save!
+      answer.save
     end
     answer
   end
