@@ -5,19 +5,21 @@ class FavController < ApplicationController
 
   def create
     Fav.find_or_create(params[:answer_id], current_user.id)
+    head :created, :nothing => true 
   end
 
   def destroy
     begin
-      Fav.find_or_delete( params[:answer_id], current_user.id)
+      Fav.find_or_delete(params[:answer_id], current_user.id)
     rescue
-     render status: 400
+      head :noting => true, status: :not_found
     end
+    head :ok, :nothing => true
   end
 
   private
 
   def login_check
-    render status: 403 unless logged_in?
+    head :unauthorized, :nothing => true unless logged_in?
   end
 end
