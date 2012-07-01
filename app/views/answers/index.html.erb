@@ -1,3 +1,9 @@
+<% if params[:notice].present? %>
+  <div class='notice'>
+    <p><%= params[:notice] %></p>
+  </div>
+<% end %>
+
 <div class='problem'>
   <h2>問題<%= @problem.id %></h2>
   <div class='hero-unit'>

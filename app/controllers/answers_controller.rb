@@ -43,7 +43,7 @@ class AnswersController < ApplicationController
       raise DailyCoding::Exceptions::InvalidURLError, "入力されたURLが適切ではありません。GistのURLを投稿して下さい。"
     end
     Answer.find_or_create(id, params[:problem_id], params[:gisturl], content)
-    redirect_to :action => 'index', :problem_id => params[:problem_id]
+    redirect_to :action => 'index', :problem_id => params[:problem_id], :notice => "投稿できました。"
   end
 
   def destroy
