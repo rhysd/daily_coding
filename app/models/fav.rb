@@ -5,6 +5,12 @@ class Fav < ActiveRecord::Base
   belongs_to :user
   belongs_to :answer
 
+  validates :answer_id,
+    :presence => true
+  validates :user_id,
+    :presence => true
+
+
   def self.find_or_create(answer_id, uid)
     unless Fav.find_by_answer_id_and_user_id(answer_id, uid)
       Fav.create(answer_id: answer_id, user_id: uid)
