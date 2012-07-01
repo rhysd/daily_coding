@@ -5,6 +5,8 @@ gem 'rails', '>= 3.2.3'
 group :test, :development do
   gem 'sqlite3'
   gem 'heroku'
+  gem "rspec-rails"
+  gem 'pry-rails'
 end
 
 group :production do
@@ -28,9 +30,7 @@ gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-boot
 gem 'quiet_assets', :git => 'https://github.com/evrone/quiet_assets.git'
 gem 'nokogiri'
 gem 'jquery-rails'
-gem "rspec-rails", :group => [:development, :test]
-gem 'ruby-debug19', :require => 'ruby-debug', :group => :development
-gem 'pry', :group => :development
+gem 'will_paginate'
 
 # Deploy with Capistrano
 group :deployment do
@@ -39,10 +39,4 @@ group :deployment do
   gem 'capistrano-ext'
   gem 'capistrano_rsync_with_remote_cache'
 end
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
 

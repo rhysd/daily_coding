@@ -1,0 +1,32 @@
+<div class='problems'>
+  <div class='row'>
+    <div class='span7'>
+      <table class="table table-bordered table-striped">
+        <colgroup>
+          <col class='span3'>
+          <col class='span3'>
+          <col class='span4'>
+        </colgroup>
+        <thead>
+          <tr>
+            <th>問題No.</th>
+            <th>回答数</th>
+            <th>出題日</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% if @problems %>
+            <% @problems.each do |problem| %>
+              <tr>
+                <td><%= link_to "#{problem.id}", answers_problem_path(problem.id) %></td>
+                <td><%= problem.answers.length %></td>
+                <td><%= problem.proposed_at.to_s.split(/-/).join('/') %></td>
+              </tr>
+            <% end %>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <%= will_paginate @problems, :previous_label => '<前ページ', :next_label => '次ページ>' %>
+</div>

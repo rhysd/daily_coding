@@ -31,6 +31,7 @@
           <% top_path = request.fullpath == root_path ? root_path : problems_today_path %>
           <a class="brand" href=<%= top_path %>><font color="#FFA945">DailyCoding</font></a>
           <ul class="nav secondary-nav" style="float: right;">
+            <%= link_to "過去に出題した問題", problems_path, :class => "brand" %>
             <% if logged_in? %>
               <%= link_to "Logout", smart_twitter.logout_path, :class => "brand" %>
               <a href="/profiles/<%= current_user.id %>"><img src="<%= current_user.profile_image_url %>" height="28" vspace="4"></a>

@@ -8,4 +8,7 @@ class Problem < ActiveRecord::Base
     Problem.where(proposed: false).order("id ASC").first
   end
 
+  def self.find_with_paging(page)
+    Problem.where(proposed: true).order("id DESC").paginate(:page => page, :per_page => 30)
+  end
 end

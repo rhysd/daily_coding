@@ -2,7 +2,8 @@
 
 class ProblemsController < ApplicationController
   def index
-    @problems = Problem.find_all_by_proposed(true)
+    page = params[:page].presence || 1
+    @problems = Problem.find_with_paging(page)
   end
 
   def show
