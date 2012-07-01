@@ -15,6 +15,7 @@ class Answer < ActiveRecord::Base
   scope :answers_by_uid, lambda { |u| where(:user_id => u) }
 
   validates :lang,
+    :presence => true,
     :length => { :in => 1..20},
     :format => { :with => /[\w]+/}
   validates :url, 

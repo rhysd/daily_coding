@@ -4,6 +4,16 @@ class Problem < ActiveRecord::Base
   attr_accessible :content, :url, :proposed_at
   has_many :answers, :order => 'created_at DESC'
 
+  validates :content,
+    :presence => true
+  validates :url,
+    :format => { :with => /http(s)?:\/\/([\w\-]+\.)+[\w\-]+(\/[\w\- .\/?%&=]*)?$/ } # Gist URL validattion
+  validates :prposed_at,
+    :presence => true
+  validates :prposed,
+    :presence => true
+
+
   def self.today
     Problem.where(proposed: false).order("id ASC").first
   end
