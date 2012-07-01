@@ -7,12 +7,8 @@ class AnswersController < ApplicationController
 
   def index
     @problem = Problem.find(params[:problem_id])
-    begin
-      @answers = @problem.answers
-      @langs = @answers.map {|a| a.lang}.uniq
-    rescue => e
-      @langs = []
-    end
+    @answers = @problem.present? ? @problem.answers : []
+    @langs = @answers.map {|a| a.lang}.uniq
   end
 
   def answers
