@@ -6,11 +6,9 @@ class Problem < ActiveRecord::Base
 
   validates :content,
     :presence => true
-  validates :url,
-    :format => { :with => /http(s)?:\/\/([\w\-]+\.)+[\w\-]+(\/[\w\- .\/?%&=]*)?$/ } # Gist URL validattion
+  # validates :url,
+  #   :format => { :with => /http(s)?:\/\/([\w\-]+\.)+[\w\-]+(\/[\w\- .\/?%&=]*)?$/ } # Gist URL validattion
   validates :proposed_at,
-    :presence => true
-  validates :proposed,
     :presence => true
 
 
