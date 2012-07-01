@@ -8,7 +8,7 @@ class AnswersController < ApplicationController
   def index
     @problem = Problem.find(params[:problem_id])
     begin
-      @answers = @problem.answers.reverse
+      @answers = @problem.answers
       @langs = @answers.map {|a| a.lang}.uniq
     rescue => e
       @langs = []
@@ -32,8 +32,7 @@ class AnswersController < ApplicationController
   end
 
   def profile_fav
-    faved_answer_ids = Fav.find_all_by_user_id(params[:uid]) || []
-    faved_answer_ids = faved_answer_ids.class == Array ? faved_answer_ids : [faved_answer_ids]
+    faved_answer_ids = Fav.find_all_by_user_id(params[:uid])
     begin
       @faved_answers = Answer.find(faved_answer_ids)
     rescue ActiveRecord::RecordNotFound
@@ -68,7 +67,7 @@ class AnswersController < ApplicationController
     uri = URI.parse(url + '.json')
     begin
       content = uri.read
-    rescue SocketError
+    rescue
       return nil
     end
     return nil if (content.status == "404" || content.status == "302") || gist_url?(url) == false

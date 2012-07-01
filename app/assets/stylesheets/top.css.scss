@@ -8,19 +8,15 @@
   font-size: 18px;
 }
 
-div#gist-url {
+div.url-form {
+  display: block;
+  float: left;
   margin: 0 auto;
-  clear: both;
-  width: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -o-box;
-  display: box;
 }
 
-form#gist-url-form {
+div#to-answers {
+  float: right;
   margin: 0 auto;
-  width: 120%;
 }
 
 .gist-unit {
