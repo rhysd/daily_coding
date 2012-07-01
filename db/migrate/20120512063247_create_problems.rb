@@ -4,6 +4,7 @@ class CreateProblems < ActiveRecord::Migration
       t.text :content, :null => false
       t.string :url
       t.boolean :proposed, :null => false, :default => false
+      t.date   :proposed_at, :null => false
 
       t.timestamps
     end

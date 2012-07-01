@@ -24,19 +24,19 @@ ActiveRecord::Schema.define(:version => 20120512083554) do
   end
 
   create_table "favs", :force => true do |t|
-    t.integer  "problem",    :null => false
     t.integer  "answer_id",  :null => false
-    t.integer  "from",       :null => false
+    t.integer  "user_id",    :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   create_table "problems", :force => true do |t|
-    t.text     "content"
+    t.text     "content",                        :null => false
     t.string   "url"
-    t.boolean  "proposed",   :default => false, :null => false
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
+    t.boolean  "proposed",    :default => false, :null => false
+    t.date     "proposed_at",                    :null => false
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
   end
 
   create_table "smart_twitter_users", :force => true do |t|

@@ -2,7 +2,7 @@
 
 class ProblemsController < ApplicationController
   def index
-    @problems = Problem.find_all_by_proposed(proposed: true)
+    @problems = Problem.find_all_by_proposed(true)
   end
 
   def show

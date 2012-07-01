@@ -2,5 +2,7 @@
 
 desc "update proposal colum on problem table" 
 task :cron => :environment do
-  Problem.close_today
+  problem = Problem.today
+  problem.proposed = true
+  problem.save
 end
