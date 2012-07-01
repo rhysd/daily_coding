@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120512083554) do
+ActiveRecord::Schema.define(:version => 20120701152010) do
 
   create_table "answers", :force => true do |t|
     t.string   "url",        :null => false
@@ -23,12 +23,19 @@ ActiveRecord::Schema.define(:version => 20120512083554) do
     t.datetime "updated_at", :null => false
   end
 
+  add_index "answers", ["problem_id"], :name => "index_answers_on_problem_id"
+  add_index "answers", ["url"], :name => "index_answers_on_url"
+  add_index "answers", ["user_id"], :name => "index_answers_on_user_id"
+
   create_table "favs", :force => true do |t|
     t.integer  "answer_id",  :null => false
     t.integer  "user_id",    :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  add_index "favs", ["answer_id"], :name => "index_favs_on_answer_id"
+  add_index "favs", ["user_id"], :name => "index_favs_on_user_id"
 
   create_table "problems", :force => true do |t|
     t.text     "content",                        :null => false
@@ -38,6 +45,8 @@ ActiveRecord::Schema.define(:version => 20120512083554) do
     t.datetime "created_at",                     :null => false
     t.datetime "updated_at",                     :null => false
   end
+
+  add_index "problems", ["proposed"], :name => "index_problems_on_proposed"
 
   create_table "smart_twitter_users", :force => true do |t|
     t.string   "twitter_id"
