@@ -2,7 +2,7 @@
 
 class Problem < ActiveRecord::Base
   attr_accessible :content, :url, :proposed_at
-  has_many :answers, :order => 'proposed_at DESC'
+  has_many :answers, :order => 'created_at DESC'
 
   def self.today
     Problem.where(proposed: false).order("id ASC").first
