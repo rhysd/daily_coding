@@ -1,32 +1,36 @@
-
+<% user = answer.user %>
 <div class='code'>
-  <div class="author">
-    <% if answer.user %>
-      <p><a href="/profiles/<%= answer.user_id %>">@<%= answer.user.login %></a></p>
-      <a href="/profiles/<%= answer.user_id %>">
-        <img src="<%= answer.user.profile_image_url %>" width='40px' height='40px'>
-      </a>
-    <% end %>
-  </div>
-  <div class="fav-star">
-    <a class='fav-btn' data-answer-id="<%= answer.id %>" href="javascript:void(0);">
-      <% if current_user_faved?(answer) %>
-        <img src="/assets/star_full.png">
-      <% else %>
-        <img src="/assets/star_empty.png">
-      <% end %>
-    </a>
-    <% answer.favs.each do |fav| %>
-      <a href="/profiles/<%= fav.user_id %>">
-        <img src="<%= fav.user.profile_image_url %>" width='20px' height='20px'>
-      </a>
-    <% end %>
-  </div>
-  <% if current_user == answer.user %>
-    <div class='answer-destroy'>
-        <%= link_to "削除", answer_path(answer.id), :data => {:confirm => "この投稿を削除します。よろしいですか?"}, :method => :delete %>
+  <div class="meta">
+    <div class="notice">
+      <p><%= link_to "@#{user.login}", profile_path(user.id) %>さんが投稿しました。</p>
     </div>
-  <% end %>
+    <div class="author">
+      <% if user %>
+        <a href="/profiles/<%= user.id %>">
+          <img src="<%= user.profile_image_url %>" width='40px' height='40px'>
+        </a>
+      <% end %>
+    </div>
+    <div class="fav-star">
+      <a class='fav-btn' data-answer-id="<%= answer.id %>" href="javascript:void(0);">
+        <% if current_user_faved?(answer) %>
+          <img src="/assets/star_full.png">
+        <% else %>
+          <img src="/assets/star_empty.png">
+        <% end %>
+      </a>
+      <% answer.favs.each do |fav| %>
+        <a href="/profiles/<%= fav.user_id %>">
+          <img src="<%= fav.user.profile_image_url %>" width='24px' height='24px'>
+        </a>
+      <% end %>
+    </div>
+    <% if current_user == user %>
+      <div class='answer-destroy'>
+          <%= link_to "削除", answer_path(answer.id), :data => {:confirm => "この投稿を削除します。よろしいですか?"}, :method => :delete %>
+      </div>
+    <% end %>
+  </div>
   <div class="gist-part">
     <%== answer.body %>
   </div>

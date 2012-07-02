@@ -1,6 +1,6 @@
 DailyCoding::Application.routes.draw do
 
-  get     'profiles/:user_id'              => 'profiles#codes'
+  get     'profiles/:user_id'              => 'profiles#codes', :as => 'profile'
   get     'profiles/codes/:user_id'        => 'profiles#codes', :as => 'profiles_codes'
   get     'profiles/stared_codes/:user_id' => 'profiles#stared_codes', :as => 'profiles_stared_codes'
 

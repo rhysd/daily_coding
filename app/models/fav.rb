@@ -5,6 +5,8 @@ class Fav < ActiveRecord::Base
   belongs_to :user
   belongs_to :answer
 
+  default_scope order("created_at DESC")
+
   validates :answer_id,
     :presence => true
   validates :user_id,

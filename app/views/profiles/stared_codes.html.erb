@@ -17,7 +17,7 @@
     </div><!--/span-->
     <div class="span9">
       <div id="answers-unit" class="hero-unit">
-        <%= render partial: 'answers/answer', collection: @stared_answers, as: :answer %>
+        <%= render partial: 'answers/answer', spacer_template: 'answers/sep', collection: @stared_answers, :as => :answer %>
       </div>
     </div>
   </div>
