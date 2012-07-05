@@ -11,8 +11,8 @@ class Answer < ActiveRecord::Base
 
   scope :recent, order('created_at DESC')
   scope :lang, lambda { |l| where(:lang => l) }
-  scope :answers_by_pid, lambda { |p| where(:problem_id => p) }
-  scope :answers_by_uid, lambda { |u| where(:user_id => u) }
+  scope :answers_by_pid, lambda { |p| includes(:favs).where(:problem_id => p) }
+  scope :answers_by_uid, lambda { |u| includes(:favs).where(:user_id => u) }
 
   validates :lang,
     :presence => true,

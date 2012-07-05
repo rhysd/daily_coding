@@ -2,7 +2,7 @@
 
 class Problem < ActiveRecord::Base
   attr_accessible :content, :url, :proposed_at
-  has_many :answers, :order => 'created_at DESC'
+  has_many :answers, :include => :favs, :order => 'created_at DESC'
 
   validates :content,
     :presence => true
@@ -13,7 +13,7 @@ class Problem < ActiveRecord::Base
 
 
   def self.today
-    Problem.where(proposed: false).order("id ASC").first
+    Problem.includes(:answers).where(proposed: false).order("id ASC").first
   end
 
   def self.find_with_paging(page)

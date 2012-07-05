@@ -6,9 +6,9 @@ class AnswersController < ApplicationController
   helper_method :gist_url?
 
   def index
-    @problem = Problem.find(params[:problem_id])
+    @problem = Problem.includes(:answers).find(params[:problem_id])
     @answers = @problem.present? ? @problem.answers : []
-    @langs = @answers.map {|a| a.lang}.uniq
+    @langs = @answers.present? ? @answers.map {|a| a.lang}.uniq : []
   end
 
   def answers
@@ -24,7 +24,6 @@ class AnswersController < ApplicationController
   def profile
     @user = User.find(params[:uid])
     @my_answers = Answer.answers_by_uid(params[:uid]).recent || []
-    @my_answers = @my_answers.class == Array ? @my_answers : [@my_answers]
   end
 
   def profile_fav
@@ -53,7 +52,7 @@ class AnswersController < ApplicationController
 
   def gist_url?(url)
     uri = URI.parse(url)
-    return false unless uri.host == "gist.github.com" && uri.path =~ /\d{1,8}/
+    return false unless uri.host == "gist.github.com" && uri.path =~ /\d{1,8}/ # github.com/12345678
     true
   end
 

@@ -11,13 +11,9 @@ class ProblemsController < ApplicationController
   end
 
   def show_with_answers
-    @problem = Problem.find(params[:id])
-    begin
-      @answers = @problem.answers
-      @langs = @answers.collect {|a| a.lang}.uniq
-    rescue => e
-      @langs = []
-    end
+    @problem = Problem.include(:answers).find(params[:id])
+    @answers = @problem.present? ? @problem.answers : []
+    @langs = @answers.present? ? @answers.map {|a| a.lang}.uniq : []
   end
 
   def today
