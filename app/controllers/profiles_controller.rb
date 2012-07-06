@@ -13,7 +13,7 @@ class ProfilesController < ApplicationController
     @uid = params[:user_id]
     @user = User.includes(:answers).includes(:favs).find_by_id(params[:user_id])
     @my_answers = @user.present? ? @user.answers : []
-    stared_answer_ids = @user.favs.map! {|f| f.id }
+    stared_answer_ids = @user.present? ? @user.favs.map! {|f| f.id } : []
     begin
       @stared_answers = Answer.find_all_by_id(stared_answer_ids)
     rescue ActiveRecord::RecordNotFound

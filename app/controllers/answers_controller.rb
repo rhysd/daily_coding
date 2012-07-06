@@ -68,7 +68,7 @@ class AnswersController < ApplicationController
     return nil if (content.status == "404" || content.status == "302") || gist_url?(url) == false
     hash_from_gist(content)
   end
-  
+
   def hash_from_gist(content)
     json = JSON.parse content
     json['div']

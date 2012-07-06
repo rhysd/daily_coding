@@ -7,10 +7,6 @@ div.meta {
   display: inline;
 }
 
-div.notice p {
-  font-size: 16px;
-}
-
 div.author {
   float: left;
   margin-top: 25px;
@@ -22,4 +18,16 @@ div.answer-destroy {
 
 div.gist-part {
   margin: auto;
+}
+
+div.notice p {
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+}
+
+div.content hr {
+  color: black;
+  background-color: black;
+  border: none;
+  height: 0.3mm;
 }

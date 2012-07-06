@@ -5,6 +5,10 @@ require 'nokogiri'
 class Answer < ActiveRecord::Base
   attr_accessible :lang, :url, :user_id, :problem_id, :body
 
+  MINUTE = 60           # 60s
+  HOUR   = 60 * 60      # 3600s
+  DAY    = 60 * 60 * 24 # 86400s
+
   has_many :favs, :dependent => :destroy
   belongs_to :problem
   belongs_to :user
@@ -18,7 +22,7 @@ class Answer < ActiveRecord::Base
     :presence => true,
     :length => { :in => 1..20},
     :format => { :with => /[\w]+/}
-  validates :url, 
+  validates :url,
     :presence => { :message => "は必ず入力して下さい。"},
     :format => { :with => /http(s)?:\/\/gist\.github\.com\/[\d]+/, :message => "はGistのURLを入力して下さい。"} # Gist URL validattion
   validates :user_id,
@@ -51,6 +55,21 @@ class Answer < ActiveRecord::Base
       answer.save
     end
     answer
+  end
+
+  def to_ago
+    relative_sec = Time.now - self.created_at
+    if 0 <= relative_sec && relative_sec < MINUTE
+      sprintf "%d秒", relative_sec
+    elsif MINUTE <= relative_sec && relative_sec < HOUR
+      sprintf "%d分", relative_sec / 60
+    elsif HOUR <= relative_sec && relative_sec < DAY
+      sprintf "%d時間", relative_sec / 3600
+    elsif DAY <= relative_sec
+      sprintf "%d日", relative_sec / (3600 * 24)
+    else
+      nil
+    end
   end
 
   private
