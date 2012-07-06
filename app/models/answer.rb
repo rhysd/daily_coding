@@ -62,11 +62,11 @@ class Answer < ActiveRecord::Base
     if 0 <= relative_sec && relative_sec < MINUTE
       sprintf "%d秒", relative_sec
     elsif MINUTE <= relative_sec && relative_sec < HOUR
-      sprintf "%d分", relative_sec / 60
+      sprintf "%d分", relative_sec / MINUTE
     elsif HOUR <= relative_sec && relative_sec < DAY
-      sprintf "%d時間", relative_sec / 3600
+      sprintf "%d時間", relative_sec / HOUR
     elsif DAY <= relative_sec
-      sprintf "%d日", relative_sec / (3600 * 24)
+      sprintf "%d日", relative_sec / DAY
     else
       nil
     end
