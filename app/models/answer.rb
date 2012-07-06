@@ -60,14 +60,10 @@ class Answer < ActiveRecord::Base
   def to_ago
     relative_sec = Time.now - self.created_at
     case relative_sec
-    when 0 .. MINUTE-1
-      sprintf "%d秒", relative_sec
-    when MINUTE .. HOUR-1
-      sprintf "%d分", relative_sec / MINUTE
-    when HOUR .. DAY-1
-      sprintf "%d時間", relative_sec / HOUR
-    else
-      sprintf "%d日", relative_sec / DAY
+    when 0 ... MINUTE then    sprintf "%d秒", relative_sec
+    when MINUTE ... HOUR then sprintf "%d分", relative_sec / MINUTE
+    when HOUR ... DAY then    sprintf "%d時間", relative_sec / HOUR
+    else                      sprintf "%d日", relative_sec / DAY
     end
   end
 
