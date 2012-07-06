@@ -1,6 +1,13 @@
-// Place all the styles related to the top controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.top-box {
+  clear: both;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#share-buttons div {
+  display: inline;
+}
 
 .signboard {line-height: 140% ;}
 
