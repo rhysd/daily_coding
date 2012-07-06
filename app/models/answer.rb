@@ -59,16 +59,15 @@ class Answer < ActiveRecord::Base
 
   def to_ago
     relative_sec = Time.now - self.created_at
-    if 0 <= relative_sec && relative_sec < MINUTE
+    case relative_sec
+    when 0 .. MINUTE-1
       sprintf "%d秒", relative_sec
-    elsif MINUTE <= relative_sec && relative_sec < HOUR
+    when MINUTE .. HOUR-1
       sprintf "%d分", relative_sec / MINUTE
-    elsif HOUR <= relative_sec && relative_sec < DAY
+    when HOUR .. DAY-1
       sprintf "%d時間", relative_sec / HOUR
-    elsif DAY <= relative_sec
-      sprintf "%d日", relative_sec / DAY
     else
-      nil
+      sprintf "%d日", relative_sec / DAY
     end
   end
 
