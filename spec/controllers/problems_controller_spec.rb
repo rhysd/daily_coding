@@ -8,21 +8,21 @@ describe ProblemsController do
   end
 
   describe "GET 'index'" do
-    it "returns http success" do
+    it "returns 200 status" do
       get 'index', params = {:page => 1}
       response.should be_success
     end
   end
 
   describe "GET 'show/:id'" do
-    it "returns http success" do
+    it "returns 200 status" do
       get 'show', params = {:id => 1}
       response.should be_success
     end
   end
 
   describe "GET 'show/today'" do
-    it "returns http success" do
+    it "returns 200 status" do
       get 'today', params = {:id => 1}
       response.should be_success
     end
