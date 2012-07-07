@@ -5,12 +5,6 @@ require 'open-uri'
 class AnswersController < ApplicationController
   helper_method :gist_url?
 
-  def index
-    @problem = Problem.includes(:answers).find(params[:problem_id])
-    @answers = @problem.present? ? @problem.answers : []
-    @langs = @answers.present? ? @answers.map {|a| a.lang}.uniq : []
-  end
-
   def answers
     @answers = Answer.answers_by_pid(params[:problem_id]).recent
     render partial: 'answer', collection: @answers, :layout => false
@@ -42,7 +36,7 @@ class AnswersController < ApplicationController
       raise DailyCoding::Exceptions::InvalidURLError, "入力されたURLが適切ではありません。GistのURLを投稿して下さい。"
     end
     Answer.find_or_create(id, params[:problem_id], params[:gisturl], content)
-    redirect_to :action => 'index', :problem_id => params[:problem_id], :notice => "投稿できました。"
+    redirect_to problem_path(params[:problem_id]), :notice => "投稿できました。"
   end
 
   def destroy

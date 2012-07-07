@@ -7,11 +7,7 @@ class ProblemsController < ApplicationController
   end
 
   def show
-    @problem = Problem.find(params[:id])
-  end
-
-  def show_with_answers
-    @problem = Problem.include(:answers).find(params[:id])
+    @problem = Problem.includes(:answers).find(params[:id])
     @answers = @problem.present? ? @problem.answers : []
     @langs = @answers.present? ? @answers.map {|a| a.lang}.uniq : []
   end

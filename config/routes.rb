@@ -7,7 +7,6 @@ DailyCoding::Application.routes.draw do
   post    'fav/create/:answer_id'  => 'fav#create'
   delete  'fav/destroy/:answer_id' => 'fav#destroy'
 
-  get     'answers/:problem_id'       => 'answers#index', :as => 'answers_problem'
   get     'answers/profile/:uid'      => 'answer#profile'
   get     'answers/profile_fav/:uid'  => 'answer#profile_fav'
   scope 'tmpl' do
@@ -16,8 +15,8 @@ DailyCoding::Application.routes.draw do
   end
   resources 'answers', :only => [:show, :create, :destroy]
 
-  get       'problems/today' => 'problems#today'
-  resources 'problems', :only => [:index, :show]
+  get       'problems/today'      => 'problems#today'
+  resources 'problems',     :only => [:index, :show]
 
   root    :to => 'top#index'
 

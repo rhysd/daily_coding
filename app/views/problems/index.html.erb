@@ -18,7 +18,7 @@
           <% if @problems %>
             <% @problems.each do |problem| %>
               <tr>
-                <td><%= link_to "#{problem.id}", answers_problem_path(problem.id) %></td>
+                <td><%= link_to "#{problem.id}", problem_path(problem.id) %></td>
                 <td><%= problem.answers.length %></td>
                 <td><%= problem.proposed_at.to_s.split(/-/).join('/') %></td>
               </tr>
