@@ -62,4 +62,9 @@ FactoryGirl.define do
     user
     problem
   end
+
+  factory :fav do
+    answer
+    user
+  end
 end

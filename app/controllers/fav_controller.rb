@@ -5,7 +5,7 @@ class FavController < ApplicationController
 
   def create
     Fav.find_or_create(params[:answer_id], current_user.id)
-    head :created, :nothing => true 
+    head :created, :nothing => true
   end
 
   def destroy
