@@ -25,7 +25,7 @@
       </span>
     </h1>
     <div class='login-buttons'>
-      <a class='btn btn-primary btn-large' href=<%= smart_twitter.login_path %>>Twitterでログインして参加</a>
+      <a class='btn btn-primary btn-large' href=<%=  user_omniauth_authorize_path(:github) %>>Githubでログインして参加</a>
       <a class='btn btn-large' href=<%= problems_today_path %>>ログインせずに参加</a>
     </div>
   </div>

@@ -20,6 +20,6 @@ class FavController < ApplicationController
   private
 
   def login_check
-    head :unauthorized, :nothing => true unless logged_in?
+    head :unauthorized, :nothing => true unless user_signed_in?
   end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120701152010) do
+ActiveRecord::Schema.define(:version => 20120709153427) do
 
   create_table "answers", :force => true do |t|
     t.string   "url",        :null => false
@@ -48,37 +48,27 @@ ActiveRecord::Schema.define(:version => 20120701152010) do
 
   add_index "problems", ["proposed"], :name => "index_problems_on_proposed"
 
-  create_table "smart_twitter_users", :force => true do |t|
-    t.string   "twitter_id"
-    t.string   "login"
-    t.string   "access_token"
-    t.string   "access_secret"
-    t.binary   "crypted_password"
-    t.string   "salt"
-    t.string   "remember_token"
-    t.datetime "remember_token_expires_at"
+  create_table "users", :force => true do |t|
+    t.string   "provider",            :null => false
+    t.string   "uid",                 :null => false
+    t.string   "nickname",            :null => false
+    t.string   "email"
     t.string   "name"
-    t.string   "location"
-    t.string   "description"
-    t.string   "profile_image_url"
-    t.string   "url"
-    t.boolean  "protected"
-    t.string   "profile_background_color"
-    t.string   "profile_sidebar_fill_color"
-    t.string   "profile_link_color"
-    t.string   "profile_sidebar_border_color"
-    t.string   "profile_text_color"
-    t.integer  "friends_count"
-    t.integer  "statuses_count"
-    t.integer  "followers_count"
-    t.integer  "favourites_count"
-    t.integer  "utc_offset"
-    t.string   "time_zone"
+    t.string   "image"
+    t.string   "blog_url"
+    t.string   "github_url",          :null => false
+    t.string   "bio"
+    t.integer  "followers"
+    t.integer  "following"
+    t.string   "oauth_token",         :null => false
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+    t.datetime "remember_created_at"
+    t.string   "remember_token"
   end
 
-  create_table "users", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["nickname"], :name => "index_users_on_nickname", :unique => true
+  add_index "users", ["uid"], :name => "index_users_on_uid", :unique => true
 
 end

@@ -3,11 +3,11 @@
     <div class="span3">
       <div class="well sidebar-nav">
         <ul class="nav nav-list">
-          <img src="<%= @user.profile_image_url%>"><h2><%= link_to @user.login, "https://twitter.com/#/#{@user.login}" %></h2>
+          <img src="<%= @user.image %>"><h2><%= link_to @user.nickname, @user.github_url %></h2>
           <small><font color="gray"><%= @user.name %></font></small>
           <hr>
-          <p><%= @user.description %></p>
-          <small><%= link_to @user.url,@user.url %></small>
+          <p><%= @user.bio %></p>
+          <small><%= link_to @user.blog_url, @user.blog_url %></small>
           <hr>
           <li class="nav-header">Codes</li>
           <li class="active"><a href="#">書いたコード (<%= @my_answers.size %>)</a></li>

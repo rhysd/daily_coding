@@ -1,5 +1,12 @@
 DailyCoding::Application.routes.draw do
 
+  devise_for :users, :controllers => { :omniauth_callbacks => 'users/omniauth_callbacks' }
+  devise_scope :user do
+    get '/users/auth/:provider' => 'users/omniauth_callbacks#passthru'
+    get '/users/sign_in' => 'users/sessions#new', :as => :new_session
+    get '/users/sign_out' => 'devise/sessions#destroy', :as => :destroy_session
+  end
+
   get     'profiles/:user_id'              => 'profiles#codes', :as => 'profile'
   get     'profiles/codes/:user_id'        => 'profiles#codes', :as => 'profiles_codes'
   get     'profiles/stared_codes/:user_id' => 'profiles#stared_codes', :as => 'profiles_stared_codes'
@@ -19,7 +26,5 @@ DailyCoding::Application.routes.draw do
   resources 'problems',     :only => [:index, :show]
 
   root    :to => 'top#index'
-
-  mount SmartTwitter::Engine => "/", :as => "smart_twitter"
 
 end
