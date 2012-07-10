@@ -5,6 +5,7 @@ class AddDeviseToUsers < ActiveRecord::Migration
       t.datetime :remember_created_at
       t.string :remember_token
     end
+    add_index :users, :remember_token,  :unique => true
   end
 
   def self.down

@@ -3,11 +3,8 @@
 class User < ActiveRecord::Base
   include Devise::Models::Rememberable
 
-
   devise :omniauthable, :rememberable
   attr_accessible :remember_created_at, :remember_token, :provider, :uid, :nickname, :name, :email, :image, :blog_url, :github_url, :bio, :followers, :following, :oauth_token
-
-  before_create :rememberable_value
 
   has_many :answers, :include => :favs, :dependent => :destroy
   has_many :favs, :dependent => :destroy
@@ -45,8 +42,9 @@ class User < ActiveRecord::Base
     end
   end
 
+  # It is necessary to put this method because of devise's bug I guess
   def rememberable_value
-    self.remember_token ||= Devise.friendly_token
+    User.remember_token
   end
 
 end
