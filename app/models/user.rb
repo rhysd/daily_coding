@@ -34,10 +34,16 @@ class User < ActiveRecord::Base
   def self.new_with_session(params, session)
     super.tap do |user|
       if data = session["devise.github_data"] && session["devise.github_data"]["extra"]["raw_info"]
-        user.nickname = data["nickname"] if user.nickname.blank?
-        user.name = data["name"] if user.name.blank?
-        user.email = data["email"] if user.email.blank?
-        # TODO
+        user.nickname = data["info"]["nickname"] if user.nickname.blank?
+        user.name = data["info"]["name"] if user.name.blank?
+        user.email = data["info"]["email"] if user.email.blank?
+        user.image = data["info"]["image"] if user.image.blank?
+        user.blog_url = data["info"]["urls"]["Blog"] if user.blog_url.blank?
+        user.github_url = data["info"]["urls"]["GitHub"] if user.github_url.blank?
+        user.bio = data["info"]["bio"] if user.bio.blank?
+        user.followers = data["extra"]["raw_info"]["followers"] if user.followers.blank?
+        user.following = data["extra"]["raw_info"]["following"] if user.following.blank?
+        user.oauth_token = data["credentials"]["token"] if user.oauth_token.blank?
       end
     end
   end
