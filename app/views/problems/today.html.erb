@@ -15,8 +15,9 @@
   <div class='url-form'>
     <%= form_tag(answers_path, :id => 'gist-url-form') do %>
       <%= hidden_field_tag 'problem_id', @today_problem.id %>
-      <%= url_field_tag "gisturl", "", { :placeholder => "GistのURLを入力してください." } %>
+      <%= url_field_tag "gisturl", "", { :placeholder => "GistのURLを入力してください。" } %>
       <%= submit_tag "投稿", :class => 'btn btn-primary' %>
+      <%= check_box 'twitter_post', '', {}, true, false %> twitter に投稿
     <% end %>
   </div>
   <div id='to-answers'>

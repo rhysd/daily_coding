@@ -37,6 +37,9 @@ class AnswersController < ApplicationController
     end
     Answer.find_or_create(id, params[:problem_id], params[:gisturl], content)
     redirect_to problem_path(params[:problem_id]), :notice => "投稿できました。"
+    if params[:twitter_post]
+        client.update "@"+current_user[:login]+" さんが今日の問題に解答しました。 "+problems_today_url+" via @daily_coding"
+    end
   end
 
   def destroy
