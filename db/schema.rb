@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120709153427) do
+ActiveRecord::Schema.define(:version => 20120711153524) do
 
   create_table "answers", :force => true do |t|
     t.string   "url",        :null => false
@@ -26,6 +26,24 @@ ActiveRecord::Schema.define(:version => 20120709153427) do
   add_index "answers", ["problem_id"], :name => "index_answers_on_problem_id"
   add_index "answers", ["url"], :name => "index_answers_on_url"
   add_index "answers", ["user_id"], :name => "index_answers_on_user_id"
+
+  create_table "authentications", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "screen_name"
+    t.string   "name"
+    t.string   "access_token"
+    t.string   "access_secret"
+    t.string   "bio"
+    t.string   "image_url"
+    t.string   "web_url"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "authentications", ["screen_name"], :name => "index_authentications_on_screen_name"
+  add_index "authentications", ["user_id"], :name => "index_authentications_on_user_id"
 
   create_table "favs", :force => true do |t|
     t.integer  "answer_id",  :null => false
@@ -49,27 +67,12 @@ ActiveRecord::Schema.define(:version => 20120709153427) do
   add_index "problems", ["proposed"], :name => "index_problems_on_proposed"
 
   create_table "users", :force => true do |t|
-    t.string   "provider",            :null => false
-    t.string   "uid",                 :null => false
-    t.string   "nickname",            :null => false
-    t.string   "email"
-    t.string   "name"
-    t.string   "image"
-    t.string   "blog_url"
-    t.string   "github_url",          :null => false
-    t.string   "bio"
-    t.integer  "followers"
-    t.integer  "following"
-    t.string   "oauth_token",         :null => false
-    t.datetime "created_at",          :null => false
-    t.datetime "updated_at",          :null => false
     t.datetime "remember_created_at"
     t.string   "remember_token"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
   end
 
-  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
-  add_index "users", ["nickname"], :name => "index_users_on_nickname", :unique => true
   add_index "users", ["remember_token"], :name => "index_users_on_remember_token", :unique => true
-  add_index "users", ["uid"], :name => "index_users_on_uid", :unique => true
 
 end

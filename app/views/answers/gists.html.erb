@@ -1,0 +1,22 @@
+<h2>解答の選択</h2>
+<div id="user-github-gists">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Gist URL</th>
+        <th>Description</th>
+        <th>ファイル名</th>
+        <th>投稿時間</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render partial: 'gist', collection: @gists, :as => :gist %>
+    </tbody>
+  </table>
+</div>
+<div id='to-gists'>
+  <%= form_tag(answers_path, :id => 'gist-url-form') do %>
+    <%= hidden_field_tag 'gist_url', "" %>
+    <%= submit_tag "投稿", :class => 'btn btn-primary' %>
+  <% end %>
+</div>

@@ -208,9 +208,11 @@ Devise.setup do |config|
 
   if Rails.env.development? or Rails.env.test?
     # localhost application
+    config.omniauth :twitter, 'U7PSqmZoHIy4jUQjrJCNPA', 'DYJvoOwOeYWC2NHPziFqzASlv8r3YQF4AXwBM6djxM'
     config.omniauth :github, '9247bbf59cfb22348041', 'db23bdf5ded26a6e0a6c97c04587b2fa4509c8b3', :scope => 'user,public_repo'
   elsif Rails.env.production?
     # heroku application
+    config.omniauth :twitter, 'JSQdrHsyaJ23olEedclkLg', 'wDZQiP1qEmOkVQjJCUDrjfMuYXZyEV5uEKncJmwD0E'
     config.omniauth :github, '7722409e12e04aec9142', 'd492804d378aec9bc109b46b1d161a83c8028f22', :scope => 'user,public_repo'
   end
 

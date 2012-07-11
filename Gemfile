@@ -33,6 +33,7 @@ gem 'nokogiri'
 gem 'jquery-rails'
 gem 'will_paginate'
 gem 'devise'
+gem 'omniauth-twitter'
 gem 'omniauth-github'
 
 # Deploy with Capistrano

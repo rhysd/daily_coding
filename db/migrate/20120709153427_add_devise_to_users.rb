@@ -1,11 +1,7 @@
 class AddDeviseToUsers < ActiveRecord::Migration
   def self.up
     change_table(:users) do |t|
-      ## Rememberable
-      t.datetime :remember_created_at
-      t.string :remember_token
     end
-    add_index :users, :remember_token,  :unique => true
   end
 
   def self.down
