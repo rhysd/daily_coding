@@ -35,6 +35,7 @@ gem 'will_paginate'
 gem 'devise'
 gem 'omniauth-twitter'
 gem 'omniauth-github'
+gem 'twitter'
 
 # Deploy with Capistrano
 group :deployment do
