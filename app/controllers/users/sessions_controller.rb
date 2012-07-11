@@ -1,6 +1,6 @@
 class Users::SessionsController < ApplicationController
   def new
-    token = session[:oauth_token]
+    # token = session[:oauth_token]
     # Github API Clinet
     redirect_to :problems_today
   end

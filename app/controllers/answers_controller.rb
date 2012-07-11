@@ -4,7 +4,7 @@ require 'open-uri'
 
 class AnswersController < ApplicationController
   helper_method :gist_url?
-  before_filter :authenticate_user!
+  before_filter :authenticate_user!, :only => [:create, :destroy]
 
   def answers
     @answers = Answer.answers_by_pid(params[:problem_id]).recent
@@ -31,7 +31,7 @@ class AnswersController < ApplicationController
   end
 
   def create
-    id = user_sigend_in? ? current_user.id : 0
+    id = user_signed_in? ? current_user.id : 0
     content = content_by_gist_url(params[:gisturl])
     unless content.present?
       raise DailyCoding::Exceptions::InvalidURLError, "入力されたURLが適切ではありません。GistのURLを投稿して下さい。"

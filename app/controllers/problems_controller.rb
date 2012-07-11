@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 class ProblemsController < ApplicationController
-  before_filter :authenticate_user!
+  before_filter :authenticate_user!, :only => 'today'
 
   def index
     page = params[:page].presence || 1
