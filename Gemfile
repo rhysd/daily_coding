@@ -27,6 +27,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'thin'
 gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'quiet_assets', :git => 'https://github.com/evrone/quiet_assets.git'
 gem 'nokogiri'
