@@ -10,14 +10,14 @@
           <small><%= link_to @user.twitter.web_url, @user.twitter.web_url %></small>
           <hr>
           <li class="nav-header">Codes</li>
-          <li class="active"><a href="#">書いたコード (<%= @my_answers.size %>)</a></li>
-          <li><a href=<%= profiles_stared_codes_path(@user.id) %>>お気に入りのコード (<%= @stared_answers.size %>)</a></li>
+          <li><a href=<%= users_codes_path(@user.id) %>>書いたコード (<%= @my_answers.size %>)</a></li>
+          <li class="active"><a href="#">お気に入りのコード (<%= @stared_answers.size %>)</a></li>
         </ul>
       </div><!--/.well -->
     </div><!--/span-->
     <div class="span9">
       <div id="answers-unit" class="hero-unit">
-        <%= render partial: 'answers/answer', spacer_template: 'answers/sep', collection: @my_answers, :as => :answer %>
+        <%= render partial: 'answers/answer', spacer_template: 'answers/sep', collection: @stared_answers, :as => :answer %>
       </div>
     </div>
   </div>

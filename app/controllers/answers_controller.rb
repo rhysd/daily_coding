@@ -16,12 +16,12 @@ class AnswersController < ApplicationController
     render partial: 'answer', collection: @answers, :layout => false
   end
 
-  def profile
+  def user
     @user = User.find(params[:uid])
     @my_answers = Answer.answers_by_uid(params[:uid]).recent || []
   end
 
-  def profile_fav
+  def user_fav
     faved_answer_ids = Fav.find_all_by_user_id(params[:uid])
     begin
       @faved_answers = Answer.find(faved_answer_ids)

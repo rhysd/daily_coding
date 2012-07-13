@@ -2,11 +2,11 @@
 <div class='code'>
   <div class="meta">
     <div class="notice">
-      <p><%= link_to "@#{user.twitter.screen_name}", profile_path(user.id) %>さんが<%= answer.to_ago %>前に投稿しました</p>
+      <p><%= link_to "@#{user.twitter.screen_name}", user_path(user.id) %>さんが<%= answer.to_ago %>前に投稿しました</p>
     </div>
     <div class="author">
       <% if user %>
-        <a href="/profiles/<%= user.id %>">
+        <a href="/users/<%= user.id %>">
           <img src="<%= user.twitter.image_url %>" width='40px' height='40px'>
         </a>
       <% end %>
@@ -20,7 +20,7 @@
         <% end %>
       </a>
       <% answer.favs.each do |fav| %>
-        <a href="/profiles/<%= fav.user_id %>">
+        <a href="/users/<%= fav.user_id %>">
           <img src="<%= fav.user.twitter.image_url %>" width='24px' height='24px'>
         </a>
       <% end %>
