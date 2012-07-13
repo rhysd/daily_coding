@@ -11,7 +11,6 @@ class Problem < ActiveRecord::Base
   validates :proposed_at,
     :presence => true
 
-
   def self.today
     Problem.includes(:answers).where(proposed: false).order("id ASC").first
   end

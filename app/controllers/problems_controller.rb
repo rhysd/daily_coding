@@ -10,11 +10,15 @@ class ProblemsController < ApplicationController
 
   def show
     @problem = Problem.includes(:answers).find(params[:id])
+    raise NoProblemError, "問題idが不適切です。" unless @problem.present?
     @answers = @problem.present? ? @problem.answers : []
     @langs = @answers.present? ? @answers.map {|a| a.lang}.uniq : []
   end
 
   def today
     @today_problem = Problem.today
+    unless @today_problem.present?
+      raise NoProblemError, "今日の問題を取得できませんでした。時間を空けてアクセスしてください。"
+    end
   end
 end
