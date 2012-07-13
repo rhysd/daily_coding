@@ -24,3 +24,15 @@ div.url-form input[type="submit"] {
 label[for="twitter_post"] {
   display: inline;
 }
+
+.countdown h3 {
+  text-align: right;
+}
+
+#counter {
+  font-size: 18px;
+  float: right;
+  clear: both;
+  background-color: #FFF; 
+  border: none;
+}

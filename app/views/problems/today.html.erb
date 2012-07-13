@@ -1,7 +1,13 @@
-<h2>今日の問題</h2>
-<div class='hero-unit' id='today-problem' data-problem-id="<%= @today_problem.id %>">
-  <%== @today_problem.content %>
-  <%= link_to "Project Euler 問題#{@today_problem.id}", @today_problem.url %>
+<div class='countdown'>
+  <h3>次の問題までの時間</h3>
+  <div id='counter'></div>
+</div>
+<div id='today-problem'>
+  <h2>今日の問題</h2>
+  <div class='hero-unit' %>
+    <%== @today_problem.content %>
+    <%= link_to "Project Euler 問題#{@today_problem.id}", @today_problem.url %>
+  </div>
 </div>
 <h2>解答を共有</h2>
 <div class='hero-unit' id='gist-url'>
