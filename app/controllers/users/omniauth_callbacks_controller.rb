@@ -3,9 +3,9 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
   def twitter
     @user = User.find_for_twitter_oauth(request.env["omniauth.auth"], current_user)
-    remember_me(@user)
     if @user.persisted?
-      flash[:notice] = I18n.t "devise.omniauth_callbacks.success", :kind => "Github"
+      flash[:notice] = I18n.t "devise.omniauth_callbacks.success", :kind => "Twitter"
+      remember_me(@user)
       sign_in_and_redirect @user, :event => :authentication
     else
       session["devise.twitter_data"] = request.env["omniauth.auth"]
@@ -15,9 +15,9 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
   def github
     @user = User.find_for_github_oauth(request.env["omniauth.auth"], current_user)
-    remember_me(@user)
     if @user.persisted?
       flash[:notice] = I18n.t "devise.omniauth_callbacks.success", :kind => "Github"
+      remember_me(@user)
       sign_in_and_redirect @user, :event => :authentication
     else
       session["devise.github_data"] = request.env["omniauth.auth"]
