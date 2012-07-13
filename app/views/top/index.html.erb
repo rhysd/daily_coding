@@ -21,11 +21,11 @@
     <h1>
       <span class="signboard">
         DailyCoding
-        <p>１日の終わりにコーディングしていきませんか？</p>
+        <p>毎日みんなでコードを書こう！</p>
       </span>
     </h1>
     <div class='login-buttons'>
-      <a class='btn btn-primary btn-large' href=<%= user_omniauth_authorize_path(:twitter) %>>Twitterでログインして参加</a>
+      <a class='btn btn-primary btn-large' href=<%= user_omniauth_authorize_path(:twitter) %>>Twitterでログイン</a>
     </div>
   </div>
   <div id='share-buttons'>
@@ -41,22 +41,20 @@
     </div>
   </div>
 </div>
-<div class='row'>
-  <div class='span4'>
+<div id= 'about-service' class='row'>
+  <div class='span6'>
     <h2>このサービスについて</h2>
     <p> プログラミングの上達には日々のコーディングが欠かせません。
-    寝る前に少し時間を作って1日1題出されるプロジェクトオイラーの問題を解き、他の人と解答を共有したり，他の人の解答をお気に入りに登録しましょう。
-    問題は日替わりです。匿名でも参加できます。</p>
-  </div>
-  <div class='span4'>
-    <h2>出題される問題</h2>
-    <%= link_to "プロジェクトオイラー","http://projecteuler.net/" %>とは、
+    1日1題出されるプロジェクトオイラーの問題を解き、他の人と解答を共有したり，他の人の解答をお気に入りに登録しましょう。
+    </p>
+    <p> <%= link_to "プロジェクトオイラー","http://projecteuler.net/" %>とは、
     プログラミングで解く数学の問題集です。DailyCoding では、それらを毎日
     1問ずつ解いていくことで、楽しくプログラミング能力を向上させていくことができます。
+    </p>
   </div>
-  <div class='span4'>
-    <h2> 今日の問題 </h2>
-    <div id='today-problem'>
+  <div class='span6'>
+    <h2>例題</h2>
+    <div id='example-problem'>
       <%== @today_problem.content %>
     </div>
   </div>

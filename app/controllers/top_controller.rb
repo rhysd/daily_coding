@@ -3,6 +3,6 @@
 class TopController < ApplicationController
   def index
     @today_problem = Problem.today
-    redirect_to problems_today_path if user_signed_in?
+    user_signed_in? and redirect_to problems_today_path
   end
 end
