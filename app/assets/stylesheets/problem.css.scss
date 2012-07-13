@@ -15,3 +15,12 @@ input[type="url"] {
 div.url-form input[type="submit"] {
   width: 40%;
 }
+
+#post-to-twitter-parts {
+  display: inline;
+  margin-left: 14px;
+}
+
+label[for="twitter_post"] {
+  display: inline;
+}

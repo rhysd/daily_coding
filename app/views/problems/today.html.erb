@@ -17,7 +17,12 @@
       <%= hidden_field_tag 'problem_id', @today_problem.id %>
       <%= url_field_tag "gisturl", "", { :placeholder => "GistのURLを入力してください。" } %>
       <%= submit_tag "投稿", :class => 'btn btn-primary' %>
-      <%= check_box 'twitter_post', '', {}, true, false %> twitter に投稿
+      <div id='post-to-twitter-parts'>
+        <%= check_box 'twitter_post', '', {}, true, false %>
+        <label for='twitter_post'>
+          <%= image_tag 'blue_bird.png', :alt => 'Icon-t', :title => 'Twitterに投稿する', :size => '20x20' %>
+        </label>
+      </div>
     <% end %>
   </div>
   <div id='to-answers'>
