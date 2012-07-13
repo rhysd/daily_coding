@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 class FavController < ApplicationController
-  before_filter :login_check
+  before_filter :authenticate_user!
 
   def create
     Fav.find_or_create(params[:answer_id], current_user.id)
@@ -17,9 +17,4 @@ class FavController < ApplicationController
     head :ok, :nothing => true
   end
 
-  private
-
-  def login_check
-    head :unauthorized, :nothing => true unless logged_in?
-  end
 end

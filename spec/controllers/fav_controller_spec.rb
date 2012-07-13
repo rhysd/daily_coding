@@ -10,7 +10,7 @@ describe FavController do
 
   context "when a user logins" do
     before(:each) do
-      controller.stub(:logged_in?).and_return(true)
+      controller.stub(:user_signed_in?).and_return(true)
       controller.stub!(:current_user).and_return(@user)
     end
 
@@ -35,7 +35,7 @@ describe FavController do
 
   context "when a user doesn't 'login" do
     before(:each) do
-      controller.stub(:logged_in?).and_return(false)
+      controller.stub(:user_signed_in?).and_return(false)
     end
 
     describe "POST 'create'" do

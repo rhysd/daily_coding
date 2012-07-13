@@ -32,11 +32,11 @@
           <a class="brand" href=<%= top_path %>><font color="#FFA945">DailyCoding</font></a>
           <ul class="nav secondary-nav" style="float: right;">
             <%= link_to "過去に出題した問題", problems_path, :class => "brand" %>
-            <% if logged_in? %>
-              <%= link_to "Logout", smart_twitter.logout_path, :class => "brand" %>
-              <a href="/profiles/<%= current_user.id %>"><img src="<%= current_user.profile_image_url %>" height="28" vspace="4"></a>
+            <% if user_signed_in? %>
+              <%= link_to "Logout", destroy_session_path, :class => "brand" %>
+              <a href="/profiles/<%= current_user.id %>"><img src="<%= current_user.twitter.image_url %>" height="28" vspace="4"></a>
             <% else %>
-              <%= link_to "Login", smart_twitter.login_path, :class => "brand" %>
+              <%= link_to "Login", user_omniauth_authorize_path(:twitter), :class => "brand" %>
             <% end %>
           </ul>
         </div>
@@ -48,10 +48,10 @@
         <%= yield %>
       </div><!--/content-->
 
-      <hr>
+      <hr/>
       <footer>
-      <p>&copy; DailyCoding 2012 <ul style="float: right;"><%= link_to "Project Euler","http://projecteuler.net/" %></ul></p>
-      <p>This site is licensed under a <%= link_to "Creative Commons License","http://creativecommons.org/licenses/by-nc-sa/2.1/jp/" %></p>
+        <p>Programmed by <%= link_to "@Linda_pp", "http://twitter.com/Linda_pp" %>, <%= link_to "@y_uuki_", "http://twitter.com/y_uuki_" %><ul style="float: right;"><%= link_to "Project Euler","http://projecteuler.net/" %></ul></p>
+        <p>This site is licensed under a <%= link_to "Creative Commons License","http://creativecommons.org/licenses/by-nc-sa/2.1/jp/" %></p>
       </footer>
 
     </div> <!-- /container -->

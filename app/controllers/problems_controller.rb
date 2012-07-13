@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 class ProblemsController < ApplicationController
+  before_filter :authenticate_user!, :only => 'today'
+
   def index
     page = params[:page].presence || 1
     @problems = Problem.find_with_paging(page)

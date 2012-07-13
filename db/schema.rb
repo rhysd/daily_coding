@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120701152010) do
+ActiveRecord::Schema.define(:version => 20120711153524) do
 
   create_table "answers", :force => true do |t|
     t.string   "url",        :null => false
@@ -26,6 +26,24 @@ ActiveRecord::Schema.define(:version => 20120701152010) do
   add_index "answers", ["problem_id"], :name => "index_answers_on_problem_id"
   add_index "answers", ["url"], :name => "index_answers_on_url"
   add_index "answers", ["user_id"], :name => "index_answers_on_user_id"
+
+  create_table "authentications", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "screen_name"
+    t.string   "name"
+    t.string   "access_token"
+    t.string   "access_secret"
+    t.string   "bio"
+    t.string   "image_url"
+    t.string   "web_url"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "authentications", ["screen_name"], :name => "index_authentications_on_screen_name"
+  add_index "authentications", ["user_id"], :name => "index_authentications_on_user_id"
 
   create_table "favs", :force => true do |t|
     t.integer  "answer_id",  :null => false
@@ -48,37 +66,13 @@ ActiveRecord::Schema.define(:version => 20120701152010) do
 
   add_index "problems", ["proposed"], :name => "index_problems_on_proposed"
 
-  create_table "smart_twitter_users", :force => true do |t|
-    t.string   "twitter_id"
-    t.string   "login"
-    t.string   "access_token"
-    t.string   "access_secret"
-    t.binary   "crypted_password"
-    t.string   "salt"
+  create_table "users", :force => true do |t|
+    t.datetime "remember_created_at"
     t.string   "remember_token"
-    t.datetime "remember_token_expires_at"
-    t.string   "name"
-    t.string   "location"
-    t.string   "description"
-    t.string   "profile_image_url"
-    t.string   "url"
-    t.boolean  "protected"
-    t.string   "profile_background_color"
-    t.string   "profile_sidebar_fill_color"
-    t.string   "profile_link_color"
-    t.string   "profile_sidebar_border_color"
-    t.string   "profile_text_color"
-    t.integer  "friends_count"
-    t.integer  "statuses_count"
-    t.integer  "followers_count"
-    t.integer  "favourites_count"
-    t.integer  "utc_offset"
-    t.string   "time_zone"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
   end
 
-  create_table "users", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
+  add_index "users", ["remember_token"], :name => "index_users_on_remember_token", :unique => true
 
 end
