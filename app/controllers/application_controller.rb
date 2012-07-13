@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   rescue_from DailyCoding::Exceptions::InvalidURLError, :with => :error_page
 
   def twitter_client
-    @clinet ||= Twitter.configure do |config|
+    @twitter_clinet ||= Twitter.configure do |config|
       config.consumer_key = Devise.omniauth_configs[:twitter].args.first 
       config.consumer_secret = Devise.omniauth_configs[:twitter].args.last 
       config.oauth_token = current_user.twitter.access_token
