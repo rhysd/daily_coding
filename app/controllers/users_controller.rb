@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 
   def stared_codes
     setup
-    @stared_answers = Answer.find_all_by_id(@stared_answer_ids)
+    @stared_answers = @user.favs.map! { |f| f.answer } #Answer.find_all_by_id(@stared_answer_ids)
     @displayed_answers = @stared_answers
   end
 
@@ -20,7 +20,6 @@ class UsersController < ApplicationController
   def setup
     @user = User.includes(:answers).includes(:favs).find_by_id(params[:user_id])
     @user.present? or raise InvalidResourceError, "該当するユーザは存在しません。"
-    @stared_answer_ids = @user.favs.map! {|f| f.answer_id }
     @my_answers = @user.answers
     @my_answers.present? and @stared_counts = Fav.counts_faved_to_me(@my_answers)
   end

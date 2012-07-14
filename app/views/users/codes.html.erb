@@ -2,5 +2,5 @@
   <%= link_to "書いたコード (#{@my_answers.size})", "#" %>
 </li>
 <li>
-  <%= link_to "お気に入りのコード (#{@stared_answer_ids.size})", users_stared_codes_path(@user.id) %></a>
+  <%= link_to "お気に入りのコード (#{@user.favs.size})", users_stared_codes_path(@user.id) %></a>
 </li>
