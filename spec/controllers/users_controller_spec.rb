@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ProfilesController do
+describe UsersController do
   before(:each) do
     user = FactoryGirl.create(:user_with_answers)
     current_user= user

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe FavController do
+describe FavsController do
   before(:each) do
     @user = FactoryGirl.create(:user)
     @problem = FactoryGirl.create(:problem)

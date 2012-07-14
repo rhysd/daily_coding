@@ -11,8 +11,8 @@ DailyCoding::Application.routes.draw do
   get     'users/codes/:user_id'        => 'users#codes', :as => 'users_codes'
   get     'users/stared_codes/:user_id' => 'users#stared_codes', :as => 'users_stared_codes'
 
-  post    'fav/create/:answer_id'  => 'fav#create'
-  delete  'fav/destroy/:answer_id' => 'fav#destroy'
+  post    'favs/:answer_id'  => 'favs#create'
+  delete  'favs/:answer_id' => 'favs#destroy'
 
   get     'answers/user/:uid'      => 'answer#user'
   get     'answers/user_fav/:uid'  => 'answer#user_fav'

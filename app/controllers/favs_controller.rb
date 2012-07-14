@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-class FavController < ApplicationController
+class FavsController < ApplicationController
   before_filter :authenticate_user!
 
   def create
