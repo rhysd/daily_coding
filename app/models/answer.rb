@@ -3,6 +3,7 @@
 require 'nokogiri'
 
 class Answer < ActiveRecord::Base
+  include DailyCoding::Exceptions
   attr_accessible :lang, :url, :user_id, :problem_id, :body
 
   MINUTE = 60           # 60s
@@ -24,6 +25,7 @@ class Answer < ActiveRecord::Base
     :format => { :with => /[\w]+/}
   validates :url,
     :presence => { :message => "は必ず入力して下さい。"},
+    :uniqueness => { :message => "はすでに投稿されたURLです。"},
     :format => { :with => /http(s)?:\/\/gist\.github\.com\/[\d]+/, :message => "はGistのURLを入力して下さい。"} # Gist URL validattion
   validates :user_id,
     :presence => true,
@@ -44,17 +46,15 @@ class Answer < ActiveRecord::Base
       end
   end
 
-  def self.find_or_create(uid, problem_id, gist_url, content)
-    answer = find_or_initialize_by_url(gist_url)
-    if answer.present?
-      answer.user_id = uid
-      answer.url = gist_url
-      answer.lang = self.lang_type(gist_url)
-      answer.body = content
-      answer.problem_id = problem_id
-      answer.save
-    end
-    answer
+  def self.find_or_create_by_gisturl(uid, problem_id, gist_url, content)
+    Answer.find_by_url(gist_url).present? and raise InvalidResourceError, "入力されたURLはすでに投稿されています。"
+    answer = Answer.create(
+      :user_id => uid,
+      :url => gist_url,
+      :lang => self.lang_type(gist_url),
+      :body => content,
+      :problem_id => problem_id
+    )
   end
 
   def to_ago

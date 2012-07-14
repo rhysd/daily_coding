@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(:version => 20120711153524) do
   end
 
   add_index "answers", ["problem_id"], :name => "index_answers_on_problem_id"
-  add_index "answers", ["url"], :name => "index_answers_on_url"
+  add_index "answers", ["url"], :name => "index_answers_on_url", :unique => true
   add_index "answers", ["user_id"], :name => "index_answers_on_user_id"
 
   create_table "authentications", :force => true do |t|

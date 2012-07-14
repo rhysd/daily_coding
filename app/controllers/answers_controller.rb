@@ -17,10 +17,9 @@ class AnswersController < ApplicationController
   end
 
   def create
-    id = user_signed_in? ? current_user.id : 0
     content = content_by_gist_url(params[:gisturl])
     content.present? or raise InvalidURLError, "入力されたURLが適切ではありません。GistのURLを投稿して下さい。"
-    Answer.find_or_create(id, params[:problem_id], params[:gisturl], content)
+    Answer.find_or_create_by_gisturl(current_user.id, params[:problem_id], params[:gisturl], content)
     redirect_to problem_path(params[:problem_id]), :notice => "投稿できました。"
     if params[:twitter_post]
       twitter_client.update "@"+current_user.twitter.screen_name+" さんが今日の問題に解答しました。 "+problems_today_url+" via @daily_coding"
