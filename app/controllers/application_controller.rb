@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
 
   rescue_from DailyCoding::Exceptions::InvalidURLError, :with => :error_page
   rescue_from DailyCoding::Exceptions::NoProblemError, :with => :error_page
+  rescue_from ActiveRecord::RecordInvalid, :with => :error_page
 
   def twitter_client
     @twitter_clinet ||= Twitter.configure do |config|

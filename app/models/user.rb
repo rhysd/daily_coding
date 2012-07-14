@@ -25,6 +25,7 @@ class User < ActiveRecord::Base
       user = User.new
       data = auth['extra']['raw_info']
       user.authentications.build(
+        user_id: user.id,
         provider: auth['provider'],
         uid: auth['uid'],
         access_token: auth['credentials']['token'],
