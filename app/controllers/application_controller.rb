@@ -1,12 +1,12 @@
 class ApplicationController < ActionController::Base
+  include DailyCoding::Exceptions
   protect_from_forgery
 
   helper_method :twitter_client
 
-  rescue_from DailyCoding::Exceptions::InvalidURLError, :with => :error_page
-  rescue_from DailyCoding::Exceptions::NoProblemError, :with => :error_page
+  rescue_from InvalidURLError, :with => :error_page
+  rescue_from InvalidResourceError, :with => :error_page
   rescue_from ActiveRecord::RecordInvalid, :with => :error_page
-  rescue_from DailyCoding::Exceptions::InvalidResourceError, :with => :error_page
 
   def twitter_client
     @twitter_clinet ||= Twitter.configure do |config|

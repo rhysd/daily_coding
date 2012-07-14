@@ -7,9 +7,6 @@ module DailyCoding
     class InvalidURLError < StandardError
     end
 
-    class NoProblemError < StandardError
-    end
-
     class InvalidResourceError < StandardError
     end
   end

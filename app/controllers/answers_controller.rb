@@ -19,9 +19,7 @@ class AnswersController < ApplicationController
   def create
     id = user_signed_in? ? current_user.id : 0
     content = content_by_gist_url(params[:gisturl])
-    unless content.present?
-      raise DailyCoding::Exceptions::InvalidURLError, "入力されたURLが適切ではありません。GistのURLを投稿して下さい。"
-    end
+    content.present? or raise InvalidURLError, "入力されたURLが適切ではありません。GistのURLを投稿して下さい。"
     Answer.find_or_create(id, params[:problem_id], params[:gisturl], content)
     redirect_to problem_path(params[:problem_id]), :notice => "投稿できました。"
     if params[:twitter_post]
@@ -36,8 +34,7 @@ class AnswersController < ApplicationController
 
   def gist_url?(url)
     uri = URI.parse(url)
-    return false unless uri.host == "gist.github.com" && uri.path =~ /\d{1,8}/ # github.com/12345678
-    true
+    uri.host == "gist.github.com" && uri.path =~ /\d{1,8}/ # github.com/12345678
   end
 
   private

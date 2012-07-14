@@ -9,16 +9,14 @@ class ProblemsController < ApplicationController
   end
 
   def show
-    @problem = Problem.includes(:answers).find(params[:id])
-    raise NoProblemError, "問題idが不適切です。" unless @problem.present?
+    @problem = Problem.includes(:answers).find_by_id(params[:id])
+    @problem.present? or raise InvalidResourceError, "該当する問題は存在しません。"
     @answers = @problem.present? ? @problem.answers : []
     @langs = @answers.present? ? @answers.map {|a| a.lang}.uniq : []
   end
 
   def today
     @today_problem = Problem.today
-    unless @today_problem.present?
-      raise NoProblemError, "今日の問題を取得できませんでした。時間を空けてアクセスしてください。"
-    end
+    @today_problem.present? or raise InvalidResourceError, "今日の問題を取得できませんでした。時間を空けてアクセスしてください。"
   end
 end
