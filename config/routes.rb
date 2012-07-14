@@ -8,7 +8,7 @@ DailyCoding::Application.routes.draw do
   end
 
   scope 'users' do
-    get     ':user_id'              => 'users#codes', :as => 'user'
+    get     ':user_id'               => 'users#codes', :as => 'user'
     get     '/codes/:user_id'        => 'users#codes', :as => 'users_codes'
     get     '/stared_codes/:user_id' => 'users#stared_codes', :as => 'users_stared_codes'
   end
@@ -26,12 +26,11 @@ DailyCoding::Application.routes.draw do
     get     '/user_fav/:uid'  => 'answer#user_fav'
   end
   scope 'tmpl/answers' do
-    get   ':problem_id'       => 'answers#answers', :as => 'tmpl_answers'
-    get   ':problem_id/:lang' => 'answers#answers_by_lang', :as => 'tmpl_answers_by_lang'
+    get     ':problem_id'       => 'answers#answers', :as => 'tmpl_answers'
+    get     ':problem_id/:lang' => 'answers#answers_by_lang', :as => 'tmpl_answers_by_lang'
   end
   resources 'answers', :only => [:show, :create, :destroy]
 
-
-  root    :to => 'top#index'
+  root :to => 'top#index'
 
 end
