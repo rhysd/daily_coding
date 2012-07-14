@@ -16,20 +16,6 @@ class AnswersController < ApplicationController
     render partial: 'answer', collection: @answers, :layout => false
   end
 
-  def user
-    @user = User.find(params[:uid])
-    @my_answers = Answer.answers_by_uid(params[:uid]).recent || []
-  end
-
-  def user_fav
-    faved_answer_ids = Fav.find_all_by_user_id(params[:uid])
-    begin
-      @faved_answers = Answer.find(faved_answer_ids)
-    rescue ActiveRecord::RecordNotFound
-      @faved_answers = []
-    end
-  end
-
   def create
     id = user_signed_in? ? current_user.id : 0
     content = content_by_gist_url(params[:gisturl])
