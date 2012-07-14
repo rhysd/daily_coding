@@ -1,2 +1,6 @@
-<li class="active"><a href="#">書いたコード (<%= @my_answers.size %>)</a></li>
-<li><a href=<%= users_stared_codes_path(@user.id) %>>お気に入りのコード (<%= @stared_answer_ids.size %>)</a></li>
+<li class="active">
+  <%= link_to "書いたコード (#{@my_answers.size})", "#" %>
+</li>
+<li>
+  <%= link_to "お気に入りのコード (#{@stared_answer_ids.size})", users_stared_codes_path(@user.id) %></a>
+</li>
