@@ -13,8 +13,13 @@ class Fav < ActiveRecord::Base
     :presence => true
 
 
-  def self.destroy_by_answer_id_and_user_id(answer_id, uid)
-    fav = Fav.find_by_answer_id_and_user_id(answer_id, uid)
+  def self.destroy_by_answer_id_and_user_id(answer_id, user_id)
+    fav = Fav.find_by_answer_id_and_user_id(answer_id, user_id)
     fav.present? and Fav.delete(fav.id)
+  end
+
+  def self.counts_faved_to_me(my_answers)
+    answer_ids = my_answers.map { |a| a.id }
+    Fav.find_all_by_answer_id(answer_ids).length
   end
 end
