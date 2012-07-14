@@ -52,8 +52,7 @@ ActiveRecord::Schema.define(:version => 20120711153524) do
     t.datetime "updated_at", :null => false
   end
 
-  add_index "favs", ["answer_id"], :name => "index_favs_on_answer_id"
-  add_index "favs", ["user_id"], :name => "index_favs_on_user_id"
+  add_index "favs", ["user_id", "answer_id"], :name => "index_favs_on_user_id_and_answer_id", :unique => true
 
   create_table "problems", :force => true do |t|
     t.text     "content",                        :null => false

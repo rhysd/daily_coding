@@ -5,8 +5,8 @@
       <p><%= link_to "@#{author.twitter.screen_name}", user_path(author.id) %>さんが<%= answer.to_ago %>前に投稿しました</p>
     </div>
     <div class="author">
-      <% if user %>
-        <a href=<%= users_path(author.id) %>>
+      <% if author %>
+        <a href=<%= user_path(author.id) %>>
           <img src="<%= author.twitter.image_url %>" width='40px' height='40px'>
         </a>
       <% end %>
@@ -20,7 +20,7 @@
         <% end %>
       </a>
       <% answer.favs.each do |fav| %>
-        <a href=<%= users_path(fav.user_id) %>>
+        <a href=<%= user_path(fav.user_id) %>>
           <img src="<%= fav.user.twitter.image_url %>" width='24px' height='24px'>
         </a>
       <% end %>
