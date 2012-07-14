@@ -46,7 +46,7 @@
 
     <div class="container">
       <div class="content">
-        <%= yield %>
+        <%= content_for?(:user) ? yield(:user) : yield %>
       </div><!--/content-->
 
       <hr/>

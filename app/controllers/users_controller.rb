@@ -1,12 +1,15 @@
 class UsersController < ApplicationController
   before_filter :authenticate_user!
+  layout 'user'
 
   def codes
     setup
+    @displayed_answers = @my_answers
   end
 
   def stared_codes
     setup
+    @displayed_answers = @stared_answers
   end
 
   private

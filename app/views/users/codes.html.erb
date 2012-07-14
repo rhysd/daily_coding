@@ -1,25 +1,2 @@
-<div class="container-fluid">
-  <div class="row-fluid">
-    <div class="span3">
-      <div class="well sidebar-nav">
-        <ul class="nav nav-list">
-          <img src="<%= @user.twitter.image_url %>"><h2><%= link_to @user.twitter.screen_name, "http://twitter.com/#{@user.twitter.screen_name}" %></h2>
-          <small><font color="gray"><%= @user.twitter.name %></font></small>
-          <hr>
-          <p><%= @user.twitter.bio %></p>
-          <small><%= link_to @user.twitter.web_url, @user.twitter.web_url %></small>
-          <hr>
-          <li class="nav-header">Codes</li>
-          <li class="active"><a href="#">書いたコード (<%= @my_answers.size %>)</a></li>
-          <li><a href=<%= users_stared_codes_path(@user.id) %>>お気に入りのコード (<%= @stared_answers.size %>)</a></li>
-        </ul>
-      </div><!--/.well -->
-    </div><!--/span-->
-    <div class="span9">
-      <div id="answers-unit" class="hero-unit">
-        <%= render partial: 'answers/answer', spacer_template: 'answers/sep', collection: @my_answers, :as => :answer %>
-      </div>
-    </div>
-  </div>
-</div>
-
+<li class="active"><a href="#">書いたコード (<%= @my_answers.size %>)</a></li>
+<li><a href=<%= users_stared_codes_path(@user.id) %>>お気に入りのコード (<%= @stared_answers.size %>)</a></li>
