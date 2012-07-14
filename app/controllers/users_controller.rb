@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 
   def stared_codes
     setup
-    @stared_answers = @user.favs.map! { |f| f.answer } #Answer.find_all_by_id(@stared_answer_ids)
+    @stared_answers = @user.favs.map! { |f| f.answer }
     @displayed_answers = @stared_answers
   end
 

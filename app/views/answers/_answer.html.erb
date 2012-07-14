@@ -1,8 +1,9 @@
 <% author = answer.user %>
+<% problem = answer.problem %>
 <div class='code'>
   <div class="meta">
     <div class="notice">
-      <p><%= link_to "@#{author.twitter.screen_name}", user_path(author.id) %>さんが<%= answer.to_ago %>前に投稿しました</p>
+      <p><%= link_to "問題#{problem.id}", problem_path(problem.id) %>：<%= link_to "@#{author.twitter.screen_name}", user_path(author.id) %>さんが<%= answer.to_ago %>前に投稿しました</p>
     </div>
     <div class="author">
       <% if author %>
