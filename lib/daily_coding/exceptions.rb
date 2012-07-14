@@ -9,5 +9,8 @@ module DailyCoding
 
     class NoProblemError < StandardError
     end
+
+    class InvalidResourceError < StandardError
+    end
   end
 end

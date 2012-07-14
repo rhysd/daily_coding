@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 class UsersController < ApplicationController
   before_filter :authenticate_user!
   layout 'user'
@@ -16,7 +18,8 @@ class UsersController < ApplicationController
 
   def setup
     @user = User.includes(:answers).includes(:favs).find_by_id(params[:user_id])
-    @my_answers = @user.present? ? @user.answers : []
+    @user.present? or raise DailyCoding::Exceptions::InvalidResourceError, "該当するユーザは存在しません。"
+    @my_answers = @user.answers
     stared_answer_ids = @user.present? ? @user.favs.map! {|f| f.id } : []
     @stared_answers = Answer.find_all_by_id(stared_answer_ids)
   end
