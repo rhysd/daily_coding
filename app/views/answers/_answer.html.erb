@@ -1,13 +1,13 @@
-<% user = answer.user %>
+<% author = answer.user %>
 <div class='code'>
   <div class="meta">
     <div class="notice">
-      <p><%= link_to "@#{user.twitter.screen_name}", user_path(user.id) %>さんが<%= answer.to_ago %>前に投稿しました</p>
+      <p><%= link_to "@#{author.twitter.screen_name}", user_path(author.id) %>さんが<%= answer.to_ago %>前に投稿しました</p>
     </div>
     <div class="author">
       <% if user %>
-        <a href="/users/<%= user.id %>">
-          <img src="<%= user.twitter.image_url %>" width='40px' height='40px'>
+        <a href=<%= users_path(author.id) %>>
+          <img src="<%= author.twitter.image_url %>" width='40px' height='40px'>
         </a>
       <% end %>
     </div>
@@ -20,12 +20,12 @@
         <% end %>
       </a>
       <% answer.favs.each do |fav| %>
-        <a href="/users/<%= fav.user_id %>">
+        <a href=<%= users_path(fav.user_id) %>>
           <img src="<%= fav.user.twitter.image_url %>" width='24px' height='24px'>
         </a>
       <% end %>
     </div>
-    <% if current_user == user %>
+    <% if current_user == author %>
       <div class='answer-destroy'>
           <%= link_to "削除", answer_path(answer.id), :data => {:confirm => "この投稿を削除します。よろしいですか?"}, :method => :delete %>
       </div>

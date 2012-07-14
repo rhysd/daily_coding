@@ -8,8 +8,8 @@ class ApplicationController < ActionController::Base
 
   def twitter_client
     @twitter_clinet ||= Twitter.configure do |config|
-      config.consumer_key = Devise.omniauth_configs[:twitter].args.first 
-      config.consumer_secret = Devise.omniauth_configs[:twitter].args.last 
+      config.consumer_key = Devise.omniauth_configs[:twitter].args.first
+      config.consumer_secret = Devise.omniauth_configs[:twitter].args.last
       config.oauth_token = current_user.twitter.access_token
       config.oauth_token_secret = current_user.twitter.access_secret
     end
