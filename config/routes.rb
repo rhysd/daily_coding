@@ -16,8 +16,8 @@ DailyCoding::Application.routes.draw do
   resources 'problems',     :only => [:index, :show]
 
   scope 'favs' do
-    post    ':answer_id' => 'favs#create'
-    delete  ':answer_id' => 'favs#destroy'
+    post    '/create/:answer_id' => 'favs#create', :as => 'fav_create'
+    post    '/destroy/:answer_id' => 'favs#destroy', :as => 'fav_destroy'
   end
 
   scope 'answers' do
