@@ -1,0 +1,12 @@
+<% problem = @answer.problem %>
+<div class='problem'>
+  <h2>問題<%= problem.id %></h2>
+  <div class='hero-unit'>
+    <%== problem.content %>
+    <%= link_to "Project Euler 問題#{problem.id}", problem.url %>
+  </div>
+</div>
+
+<div class='hero-unit'>
+  <%= render partial: 'answer', locals: {:answer => @answer } %>
+</div>

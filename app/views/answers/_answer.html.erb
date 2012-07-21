@@ -1,36 +1,41 @@
-<% author = answer.user %>
-<% problem = answer.problem %>
-<div class='code' id=<%= answer.id%> >
-  <div class="meta">
-    <div class="notice">
-      <p><%= link_to "問題#{problem.id}", problem_path(problem.id) %>：<%= link_to "@#{author.twitter.screen_name}", user_path(author.id) %>さんが<%= answer.to_ago %>前に投稿しました</p>
-    </div>
-    <div class="author">
-      <% if author %>
-        <a href=<%= user_path(author.id) %>>
-          <img src="<%= author.twitter.image_url %>" width='40px' height='40px'>
-        </a>
-      <% end %>
-    </div>
-    <div class="fav-star">
-      <% if current_user_faved?(answer) %>
-        <%= link_to (image_tag "/assets/star_full.png"), fav_destroy_path(answer.id), :method => :post, :remote => true, :class => 'fav-btn' %>
-      <% else %>
-        <%= link_to (image_tag "/assets/star_empty.png"), fav_create_path(answer.id), :method => :post, :remote => true, :class => 'fav-btn' %>
-      <% end %>
-      <% answer.favs.each do |fav| %>
-        <a href=<%= user_path(fav.user_id) %>>
-          <img src="<%= fav.user.twitter.image_url %>" width='24px' height='24px'>
-        </a>
-      <% end %>
-    </div>
-    <% if current_user == author %>
-      <div class='answer-destroy'>
-          <%= link_to "削除", answer_path(answer.id), :data => {:confirm => "この投稿を削除します。よろしいですか?"}, :method => :delete %>
+<% if answer.present? %>
+  <% author = answer.user %>
+  <% problem = answer.problem %>
+  <div class='code' id=<%= answer.id%> >
+    <div class="meta">
+      <div class="notice">
+        <p>
+          <%= link_to "問題#{problem.id}", problem_path(problem.id) %>：<%= link_to "@#{author.twitter.screen_name}", user_path(author.id) %>さんが<%= answer.to_ago %>前に投稿しました。
+          <%= link_to "詳細", answer_path(answer.id) %>
+        </p>
       </div>
-    <% end %>
+      <div class="author">
+        <% if author %>
+          <a href=<%= user_path(author.id) %>>
+            <img src="<%= author.twitter.image_url %>" width='40px' height='40px'>
+          </a>
+        <% end %>
+      </div>
+      <div class="fav-star">
+        <% if current_user_faved?(answer) %>
+          <%= link_to (image_tag "/assets/star_full.png"), fav_destroy_path(answer.id), :method => :post, :remote => true, :class => 'fav-btn' %>
+        <% else %>
+          <%= link_to (image_tag "/assets/star_empty.png"), fav_create_path(answer.id), :method => :post, :remote => true, :class => 'fav-btn' %>
+        <% end %>
+        <% answer.favs.each do |fav| %>
+          <a href=<%= user_path(fav.user_id) %>>
+            <img src="<%= fav.user.twitter.image_url %>" width='24px' height='24px'>
+          </a>
+        <% end %>
+      </div>
+      <% if current_user == author %>
+        <div class='answer-destroy'>
+            <%= link_to "削除", answer_path(answer.id), :data => {:confirm => "この投稿を削除します。よろしいですか?"}, :method => :delete %>
+        </div>
+      <% end %>
+    </div>
+    <div class="gist-part">
+      <%== answer.body %>
+    </div>
   </div>
-  <div class="gist-part">
-    <%== answer.body %>
-  </div>
-</div>
+<% end %>

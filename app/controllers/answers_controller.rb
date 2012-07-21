@@ -8,22 +8,25 @@ class AnswersController < ApplicationController
 
   def answers
     @answers = Answer.answers_by_pid(params[:problem_id]).recent
-    render partial: 'answer', collection: @answers, :layout => false
+    render partial: 'answer', collection: @answers, layout: false
   end
 
   def answers_by_lang
     @answers = Answer.answers_by_pid(params[:problem_id]).lang(params[:lang]).recent
-    render partial: 'answer', collection: @answers, :layout => false
+    render partial: 'answer', collection: @answers, layout: false
+  end
+
+  def show
+    @answer = Answer.find_by_id(params[:id])
+    @answer.present? or raise InvalidResourceError, "指定された投稿は存在しません。"
   end
 
   def create
     content = content_by_gist_url(params[:gisturl])
     content.present? or raise InvalidURLError, "入力されたURLが適切ではありません。GistのURLを投稿して下さい。"
-    Answer.find_or_create_by_gisturl(current_user.id, params[:problem_id], params[:gisturl], content)
+    answer = Answer.find_or_create_by_gisturl(current_user.id, params[:problem_id], params[:gisturl], content)
     redirect_to problem_path(params[:problem_id]), :notice => "投稿できました。"
-    if params[:twitter_post]
-      twitter_client.update "@"+current_user.twitter.screen_name+" さんが今日の問題に解答しました。 "+problems_today_url+" via @daily_coding"
-    end
+    post_to_twitter(answer.id)
   end
 
   def destroy
@@ -37,6 +40,12 @@ class AnswersController < ApplicationController
   end
 
   private
+
+  def post_to_twitter(answer_id)
+    if params[:twitter_post]
+      twitter_client.update "@"+current_user.twitter.screen_name+" さんが今日の問題に解答しました。 "+answer_url(answer_id)+" via @daily_coding"
+    end
+  end
 
   def content_by_gist_url(url)
     uri = URI.parse(url + '.json')
