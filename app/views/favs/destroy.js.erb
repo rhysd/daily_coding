@@ -1,6 +1,7 @@
 
-if ($('a.fav-btn > img').attr('src') == '/assets/star_full.png') {
-  $('a.fav-btn > img').attr('src','/assets/star_empty.png');
+var answer_id = "<%= j(render 'answer_id') %>";
+if ($('#answer-' + answer_id + ' a.fav-btn > img').attr('src') == '/assets/star_full.png') {
+  $('#answer-' + answer_id + ' a.fav-btn > img').attr('src','/assets/star_empty.png');
 }
 
-$('a.fav-btn').attr('href', "/favs/create/<%= j(render 'answer_id') %>");
+$('#answer-' + answer_id + ' a.fav-btn').attr('href', "/favs/create/" + answer_id);
