@@ -77,7 +77,8 @@ class Answer < ActiveRecord::Base
         case type
         when "c"
           ext = File.extname doc.xpath('//div[@class="file"]')[0].get_attribute("id")
-          type = "cpp" if %w[ .cpp .cc .cxx ].include? ext
+          type = "c++" if %w[ .cpp .cc .cxx ].include? ext
+          type = "c#" if ext == "cs"
         when "viml"
           type = "vim"
         end
