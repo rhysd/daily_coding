@@ -3,7 +3,8 @@
 require 'open-uri'
 
 class AnswersController < ApplicationController
-  helper_method :gist_url?
+  include DailyCoding::GistUtil
+
   before_filter :authenticate_user!, :only => [:create, :destroy]
 
   def answers
@@ -22,11 +23,12 @@ class AnswersController < ApplicationController
   end
 
   def create
-    content = content_by_gist_url(params[:gisturl])
-    content.present? or raise InvalidURLError, "入力されたURLが適切ではありません。GistのURLを投稿して下さい。"
-    answer = Answer.find_or_create_by_gisturl(current_user.id, params[:problem_id], params[:gisturl], content)
+    gist_info = create_gist(params[:content], params[:lang])
+    gist_info[:html_content] = gist_content_by_url(gist_info[:url])
+    gist_info[:html_content].present? or raise InvalidURLError, "入力されたURLが適切ではありません。GistのURLを投稿して下さい。"
+    answer = Answer.find_or_create_by_user_id_and_problem_id(current_user.id, params[:problem_id], params[:lang], gist_info)
+    post_to_twitter(answer.id) if params[:twitter_post]
     redirect_to problem_path(params[:problem_id]), :notice => "投稿できました。"
-    post_to_twitter(answer.id)
   end
 
   def destroy
@@ -34,33 +36,24 @@ class AnswersController < ApplicationController
     redirect_to :back
   end
 
-  def gist_url?(url)
-    uri = URI.parse(url)
-    uri.host == "gist.github.com" && uri.path =~ /\d{1,8}/ # github.com/12345678
-  end
-
   private
 
+  def create_gist(content, lang)
+    p convert2ext(lang)
+    response = github_client.create_gist(
+      description: "Posted by DailyCoding Application",
+      public: false,
+      files: { "euler#{Problem.today.id}.#{convert2ext(lang)}" => {content: content} },
+    )
+    {
+      url: response.html_url,
+      raw_url: response.files.first[1].raw_url,
+      raw_content: response.files.first[1].content
+    }
+  end
+
   def post_to_twitter(answer_id)
-    if params[:twitter_post]
-      twitter_client.update "@"+current_user.twitter.screen_name+" さんが今日の問題に解答しました。 "+answer_url(answer_id)+" via @daily_coding"
-    end
-  end
-
-  def content_by_gist_url(url)
-    uri = URI.parse(url + '.json')
-    begin
-      content = uri.read
-    rescue
-      return nil
-    end
-    return nil if (content.status == "404" || content.status == "302") || gist_url?(url) == false
-    hash_from_gist(content)
-  end
-
-  def hash_from_gist(content)
-    json = JSON.parse content
-    json['div']
+    twitter_client.update "@"+current_user.twitter.screen_name+" さんが今日の問題に解答しました。 "+answer_url(answer_id)+" via @daily_coding"
   end
 
 end

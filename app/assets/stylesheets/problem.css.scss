@@ -3,17 +3,29 @@ div.hero-unit {
   padding-bottom: 30px;
 }
 
-div#gist-url {
+#url-form {
+  width: 600px;
+  display: block;
+  float: left;
+  margin: 0 auto;
+}
+
+#gist-url {
   padding-top: 30px;
   padding-bottom: 80px;
 }
 
-input[type="url"] {
-  width: 150%;
+textarea#content {
+  width: 800px;
+  font-size: 18px;
 }
 
+// input[type="textarea"] {
+//   width: 150%;
+// }
+
 div.url-form input[type="submit"] {
-  width: 40%;
+  width: 8%;
 }
 
 #post-to-twitter-parts {

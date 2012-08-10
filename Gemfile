@@ -38,6 +38,7 @@ gem 'devise'
 gem 'omniauth-twitter'
 gem 'omniauth-github'
 gem 'twitter'
+gem 'octokit'
 
 # Deploy with Capistrano
 group :deployment do

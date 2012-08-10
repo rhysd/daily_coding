@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120711153524) do
+ActiveRecord::Schema.define(:version => 20120803073406) do
 
   create_table "answers", :force => true do |t|
     t.string   "url",        :null => false
@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(:version => 20120711153524) do
     t.integer  "problem_id", :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "raw_url"
+    t.text     "raw_body"
   end
 
   add_index "answers", ["problem_id"], :name => "index_answers_on_problem_id"

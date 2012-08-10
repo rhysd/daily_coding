@@ -2,6 +2,11 @@ require 'open-uri'
 require 'nokogiri'
 require 'errors.rb'
 
+require 'daily_coding/exceptions'
+require 'daily_coding/gist_util'
+
+require 'active_support/core_ext'
+
 module DailyCoding
 
   def self.lang_type(url)
