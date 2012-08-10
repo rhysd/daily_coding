@@ -19,3 +19,5 @@
 config/smart_twitter.yml
 
 *.swp
+
+.env

@@ -43,7 +43,7 @@ class AnswersController < ApplicationController
 
   def post_to_twitter(answer_id)
     if params[:twitter_post]
-      twitter_client.update "@"+current_user.twitter.screen_name+" さんが今日の問題に解答しました。 "+answer_url(answer_id)+" via @daily_coding"
+      twitter_client.update "@"+current_user.twitter.screen_name+" さんが今日の問題に回答しました。 "+answer_url(answer_id)+" #daily_coding"
     end
   end
 

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.6'
+gem 'rails', '3.2.8'
 
 group :test, :development do
   gem 'sqlite3'
@@ -38,6 +38,7 @@ gem 'devise'
 gem 'omniauth-twitter'
 gem 'omniauth-github'
 gem 'twitter'
+gem 'libv8', '~> 3.11.8'
 
 # Deploy with Capistrano
 group :deployment do
