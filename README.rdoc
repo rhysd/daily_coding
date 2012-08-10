@@ -7,8 +7,8 @@ Link
 
 == Requirement
 
-- Ruby 1.9.2
-- Ruby on Rails 3.2.6
+- Ruby 1.9.3
+- Ruby on Rails 3.2.8
 - Heroku
 - Twitter Bootstrap
 
