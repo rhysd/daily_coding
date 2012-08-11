@@ -1,18 +1,40 @@
-<% if params[:notice].present? %>
+<% if flash[:notice].present? %>
   <div class='notice'>
-    <p><%= params[:notice] %></p>
+    <p><%= flash[:notice] %></p>
   </div>
 <% end %>
 
 <div class='problem'>
-  <h2>問題<%= @problem.id %></h2>
+  <ul class='pager'>
+    <% if @problem.id > 1 %>
+    <li class='previous'>
+      <%= link_to "<<", problem_path(@problem.id - 1) %>
+    </li>
+    <% end %>
+    <li>
+      <h2>問題<%= @problem.id %></h2>
+    </li>
+    <% if @problem.id != Problem.today.id %>
+    <li>
+      <%= link_to ">>", problem_path(@problem.id + 1) %>
+    </li>
+    <% end %>
+  </ul>
   <div class='hero-unit'>
     <%== @problem.content %>
     <%= link_to "Project Euler 問題#{@problem.id}", @problem.url %>
   </div>
 </div>
 
-<h2>みんなのコード</h2>
+<div class='heading'>
+  <h2>みんなのコード(<%= @answers.size %>)</h2>
+  <% user_images_for_each_answers(@answers).each |image| %>
+    <%= link_to (image_tag image)
+    <a href=<%= user_path(author.id) %>>
+      <img src="<%= author.twitter.image_url %>" width='40px' height='40px'>
+    </a>
+  <% end %>
+</div>
 
 <div class='hero-unit'>
   <ul class="nav nav-pills" id='lang-selector'>

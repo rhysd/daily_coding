@@ -3,7 +3,9 @@
   <div id='counter'></div>
 </div>
 <div id='today-problem'>
-  <h2>今日の問題</h2>
+  <div class='heading'>
+    <h2>今日の問題</h2>
+  </div>
   <div class='hero-unit' %>
     <%== @today_problem.content %>
     <%= link_to "Project Euler 問題#{@today_problem.id}", @today_problem.url %>
@@ -13,9 +15,7 @@
 <div class='hero-unit' id='gist-url'>
   <div class='explain'>
     <p>作成した解答を<strong><%= link_to "Gist","https://gist.github.com/" %></strong>にアップロードしましょう。</p>
-    <p>
-    GistのページのURL（例: https://gist.github.com/230912 ）を下のフォームに入力してください。
-    </p>
+    <p>GistのページのURL（例: https://gist.github.com/230912 ）を下のフォームに入力してください。</p>
   </div>
   <hr>
   <div class='url-form'>
