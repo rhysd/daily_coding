@@ -26,9 +26,18 @@
   </div>
 </div>
 
-<div class='heading'>
-  <h2>みんなのコード</h2>
-</div>
+<ul class="nav-heading">
+  <li>
+    <h2>みんなのコード(<%= @answers.size %>)</h2>
+  </li>
+  <li>
+    <div id="author-imgs">
+      <% author_for_each_answers(@answers).each do |author| %>
+        <%= link_to (image_tag author.twitter.image_url, :wifth => 36, :height => 36), user_path(author.id) %>
+      <% end %>
+    </div>
+  </li>
+</ul>
 
 <div class='hero-unit'>
   <ul class="nav nav-pills" id='lang-selector'>

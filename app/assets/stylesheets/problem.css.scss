@@ -1,13 +1,28 @@
-div.hero-unit {
+.hero-unit {
   padding-top: 30px;
   padding-bottom: 30px;
+  clear: both;
 }
 
 .pager li {
   float: left;
 }
 
-div#gist-url {
+ul.nav-heading {
+  display: block;
+  list-style: none;
+}
+
+.nav-heading li {
+  float: left;
+  margin-right: 20px;
+}
+
+#author-imgs a {
+  float: left;
+}
+
+#gist-url {
   padding-top: 30px;
   padding-bottom: 80px;
 }
@@ -16,7 +31,7 @@ input[type="url"] {
   width: 150%;
 }
 
-div.url-form input[type="submit"] {
+.url-form input[type="submit"] {
   width: 40%;
 }
 
