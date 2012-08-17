@@ -27,13 +27,7 @@
 </div>
 
 <div class='heading'>
-  <h2>みんなのコード(<%= @answers.size %>)</h2>
-  <% user_images_for_each_answers(@answers).each |image| %>
-    <%= link_to (image_tag image)
-    <a href=<%= user_path(author.id) %>>
-      <img src="<%= author.twitter.image_url %>" width='40px' height='40px'>
-    </a>
-  <% end %>
+  <h2>みんなのコード</h2>
 </div>
 
 <div class='hero-unit'>
