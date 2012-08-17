@@ -14,7 +14,7 @@ class Answer < ActiveRecord::Base
   belongs_to :problem
   belongs_to :user
 
-  scope :recent, order('created_at DESC')
+  default_scope order('created_at DESC')
   scope :lang, lambda { |l| where(:lang => l) }
   scope :answers_by_pid, lambda { |p| includes(:favs).where(:problem_id => p) }
   scope :answers_by_uid, lambda { |u| includes(:favs).where(:user_id => u) }

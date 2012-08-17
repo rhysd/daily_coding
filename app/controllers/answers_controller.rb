@@ -7,12 +7,12 @@ class AnswersController < ApplicationController
   before_filter :authenticate_user!, :only => [:create, :destroy]
 
   def answers
-    @answers = Answer.answers_by_pid(params[:problem_id]).recent
+    @answers = Answer.answers_by_pid(params[:problem_id])
     render partial: 'answer', collection: @answers, layout: false
   end
 
   def answers_by_lang
-    @answers = Answer.answers_by_pid(params[:problem_id]).lang(params[:lang]).recent
+    @answers = Answer.answers_by_pid(params[:problem_id]).lang(params[:lang])
     render partial: 'answer', collection: @answers, layout: false
   end
 
