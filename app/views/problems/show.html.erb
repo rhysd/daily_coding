@@ -46,7 +46,7 @@
     </li>
     <% @langs.each do |lang| %>
     <li>
-      <a class="lang-btn" data-href="<%= tmpl_answers_by_lang_path(@problem.id, lang) %>" href="javascript:void(0);" ><%= lang %></a>
+      <a class="lang-btn" data-href="<%= tmpl_answers_by_lang_path(@problem.id, lang) %>" href="javascript:void(0);" ><%= lang %> (<%= answers_by_lang(@answers, lang).size %>)</a>
     </li>
     <% end %>
   </ul>
