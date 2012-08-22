@@ -22,17 +22,9 @@ ul.nav-heading {
   float: left;
 }
 
-#gist-url {
-  padding-top: 30px;
-  padding-bottom: 80px;
-}
-
-input[type="url"] {
-  width: 150%;
-}
-
-.url-form input[type="submit"] {
-  width: 40%;
+textarea#content {
+  width: 800px;
+  font-size: 18px;
 }
 
 #post-to-twitter-parts {

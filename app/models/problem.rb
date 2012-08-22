@@ -4,6 +4,8 @@ class Problem < ActiveRecord::Base
   attr_accessible :content, :url, :proposed_at
   has_many :answers, :include => :favs, :order => 'created_at DESC'
 
+  scope :find_today, where(proposed: false).order("id ASC")
+
   validates :content,
     :presence => true
   # validates :url,
@@ -11,8 +13,13 @@ class Problem < ActiveRecord::Base
   validates :proposed_at,
     :presence => true
 
+
   def self.today
-    Problem.includes(:answers).where(proposed: false).order("id ASC").first
+    Problem.find_today.first
+  end
+
+  def self.today_with_answers
+    Problem.includes(:answers).find_today.first
   end
 
   def self.find_with_paging(page)

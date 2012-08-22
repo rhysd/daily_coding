@@ -16,8 +16,6 @@
 
 /vendor/bundle/*
 
-config/smart_twitter.yml
-
 *.swp
 
 .env

@@ -39,6 +39,7 @@ gem 'omniauth-twitter'
 gem 'omniauth-github'
 gem 'twitter'
 gem 'libv8', '~> 3.11.8'
+gem 'octokit'
 
 # Deploy with Capistrano
 group :deployment do

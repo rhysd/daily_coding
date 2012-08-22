@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 
-require 'nokogiri'
-
 class Answer < ActiveRecord::Base
   include DailyCoding::Exceptions
-  attr_accessible :lang, :url, :user_id, :problem_id, :body
+  attr_accessible :lang, :url, :raw_url, :user_id, :problem_id, :body, :raw_body
 
   MINUTE = 60           # 60s
   HOUR   = 60 * 60      # 3600s
@@ -46,14 +44,16 @@ class Answer < ActiveRecord::Base
       end
   end
 
-  def self.find_or_create_by_gisturl(uid, problem_id, gist_url, content)
-    Answer.find_by_url(gist_url).present? and raise InvalidResourceError, "入力されたURLはすでに投稿されています。"
-    answer = Answer.create(
-      :user_id => uid,
-      :url => gist_url,
-      :lang => self.lang_type(gist_url),
-      :body => content,
-      :problem_id => problem_id
+  def self.find_or_create_by_user_id_and_problem_id(user_id, problem_id, lang, gist_info)
+    Answer.find_by_url(gist_info[:url]).present? and raise InvalidResourceError, "入力されたURLはすでに投稿されています。"
+    Answer.create(
+      user_id: user_id,
+      problem_id: problem_id,
+      lang: lang,
+      url: gist_info[:url],
+      raw_url: gist_info[:raw_url],
+      body: gist_info[:html_content],
+      raw_body: gist_info[:raw_content],
     )
   end
 
@@ -65,27 +65,6 @@ class Answer < ActiveRecord::Base
     when HOUR ... DAY then    sprintf "%d時間", relative_sec / HOUR
     else                      sprintf "%d日", relative_sec / DAY
     end
-  end
-
-  private
-
-  def self.lang_type(gist_url)
-    doc = Nokogiri::HTML open(gist_url)
-    result = doc.xpath('//div[@class="file"]/div').each do |div|
-      if div.get_attribute("class") =~ /^data type-(.*)$/
-        type = $1
-        case type
-        when "c"
-          ext = File.extname doc.xpath('//div[@class="file"]')[0].get_attribute("id")
-          type = "c++" if %w[ .cpp .cc .cxx ].include? ext
-          type = "c#" if ext == "cs"
-        when "viml"
-          type = "vim"
-        end
-        return type
-      end
-    end
-    "others"
   end
 
 end

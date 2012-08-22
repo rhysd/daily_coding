@@ -17,6 +17,10 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def github_client
+    @github_client ||= Octokit::Client.new(login: "daily-coding", oauth_token: ENV['GITHUB_OAUTH_TOKEN'])
+  end
+
   private
 
   def error_page(e)

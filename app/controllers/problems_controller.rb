@@ -16,7 +16,7 @@ class ProblemsController < ApplicationController
   end
 
   def today
-    @today_problem = Problem.today
+    @today_problem = Problem.today_with_answers
     @today_problem.present? or raise InvalidResourceError, "今日の問題を取得できませんでした。時間を空けてアクセスしてください。"
   end
 end
