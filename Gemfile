@@ -17,6 +17,7 @@ group :production do
   gem 'pg'
   gem 'dalli'
   gem 'unicorn'
+  gem 'newrelic_rpm'
   # gem 'mysql2'
 end
 
