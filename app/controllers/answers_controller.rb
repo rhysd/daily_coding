@@ -54,6 +54,7 @@ class AnswersController < ApplicationController
     rescue
       return nil
     end
+    Rails.logger.warn content.inspect # 本番環境でこれがないとなぜか動かない
     return nil if (content.status == "404" || content.status == "302") || gist_url?(url) == false
     hash_from_gist(content)
   end
