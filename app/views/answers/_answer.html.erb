@@ -31,12 +31,12 @@
       </div>
       <% if current_user == author %>
         <div class='answer-destroy'>
-            <%= link_to "削除", answer_path(answer.id), :data => {:confirm => "この投稿を削除します。よろしいですか?"}, :method => :delete %>
+          <%= link_to "削除", answer_path(answer.id), :data => {:confirm => "この投稿を削除します。よろしいですか?"}, :method => :delete %>
         </div>
       <% end %>
     </div>
     <div class="gist-part">
-      <%== answer.body %>
+      <%== embed_by_gist_url(answer.url) %>
     </div>
   </div>
 <% end %>

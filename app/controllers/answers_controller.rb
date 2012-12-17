@@ -6,15 +6,23 @@ class AnswersController < ApplicationController
   helper_method :gist_url?
   before_filter :authenticate_user!, :only => [:create, :destroy]
 
-  def answers
-    @answers = Answer.answers_by_pid(params[:problem_id])
-    render partial: 'answer', collection: @answers, layout: false
-  end
+  # def index
+  #   @answers = Answer.answers_by_pid(params[:problem_id])
+  #   if params[:lang]
+  #     @answers = @answers.lang(params[:lang])
+  #   end
+  #   render :template , collection: @answers, layout: false
+  # end
 
-  def answers_by_lang
-    @answers = Answer.answers_by_pid(params[:problem_id]).lang(params[:lang])
-    render partial: 'answer', collection: @answers, layout: false
-  end
+  # def answers
+  #   @answers = Answer.answers_by_pid(params[:problem_id])
+  #   render partial: 'answer', collection: @answers, layout: false
+  # end
+
+  # def answers_by_lang
+  #   @answers = Answer.answers_by_pid(params[:problem_id]).lang(params[:lang])
+  #   render partial: 'answer', collection: @answers, layout: false
+  # end
 
   def show
     @answer = Answer.find_by_id(params[:id])
@@ -48,14 +56,16 @@ class AnswersController < ApplicationController
   end
 
   def content_by_gist_url(url)
-    uri = URI.parse(url + '.json')
+    uri = open(url + '.json', :ssl_verify_mode => OpenSSL::SSL::VERIFY_NONE)
     begin
       content = uri.read
-    rescue
+    rescue => e
+      require 'pp'
+      pp e
       return nil
     end
     Rails.logger.warn content.inspect # 本番環境でこれがないとなぜか動かない
-    return nil if (content.status == "404" || content.status == "302") || gist_url?(url) == false
+    return nil if (uri.status == "404" || uri.status == "302") || gist_url?(url) == false
     hash_from_gist(content)
   end
 

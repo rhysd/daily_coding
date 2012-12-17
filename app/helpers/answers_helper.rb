@@ -8,4 +8,8 @@ module AnswersHelper
     false
   end
 
+  def embed_by_gist_url(url)
+    "<script src='#{url}.js'><\/script>"
+  end
+
 end

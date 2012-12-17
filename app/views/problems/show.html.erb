@@ -41,13 +41,22 @@
 
 <div class='hero-unit'>
   <ul class="nav nav-pills" id='lang-selector'>
-    <li class="active">
-      <a id="all-lang" class= "lang-btn" href="javascript:void(0);" data-href="<%= tmpl_answers_path(@problem.id) %>">ALL</a>
-    </li>
+    <% if @lang %>
+      <li>
+    <% else %>
+      <li class="active">
+    <% end %>
+    <%= link_to "ALL", "/problems/#{@problem.id}", :id => "all-lang", :class => "lang-btn" %>
+    <!-- <a id="all-lang" class= "lang-btn" href="/problems/#{@problem.id}">ALL</a> -->
+      </li>
     <% @langs.each do |lang| %>
-    <li>
-      <a class="lang-btn" data-href="<%= tmpl_answers_by_lang_path(@problem.id, lang) %>" href="javascript:void(0);" ><%= lang %> (<%= answers_by_lang(@answers, lang).size %>)</a>
-    </li>
+      <% if @lang == lang %>
+        <li class="active">
+      <% else %>
+        <li>
+      <% end %>
+          <%= link_to "#{lang} (#{answers_by_lang(@answers, lang).size})", "/problems/#{@problem.id}/answers/#{lang}" %>
+        </li>
     <% end %>
   </ul>
 

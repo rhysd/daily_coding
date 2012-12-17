@@ -70,7 +70,7 @@ class Answer < ActiveRecord::Base
   private
 
   def self.lang_type(gist_url)
-    doc = Nokogiri::HTML open(gist_url)
+    doc = Nokogiri::HTML open(gist_url, :ssl_verify_mode => OpenSSL::SSL::VERIFY_NONE)
     result = doc.xpath('//div[@class="file"]/div').each do |div|
       if div.get_attribute("class") =~ /^data type-(.*)$/
         type = $1
